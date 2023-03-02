@@ -5,7 +5,9 @@ import cors = require("cors");
 import cookieParser = require("cookie-parser");
 import routes from './routes/routes'
 //endnew
+import { Music } from 'music-app-models';
 
+var music = new Music();
 
 var app = express();
 //new
