@@ -43,6 +43,10 @@ import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.co
       {
         path: "admin",
         component: AdminPageComponent
+      },
+      {
+        path: "registro-usuario",
+        component: RegistroUsuarioComponent
       }
     ])
   ],
