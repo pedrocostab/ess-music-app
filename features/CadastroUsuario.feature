@@ -62,3 +62,12 @@ Scenario: User logged in wants to change his password to his actual password
     And I write "000000" in "New Password"
     And I click on "Confirm"
     Then I see a Error message "password already in use"
+
+Scenario: User logged in wants to change his email
+    Given I am on the "User Profile" page
+    And I am logged in with email "pcsb@cin.ufpe.br" and password "000000"
+    When I click on "Change Email" option
+    And I write "pedrocostab@gmail.com" in "New email"
+    And I write "pedrocostab@gmail.com" in "Confirm email adress"
+    And I click on "Confirm"
+    Then I see a email changed successfully message
