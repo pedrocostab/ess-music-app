@@ -53,3 +53,12 @@ Scenario: Register new User with password less than 6 digits
     And I write "dddd@cin.ufpe.br" in "email"
     And I write "00000" in "Password"
     Then I get a Registration Error message "password less than 6 digits"
+
+Scenario: User logged in wants to change his password to his actual password
+    Given I am on the "User Profile" page
+    And I am logged in with email "pcsb@cin.ufpe.br" and password "000000"
+    When I click on "Change Password" option
+    And I write "000000" in "Current Password"
+    And I write "000000" in "New Password"
+    And I click on "Confirm"
+    Then I see a Error message "password already in use"
