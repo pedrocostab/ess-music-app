@@ -28,9 +28,12 @@ export class RegistroUsuarioComponent implements OnInit {
 
   proceedregister() {
     if (this.registerform.valid) {
- 
+      this.service.RegisterUser(this.registerform.value).subscribe(result => {
+        window.confirm("Registro feito com sucesso")
+        this.router.navigate(['login'])
+      })
     } else {
-      console.error('Por favor, insira uma senha com no mínimo 6 caracteres')
+      alert("Por favor, insira uma senha com no mínimo 6 caracteres")
     }
   }
   
