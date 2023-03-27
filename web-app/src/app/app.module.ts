@@ -12,6 +12,8 @@ import { IndexComponent } from './index/index.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.component';
+import { LoginComponent } from './login/login.component';
+import { ListaUsuarioComponent } from './lista-usuario/lista-usuario.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.co
     AdminPageComponent,
     ListaMusicasComponent,
     RegistroUsuarioComponent,
+    LoginComponent,
+    ListaUsuarioComponent,
   ],
   imports: [
     BrowserModule,
