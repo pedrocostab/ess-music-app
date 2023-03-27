@@ -11,6 +11,7 @@ import { MusicaService } from './musicas/musicas.service';
 import { IndexComponent } from './index/index.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
+import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
     MusicasComponent,
     AdminPageComponent,
     ListaMusicasComponent,
+    RegistroUsuarioComponent,
   ],
   imports: [
     BrowserModule,
