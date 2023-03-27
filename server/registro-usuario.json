@@ -1,0 +1,10 @@
+{
+    "Usuarios": [
+        {
+        "id": 1,
+        "nome": "Pedro",
+        "email": "pcsb@cin.ufpe.br",
+        "ano_lancamento": 2020
+        }
+    ]
+}
