@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { UserlistingComponent } from './userlisting/userlisting.component';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
+import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
+import { MusicasComponent } from './musicas/musicas.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
     LoginComponent,
     HomeComponent,
     UserlistingComponent,
-    UpdatepopupComponent
+    UpdatepopupComponent,
+    ListaMusicasComponent,
+    MusicasComponent
   ],
   imports: [
     BrowserModule,
