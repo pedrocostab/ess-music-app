@@ -35,6 +35,11 @@ export class LoginComponent {
     this.service.Getbycode(this.loginform.value.username).subscribe(res=>{
       this.userdata=res;
       console.log(this.userdata);
+      if(this.userdata.password===this.loginform.value.password){
+
+      }else{
+        this.toastr.error('Credenciais Inválidas');
+      }
     })
   }
   }
