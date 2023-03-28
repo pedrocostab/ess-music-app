@@ -26,4 +26,8 @@ export class AuthService {
     return this.http.post(this.apiurl+'/'+code, inputdata);
   }
 
+IsloggedIn(){
+  return sessionStorage.getItem('username')!=null;
+}
+
 }
