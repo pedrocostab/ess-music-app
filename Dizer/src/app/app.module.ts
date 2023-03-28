@@ -14,9 +14,9 @@ import { UserlistingComponent } from './userlisting/userlisting.component';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 
 import { FormsModule } from '@angular/forms';
-import { RouterModule }   from '@angular/router';
-import { MusicasComponent } from './musicas/musicas.component';
-import { MusicaService } from './musicas/musicas.service';
+// import { RouterModule }   from '@angular/router';
+// import { MusicasComponent } from './musicas/musicas.component';
+// import { MusicaService } from './musicas/musicas.service';
 import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 
 
@@ -28,8 +28,8 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
     HomeComponent,
     UserlistingComponent,
     UpdatepopupComponent,
-    ListaMusicasComponent,
-    MusicasComponent
+    ListaMusicasComponent
+    // MusicasComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +41,8 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
     FormsModule,
     ToastrModule.forRoot()
   ],
-  providers: [MusicaService],
+  // providers: [MusicaService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
