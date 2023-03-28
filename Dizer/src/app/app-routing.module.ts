@@ -11,12 +11,12 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 
 
 const routes: Routes = [
-  {path:'', component:HomeComponent, canActivate:[AuthGuard]},
+  {path:'', component:HomeComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
   {path:'user', component:UserlistingComponent, canActivate:[AuthGuard]},
   // {path: 'cadastrar-musicas', component: MusicasComponent},
-  {path: 'lista-musicas', component: ListaMusicasComponent}
+  {path: 'lista-musicas', component: ListaMusicasComponent, canActivate:[AuthGuard]}
 ];
 
 @NgModule({
