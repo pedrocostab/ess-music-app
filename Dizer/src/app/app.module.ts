@@ -12,8 +12,13 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { UserlistingComponent } from './userlisting/userlisting.component';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
-import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
+
+import { FormsModule } from '@angular/forms';
+import { RouterModule }   from '@angular/router';
 import { MusicasComponent } from './musicas/musicas.component';
+import { MusicaService } from './musicas/musicas.service';
+import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
+
 
 @NgModule({
   declarations: [
@@ -33,9 +38,10 @@ import { MusicasComponent } from './musicas/musicas.component';
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule,
     ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [MusicaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
