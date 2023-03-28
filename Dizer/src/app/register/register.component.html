@@ -1,1 +1,19 @@
-<p>register works!</p>
+<mat-card>
+    <mat-card-header>
+        <h1>Registro de Usuários</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]= "registerform" (ngSubmit)="proceedregistration()">
+            <mat-form-field class="example-full-width">
+              <mat-label>User</mat-label>
+              <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <mat-label>Leave a comment</mat-label>
+              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+            </mat-form-field>
+          </form>
+    </mat-card-content>
+  </mat-card>
+
