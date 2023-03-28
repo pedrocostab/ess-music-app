@@ -10,7 +10,9 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private builder: FormBuilder, private toastr: ToastrService, private service: AuthService, private router: Router) {
+  constructor(private builder: FormBuilder, private toastr: ToastrService, 
+    private service: AuthService, private router: Router) {
+      sessionStorage.clear();
   }
 
   userdata: any;
