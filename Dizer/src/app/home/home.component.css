@@ -1,3 +1,17 @@
+div.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #000000c0;
+    color: white;
+    font-weight: 600;
+    text-shadow: 3px 2px 6px #9039D4;
+  }
+
 div.container-home {
     display: flex;
     align-items: center;
@@ -86,4 +100,11 @@ div.container-home-buttons button + button {
 div.container-home-buttons button:hover {
 	background:linear-gradient(to bottom, #3c2a71 5%, #865bcc 100%);
 	background-color:#3c2a71;
+}
+
+div.container-home-logout {
+    width: 100%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
 }

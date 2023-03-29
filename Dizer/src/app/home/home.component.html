@@ -1,3 +1,12 @@
+<div class="toolbar" role="banner">
+  <a routerLink="">Home</a>
+  <a routerLink="/user">Usuario</a>
+  <div class="container-home-logout"> 
+     <a routerLink="/login">Logout</a>
+    </div>
+
+</div>
+
 <div class="container-home">
     <div class="container-home-content">
       <div class="titles">
@@ -23,8 +32,12 @@
     </div>
     <div class="container-home-buttons">
       <div class="buttons">
-        <a routerLink="/login"><button>Login</button></a>
-        <a routerLink="/register"><button>Cadastro</button></a>
+        <button [routerLink]="'/login'"> Login</button>
+        <button [routerLink]="'/register'"> Cadastro</button>
+        <!-- <button><a routerLink="/login">Login</a></button>
+        <button><a routerLink="/register"></a></button> -->
+        <!-- <a routerLink="/login"><button>Login</button></a>
+        <a routerLink="/register"><button>Cadastro</button></a> -->
       </div>
     </div>
   </div>
