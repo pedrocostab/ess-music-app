@@ -43,7 +43,7 @@ export class LoginComponent {
           if (this.userdata.isactive) {
             sessionStorage.setItem('username', this.userdata.id);
             sessionStorage.setItem('userrole', this.userdata.role);
-            this.router.navigate([''])
+            this.router.navigate(['/initial-page'])
           } else {
             this.toastr.error('Por favor, renove seu cadastro na Dizer ou contate nosso suporte');
           }
