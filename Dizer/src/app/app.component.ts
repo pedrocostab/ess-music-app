@@ -14,7 +14,7 @@ export class AppComponent implements DoCheck  {
   }
   ngDoCheck(): void {
     let currenturl=this.router.url;
-    if(currenturl=='/login' || currenturl=='/register'){
+    if(currenturl=='/login' || currenturl=='/register' || currenturl=='/'){
       this.ismenurequired=false;
     }else{
       this.ismenurequired=true;
