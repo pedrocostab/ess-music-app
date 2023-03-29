@@ -22,7 +22,7 @@
     <!-- Coluna de Tipo de usuário -->
     <ng-container matColumnDef="role">
       <th mat-header-cell *matHeaderCellDef> Tipo de Usuário </th>
-      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      <td mat-cell *matCellDef="let element"> {{element.role===''?'Não definido' : element.role}} </td>
     </ng-container>
 
     <!-- Coluna de status -->
