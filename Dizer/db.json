@@ -9,6 +9,15 @@
       "gender": "Masculino",
       "role": "admin",
       "isactive": true
-    } 
+    },
+    {
+      "id": "x",
+      "name": "x",
+      "password": "xxxxxx",
+      "email": "x@x",
+      "gender": "Masculino",
+      "role": "",
+      "isactive": false
+    }
   ]
 }

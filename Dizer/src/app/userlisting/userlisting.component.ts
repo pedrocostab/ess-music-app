@@ -10,7 +10,7 @@ import { MatTableDataSource } from '@angular/material/table';
 export class UserlistingComponent {
 
   constructor(private service: AuthService) {
-
+    this.Loaduser();
   }
 
   userlist: any;
@@ -19,7 +19,7 @@ export class UserlistingComponent {
   Loaduser() {
     this.service.GetAll().subscribe(res => {
       this.userlist = res;
-      this.dataSource = new MatTableDataSource(this.userlist)
+      this.dataSource = new MatTableDataSource(this.userlist);
     });
   }
 
