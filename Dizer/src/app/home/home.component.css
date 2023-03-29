@@ -102,9 +102,3 @@ div.container-home-buttons button:hover {
 	background-color:#3c2a71;
 }
 
-div.container-home-logout {
-    width: 100%;
-    display: flex;
-    align-items: right;
-    justify-content: right;
-}
