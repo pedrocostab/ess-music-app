@@ -1,7 +1,8 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, Inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../service/auth.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-updatepopup',
@@ -11,7 +12,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 export class UpdatepopupComponent implements OnInit {
 
   constructor(private builder: FormBuilder, private service: AuthService,
-    @inject(MAT_DIALOG_DATA) public data: any) {
+    @Inject(MAT_DIALOG_DATA) public data: any, private toastr:ToastrService,
+    private dialog:MatDialogRef<UpdatepopupComponent>) {
 
   }
 
@@ -42,6 +44,13 @@ export class UpdatepopupComponent implements OnInit {
   });
 
   updateuser() {
-
+    if(this.registerform.valid){
+      this.service.Updateuser(this.registerform.value.id, this.registerform.value).subscribe(res=>{
+        this.toastr.success('Informação alterada com sucesso!');
+        this.dialog.close();
+      })
+    }else{
+      this.toastr.warning('Por favor, selecione um cargo!')
+    }
   }
 }

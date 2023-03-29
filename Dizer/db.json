@@ -63,6 +63,15 @@
       "gender": "Masculino",
       "role": "",
       "isactive": false
+    },
+    {
+      "id": "iqkqy-n",
+      "name": "",
+      "password": "",
+      "email": "",
+      "gender": "",
+      "role": "usuario",
+      "isactive": false
     }
   ],
   "role": [
