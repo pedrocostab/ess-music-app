@@ -64,5 +64,15 @@
       "role": "",
       "isactive": false
     }
+  ],
+  "role": [
+    {
+      "code": "admin",
+      "name": "Admin"
+    },
+    {
+      "code": "usuario",
+      "name": "Usuario"
+    }
   ]
 }
