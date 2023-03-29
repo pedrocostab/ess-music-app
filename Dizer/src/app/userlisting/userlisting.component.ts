@@ -2,6 +2,7 @@ import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { AuthService } from '../service/auth.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-userlisting',
@@ -17,6 +18,7 @@ export class UserlistingComponent {
   userlist: any;
   dataSource: any;
   @ViewChild(MatPaginator) paginator !:MatPaginator;
+  @ViewChild(MatSort) sort !:MatSort;
 
 
   Loaduser() {
@@ -24,6 +26,7 @@ export class UserlistingComponent {
       this.userlist = res;
       this.dataSource = new MatTableDataSource(this.userlist);
       this.dataSource.paginator=this.paginator;
+      this.dataSource.sort=this.sort;
     });
   }
 
