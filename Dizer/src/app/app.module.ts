@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 // import { MusicasComponent } from './musicas/musicas.component';
 // import { MusicaService } from './musicas/musicas.service';
 import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
+import { InitialPageComponent } from './initial-page/initial-page.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
     HomeComponent,
     UserlistingComponent,
     UpdatepopupComponent,
-    ListaMusicasComponent
+    ListaMusicasComponent,
+    InitialPageComponent
     // MusicasComponent
   ],
   imports: [
