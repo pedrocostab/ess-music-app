@@ -9,6 +9,7 @@
             <mat-form-field class="example-full-width">
                 <mat-label>Tipo de Usuário</mat-label>
                 <mat-select formControlName="role">
+                    <mat-option value="">Selecio o Cargo</mat-option>
                     <mat-option *ngFor="let item of rolelist" [value]="item.code">
                       {{item.name}}
                     </mat-option>
