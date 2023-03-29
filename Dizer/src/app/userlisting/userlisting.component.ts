@@ -44,11 +44,11 @@ export class UserlistingComponent {
       }
     })
     popup.afterClosed().subscribe(res=>{
-
+      this.Loaduser();
     });
   }
 
     opendialog(){
-      this.Loaduser();
+
     }
 }
