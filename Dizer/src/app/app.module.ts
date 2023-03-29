@@ -19,6 +19,8 @@ import { FormsModule } from '@angular/forms';
 // import { MusicaService } from './musicas/musicas.service';
 import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
+import { MusicaService } from './musicas/musicas.service';
+import { MusicasComponent } from './musicas/musicas.component';
 
 
 @NgModule({
@@ -30,8 +32,8 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
     UserlistingComponent,
     UpdatepopupComponent,
     ListaMusicasComponent,
-    InitialPageComponent
-    // MusicasComponent
+    InitialPageComponent,
+    MusicasComponent
   ],
   imports: [
     BrowserModule,
@@ -43,8 +45,8 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
     FormsModule,
     ToastrModule.forRoot()
   ],
-  // providers: [MusicaService],
-  providers: [],
+  providers: [MusicaService],
+  // providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,14 +18,13 @@ export class MusicasComponent implements OnInit {
    musicas: Musica[] = [];
 
    createMusica(c: Musica): void {
-      // this.musicaService.create(c)
-      // .then(result => {
-      //       if (result) {
-      //          this.musicas.push(<Musica> result);
-      //          this.musica = new Musica();
-      //       }
-      //    })
-      //    .catch(erro => alert(erro));
+      this.musicaService.create(c)
+      .subscribe(result => {
+            if (result) {
+               this.musicas.push(<Musica> result);
+               this.musica = new Musica();
+            }
+         });
    }
 
    ngOnInit(): void {}
