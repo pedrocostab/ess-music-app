@@ -9,6 +9,7 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
 import { MusicasComponent } from './musicas/musicas.component';
 import { UserAdminComponent } from './user-admin/user-admin.component';
+import { UserComponent } from './user/user.component';
 // import { MusicasComponent } from './musicas/musicas.component';
 
 
@@ -17,11 +18,12 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
-  {path:'user', component:UserlistingComponent},
+  {path:'lista-usuarios', component:UserlistingComponent},
   {path: 'cadastrar-musicas', component: MusicasComponent},
   {path: 'lista-musicas', component: ListaMusicasComponent, canActivate:[AuthGuard]},
   {path: 'initial-page', component: InitialPageComponent, canActivate:[AuthGuard]},
-  {path: 'userAdmin', component: UserAdminComponent}
+  {path: 'userAdmin', component: UserAdminComponent},
+  {path: 'user', component: UserComponent}
 ];
 
 @NgModule({
