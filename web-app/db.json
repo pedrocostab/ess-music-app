@@ -155,5 +155,45 @@
       "code": "usuario",
       "name": "Usuario"
     }
+  ],
+  "menu": [
+    {
+      "role": "usuario",
+      "menu": "Usuario"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "usuario",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "usuario",
+      "menu": "usuario",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "usuario",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
   ]
 }
