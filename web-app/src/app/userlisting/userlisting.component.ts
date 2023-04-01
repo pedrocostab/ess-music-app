@@ -32,9 +32,24 @@ export class UserlistingComponent {
     });
   }
 
-  displayedColumns: string[] = ['username', 'name', 'email', 'role', 'status', 'action'];
+  displayedColumns: string[] = ['username', 'name', 'email', 'role', 'status', 'action', 'edit'];
 
   UpdateUser(code: any) {
+    const popup = this.dialog.open(UpdatepopupComponent, {
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data:{
+        usercode:code
+      }
+    })
+    popup.afterClosed().subscribe(res=>{
+      this.Loaduser();
+    });
+  }
+
+  
+  UpdateUser2(code: any) {
     const popup = this.dialog.open(UpdatepopupComponent, {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',

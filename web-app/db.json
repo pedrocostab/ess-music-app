@@ -25,7 +25,7 @@
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
-      "role": "admin",
+      "role": "usuario",
       "isactive": true
     },
     {
