@@ -7,7 +7,7 @@
       "password": "admin",
       "email": "admin@admin.com",
       "gender": "Masculino",
-      "role": "admin",
+      "role": "usuario",
       "isactive": true
     },
     {
@@ -25,8 +25,8 @@
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
-      "role": "",
-      "isactive": false
+      "role": "admin",
+      "isactive": true
     },
     {
       "id": "x3",
@@ -34,7 +34,7 @@
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
-      "role": "",
+      "role": "usuario",
       "isactive": false
     },
     {
@@ -43,7 +43,7 @@
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
-      "role": "",
+      "role": "usuario",
       "isactive": false
     },
     {
@@ -89,6 +89,60 @@
       "email": "s@sapsofk",
       "gender": "",
       "role": "",
+      "isactive": false
+    },
+    {
+      "id": "s_zPME2",
+      "name": "",
+      "password": "",
+      "email": "",
+      "gender": "male",
+      "role": "usuario",
+      "isactive": false
+    },
+    {
+      "id": "zB52T5F",
+      "name": "",
+      "password": "",
+      "email": "",
+      "gender": "male",
+      "role": "usuario",
+      "isactive": false
+    },
+    {
+      "id": "q_nlscc",
+      "name": "",
+      "password": "",
+      "email": "",
+      "gender": "male",
+      "role": "admin",
+      "isactive": false
+    },
+    {
+      "id": "flRxLMq",
+      "name": "",
+      "password": "",
+      "email": "",
+      "gender": "",
+      "role": "admin",
+      "isactive": false
+    },
+    {
+      "id": "s",
+      "name": "s",
+      "password": "sssss",
+      "email": "s@s",
+      "gender": "",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "m5Pf6oy",
+      "name": "",
+      "password": "",
+      "email": "",
+      "gender": "",
+      "role": "admin",
       "isactive": false
     }
   ],
