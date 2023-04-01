@@ -21,6 +21,7 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
 import { MusicaService } from './musicas/musicas.service';
 import { MusicasComponent } from './musicas/musicas.component';
+import { UserAdminComponent } from './user-admin/user-admin.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MusicasComponent } from './musicas/musicas.component';
     UpdatepopupComponent,
     ListaMusicasComponent,
     InitialPageComponent,
-    MusicasComponent
+    MusicasComponent,
+    UserAdminComponent
   ],
   imports: [
     BrowserModule,
