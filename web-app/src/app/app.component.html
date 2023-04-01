@@ -1,14 +1,31 @@
 <html>
-    <body>
-        <div class="toolbar" *ngIf="ismenurequired" role="banner">
-            <a routerLink="">Home</a>
-            <a routerLink="/user">Usuario</a>
-            <a routerLink="/cadastrar-musicas">Cadastrar Musica</a>
-            <a routerLink="/lista-musicas">Lista Musica</a>
-            <div class="container-home-logout"> 
-               <a routerLink="/login">Logout</a>
-              </div>
-          </div>
-        <router-outlet></router-outlet>
-    </body>
+
+    <nav>
+        <body>
+
+            <div class="barra-de-inicio" *ngIf="ismenurequired" role="banner">
+                <ul>
+                    <li class="circulo-foto">
+                        <img src="./../../assets/taylor.png" alt="Foto de perfil">
+                    </li>
+                    <li><a routerLink="">Home</a></li>
+                    <li><a routerLink="/user">Usuario</a></li>
+                    <li><a routerLink="/cadastrar-musicas">Cadastrar Musica</a></li>
+                    <li><a routerLink="/lista-musicas">Lista Musica</a></li>
+                    <li>
+                        <form action="#" method="get">
+                          <input type="text" name="q" placeholder="Pesquisar músicas, artistas, álbuns...">
+                          <button type="submit">Buscar</button>
+                        </form>
+                      </li>
+                    <ul><li class="logout-item"><a routerLink="/login">Logout</a></li></ul>
+                    
+    
+                </ul>
+
+                
+            </div>
+            <router-outlet></router-outlet>
+        </body>
+    </nav>
 </html>
