@@ -10,6 +10,7 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
 import { MusicasComponent } from './musicas/musicas.component';
 import { UserAdminComponent } from './user-admin/user-admin.component';
 import { UserComponent } from './user/user.component';
+import { ArtistaComponent } from './artista/artista.component';
 // import { MusicasComponent } from './musicas/musicas.component';
 
 
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'lista-musicas', component: ListaMusicasComponent, canActivate:[AuthGuard]},
   {path: 'initial-page', component: InitialPageComponent, canActivate:[AuthGuard]},
   {path: 'userAdmin', component: UserAdminComponent},
-  {path: 'user', component: UserComponent}
+  {path: 'user', component: UserComponent},
+  {path: 'artista', component: ArtistaComponent}
 ];
 
 @NgModule({

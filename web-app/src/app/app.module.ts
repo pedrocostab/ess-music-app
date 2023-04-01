@@ -23,6 +23,7 @@ import { MusicaService } from './musicas/musicas.service';
 import { MusicasComponent } from './musicas/musicas.component';
 import { UserAdminComponent } from './user-admin/user-admin.component';
 import { UserComponent } from './user/user.component';
+import { ArtistaComponent } from './artista/artista.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { UserComponent } from './user/user.component';
     InitialPageComponent,
     MusicasComponent,
     UserAdminComponent,
-    UserComponent
+    UserComponent,
+    ArtistaComponent
   ],
   imports: [
     BrowserModule,
