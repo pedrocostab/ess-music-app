@@ -50,7 +50,7 @@
     align-items: center;
   }
   
-  .tableGeral{
+  .tableMusicas{
     width: 100%;
     display: flex;
     align-items: center;
@@ -96,7 +96,33 @@
   td.album-capa img{
     border-radius: 50%;
   }
+
+  #tabela-albuns {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .tabela-albuns {
+    border-radius: 24px;
+    overflow: hidden;
+  }
   
+ #tabelaAlbum td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 0px solid #ccc;
+    background-color: rgba(38, 38, 40, 0.87);
+  }
+  
+.tabela-albuns img{
+    width: 200px;
+    height: 200px;
+}
+
+.ano-lancamento{
+    color: rgba(195, 195, 195, 0.7);
+}
   
     
    
