@@ -72,6 +72,15 @@
       "gender": "",
       "role": "usuario",
       "isactive": false
+    },
+    {
+      "id": "aSDAS",
+      "name": "ASFASD",
+      "password": "ASFSADFSAD",
+      "email": "X@C",
+      "gender": "Masculino",
+      "role": "",
+      "isactive": false
     }
   ],
   "role": [
