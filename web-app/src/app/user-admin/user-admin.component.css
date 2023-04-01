@@ -26,6 +26,14 @@ li {
   margin-right: 20px;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+  } 
+
 .container {
   top: 150px;
   margin-left: 10px;
@@ -88,3 +96,7 @@ td.album-capa {
 td.album-capa img{
   border-radius: 50%;
 }
+
+
+  
+ 
