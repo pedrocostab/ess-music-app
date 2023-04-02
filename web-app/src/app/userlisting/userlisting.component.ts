@@ -5,6 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatDialog } from '@angular/material/dialog';
 import { UpdatepopupComponent } from '../updatepopup/updatepopup.component';
+import { EditpopupComponent } from '../editpopup/editpopup.component';
 
 @Component({
   selector: 'app-userlisting',
@@ -50,7 +51,7 @@ export class UserlistingComponent {
 
   
   UpdateUser2(code: any) {
-    const popup = this.dialog.open(UpdatepopupComponent, {
+    const popup = this.dialog.open(EditpopupComponent, {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',
       width: '50%',
