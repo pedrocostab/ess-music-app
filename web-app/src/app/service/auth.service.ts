@@ -43,4 +43,8 @@ GetUserrole(){
   return sessionStorage.getItem('userrole')!=null?sessionStorage.getItem('userrole')?.toString():'';
 }
 
+deletarUsuario(code:any) {
+  return this.http.delete(this.apiurl+'/'+code);
+}
+
 }

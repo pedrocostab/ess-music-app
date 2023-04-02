@@ -7,6 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { UpdatepopupComponent } from '../updatepopup/updatepopup.component';
 import { EditpopupComponent } from '../editpopup/editpopup.component';
 import { AddpopupComponent } from '../addpopup/addpopup.component';
+import { DeletepopupComponent } from '../deletepopup/deletepopup.component';
 
 @Component({
   selector: 'app-userlisting',
@@ -66,7 +67,7 @@ export class UserlistingComponent {
   }
 
   RemoveUser(code: any) {
-    const popup = this.dialog.open(EditpopupComponent, {
+    const popup = this.dialog.open(DeletepopupComponent, {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',
       width: '50%',
@@ -75,7 +76,7 @@ export class UserlistingComponent {
       }
     })
     popup.afterClosed().subscribe(res=>{
-      this.Loaduser();
+      this.service.deletarUsuario(this.Loaduser);
     });
   }
   

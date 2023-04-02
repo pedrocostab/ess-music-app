@@ -21,12 +21,12 @@
     },
     {
       "id": "x2",
-      "name": "xxxx",
+      "name": "xxxxxx",
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
-      "role": "usuario",
-      "isactive": true
+      "role": "admin",
+      "isactive": false
     },
     {
       "id": "x3",
@@ -153,6 +153,33 @@
       "gender": "",
       "role": "admin",
       "isactive": true
+    },
+    {
+      "id": "x222",
+      "name": "xxxxxx",
+      "password": "xxxxxx",
+      "email": "x@x",
+      "gender": "Masculino",
+      "role": "admin",
+      "isactive": false
+    },
+    {
+      "id": "x222222",
+      "name": "xxxxxx",
+      "password": "xxxxxx",
+      "email": "x@x",
+      "gender": "Masculino",
+      "role": "admin",
+      "isactive": false
+    },
+    {
+      "id": "x1xxx",
+      "name": "x",
+      "password": "xxxxxx",
+      "email": "x@x",
+      "gender": "",
+      "role": "",
+      "isactive": false
     }
   ],
   "role": [
