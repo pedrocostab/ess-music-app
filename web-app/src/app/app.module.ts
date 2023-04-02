@@ -27,6 +27,7 @@ import { ArtistaComponent } from './artista/artista.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { EditpopupComponent } from './editpopup/editpopup.component';
 import { AddpopupComponent } from './addpopup/addpopup.component';
+import { DeletepopupComponent } from './deletepopup/deletepopup.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { AddpopupComponent } from './addpopup/addpopup.component';
     ArtistaComponent,
     UserEditComponent,
     EditpopupComponent,
-    AddpopupComponent
+    AddpopupComponent,
+    DeletepopupComponent
   ],
   imports: [
     BrowserModule,
