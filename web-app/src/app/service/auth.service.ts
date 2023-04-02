@@ -29,6 +29,10 @@ export class AuthService {
   Updateuser(code:any , inputdata:any) {
     return this.http.put(this.apiurl+'/'+code, inputdata);
   }
+  
+  Adduser(inputdata:any) {
+    return this.http.post(this.apiurl, inputdata);
+  }
 
   //saber se o usuario esta logado
 IsloggedIn(){

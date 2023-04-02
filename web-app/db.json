@@ -7,7 +7,7 @@
       "password": "admin",
       "email": "admin@admin.com",
       "gender": "Masculino",
-      "role": "usuario",
+      "role": "admin",
       "isactive": true
     },
     {
@@ -16,23 +16,23 @@
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
-      "role": "",
+      "role": "admin",
       "isactive": false
     },
     {
       "id": "x2",
-      "name": "x",
+      "name": "xxxx",
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
-      "role": "admin",
+      "role": "usuario",
       "isactive": true
     },
     {
       "id": "x3",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
+      "name": "xxx",
+      "password": "xxxxxxx",
+      "email": "x@xxx",
       "gender": "Masculino",
       "role": "usuario",
       "isactive": false
@@ -144,6 +144,15 @@
       "gender": "",
       "role": "admin",
       "isactive": false
+    },
+    {
+      "id": "testeadicao",
+      "name": "xxxxxx",
+      "password": "xxxxxxxxx",
+      "email": "teste@adicao",
+      "gender": "",
+      "role": "admin",
+      "isactive": true
     }
   ],
   "role": [
@@ -156,43 +165,17 @@
       "name": "Usuario"
     }
   ],
-  "menu": [
-    {
-      "role": "usuario",
-      "menu": "Usuario"
-    },
-    {
-      "code": "customer",
-      "name": "Customer"
-    }
-  ],
   "roleaccess": [
     {
       "role": "admin",
-      "menu": "usuario",
-      "haveedit": true,
-      "haveadd": true,
-      "havedelete": true
-    },
-    {
-      "role": "admin",
-      "menu": "customer",
       "haveedit": true,
       "haveadd": true,
       "havedelete": true
     },
     {
       "role": "usuario",
-      "menu": "usuario",
       "haveedit": false,
       "haveadd": false,
-      "havedelete": false
-    },
-    {
-      "role": "usuario",
-      "menu": "customer",
-      "haveedit": true,
-      "haveadd": true,
       "havedelete": false
     }
   ]

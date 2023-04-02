@@ -1,4 +1,6 @@
+
 <div class="mat-elevation-z8">
+
   <table mat-table matSort [dataSource]="dataSource">
 
     <!-- Coluna de Usuario -->
@@ -33,11 +35,21 @@
 
     <!-- Botao para editar informação -->
     <ng-container matColumnDef="action">
-      <th mat-header-cell mat-sort-header *matHeaderCellDef> Action </th>
-      <td mat-cell *matCellDef="let element"> 
-        <a (click)="UpdateUser(element.id)" mat-raised-button color="primary">Atualizar dados</a>  
+      <th mat-header-cell mat-sort-header *matHeaderCellDef>  </th>
+      <td class="example-button-row" mat-cell *matCellDef="let element"> 
+        <button (click)="UpdateUser(element.id)" mat-raised-button color="primary">Ativar </button>  
+        <button (click)="UpdateUser2(element.id)" mat-raised-button color="basic">Editar </button>  
+        <button (click)="RemoveUser(element.id)" mat-raised-button color="warn">Remover </button>  
       </td>
     </ng-container>
+
+        <!-- Botao para adicionar -->
+        <ng-container matColumnDef="add">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef>  </th>
+          <td class="example-button-row" mat-cell *matCellDef="let element"> 
+            <button (click)="AddUser(element.id)" mat-raised-button color="primary">Adicionar Novo Usuário </button>  
+          </td>
+        </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
