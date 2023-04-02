@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject, Inject } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '../service/auth.service';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-alterar-senha-popup',
@@ -6,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./alterar-senha-popup.component.css']
 })
 export class AlterarSenhaPopupComponent {
-
+  constructor(private builder: FormBuilder, private service: AuthService,
+    @Inject(MAT_DIALOG_DATA) public data: any, private toastr: ToastrService,
+    private dialog: MatDialogRef<AlterarSenhaPopupComponent>) {
+  }
 }

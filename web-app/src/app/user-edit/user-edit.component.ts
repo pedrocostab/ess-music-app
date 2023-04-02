@@ -5,6 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatDialog } from '@angular/material/dialog';
 import { UserSeDeletapopupComponent } from '../user-se-deletapopup/user-se-deletapopup.component';
+import { AlterarSenhaPopupComponent } from '../alterar-senha-popup/alterar-senha-popup.component';
 
 @Component({
   selector: 'app-user-edit',
@@ -38,6 +39,19 @@ export class UserEditComponent {
     popup.afterClosed().subscribe(res=>{
       this.service.deletarUsuario(codeId);
       window.location.replace('');
+    });
+  }
+  AlterarSenha(code: any) {
+    const popup = this.dialog.open(AlterarSenhaPopupComponent, {
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data:{
+        usercode:code
+      }
+    })
+    popup.afterClosed().subscribe(res=>{
+      this.user();
     });
   }
 
