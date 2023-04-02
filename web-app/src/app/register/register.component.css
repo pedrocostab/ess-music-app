@@ -9,15 +9,15 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #000000;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -111,14 +111,14 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 13px;
   color: #666666;
   line-height: 1.5;
 }
 
 .txt2 {
-  font-family: Poppins-Regular;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 13px;
   color: #333333;
   line-height: 1.5;
@@ -144,16 +144,27 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #f2f2f2;  
+  background-image: url("./../../assets/artistas.png");
+  background-size: cover;
+  background-position: center;
 }
 
+.conteudo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+  }
+  
 .wrap-login100 {
-  width: 390px;
-  background: #fff;
+  background: #666666;
   border-radius: 10px;
   overflow: hidden;
-  padding: 77px 55px 33px 55px;
 
+  padding: 77px 55px 33px 55px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
@@ -171,7 +182,7 @@ iframe {
 
 .login100-form-title {
   display: block;
-  font-family: Poppins-Bold;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 30px;
   color: #333333;
   line-height: 1.2;
@@ -192,11 +203,10 @@ iframe {
 }
 
 .input100 {
-  font-family: Poppins-Regular;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
-
   display: block;
   width: 100%;
   height: 45px;
@@ -237,7 +247,7 @@ iframe {
 }
 
 .focus-input100::after {
-  font-family: Poppins-Regular;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 15px;
   color: #999999;
   line-height: 1.2;
@@ -324,6 +334,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 13px;
+  opacity: 1;
 }
 
 .wrap-login100-form-btn {
@@ -353,15 +364,15 @@ iframe {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+
 }
 
 .login100-form-btn {
-  font-family: Poppins-Medium;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 15px;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
