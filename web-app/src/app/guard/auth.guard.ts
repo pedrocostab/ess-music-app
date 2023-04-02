@@ -9,7 +9,7 @@ import { ToastrService } from 'ngx-toastr'
 })
 
 export class AuthGuard implements CanActivate {
-  constructor(private service:AuthService, private router:Router, private toastr:ToastrService){
+  constructor(private service: AuthService, private router: Router, private toastr: ToastrService) {
 
   }
 
@@ -17,14 +17,29 @@ export class AuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      
-      if(this.service.IsloggedIn()){
+
+    if (this.service.IsloggedIn()) {
+      if (route.url.length > 0) {
+        let menu = route.url[0].path;
+        if (menu == 'usuario') {
+          if (this.service.GetUserrole()=='admin') {
+            return true;
+          } else {
+            this.toastr.warning('Voce não tem permissão para acessar a página');
+            this.router.navigate(['']);
+            return false;
+          }
+        } else{
+          return true;
+        }
+      } else {
         return true;
-      }else {
-        this.router.navigate(['login']);
-        return false;
       }
-      
+    } else {
+      this.router.navigate(['login']);
+      return false;
+    }
+
   }
-  
+
 }
