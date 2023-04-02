@@ -90,15 +90,6 @@
       "gender": "",
       "role": "",
       "isactive": true
-    },
-    {
-      "id": "pedro",
-      "name": "Pedro Basilio",
-      "password": "admin",
-      "email": "pedro@dizer.com",
-      "gender": "",
-      "role": "",
-      "isactive": true
     }
   ],
   "role": [

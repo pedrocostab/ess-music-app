@@ -37,7 +37,7 @@ export class UserEditComponent {
     })
     popup.afterClosed().subscribe(res=>{
       this.service.deletarUsuario(codeId);
-      window.location.reload();
+      window.location.replace('');
     });
   }
 
