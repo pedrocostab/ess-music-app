@@ -2,111 +2,12 @@
   "user": [
     {},
     {
-      "id": "admin",
-      "name": "Admin User",
-      "password": "admin",
-      "email": "admin@admin.com",
-      "gender": "Masculino",
-      "role": "admin",
-      "isactive": true
-    },
-    {
       "id": "x",
       "name": "x",
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
       "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "x2",
-      "name": "xxxxxx",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "x3",
-      "name": "xxx",
-      "password": "xxxxxxx",
-      "email": "x@xxx",
-      "gender": "Masculino",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
-      "id": "x4",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
-      "id": "x5",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "x1",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "iqkqy-n",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
-      "id": "aSDAS",
-      "name": "ASFASD",
-      "password": "ASFSADFSAD",
-      "email": "X@C",
-      "gender": "Masculino",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "asfsafs",
-      "name": "asdfpokasfopk",
-      "password": "paofksopdk",
-      "email": "s@sapsofk",
-      "gender": "",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "s_zPME2",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "male",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
-      "id": "zB52T5F",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "male",
-      "role": "usuario",
       "isactive": false
     },
     {
@@ -180,6 +81,15 @@
       "gender": "",
       "role": "",
       "isactive": false
+    },
+    {
+      "id": "admin",
+      "name": "admin",
+      "password": "admin",
+      "email": "admin@admin",
+      "gender": "",
+      "role": "",
+      "isactive": true
     }
   ],
   "role": [
@@ -220,8 +130,9 @@
       "postId": 1
     }
   ],
-  "profile": [{
-    
-    "name": "typicode"
-}]
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ]
 }

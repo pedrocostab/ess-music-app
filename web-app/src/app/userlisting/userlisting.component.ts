@@ -67,6 +67,7 @@ export class UserlistingComponent {
   }
 
   RemoveUser(code: any) {
+    const codeId = code
     const popup = this.dialog.open(DeletepopupComponent, {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',
@@ -76,7 +77,8 @@ export class UserlistingComponent {
       }
     })
     popup.afterClosed().subscribe(res=>{
-      this.service.deletarUsuario(this.Loaduser);
+      this.service.deletarUsuario(codeId);
+      window.location.reload();
     });
   }
   

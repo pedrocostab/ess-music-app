@@ -44,7 +44,7 @@ GetUserrole(){
 }
 
 deletarUsuario(code:any) {
-  return this.http.delete(this.apiurl+'/'+code);
+  this.http.delete(this.apiurl+'/'+code).subscribe(res => res)
 }
 
 }
