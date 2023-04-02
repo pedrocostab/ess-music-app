@@ -144,6 +144,15 @@
       "gender": "",
       "role": "admin",
       "isactive": false
+    },
+    {
+      "id": "testeadicao",
+      "name": "xxxxxx",
+      "password": "xxxxxxxxx",
+      "email": "teste@adicao",
+      "gender": "",
+      "role": "admin",
+      "isactive": true
     }
   ],
   "role": [

@@ -6,6 +6,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatDialog } from '@angular/material/dialog';
 import { UpdatepopupComponent } from '../updatepopup/updatepopup.component';
 import { EditpopupComponent } from '../editpopup/editpopup.component';
+import { AddpopupComponent } from '../addpopup/addpopup.component';
 
 @Component({
   selector: 'app-userlisting',
@@ -33,7 +34,7 @@ export class UserlistingComponent {
     });
   }
 
-  displayedColumns: string[] = ['username', 'name', 'email', 'role', 'status', 'action'];
+  displayedColumns: string[] = ['username', 'name', 'email', 'role', 'status', 'action', 'add'];
 
   UpdateUser(code: any) {
     const popup = this.dialog.open(UpdatepopupComponent, {
@@ -52,6 +53,34 @@ export class UserlistingComponent {
   
   UpdateUser2(code: any) {
     const popup = this.dialog.open(EditpopupComponent, {
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data:{
+        usercode:code
+      }
+    })
+    popup.afterClosed().subscribe(res=>{
+      this.Loaduser();
+    });
+  }
+
+  RemoveUser(code: any) {
+    const popup = this.dialog.open(EditpopupComponent, {
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data:{
+        usercode:code
+      }
+    })
+    popup.afterClosed().subscribe(res=>{
+      this.Loaduser();
+    });
+  }
+  
+  AddUser(code: any) {
+    const popup = this.dialog.open(AddpopupComponent, {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',
       width: '50%',
