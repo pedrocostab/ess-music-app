@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements DoCheck  {
   title = 'Dizer';
   ismenurequired=false;
+  isadminuser=false;
   constructor(private router:Router){
 
   }
