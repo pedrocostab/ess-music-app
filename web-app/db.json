@@ -20,24 +20,6 @@
       "isactive": false
     },
     {
-      "id": "x3",
-      "name": "xxx",
-      "password": "xxxxxxx",
-      "email": "x@xxx",
-      "gender": "Masculino",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
-      "id": "x4",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
       "id": "x5",
       "name": "x",
       "password": "xxxxxx",

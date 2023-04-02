@@ -78,6 +78,7 @@ export class UserlistingComponent {
     })
     popup.afterClosed().subscribe(res=>{
       this.service.deletarUsuario(codeId);
+      window.location.reload();
     });
   }
   
