@@ -15,7 +15,9 @@ export class UserEditComponent {
   user: any;
 
   Loadinfouser(){
-    this.user = this.service.Getbycode(sessionStorage.getItem('username')).subscribe(res=> this.user);
+    this.user = this.service.Getbycode(sessionStorage.getItem('username')).subscribe(res=> {
+      this.user = res;
+    });
   }
 
 }
