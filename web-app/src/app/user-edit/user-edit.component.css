@@ -58,6 +58,19 @@
     color: #fff; /* Definindo o texto como branco */
   }
   
+  .tipo-input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #000; /* Definindo o background como preto */
+    color: #fff; /* Definindo o texto como branco */
+  }
+
   button#botoes-informacoes {
     background-color: transparent;
     border: none;
