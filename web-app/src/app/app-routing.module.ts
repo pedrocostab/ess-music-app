@@ -20,14 +20,14 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
-  {path:'lista-usuarios', component:UserlistingComponent},
-  {path: 'cadastrar-musicas', component: MusicasComponent},
+  {path:'lista-usuarios', component:UserlistingComponent, canActivate:[AuthGuard]},
+  {path: 'cadastrar-musicas', component: MusicasComponent, canActivate:[AuthGuard]},
   {path: 'lista-musicas', component: ListaMusicasComponent, canActivate:[AuthGuard]},
   {path: 'initial-page', component: InitialPageComponent, canActivate:[AuthGuard]},
-  {path: 'userAdmin', component: UserAdminComponent},
-  {path: 'user', component: UserComponent},
-  {path: 'artista', component: ArtistaComponent},
-  {path: 'userEdit', component: UserEditComponent}
+  {path: 'userAdmin', component: UserAdminComponent, canActivate:[AuthGuard]},
+  {path: 'user', component: UserComponent, canActivate:[AuthGuard]},
+  {path: 'artista', component: ArtistaComponent, canActivate:[AuthGuard]},
+  {path: 'userEdit', component: UserEditComponent, canActivate:[AuthGuard]}
 ];
 
 @NgModule({
