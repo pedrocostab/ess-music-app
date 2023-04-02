@@ -21,7 +21,7 @@
     },
     {
       "id": "x2",
-      "name": "xxxxxxxx",
+      "name": "xxxx",
       "password": "xxxxxx",
       "email": "x@x",
       "gender": "Masculino",
@@ -30,9 +30,9 @@
     },
     {
       "id": "x3",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
+      "name": "xxx",
+      "password": "xxxxxxx",
+      "email": "x@xxx",
       "gender": "Masculino",
       "role": "usuario",
       "isactive": false
