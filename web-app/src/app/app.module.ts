@@ -24,6 +24,7 @@ import { MusicasComponent } from './musicas/musicas.component';
 import { UserAdminComponent } from './user-admin/user-admin.component';
 import { UserComponent } from './user/user.component';
 import { ArtistaComponent } from './artista/artista.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ArtistaComponent } from './artista/artista.component';
     MusicasComponent,
     UserAdminComponent,
     UserComponent,
-    ArtistaComponent
+    ArtistaComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
