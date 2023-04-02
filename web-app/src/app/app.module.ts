@@ -28,6 +28,7 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 import { EditpopupComponent } from './editpopup/editpopup.component';
 import { AddpopupComponent } from './addpopup/addpopup.component';
 import { DeletepopupComponent } from './deletepopup/deletepopup.component';
+import { UserSeDeletapopupComponent } from './user-se-deletapopup/user-se-deletapopup.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { DeletepopupComponent } from './deletepopup/deletepopup.component';
     UserEditComponent,
     EditpopupComponent,
     AddpopupComponent,
-    DeletepopupComponent
+    DeletepopupComponent,
+    UserSeDeletapopupComponent
   ],
   imports: [
     BrowserModule,

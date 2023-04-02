@@ -2,15 +2,6 @@
   "user": [
     {},
     {
-      "id": "admin",
-      "name": "Admin User",
-      "password": "admin",
-      "email": "admin@admin.com",
-      "gender": "Masculino",
-      "role": "admin",
-      "isactive": true
-    },
-    {
       "id": "x",
       "name": "x",
       "password": "xxxxxx",
@@ -90,6 +81,24 @@
       "gender": "",
       "role": "",
       "isactive": false
+    },
+    {
+      "id": "admin",
+      "name": "admin",
+      "password": "admin",
+      "email": "admin@admin",
+      "gender": "",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "pedro",
+      "name": "Pedro Basilio",
+      "password": "admin",
+      "email": "pedro@dizer.com",
+      "gender": "",
+      "role": "",
+      "isactive": true
     }
   ],
   "role": [
