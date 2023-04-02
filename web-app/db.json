@@ -20,15 +20,6 @@
       "isactive": false
     },
     {
-      "id": "x2",
-      "name": "xxxxxx",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "admin",
-      "isactive": false
-    },
-    {
       "id": "x3",
       "name": "xxx",
       "password": "xxxxxxx",
@@ -220,8 +211,9 @@
       "postId": 1
     }
   ],
-  "profile": [{
-    
-    "name": "typicode"
-}]
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ]
 }
