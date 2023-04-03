@@ -85,7 +85,7 @@
     {
       "id": "admin",
       "name": "admin",
-      "password": "admin",
+      "password": "admin1",
       "email": "admin@admin",
       "gender": "",
       "role": "",

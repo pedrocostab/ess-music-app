@@ -1,1 +1,19 @@
-<p>alterar-senha-popup works!</p>
+<mat-card>
+    <mat-card-header>
+        <h1>Digite a nova Senha</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform" (ngSubmit)="alterarSenha()">
+                    <div>      
+                    <mat-form-field class="wrap-input100 validate-input">
+                        <mat-label>Nova Senha</mat-label>
+                        <input class="input100" type="password" matInput formControlName="password">
+                    </mat-form-field>
+                    </div>
+                    <div>
+                    <button mat-raised-button color="primary">Alterar</button>
+                    <a mat-dialog-close mat-raised-button color="accent">Fechar</a>
+                  </div>
+        </form>
+    </mat-card-content>
+</mat-card>
