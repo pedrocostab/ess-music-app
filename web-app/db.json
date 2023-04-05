@@ -85,7 +85,25 @@
     {
       "id": "admin",
       "name": "admin",
+      "password": "admin1",
+      "email": "admin@admin",
+      "gender": "",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "admin1",
+      "name": "admin",
       "password": "admin",
+      "email": "admin@xc",
+      "gender": "",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "admin3",
+      "name": "admin",
+      "password": "admin3",
       "email": "admin@admin",
       "gender": "",
       "role": "",
