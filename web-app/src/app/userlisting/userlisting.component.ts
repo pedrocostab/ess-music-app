@@ -5,6 +5,9 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatDialog } from '@angular/material/dialog';
 import { UpdatepopupComponent } from '../updatepopup/updatepopup.component';
+import { EditpopupComponent } from '../editpopup/editpopup.component';
+import { AddpopupComponent } from '../addpopup/addpopup.component';
+import { DeletepopupComponent } from '../deletepopup/deletepopup.component';
 
 @Component({
   selector: 'app-userlisting',
@@ -32,10 +35,55 @@ export class UserlistingComponent {
     });
   }
 
-  displayedColumns: string[] = ['username', 'name', 'email', 'role', 'status', 'action'];
+  displayedColumns: string[] = ['username', 'name', 'email', 'role', 'status', 'action', 'add'];
 
   UpdateUser(code: any) {
     const popup = this.dialog.open(UpdatepopupComponent, {
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data:{
+        usercode:code
+      }
+    })
+    popup.afterClosed().subscribe(res=>{
+      this.Loaduser();
+    });
+  }
+
+  
+  UpdateUser2(code: any) {
+    const popup = this.dialog.open(EditpopupComponent, {
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data:{
+        usercode:code
+      }
+    })
+    popup.afterClosed().subscribe(res=>{
+      this.Loaduser();
+    });
+  }
+
+  RemoveUser(code: any) {
+    const codeId = code
+    const popup = this.dialog.open(DeletepopupComponent, {
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data:{
+        usercode:code
+      }
+    })
+    popup.afterClosed().subscribe(res=>{
+      this.service.deletarUsuario(codeId);
+      window.location.reload();
+    });
+  }
+  
+  AddUser(code: any) {
+    const popup = this.dialog.open(AddpopupComponent, {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',
       width: '50%',

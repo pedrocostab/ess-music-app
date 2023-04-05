@@ -8,6 +8,10 @@ import { UserlistingComponent } from './userlisting/userlisting.component';
 import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
 import { MusicasComponent } from './musicas/musicas.component';
+import { UserAdminComponent } from './user-admin/user-admin.component';
+import { UserComponent } from './user/user.component';
+import { ArtistaComponent } from './artista/artista.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 // import { MusicasComponent } from './musicas/musicas.component';
 
 
@@ -16,10 +20,14 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
-  {path:'user', component:UserlistingComponent, canActivate:[AuthGuard]},
-  {path: 'cadastrar-musicas', component: MusicasComponent},
+  {path:'lista-usuarios', component:UserlistingComponent, canActivate:[AuthGuard]},
+  {path: 'cadastrar-musicas', component: MusicasComponent, canActivate:[AuthGuard]},
   {path: 'lista-musicas', component: ListaMusicasComponent, canActivate:[AuthGuard]},
-  {path: 'initial-page', component: InitialPageComponent, canActivate:[AuthGuard]}
+  {path: 'initial-page', component: InitialPageComponent, canActivate:[AuthGuard]},
+  {path: 'userAdmin', component: UserAdminComponent, canActivate:[AuthGuard]},
+  {path: 'user', component: UserComponent, canActivate:[AuthGuard]},
+  {path: 'artista', component: ArtistaComponent, canActivate:[AuthGuard]},
+  {path: 'userEdit', component: UserEditComponent, canActivate:[AuthGuard]}
 ];
 
 @NgModule({

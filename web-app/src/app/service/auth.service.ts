@@ -27,7 +27,11 @@ export class AuthService {
   }
 
   Updateuser(code:any , inputdata:any) {
-    return this.http.post(this.apiurl+'/'+code, inputdata);
+    return this.http.put(this.apiurl+'/'+code, inputdata);
+  }
+  
+  Adduser(inputdata:any) {
+    return this.http.post(this.apiurl, inputdata);
   }
 
   //saber se o usuario esta logado
@@ -37,6 +41,10 @@ IsloggedIn(){
 
 GetUserrole(){
   return sessionStorage.getItem('userrole')!=null?sessionStorage.getItem('userrole')?.toString():'';
+}
+
+deletarUsuario(code:any) {
+  this.http.delete(this.apiurl+'/'+code).subscribe(res => res)
 }
 
 }

@@ -21,6 +21,14 @@ import { ListaMusicasComponent } from './lista-musicas/lista-musicas.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
 import { MusicaService } from './musicas/musicas.service';
 import { MusicasComponent } from './musicas/musicas.component';
+import { UserAdminComponent } from './user-admin/user-admin.component';
+import { UserComponent } from './user/user.component';
+import { ArtistaComponent } from './artista/artista.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
+import { EditpopupComponent } from './editpopup/editpopup.component';
+import { AddpopupComponent } from './addpopup/addpopup.component';
+import { DeletepopupComponent } from './deletepopup/deletepopup.component';
+import { UserSeDeletapopupComponent } from './user-se-deletapopup/user-se-deletapopup.component';
 
 
 @NgModule({
@@ -33,7 +41,15 @@ import { MusicasComponent } from './musicas/musicas.component';
     UpdatepopupComponent,
     ListaMusicasComponent,
     InitialPageComponent,
-    MusicasComponent
+    MusicasComponent,
+    UserAdminComponent,
+    UserComponent,
+    ArtistaComponent,
+    UserEditComponent,
+    EditpopupComponent,
+    AddpopupComponent,
+    DeletepopupComponent,
+    UserSeDeletapopupComponent
   ],
   imports: [
     BrowserModule,
