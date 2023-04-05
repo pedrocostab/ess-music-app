@@ -2,9 +2,22 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const bodyParser = require("body-parser");
-const cars_service_1 = require("./src/cars-service");
+//new
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const routes_1 = require("./routes/routes");
+//endnew
 var app = express();
 exports.app = app;
+//new
+app.use(express.json());
+app.use(cors({
+    credentials: true,
+    origin: ['http://localhost:4200']
+}));
+app.use(cookieParser());
+app.use('/api', routes_1.default);
+//endnew
 var allowCrossDomain = function (req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
@@ -13,46 +26,8 @@ var allowCrossDomain = function (req, res, next) {
 };
 app.use(allowCrossDomain);
 app.use(bodyParser.json());
-var carService = new cars_service_1.CarService();
-app.get('/cars', function (req, res) {
-    const cars = carService.get();
-    res.send(JSON.stringify(cars));
-});
-app.get('/cars/:id', function (req, res) {
-    const id = req.params.id;
-    const car = carService.getById(id);
-    if (car) {
-        res.send(car);
-    }
-    else {
-        res.status(404).send({ message: `Car ${id} could not be found` });
-    }
-});
-app.post('/cars', function (req, res) {
-    const car = req.body;
-    try {
-        const result = carService.add(car);
-        if (result) {
-            res.status(201).send(result);
-        }
-        else {
-            res.status(403).send({ message: "Car list is full" });
-        }
-    }
-    catch (err) {
-        const { message } = err;
-        res.status(400).send({ message });
-    }
-});
-app.put('/cars', function (req, res) {
-    const car = req.body;
-    const result = carService.update(car);
-    if (result) {
-        res.send(result);
-    }
-    else {
-        res.status(404).send({ message: `Car ${car.id} could not be found.` });
-    }
+app.get('/', function (req, res) {
+    res.send("Hello world!");
 });
 var server = app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
