@@ -10,7 +10,7 @@ export class UserRepository implements IUserRepository {
     }
 
     getByEmail(email: string): User {
-        return this.jsonDb.users.find(u => u.email == email);
+        return copy(this.jsonDb.users.find(u => u.email == email));
     }
 
     add(instance: User): boolean {
@@ -31,6 +31,8 @@ export class UserRepository implements IUserRepository {
         
         usr.nome = instance.nome;
         usr.senha = instance.senha;
+
+        this.jsonDb.saveChanges();
         
         return true;
     }
