@@ -5,17 +5,17 @@
     "main": "typeScript/index.js",
     "types": "typeScript/index.d.ts",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "tsc": "tsc"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tsc": "tsc"
     },
     "author": "Icaro-Nunes",
     "license": "MIT",
     "dependencies": {
-        "music-app-models": "file:../music-app-models",
-        "database-abstraction-layer": "file:../database-abstraction-layer"
+        "database-abstraction-layer": "file:../database-abstraction-layer",
+        "music-app-models": "file:../music-app-models"
     },
     "devDependencies": {
-      "typescript": "^3.3.3333"
+        "@types/node": "^18.15.11",
+        "typescript": "^3.3.3333"
     }
-  }
-  
+}
