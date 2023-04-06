@@ -2,6 +2,10 @@ import { Song, Genre } from './src/Song';
 import { User } from './src/User';
 import { Category } from './src/Category';
 import { Playlist, Privacy } from './src/Playlist';
+import { PlaylistCategory } from './src/PlaylistCategory';
+import { PlaylistSong } from './src/PlaylistSong';
+import { UserFollowPlaylist } from './src/UserFollowPlaylist';
+import { UserSongHistory } from './src/UserSongHistory';
 
 export {
     Song,
@@ -9,5 +13,9 @@ export {
     User,
     Category,
     Playlist,
-    Privacy
+    Privacy,
+    PlaylistCategory,
+    PlaylistSong,
+    UserFollowPlaylist,
+    UserSongHistory
 }
