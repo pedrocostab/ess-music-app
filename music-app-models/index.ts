@@ -6,6 +6,7 @@ import { PlaylistCategory } from './src/PlaylistCategory';
 import { PlaylistSong } from './src/PlaylistSong';
 import { UserFollowPlaylist } from './src/UserFollowPlaylist';
 import { UserSongHistory } from './src/UserSongHistory';
+import { copy } from './src/copy';
 
 export {
     Song,
@@ -17,5 +18,6 @@ export {
     PlaylistCategory,
     PlaylistSong,
     UserFollowPlaylist,
-    UserSongHistory
+    UserSongHistory,
+    copy
 }
