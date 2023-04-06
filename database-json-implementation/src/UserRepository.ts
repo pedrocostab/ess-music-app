@@ -1,18 +1,24 @@
 import { IUserRepository } from 'database-abstraction-layer';
 import { User, copy } from 'music-app-models';
+import { JsonDB } from './json-handling/json-handling';
 
 export class UserRepository implements IUserRepository {
-    users:User[] = [];
+    jsonDb: JsonDB;
+
+    constructor(jsonDb: JsonDB){
+        this.jsonDb = jsonDb;
+    }
 
     getByEmail(email: string): User {
-        return this.users.find(u => u.email == email);
+        return this.jsonDb.users.find(u => u.email == email);
     }
 
     add(instance: User): boolean {
         if(this.getByEmail(instance.email))
             return false;
         
-        this.users.push(instance);
+        this.jsonDb.users.push(instance);
+        this.jsonDb.saveChanges();
 
         return true;
     }
@@ -30,18 +36,19 @@ export class UserRepository implements IUserRepository {
     }
 
     delete(instance: User): boolean {
-        let index = this.users.indexOf(instance);
+        let index = this.jsonDb.users.indexOf(instance);
 
         if(index == -1)
             return false;
         
-        this.users = this.users.filter(u => u.email != instance.email);
+        this.jsonDb.users = this.jsonDb.users.filter(u => u.email != instance.email);
+        this.jsonDb.saveChanges();
 
         return true;
     }
 
     getAll(): User[] {
-        return this.users.map(
+        return this.jsonDb.users.map(
             u => copy(u)
         );
     }
