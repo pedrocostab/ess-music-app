@@ -3,11 +3,11 @@ import bodyParser = require("body-parser");
 //new
 import cors = require("cors");
 import cookieParser = require("cookie-parser");
-import routes from './routes/routes'
+import routes from './routes/routes';
 //endnew
-import { Music } from 'music-app-models';
+import { Song } from 'music-app-models';
 
-var music = new Music();
+var music = new Song();
 
 var app = express();
 //new
