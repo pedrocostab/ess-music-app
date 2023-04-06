@@ -1,24 +1,71 @@
 import { ISongRepository } from 'database-abstraction-layer';
-import { Genre, Song } from 'music-app-models';
+import { copy, Genre, Song } from 'music-app-models';
+import { JsonDB } from './json-handling/json-handling';
 
 export class SongRepository implements ISongRepository {
+    jsonDb: JsonDB;
+
+    constructor(jsonDb: JsonDB){
+        this.jsonDb = jsonDb;
+    }
+
     getById(id: number): Song {
-        throw new Error('Method not implemented.');
+        return copy( 
+            this.jsonDb.songs.find(
+                s => s.id == id
+            )
+        );
     }
+
     getAllByGenre(genre: Genre): Song[] {
-        throw new Error('Method not implemented.');
+        return this.jsonDb.songs.filter(
+            s => s.genre == genre
+        ).map(s => copy(s));
     }
+
     add(instance: Song): boolean {
-        throw new Error('Method not implemented.');
+        if(this.getById(instance.id))
+            return false;
+        
+        this.jsonDb.songs.push(instance);
+        this.jsonDb.saveChanges();
+
+        return true;
     }
+
     update(instance: Song): boolean {
-        throw new Error('Method not implemented.');
+        let usr = this.getById(instance.id);
+
+        if(!usr)
+            return false;
+        
+        usr.name = instance.name;
+        usr.genre = instance.genre;
+        usr.length = instance.length;
+        usr.year = instance.year;
+        usr.artist = instance.artist;
+
+        this.jsonDb.saveChanges();
+        
+        return true;
     }
+
     delete(instance: Song): boolean {
-        throw new Error('Method not implemented.');
+        let index = this.jsonDb.songs.indexOf(instance);
+
+        if(index == -1)
+            return false;
+        
+        this.jsonDb.songs = this.jsonDb.songs.filter(u => u.id != instance.id);
+        this.jsonDb.saveChanges();
+
+        return true;
     }
+
     getAll(): Song[] {
-        throw new Error('Method not implemented.');
+        return this.jsonDb.songs.map(
+            s => copy(s)
+        );
     }
 
 }
