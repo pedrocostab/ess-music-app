@@ -18,6 +18,15 @@
       "gender": "",
       "role": "",
       "isactive": true
+    },
+    {
+      "id": "victorluiz",
+      "name": "Victor Luiz",
+      "password": "123456789",
+      "email": "victorluiz@dizer.com",
+      "gender": "",
+      "role": "usuario",
+      "isactive": true
     }
   ],
   "role": [

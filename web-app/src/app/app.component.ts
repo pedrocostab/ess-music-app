@@ -11,6 +11,7 @@ export class AppComponent implements DoCheck  {
   title = 'Dizer';
   ismenurequired=false;
   isadminuser=false;
+  isuser = true;
   constructor(private router:Router, private service:AuthService){
 
   }
@@ -23,8 +24,10 @@ export class AppComponent implements DoCheck  {
     }
     if(this.service.GetUserrole()==='admin'){
       this.isadminuser=true;
+      this.isuser = false;
     }else{
       this.isadminuser=false;
+      this.isuser = true;
     }
   }
 }

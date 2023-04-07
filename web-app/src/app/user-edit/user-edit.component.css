@@ -3,6 +3,7 @@
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    margin-top: 20px;
   }
   
   .circle img {
@@ -54,8 +55,8 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
-    background-color: #000; /* Definindo o background como preto */
-    color: #fff; /* Definindo o texto como branco */
+    background-color: #000; 
+    color: #fff; 
   }
   
   .tipo-input {
@@ -67,8 +68,8 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
-    background-color: #000; /* Definindo o background como preto */
-    color: #fff; /* Definindo o texto como branco */
+    background-color: #000;
+    color: #fff; 
   }
 
   button#botoes-informacoes {
