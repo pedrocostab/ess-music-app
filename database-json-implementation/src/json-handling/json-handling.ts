@@ -16,6 +16,10 @@ class JsonDB {
 
     writing: boolean = false;
 
+    constructor(path: string){
+        this.dbFilePath = path;
+    }
+
     saveChanges(){
         if(this.writing)
             return;
@@ -30,20 +34,18 @@ function initDatabase(dbFilePath: string):JsonDB{
     let jsonDatabase:JsonDB;
 
     if(!fs.existsSync(dbFilePath)){
-        jsonDatabase = new JsonDB();
+        jsonDatabase = new JsonDB(dbFilePath);
 
         fs.writeFileSync(dbFilePath, JSON.stringify(jsonDatabase));
 
         return jsonDatabase;
     }
 
-    fs.readFile(dbFilePath, function (err: any, data: any) {
-        if (err) {
-            console.error(err)
-        }
+    let data = fs.readFileSync(dbFilePath, {encoding: 'utf-8'});
+
+    jsonDatabase = new JsonDB(dbFilePath);
     
-        jsonDatabase = JSON.parse(data);
-    })
+    Object.assign(jsonDatabase, JSON.parse(data));
 
     return jsonDatabase;
 }
