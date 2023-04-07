@@ -1,5 +1,5 @@
 {
-    "name": "database-abstraction-layer",
+    "name": "database-json-implementation",
     "version": "1.0.0",
     "description": "models module for not repeating classes",
     "main": "typeScript/index.js",
