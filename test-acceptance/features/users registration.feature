@@ -7,28 +7,29 @@ Feature: Registration and maintenance of Users (insert, remove, update)
     And users could update theirs information at the "Dizer"
 
 Scenario: Registering new users
-    Given I am on the "New User Registration" page
-    When I write "Pedro Basilio" in "Name"
-    And I write "pcsb@cin.ufpe.br" in "e-mail"
-    And I write "000000" in "Password"
-    And I click on "Register"
+    Given I am on the "Registro de novo usuário" page
+    When I write "pcsb" in "Usuário"
+    And I write "Pedro Basilio" in "Nome"
+    And I write "pcsb01" in "Senha"
+    And I write "pcsb@cin.ufpe.br" in "Email"
+    And I click on "Enviar"
     Then I see a registration completed message
 
 Scenario: User logged in wants to change his password
-    Given I am on the "User Profile" page
-    And I am logged in with email "pcsb@cin.ufpe.br" and password "000000"
-    When I click on "Change Password" option
-    And I write "000000" in "Current Password"
-    And I write "00pcsb" in "New Password"
-    And I click on "Confirm"
+    Given I am on the "Editar Perfil" page
+    And I am logged in with user "pcsb" and password "pcsb01"
+    When I click on "Alterar Senha" option
+    And I write "01pcsb" in "Nova Senha"
+    And I click on "Alterar"
     Then I see a password changed successfully message
 
 Scenario: Logged in user wants to delete his account
-    Given I am on the "User Profile" page
-    And I am logged in with email "pcsb@cin.ufpe.br" and password "00pcsb"
-    When I click on "Delete Account" option
+    Given I am on the "Editar Perfil" page
+    And I am logged in with email "pcsb@cin.ufpe.br" and password "01pcsb"
+    When I click on "Deletar Perfil" option
+    And I click "Sim"
     Then I get a message that the user "pcsb@cin.ufpe.br" has been deleted
-    And I am logged out on the "New User Registration" page
+    And I am logged out on the "Pagina Inicial" page
 
 Scenario: Administrator wants to remove a User from the system
     Given I am logged in with and admin account with email "admin@dizer.com" and password "admin"
