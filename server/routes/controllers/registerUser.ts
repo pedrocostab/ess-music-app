@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import fs = require('fs');
-import getJsonDatabase from '../utils/jsonDatabase'
 import { hashPassword } from '../utils/bcryptUtils'
 import * as uuid from 'uuid';
 import { User } from 'music-app-models';
