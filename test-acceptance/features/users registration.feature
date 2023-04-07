@@ -41,17 +41,21 @@ Scenario: Administrator wants to remove a User from the system
     Then I get a message that the user has been deleted
     And I check that the "e-mail" user "pcsb@cin.ufpe.br" is no longer on the list of system users
 
-Scenario: Register new User with already registered email
-    Given I am on the "New User Registration" page
-    When I write "Pedro Basilio" in "Name"
-    And I write "pcsb@cin.ufpe.br" in "email"
-    And I write "000000" in "Password"
-    Then I get a Registration Error message "email already registered"
+Scenario: Register new User with an invalid email
+    Given I am on the "Registro de novo usuário" page
+    When I write "pcsb" in "Usuário"
+    And I write "Pedro Basilio" in "Name"
+    And I write "pcsb" in "email"
+    And I write "pcsb01" in "Password"
+    Then I get a Registration Error message "Por favor colocar um dado válido"
+    And I see the "Email" field highlighted
 
 
 Scenario: Register new User with password less than 6 digits
-    Given I am on the "New User Registration" page
-    When I write "Drielle" in "Name"
-    And I write "dddd@cin.ufpe.br" in "email"
-    And I write "00000" in "Password"
-    Then I get a Registration Error message "password less than 6 digits"
+    Given I am on the "Registro de novo usuário" page
+    When I write "dri" in "Usuário"
+    And I write "Drielle" in "Name"
+    And I write "drielle@cin.ufpe.br" in "email"
+    And I write "dri01" in "Password"
+    Then I get a Registration Error message "Por favor colocar um dado válido"
+    And I see the "Senha" field highlighted
