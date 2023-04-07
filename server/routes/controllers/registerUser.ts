@@ -3,6 +3,8 @@ import fs = require('fs');
 import getJsonDatabase from '../utils/jsonDatabase'
 import { hashPassword } from '../utils/bcryptUtils'
 import * as uuid from 'uuid';
+import { User } from 'music-app-models';
+import { context } from '../../server';
 
 export const registerUser = async (req: Request, res: Response) => {
     const hashedPassword = await hashPassword(req.body.password)
@@ -16,34 +18,11 @@ export const registerUser = async (req: Request, res: Response) => {
         return res.status(400).send('Email inválido.')
     }
 
-    const newUser = {
-        id: uuid.v4(),
-        name: username,
+    const newUser: User = {
         email: email,
-        password: password
+        nome: username,
+        senha: password
     }
 
-    // Cria um handle para o arquivo json de banco de dados
-    getJsonDatabase((err: any, jsonDatabase: any) => {
-        if (err) {
-            return res.status(500).send('Erro ao ler o arquivo JSON de usuários.')
-        }
-
-        // Verifica se o username já está em uso
-        const usernameExists = jsonDatabase.some((user: { name: any }) => user.name === username)
-        if (usernameExists) {
-            return res.status(400).send('Este nome de usuário já está em uso.')
-        }
-
-        // Adiciona o novo usuário
-        jsonDatabase.push(newUser)
-
-        fs.writeFile('users.json', JSON.stringify(jsonDatabase), function (err: any) {
-            if (err) {
-                console.error(err)
-                return res.status(500).send('Erro ao gravar no arquivo JSON de usuários.')
-            }
-            res.send('Usuário registrado com sucesso!')
-        })
-    })
+    context.userRepository.add(newUser);
 }

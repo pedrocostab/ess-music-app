@@ -1,16 +1,36 @@
 import express = require('express');
 import bodyParser = require("body-parser");
-//new
 import cors = require("cors");
 import cookieParser = require("cookie-parser");
 import routes from './routes/routes';
-//endnew
-import { Song } from 'music-app-models';
+import { Context } from './infra/context';
+  
+import {  initDatabase,
+          UserRepository,
+          SongRepository,
+          CategoryRepository,
+          PlaylistRepository,
+          PlaylistSongRepository,
+          PlaylistCategoryRepository,
+          UserFollowPlaylistRepository,
+          UserSongHistoryRepository } from 'database-json-implementation';
 
-var music = new Song();
+
+const jsonDb = initDatabase('db.json');
+
+const context = new Context(
+  new UserRepository(jsonDb),
+  new SongRepository(jsonDb),
+  new CategoryRepository(jsonDb),
+  new PlaylistRepository(jsonDb),
+  new PlaylistSongRepository(jsonDb),
+  new PlaylistCategoryRepository(jsonDb),
+  new UserSongHistoryRepository(jsonDb),
+  new UserFollowPlaylistRepository(jsonDb)
+);
+
 
 var app = express();
-//new
 app.use(express.json())
 app.use(cors({
   credentials: true,
@@ -18,7 +38,6 @@ app.use(cors({
 }))
 app.use(cookieParser())
 app.use('/api', routes)
-//endnew
 
 var allowCrossDomain = function (req: any, res: any, next: any) {
   res.header('Access-Control-Allow-Origin', "*");
@@ -42,4 +61,4 @@ function closeServer(): void {
   server.close();
 }
 
-export { app, server, closeServer }
+export { app, server, closeServer, context }
