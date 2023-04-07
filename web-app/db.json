@@ -9,6 +9,15 @@
       "gender": "male",
       "role": "admin",
       "isactive": true
+    },
+    {
+      "id": "pcsb",
+      "name": "Pedro Basilio",
+      "password": "pcsb01",
+      "email": "pcsb@cin.ufpe.br",
+      "gender": "",
+      "role": "",
+      "isactive": true
     }
   ],
   "role": [
