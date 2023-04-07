@@ -1,20 +1,59 @@
 import { IUserFollowPlaylistRepository } from 'database-abstraction-layer';
-import { UserFollowPlaylist } from 'music-app-models';
+import { copy, UserFollowPlaylist } from 'music-app-models';
+import { JsonDB } from './json-handling/json-handling';
 
 export class UserFollowPlaylistRepository implements IUserFollowPlaylistRepository {
+    jsonDb: JsonDB;
+
+    constructor(jsonDb: JsonDB){
+        this.jsonDb = jsonDb;
+    }
+
     getAllByUserEmail(email: string): UserFollowPlaylist[] {
-        throw new Error('Method not implemented.');
+        return this.jsonDb.userFollowPlaylists.filter(
+            ufp => ufp.follower_email == email
+        ).map(copy);
     }
+
     add(instance: UserFollowPlaylist): boolean {
-        throw new Error('Method not implemented.');
+        if(
+            this.jsonDb.userFollowPlaylists.find(
+                p => 
+                    p.playlist_owner_email == instance.playlist_owner_email &&
+                    p.playlist_number == instance.playlist_number &&
+                    p.follower_email == instance.follower_email
+            )
+        )
+            return false;
+
+        this.jsonDb.userFollowPlaylists.push(instance);
+        this.jsonDb.saveChanges();
+
+        return true;
     }
+
     update(instance: UserFollowPlaylist): boolean {
-        throw new Error('Method not implemented.');
+        return false;
     }
+
     delete(instance: UserFollowPlaylist): boolean {
-        throw new Error('Method not implemented.');
+        let index = this.jsonDb.userFollowPlaylists.indexOf(instance);
+
+        if(index == -1)
+            return false;
+        
+        this.jsonDb.userFollowPlaylists = this.jsonDb.userFollowPlaylists.filter(
+            p => p.playlist_owner_email != instance.playlist_owner_email &&
+            p.playlist_number != instance.playlist_number &&
+            p.follower_email != instance.follower_email
+        );
+
+        this.jsonDb.saveChanges();
+
+        return true;
     }
+
     getAll(): UserFollowPlaylist[] {
-        throw new Error('Method not implemented.');
+        return this.jsonDb.userFollowPlaylists.map(copy);
     }
 }

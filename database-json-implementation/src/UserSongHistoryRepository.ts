@@ -1,20 +1,60 @@
 import { IUserSongHistoryRepository } from 'database-abstraction-layer';
-import { UserSongHistory } from 'music-app-models';
+import { copy, UserSongHistory } from 'music-app-models';
+import { JsonDB } from './json-handling/json-handling';
 
 export class UserSongHistoryRepository implements IUserSongHistoryRepository {
+    jsonDb: JsonDB;
+
+    constructor(jsonDb: JsonDB){
+        this.jsonDb = jsonDb;
+    }
+
     getAllByUserEmail(email: string): UserSongHistory[] {
-        throw new Error('Method not implemented.');
+        return this.jsonDb.userSongHistories.filter(
+            h => h.user_email == email
+        ).map(copy);
     }
+
     add(instance: UserSongHistory): boolean {
-        throw new Error('Method not implemented.');
+        if(
+            this.jsonDb.userSongHistories.find(
+                ush =>
+                    ush.song_id == instance.song_id &&
+                    ush.user_email == instance.user_email &&
+                    ush.timestamp == instance.timestamp
+            )
+        )
+            return false;
+
+        this.jsonDb.userSongHistories.push(instance);
+        this.jsonDb.saveChanges();
+
+        return true;
     }
+
     update(instance: UserSongHistory): boolean {
-        throw new Error('Method not implemented.');
+        return false;
     }
+
     delete(instance: UserSongHistory): boolean {
-        throw new Error('Method not implemented.');
+        let index = this.jsonDb.userSongHistories.indexOf(instance);
+
+        if(index == -1)
+            return false;
+        
+        this.jsonDb.userSongHistories = this.jsonDb.userSongHistories.filter(
+            ush =>
+                ush.user_email != instance.user_email &&
+                ush.song_id != instance.song_id &&
+                ush.timestamp != instance.timestamp
+        );
+
+        this.jsonDb.saveChanges();
+
+        return true;
     }
+
     getAll(): UserSongHistory[] {
-        throw new Error('Method not implemented.');
+        return this.jsonDb.userSongHistories.map(copy);
     }
 }
