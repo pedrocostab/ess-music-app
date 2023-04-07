@@ -24,8 +24,11 @@
     "cors": "^2.8.5",
     "express": "^4.15.4",
     "jsonwebtoken": "^9.0.0",
+    "request": "^2.34",
     "nodemailer": "^6.1.1",
-    "request": "^2.34"
+    "music-app-models": "file:../music-app-models",
+    "database-abstraction-layer": "file:../database-abstraction-layer",
+    "database-json-implementation": "file:../database-json-implementation"
   },
   "devDependencies": {
     "@types/jasmine": "^2.8.9",
