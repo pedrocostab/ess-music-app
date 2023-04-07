@@ -36,11 +36,11 @@ export class EditpopupComponent implements OnInit {
 
   registerform = this.builder.group({
     id: this.builder.control(''),
-    name: this.builder.control(''),
-    password: this.builder.control(''),
-    email: this.builder.control(''),
+    name: this.builder.control('', Validators.required),
+    password: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
+    email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
     gender: this.builder.control(''),
-    role: this.builder.control('', Validators.required),
+    role: this.builder.control(''),
     isactive: this.builder.control(false)
   });
 

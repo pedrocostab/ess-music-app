@@ -20,12 +20,12 @@
       "isactive": true
     },
     {
-      "id": "victorluiz",
-      "name": "Victor Luiz",
-      "password": "123456789",
-      "email": "victorluiz@dizer.com",
+      "id": "teste2",
+      "name": "teste",
+      "password": "teste2",
+      "email": "teste@teste",
       "gender": "",
-      "role": "usuario",
+      "role": "",
       "isactive": true
     }
   ],
