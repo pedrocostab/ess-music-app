@@ -15,7 +15,7 @@
         "music-app-models": "file:../music-app-models"
     },
     "devDependencies": {
-        "@types/node": "^18.15.11",
+        "@types/node": "^14.14.20",
         "typescript": "^3.3.3333"
     }
 }
