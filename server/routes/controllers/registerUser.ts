@@ -1,10 +1,13 @@
 import { Request, Response } from 'express';
-import fs = require('fs');
-import getJsonDatabase from '../utils/jsonDatabase'
 import { hashPassword } from '../utils/bcryptUtils'
 import * as uuid from 'uuid';
+import { User } from 'music-app-models';
+import { context } from '../../server';
 
 export const registerUser = async (req: Request, res: Response) => {
+    if(req.body.password === undefined || req.body.password == '' || req.body.password === null)
+        return res.status(400).send('Senha vazia.');
+    
     const hashedPassword = await hashPassword(req.body.password)
     const username = req.body.name
     const email = req.body.email
@@ -16,35 +19,14 @@ export const registerUser = async (req: Request, res: Response) => {
         return res.status(400).send('Email inválido.')
     }
 
-    const newUser = {
-        id: uuid.v4(),
-        role: "user",
-        name: username,
+    const newUser: User = {
         email: email,
-        password: password
+        nome: username,
+        senha: password
     }
 
-    // Cria um handle para o arquivo json de banco de dados
-    getJsonDatabase((err: any, jsonDatabase: any) => {
-        if (err) {
-            return res.status(500).send('Erro ao ler o arquivo JSON de usuários.')
-        }
-
-        // Verifica se o username já está em uso
-        const usernameExists = jsonDatabase.some((user: { name: any }) => user.name === username)
-        if (usernameExists) {
-            return res.status(400).send('Este nome de usuário já está em uso.')
-        }
-
-        // Adiciona o novo usuário
-        jsonDatabase.push(newUser)
-
-        fs.writeFile('users.json', JSON.stringify(jsonDatabase), function (err: any) {
-            if (err) {
-                console.error(err)
-                return res.status(500).send('Erro ao gravar no arquivo JSON de usuários.')
-            }
-            res.send('Usuário registrado com sucesso!')
-        })
-    })
+    if(context.userRepository.add(newUser))
+        return res.status(200).send('Registro bem sucedido');
+    
+    return res.status(400).send('Usuário já existente');
 }

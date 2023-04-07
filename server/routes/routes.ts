@@ -31,7 +31,8 @@ interface JwtClaims {
     _id: string
 }
 
-router.post('/registerUser', registerUser)
+
+router.post('/user', registerUser)
 
 router.post('/login', loginUser)
 

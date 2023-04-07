@@ -8,11 +8,14 @@
                     <li class="circulo-foto">
                         <img src="./../../assets/taylor.png" alt="Foto de perfil">
                     </li>
-                    <li><a routerLink="">Home</a></li>
-                    <li><a routerLink="/user">Usuario</a></li>
+                    <li><a routerLink="/initial-page">Home</a></li>
+                    <li><a routerLink="/user">Perfil</a></li>
+                    <li><a *ngIf="isuser" routerLink="">Biblioteca</a></li>
+                    <li><a *ngIf="isuser" routerLink="/Histórico">Histórico</a></li>
+                    <li><a routerLink="">Playlists</a></li>
                     <li><a *ngIf="isadminuser" routerLink="/userAdmin">Admin</a></li>
-                    <li><a routerLink="/cadastrar-musicas">Cadastrar Musica</a></li>
-                    <li><a routerLink="/lista-musicas">Lista Musica</a></li>
+                    <li><a *ngIf="isadminuser" routerLink="/cadastrar-musicas">Cadastrar Musica</a></li>
+                    <li><a *ngIf="isadminuser" routerLink="/lista-musicas">Lista Musica</a></li>
                     <li>
                         <form action="#" method="get">
                           <input type="text" name="q" placeholder="Pesquisar músicas, artistas, álbuns...">

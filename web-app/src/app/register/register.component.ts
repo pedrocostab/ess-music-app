@@ -16,14 +16,14 @@ export class RegisterComponent {
 
   }
 
-  registerform = this.builder.group({
-    id: this.builder.control('', Validators.required),
-    name: this.builder.control('', Validators.required),
-    password: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(5)])),
-    email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
-    gender: this.builder.control(''),
-    role: this.builder.control(''),
-    isactive: this.builder.control(true)
+  registerform=this.builder.group({
+    id:this.builder.control('', Validators.required),
+    name:this.builder.control('', Validators.required),
+    password:this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
+    email:this.builder.control('', Validators.compose([Validators.required, Validators.email])),
+    gender:this.builder.control(''),
+    role:this.builder.control(''),
+    isactive:this.builder.control(true)
   });
 
   async proceedregistration() {
