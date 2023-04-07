@@ -4,7 +4,7 @@ import getJsonDatabase from '../utils/jsonDatabase'
 import { hashPassword } from '../utils/bcryptUtils'
 import * as uuid from 'uuid';
 
-export const registerUser = async (req: Request, res: Response) => {
+export const registerAdmin = async (req: Request, res: Response) => {
     const hashedPassword = await hashPassword(req.body.password)
     const username = req.body.name
     const email = req.body.email
@@ -18,7 +18,7 @@ export const registerUser = async (req: Request, res: Response) => {
 
     const newUser = {
         id: uuid.v4(),
-        role: "user",
+        role: "admin",
         name: username,
         email: email,
         password: password
