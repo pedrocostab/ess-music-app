@@ -30,6 +30,12 @@ import { AddpopupComponent } from './addpopup/addpopup.component';
 import { DeletepopupComponent } from './deletepopup/deletepopup.component';
 import { UserSeDeletapopupComponent } from './user-se-deletapopup/user-se-deletapopup.component';
 import { AlterarSenhaPopupComponent } from './alterar-senha-popup/alterar-senha-popup.component';
+import { PlaylistUserComponent } from './playlist-user/playlist-user.component';
+import { PlaylistCategoriaComponent } from './playlist-categoria/playlist-categoria.component';
+import { PlaylistSeguidaComponent } from './playlist-seguida/playlist-seguida.component';
+import { ArtistaAdminComponent } from './artista-admin/artista-admin.component';
+import { AlbumComponent } from './album/album.component';
+import { AlbumAdminComponent } from './album-admin/album-admin.component';
 
 
 @NgModule({
@@ -51,7 +57,13 @@ import { AlterarSenhaPopupComponent } from './alterar-senha-popup/alterar-senha-
     AddpopupComponent,
     DeletepopupComponent,
     UserSeDeletapopupComponent,
-    AlterarSenhaPopupComponent
+    AlterarSenhaPopupComponent,
+    PlaylistUserComponent,
+    PlaylistCategoriaComponent,
+    PlaylistSeguidaComponent,
+    ArtistaAdminComponent,
+    AlbumComponent,
+    AlbumAdminComponent
   ],
   imports: [
     BrowserModule,

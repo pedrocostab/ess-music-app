@@ -1,21 +1,30 @@
 <div class="admin-container-home">
     <div class = "header">
     <div class="circle">
-      <img src="./../../assets/daniellFotoPerfil.jpg" alt="Minha imagem">
+      <img src="../../assets/playslistUserCapa.png" alt="Minha imagem">
     </div>
     <div class="container">
-      <p style="font-size: 30px;">Romulo Daniell</p>
+      <p style="font-size: 30px;">Músicas favoritas</p>
+      <h2 class="informacoesPlaylist">Essa playlist pertence a Victor Luiz <br>Pública</h2>
     </div>
     </div>
     <ul>
-      <li><a routerLink="/userEdit" ><button>Editar Perfil</button></a></li>
+        <li>Tocar</li>
+      <li class="seguindo">Seguindo</li> 
+      <li>Compartilhar</li>
     </ul>
-    
-      
-    
-    <p class="paragrafo" style="font-size: 20px;">Últimos 7 dias</p>
 
-    <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Últimas músicas reproduzidas</p>
+    <br>
+    
+    <div div class="pesquisa-playlist">
+    <form action="#" method="get">
+        <input type="text" name="q" placeholder="Pesquisar músicas...">
+        <button type="submit">Buscar</button>
+    </form>
+    </div>
+
+    <br>
+
     <div class="tableGeral">
       
       <table>
@@ -70,22 +79,24 @@
           </tr>
           <tr class="cor-diferente">
             <td class="album-capa">
-              <img src="./../../assets/django.png" alt="">
+              <img src="./../../assets/heatWaves.png" alt="">
             </td>
             <td>
               <p>
-                Default
+                Heat Waves
               </p> 
             </td>
-            <td>Django</td>
-            <td>Django</td>
+            <td>Glass Animals</td>
+            <td>Heat Waves</td>
+          </tr>
+          <tr>
+            <td class="album-capa">
+              <img src="./../../assets/highJesper.jpg" alt="">
+            </td>
+            <td>High</td>
+            <td>Jesper Jenset</td>
+            <td>High</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <ul>
-        <li>
-            Mostrar Mais
-        </li>
-      </ul> 
-</div>

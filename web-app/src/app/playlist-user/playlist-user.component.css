@@ -3,6 +3,7 @@
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    margin-top: 20px;
   }
   
   .circle img {
@@ -50,7 +51,7 @@
     align-items: center;
   }
   
-  .tableMusicas{
+  .tableGeral{
     width: 100%;
     display: flex;
     align-items: center;
@@ -96,36 +97,39 @@
   td.album-capa img{
     border-radius: 50%;
   }
-
-  #tabela-albuns {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  .tabela-albuns {
-    border-radius: 24px;
-    overflow: hidden;
-  }
   
- #tabelaAlbum td {
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-    border: 0px solid #ccc;
-    background-color: rgba(38, 38, 40, 0.87);
-  }
-  
-.tabela-albuns img{
-    width: 200px;
-    height: 200px;
-}
-
-.ano-lancamento{
+.informacoesPlaylist{
     color: rgba(195, 195, 195, 0.7);
-}
-
-.informacoesArtista{
-  color: rgba(195, 195, 195, 0.7);
 }  
-    
-   
+ 
+
+  .pesquisa-playlist form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pesquisa-playlist input[type="text"],
+  .pesquisa-playlist button {
+    height: 35px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .pesquisa-playlist input[type="text"] {
+    background-color: black;
+    color: white;
+  }
+  
+  .pesquisa-playlist button {
+    background-color: grey;
+    color: white;
+    margin-left: 10px;
+  }
+
+  input[type="text"] {
+    width: 500px;
+    vertical-align: middle
+  }
