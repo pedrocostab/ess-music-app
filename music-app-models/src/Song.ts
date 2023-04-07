@@ -1,4 +1,6 @@
-export class Song{
+import { Constructable } from "./Constructable";
+
+export class Song extends Constructable{
     id: number;
     name: string;
     length: number;
