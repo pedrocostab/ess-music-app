@@ -4,9 +4,11 @@ import { JwtPayload } from 'jsonwebtoken'
 import getJsonDatabase from '../utils/jsonDatabase';
 
 interface User {
-    id: string;
-    name: string;
-    email: string;
+    id: string
+    role: string
+    name: string
+    email: string
+    password: string
 }
 
 declare global {
@@ -17,7 +19,7 @@ declare global {
     }
 }
 
-export function authMiddleware(req: Request, res: Response, next: NextFunction) {
+export function authenticationMiddleware(req: Request, res: Response, next: NextFunction) {
     const cookie = req.cookies['jwt']
 
     if (!cookie) {

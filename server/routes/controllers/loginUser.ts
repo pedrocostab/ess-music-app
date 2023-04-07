@@ -28,7 +28,11 @@ export const loginUser = async (req: Request, res: Response) => {
 
         // Gera um token JWT contendo o id do usuário
         const token = jwt.sign({
-            _id: user.id
+            _id: user.id,
+            _role: user.role,
+            _name: user.name,
+            _email: user.email
+
         }, 'minha_chave_secreta')
 
         res.cookie('jwt', token, {
