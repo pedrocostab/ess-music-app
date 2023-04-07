@@ -51,7 +51,7 @@ export class EditpopupComponent implements OnInit {
         this.dialog.close();
       })
     } else {
-      this.toastr.warning('Por favor, selecione um cargo!')
+      this.toastr.warning('Por favor, insira um dado válido!')
     }
   }
 }
