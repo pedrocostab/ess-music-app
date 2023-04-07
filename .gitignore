@@ -27,7 +27,10 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+*/.angular/*
 
 # System Files
 .DS_Store
 Thumbs.db
+
+server/users.json
