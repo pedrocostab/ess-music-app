@@ -21,7 +21,10 @@
   },
   "dependencies": {
     "cucumber-html-reporter": "^4.0.5",
-    "protractor": "^5.1.2",
-    "ts-node": "^3.1.0"
+    "protractor": "^3.3.0",
+    "selenium-webdriver": "^4.8.2",
+    "ts-node": "^3.1.0",
+    "update": "^0.7.4",
+    "webdriver-manager": "^12.1.9"
   }
 }

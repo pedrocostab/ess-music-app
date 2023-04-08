@@ -18,6 +18,15 @@
       "gender": "",
       "role": "",
       "isactive": true
+    },
+    {
+      "id": "pedro",
+      "name": "pedro basilio",
+      "password": "pedro02",
+      "email": "pedrocostab@gmail.com",
+      "gender": "",
+      "role": "",
+      "isactive": true
     }
   ],
   "role": [
