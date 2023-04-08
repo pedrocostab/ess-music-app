@@ -1,6 +1,6 @@
 {
-  "name": "testes-acceptance",
-  "description": "Testes de aceitação do teaching assistant",
+  "name": "tests-acceptance",
+  "description": "Testes de aceitação",
   "scripts": {
     "tsc": "tsc",
     "test": "npm run tsc && protractor compiledCode/config/config.js",
