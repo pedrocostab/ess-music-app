@@ -2,6 +2,15 @@
   "user": [
     {},
     {
+      "id": "admin",
+      "name": "Admin",
+      "password": "admin",
+      "email": "admin@dizer.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
       "id": "pcsb",
       "name": "Pedro Basilio",
       "password": "pcsb01",
