@@ -3,6 +3,7 @@
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .circle img {
@@ -37,6 +38,7 @@ button {
 .container {
   top: 150px;
   margin-left: 10px;
+  text-transform: capitalize;
 }
 
 .paragrafo {
@@ -66,6 +68,7 @@ tbody{
 }
 td {
   text-align: center;
+  text-transform: capitalize;
 }
 
 tr.cor-diferente {

@@ -12,22 +12,7 @@ import { UserAdminComponent } from './user-admin/user-admin.component';
 import { UserComponent } from './user/user.component';
 import { ArtistaComponent } from './artista/artista.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
-import { PlaylistUserComponent } from './playlist-user/playlist-user.component';
-import { PlaylistCategoriaComponent } from './playlist-categoria/playlist-categoria.component';
-import { PlaylistSeguidaComponent } from './playlist-seguida/playlist-seguida.component';
-import { ArtistaAdminComponent } from './artista-admin/artista-admin.component';
-import { AlbumComponent } from './album/album.component';
-import { AlbumAdminComponent } from './album-admin/album-admin.component';
-import { CadastraArtistaComponent } from './cadastra-artista/cadastra-artista.component';
-import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.component';
-import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
-import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
-import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
-import { EditaAlbumComponent } from './edita-album/edita-album.component';
-import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
-import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
-import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
-import { HistoricComponent } from './historic/historic.component';
+// import { MusicasComponent } from './musicas/musicas.component';
 
 
 
@@ -41,25 +26,8 @@ const routes: Routes = [
   {path: 'userAdmin', component: UserAdminComponent, canActivate:[AuthGuard]},
   {path: 'user', component: UserComponent, canActivate:[AuthGuard]},
   {path: 'artista', component: ArtistaComponent, canActivate:[AuthGuard]},
-  {path: 'userEdit', component: UserEditComponent, canActivate:[AuthGuard]},
-  {path: 'playlistUser', component: PlaylistUserComponent},
-  {path: 'playlistCategoria', component: PlaylistCategoriaComponent},
-  {path: 'playlistSeguida', component: PlaylistSeguidaComponent},
-  {path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:url_foto_artista/artistaAdmin', component: ArtistaAdminComponent },
-  {path: 'album', component: AlbumComponent},
-  {path: 'albumAdmin/:id', component: AlbumAdminComponent},
-  {path: 'albumAdmin/:albumId/cadastrar-musica', component: MusicasComponent},
-  {path: 'cadastrar-artista', component: CadastraArtistaComponent},
-  {path: 'visualizar-artistas-admin/:id/cadastrar-album', component: CadastraAlbumComponent},
-  {path: 'visualizar-artistas-admin', component: VisualizacaoAdminArtistasComponent},
-  {path: 'playlistAdmin', component: PlaylistAdminComponent},
-  {path: 'editar-musica/:id', component: EditaMusicaComponent},
-  {path: 'editar-album/:id', component: EditaAlbumComponent},
-  {path: 'playlistsCategoria', component: PlaylistsCategoriaComponent},
-  {path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent},
-  {path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent}
-  {path: 'historic', component: HistoricComponent, canActivate:[AuthGuard]}
-]
+  {path: 'userEdit', component: UserEditComponent, canActivate:[AuthGuard]}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

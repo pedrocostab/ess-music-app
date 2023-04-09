@@ -2,91 +2,19 @@
   "user": [
     {},
     {
-      "id": "x",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "q_nlscc",
-      "name": "",
-      "password": "",
-      "email": "",
+      "id": "admin",
+      "name": "Admin",
+      "password": "admin",
+      "email": "admin@dizer.com",
       "gender": "male",
-      "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "flRxLMq",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "",
-      "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "s",
-      "name": "s",
-      "password": "sssss",
-      "email": "s@s",
-      "gender": "",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "m5Pf6oy",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "",
-      "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "testeadicao",
-      "name": "xxxxxx",
-      "password": "xxxxxxxxx",
-      "email": "teste@adicao",
-      "gender": "",
       "role": "admin",
       "isactive": true
     },
     {
-      "id": "x222",
-      "name": "xxxxxx",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "x222222",
-      "name": "xxxxxx",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "Masculino",
-      "role": "admin",
-      "isactive": false
-    },
-    {
-      "id": "x1xxx",
-      "name": "x",
-      "password": "xxxxxx",
-      "email": "x@x",
-      "gender": "",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "admin",
-      "name": "admin",
-      "password": "admin",
-      "email": "admin@admin",
+      "id": "teste2",
+      "name": "teste2",
+      "password": "teste2",
+      "email": "teste@teste",
       "gender": "",
       "role": "",
       "isactive": true
@@ -133,6 +61,82 @@
   "profile": [
     {
       "name": "typicode"
+    }
+  ],
+  "artistas": [
+    {
+      "id": 2,
+      "nome": "Rihanna",
+      "genero_musical": "Pop/R&B",
+      "url_foto_artista": "https://i.guim.co.uk/img/media/fb824f7321345241e96684bba7678482655f6026/0_0_1576_2362/master/1576.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=22e4c259d5829deb507f667cdaaa45dc"
+    },
+    {
+      "id": 3,
+      "nome": "Taylor Swift",
+      "genero_musical": "Pop/Country",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
+    },
+    {
+      "id": 4,
+      "nome": "Doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    }
+  ],
+  "albums": [
+    {
+      "nome": "Amala",
+      "artistaId": 4,
+      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "ano_lancamento": "2021",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Hot Pink",
+      "ano_lancamento": 63,
+      "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "artistaId": 4,
+      "artistaNome": "Doja cat"
+    }
+  ],
+  "musicas": [
+    {
+      "titulo": "Go To Town",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 1
+    },
+    {
+      "titulo": "Roll With Us",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 2
+    },
+    {
+      "titulo": "Only girl",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 3
+    },
+    {
+      "titulo": "Fancy",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 4
     }
   ]
 }

@@ -1,0 +1,42 @@
+<div class="admin-container-home">
+<div class = "header">
+  <div class="square">
+    <img src="{{album.url_foto_album}}" alt="Minha imagem">
+  </div>
+  <div class="container">
+    <p style="font-size: 30px;">{{album.nome}}</p>
+    <h2 class="informacoesAlbum">{{album.artistaNome}}<br>Álbum - {{album.ano_lancamento}}<br>{{musicas.length}} músicas</h2>
+  </div>
+</div>
+<ul>
+    <li><button (click)="editarAlbum(album.id)">Editar Informações</button></li>
+    <li><button (click)="cadastrarMusicas()">Cadastrar Musicas</button></li>
+    <li><button (click)="removerAlbum()">Excluir album</button></li>
+</ul>
+<br>
+<div class="tableGeral">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th># Título</th>
+        <th># Artista</th>
+        <th># Álbum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let musica of musicas; let i = index">
+        <tr [ngClass]="{ 'cor-diferente': i % 2 == 0 }">
+          <td class="album-capa">
+            <img src="{{musica.capaAlbum}}" alt="">
+          </td>
+          <td>
+            <p>{{musica.titulo}}</p>
+          </td>
+          <td>{{musica.artistaNome}}</td>
+          <td>{{musica.tituloAlbum}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
