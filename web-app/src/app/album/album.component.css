@@ -26,6 +26,21 @@
     flex-direction: row;
     align-items: center;
   }
+
+  ul {
+    list-style: none;
+    padding: 8px 0;
+  }
+  
+  li {
+    display: inline-block;
+    width: 205.99px;
+    padding: 8px 0;
+    background-color: rgba(137, 7, 198, 1);
+    border-radius: 12px;
+    text-align: center;
+    margin-right: 20px;
+  }
   
   .tableGeral{
     width: 100%;
@@ -77,3 +92,47 @@
 .informacoesAlbum{
     color: rgba(195, 195, 195, 0.7);
 }  
+
+.opcoes-header {
+  position: relative;
+}
+
+.opcoes-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-radius: 12px;
+  background-color: rgba(38, 38, 40, 0.87);
+  width: 205.99px;
+  padding: 8px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
