@@ -283,5 +283,13 @@
       "tituloAlbum": "Hot Pink"
     }
   ],
+  "playlists": [
+    {
+      "titulo": "Treino",
+      "privacidade": "Pública",
+      "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
+      "id": 1
+    }
+  ]
   "playlists": []
 }
