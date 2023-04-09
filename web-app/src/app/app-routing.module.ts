@@ -22,6 +22,8 @@ import { CadastraArtistaComponent } from './cadastra-artista/cadastra-artista.co
 import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.component';
 import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
 import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
+import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
+import { EditaAlbumComponent } from './edita-album/edita-album.component';
 import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
@@ -48,6 +50,8 @@ const routes: Routes = [
   {path: 'visualizar-artistas-admin/:id/cadastrar-album', component: CadastraAlbumComponent},
   {path: 'visualizar-artistas-admin', component: VisualizacaoAdminArtistasComponent},
   {path: 'playlistAdmin', component: PlaylistAdminComponent},
+  {path: 'editar-musica/:id', component: EditaMusicaComponent},
+  {path: 'editar-album/:id', component: EditaAlbumComponent},
   {path: 'playlistsCategoria', component: PlaylistsCategoriaComponent},
   {path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent},
   {path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent}

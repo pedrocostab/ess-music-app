@@ -54,4 +54,8 @@ export class ArtistaAdminComponent implements OnInit {
       this.router.navigate(['visualizar-artistas-admin']);
     });
   }
+
+  editarMusica(id: number): void {
+    this.router.navigate(['editar-musica', id]);
+  }
 }

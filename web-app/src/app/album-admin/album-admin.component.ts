@@ -39,5 +39,7 @@ export class AlbumAdminComponent {
     });
   }
   
-  
+  editarAlbum(id: number): void {
+    this.router.navigate(['editar-album', id]);
+  }
 }
