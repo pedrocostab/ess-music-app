@@ -79,7 +79,7 @@ Scenario: Registering new users without name
 Scenario: User logged in wants to change his password
     Given I am on the "Editar Perfil" page
     And I am logged in with user "pcsb" and password "pcsb01"
-    When I click on "Alterar Senha" option
+    When I click on "Alterar Senha"
     And I write "01pcsb" in "Nova Senha"
     And I click on "Alterar"
     Then I see a password changed successfully message
@@ -105,7 +105,7 @@ Scenario: User logged in wants to change his password without password
 Scenario: Logged in user wants to delete his account
     Given I am on the "Editar Perfil" page
     And I am logged in with user "pcsb" and password "pcsb01"
-    When I click on "Deletar Perfil" option
+    When I click on "Deletar Perfil"
     And I click "Sim"
     Then I get a message that the user "pcsb@cin.ufpe.br" has been deleted
     And I am logged out on the "Pagina Inicial" page
@@ -264,7 +264,7 @@ Scenario: Administrator wants to add a new User
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario" 
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -284,7 +284,7 @@ Scenario: Administrator wants to add a new User with an invalid email
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -298,7 +298,7 @@ Scenario: Administrator wants to add a new User with an invalid password
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb0" in "Senha" field
@@ -312,7 +312,7 @@ Scenario: Administrator wants to add a new User without user field
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -326,7 +326,7 @@ Scenario: Administrator wants to add a new User without user field
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -340,7 +340,7 @@ Scenario: Administrator wants to add a new User without user field
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -354,7 +354,7 @@ Scenario: Administrator wants to add a new User without user field
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "pcsb02" in "Senha" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -368,7 +368,7 @@ Scenario: Administrator wants to add a new User without user field
     Given I am logged in with an admin account with user "admin" and password "ad12ad"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field

@@ -89,6 +89,20 @@ defineSupportCode(function ({ Given, When, Then }) {
         await element(by.buttonText('Alterar Senha')).click();
     })
 
+    When(/^I click on "Alterar"$/, async () => {
+        await element(by.buttonText('Alterar')).click();
+    })
+
+    When(/^I click on "Deletar Perfil"$/, async () => {
+        await element(by.buttonText('Deletar Perfil')).click();
+    })
+
+    When(/^When I write nothing in "([^\"]*)" field$/, async (campo) => {
+        // Implemente o código para deixar o campo em branco
+        const campoInput = await this.page.$(`input[formControlName=${campo}]`);
+        await campoInput.clear();
+      });
+
     Then(/^I see a registration completed message$/, async () => {
         await expect(element(by.cssContainingText('*', 'Registro feito com sucesso!')).isPresent()).to.eventually.equal(true);
     })
