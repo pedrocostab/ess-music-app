@@ -19,16 +19,16 @@ import { PlaylistSeguidaComponent } from './playlist-seguida/playlist-seguida.co
 import { ArtistaAdminComponent } from './artista-admin/artista-admin.component';
 import { AlbumComponent } from './album/album.component';
 import { AlbumAdminComponent } from './album-admin/album-admin.component';
-// import { MusicasComponent } from './musicas/musicas.component';
-
-
+import { CadastraArtistaComponent } from './cadastra-artista/cadastra-artista.component';
+import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.component';
+import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
+import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'lista-usuarios', component: UserlistingComponent, canActivate: [AuthGuard] },
-  { path: 'cadastrar-musicas', component: MusicasComponent, canActivate: [AuthGuard] },
   { path: 'lista-musicas', component: ListaMusicasComponent, canActivate: [AuthGuard] },
   { path: 'initial-page', component: InitialPageComponent, canActivate: [AuthGuard] },
   { path: 'userAdmin', component: UserAdminComponent, canActivate: [AuthGuard] },
@@ -38,10 +38,15 @@ const routes: Routes = [
   { path: 'playlistUser', component: PlaylistUserComponent },
   { path: 'playlistCategoria', component: PlaylistCategoriaComponent },
   { path: 'playlistSeguida', component: PlaylistSeguidaComponent },
-  { path: 'artistaAdmin', component: ArtistaAdminComponent },
+  { path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:url_foto_artista/artistaAdmin', component: ArtistaAdminComponent },
   { path: 'album', component: AlbumComponent },
-  { path: 'albumAdmin', component: AlbumAdminComponent }
-];
+  { path: 'albumAdmin/:id', component: AlbumAdminComponent },
+  { path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:url_foto_artista/artistaAdmin/:artistaId/:albumId/cadastrar-musica', component: MusicasComponent },
+  { path: 'cadastrar-artista', component: CadastraArtistaComponent },
+  { path: 'visualizar-artistas-admin/:id/cadastrar-album', component: CadastraAlbumComponent },
+  { path: 'visualizar-artistas-admin', component: VisualizacaoAdminArtistasComponent },
+  { path: 'playlistAdmin', component: PlaylistAdminComponent }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

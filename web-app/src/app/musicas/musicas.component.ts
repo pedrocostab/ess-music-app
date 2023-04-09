@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModule } from '@angular/core';
-
 import { Musica } from './musica';
 import { MusicaService } from './musicas.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,21 +11,33 @@ import { MusicaService } from './musicas.service';
 
 
 export class MusicasComponent implements OnInit {
-   constructor(private musicaService: MusicaService) {}
+  constructor(private cadastraMusicaService: MusicaService, private route: ActivatedRoute) {}
+  artistId: string = '';
+  albumId: string = '';
+  musica: Musica = new Musica();
+  musicas: Musica[] = [];
 
-   musica: Musica = new Musica();
-   musicas: Musica[] = [];
+  ngOnInit(): void {
+    this.artistId = this.route.snapshot.params['artistaId'];
+    this.albumId = this.route.snapshot.params['albumId'];
+  }
 
-   createMusica(c: Musica): void {
-      this.musicaService.create(c)
-      .subscribe(result => {
-            if (result) {
-               this.musicas.push(<Musica> result);
-               this.musica = new Musica();
-            }
-         });
-   }
-
-   ngOnInit(): void {}
-
+  createMusica() {
+    this.cadastraMusicaService.createMusica(this.artistId, this.albumId, this.musica)
+      .subscribe({
+        next: (result: Musica | null) => {
+          if (result) {
+            this.musicas.push(result);
+            this.musica = new Musica();
+          }
+        },
+        error: (error: any) => {
+          console.error(error);
+        },
+        complete: () => {
+          console.log("Fluxo de dados concluído.");
+        }
+      });
+  }
+  
 }

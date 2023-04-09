@@ -11,15 +11,6 @@
       "isactive": true
     },
     {
-      "id": "pcsb",
-      "name": "Pedro Basilio",
-      "password": "pcsb01",
-      "email": "pcsb@cin.ufpe.br",
-      "gender": "",
-      "role": "",
-      "isactive": true
-    },
-    {
       "id": "teste2",
       "name": "teste2",
       "password": "teste2",
@@ -158,6 +149,709 @@
   "profile": [
     {
       "name": "typicode"
+    }
+  ],
+  "artistas": [
+    {
+      "id": 1,
+      "nome": "doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Rihanna",
+      "genero_musical": "Pop/R&B",
+      "url_foto_artista": "https://i.guim.co.uk/img/media/fb824f7321345241e96684bba7678482655f6026/0_0_1576_2362/master/1576.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=22e4c259d5829deb507f667cdaaa45dc"
+    },
+    {
+      "id": 3,
+      "nome": "Taylor Swift",
+      "genero_musical": "Pop/Country",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "nome": "Hot Pink",
+      "ano_lancamento": 2019,
+      "url_foto_album": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/87/Doja_Cat_-_Hot_Pink.png/220px-Doja_Cat_-_Hot_Pink.png",
+      "artistaId": 1
+    },
+    {
+      "id": 2,
+      "nome": "Amala",
+      "ano_lancamento": 2018,
+      "url_foto_album": "https://akamai.sscdn.co/uploadfile/letras/albuns/c/6/2/6/966811601045036-tb_180.jpg",
+      "artistaId": 1
+    },
+    {
+      "id": 3,
+      "nome": "ANTi (Deluxe)",
+      "ano_lancamento": 2016,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "artistaId": 2
+    },
+    {
+      "id": 4,
+      "nome": "Lover",
+      "ano_lancamento": 2019,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg",
+      "artistaId": 3
+    },
+    {
+      "id": 5,
+      "nome": "folklore (deluxe)",
+      "ano_lancamento": 2020,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg",
+      "artistaId": 3
+    },
+    {
+      "id": 6,
+      "nome": "evermore (deluxe)",
+      "ano_lancamento": 2020,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "artistaId": 3
+    },
+    {
+      "id": 7,
+      "nome": "Midnights (3am Edition)",
+      "ano_lancamento": 2022,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "artistaId": 3
+    }
+  ],
+  "musicas": [
+    {
+      "id": 1,
+      "titulo": "Fancy",
+      "albumId": 2,
+      "artistaId": 1,
+      "capaAlbum": "https://akamai.sscdn.co/uploadfile/letras/albuns/c/6/2/6/966811601045036-tb_180.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Go To Town",
+      "albumId": 2,
+      "artistaId": 1,
+      "capaAlbum": "https://akamai.sscdn.co/uploadfile/letras/albuns/c/6/2/6/966811601045036-tb_180.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Say So",
+      "albumId": 1,
+      "artistaId": 1,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/87/Doja_Cat_-_Hot_Pink.png/220px-Doja_Cat_-_Hot_Pink.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Consideration (Feat. SZA)",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 5,
+      "titulo": "James Joint",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 6,
+      "titulo": "Kiss It Better",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 7,
+      "titulo": "Work (Feat. Drake)",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 8,
+      "titulo": "Desperado",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 9,
+      "titulo": "Needed Me",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 10,
+      "titulo": "Yeah, I Said It",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 11,
+      "titulo": "Same Ol' Mistakes",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 12,
+      "titulo": "Never Ending",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 13,
+      "titulo": "Love On The Brain",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 14,
+      "titulo": "Higher",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 15,
+      "titulo": "Close To You",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 16,
+      "titulo": "Goodnight Gotham",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 17,
+      "titulo": "Pose",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 18,
+      "titulo": "Sex With Me",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903"
+    },
+    {
+      "id": 19,
+      "titulo": "I Forgot That You Existed",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 20,
+      "titulo": "Cruel Summer",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 21,
+      "titulo": "Lover",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 22,
+      "titulo": "The Man",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 23,
+      "titulo": "The Archer",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 24,
+      "titulo": "I Think He Knows",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 25,
+      "titulo": "Miss Americana & The Heartbreak Prince",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 26,
+      "titulo": "Paper Rings",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 27,
+      "titulo": "Cornelia Street",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 28,
+      "titulo": "Death By A Thousand Cuts",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 29,
+      "titulo": "London Boy",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 30,
+      "titulo": "Soon You’ll Get Better (Feat. The Chicks)",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 31,
+      "titulo": "False God",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 32,
+      "titulo": "You Need To Calm Down",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 33,
+      "titulo": "Afterglow",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 34,
+      "titulo": "ME! (Feat. Brendon Urie)",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 35,
+      "titulo": "It’s Nice To Have A Friend",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 36,
+      "titulo": "Daylight",
+      "albumId": 4,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d3f083370c371a3ba1cddafaf193c27d.jpg"
+    },
+    {
+      "id": 37,
+      "titulo": "the 1",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 38,
+      "titulo": "cardigan",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 39,
+      "titulo": "the last great american dynasty",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 40,
+      "titulo": "4 exile (Feat. Bon Iver)",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 41,
+      "titulo": "my tears ricochet",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 42,
+      "titulo": "mirrorball",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 43,
+      "titulo": "seven",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 44,
+      "titulo": "august",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 45,
+      "titulo": "this is me trying",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 46,
+      "titulo": "illicit affairs",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 47,
+      "titulo": "invisible string",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 48,
+      "titulo": "mad woman",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 49,
+      "titulo": "epiphany",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 50,
+      "titulo": "betty",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 51,
+      "titulo": "peace",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 52,
+      "titulo": "hoax",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 53,
+      "titulo": "the lakes",
+      "albumId": 5,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg"
+    },
+    {
+      "id": 54,
+      "titulo": "willow",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 55,
+      "titulo": "champagne problems",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 56,
+      "titulo": "gold rush",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 57,
+      "titulo": "‘tis the damn season",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 58,
+      "titulo": "tolerate it",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 59,
+      "titulo": "no body, no crime (Feat. HAIM)",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 60,
+      "titulo": "happiness",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 61,
+      "titulo": "dorothea",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 62,
+      "titulo": "coney island (Feat. The National)",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 63,
+      "titulo": "ivy",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 64,
+      "titulo": "cowboy like me",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 65,
+      "titulo": "long story short",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 66,
+      "titulo": "marjorie",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 67,
+      "titulo": "closure",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 68,
+      "titulo": "evermore (Feat. Bon Iver)",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 69,
+      "titulo": "right where you left me (bonus track)",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 70,
+      "titulo": "it’s time to go (bonus track)",
+      "albumId": 6,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg"
+    },
+    {
+      "id": 71,
+      "titulo": "Lavender Haze",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 72,
+      "titulo": "Maroon",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 73,
+      "titulo": "Anti-Hero",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 74,
+      "titulo": "Snow On The Beach (Feat. Lana Del Rey)",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 75,
+      "titulo": "You're On Your Own, Kid",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 76,
+      "titulo": "Midnight Rain",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 77,
+      "titulo": "Question...?",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 78,
+      "titulo": "Vigilante Shit",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 79,
+      "titulo": "Bejeweled",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 80,
+      "titulo": "Labyrinth",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 81,
+      "titulo": "Karma",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 82,
+      "titulo": "Sweet Nothing",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 83,
+      "titulo": "Mastermind",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 84,
+      "titulo": "The Great War",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 85,
+      "titulo": "Bigger Than The Whole Sky",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 86,
+      "titulo": "Paris",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 87,
+      "titulo": "High Infidelity",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 88,
+      "titulo": "Glitch",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 89,
+      "titulo": "Would've, Could've, Should've",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
+    },
+    {
+      "id": 90,
+      "titulo": "Dear Reader",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg"
     }
   ]
 }

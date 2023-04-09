@@ -1,6 +1,6 @@
 import { Injectable }    from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {map, Observable} from 'rxjs';
+import {map, Observable, switchMap} from 'rxjs';
 import { Musica } from './musica';
 
 @Injectable()
@@ -11,16 +11,35 @@ export class MusicaService {
 
   constructor(private http: HttpClient) { }
 
-    create(musica: Musica): Observable<Musica|null> {
-    return this.http.post(this.taURL + "/musicas",JSON.stringify(musica), {headers: this.headers, observe: "response"})
-      .pipe(map(res => {
-        if (res.status === 201) {return musica;} else {return null;}
-      }));
-  }
+  createMusica(artistaId: string, albumId: string, musica: any): Observable<any | null>{
+    const newMusica = {
+      id: parseInt(musica.id),
+      titulo: musica.titulo,
+      albumId: parseInt(albumId),
+      artistaId: parseInt(artistaId),
+      capaAlbum: ''
+    };
 
+    return this.http.get(this.taURL + '/albums/' + albumId).pipe(
+      switchMap((album: any) => {
+        newMusica.capaAlbum = album.url_foto_album;
+        console.log(newMusica.capaAlbum);
+        return this.http.post(this.taURL + "/musicas", JSON.stringify(newMusica), {headers: this.headers, observe: "response"})
+      }),
+      map(res => {
+        if (res.status === 201) {return musica;} else {return null;}
+      })
+    );
+  }
+  
   getMusicas(): Observable<Musica[]> {
     return this.http.get(this.taURL + "/musicas", {"observe": "body"})
-             .pipe(map(res => res as Musica[]));
+      .pipe(map(res => res as Musica[]));
+  }
+
+  getMusicasByArtista(artistaId: string): Observable<Musica[]> {
+    return this.http.get(this.taURL + '/musicas?artistaId=' + artistaId, {'observe': 'body'})
+      .pipe(map(res => res as Musica[]));
   }
 
   private catch(erro: any): Promise<any>{
