@@ -53,11 +53,12 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/register');
     })
 
-    Given(/^I am logged in with an admin account with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user, password) => {
-        await browser.get(base_front_url);
-        await expect(browser.getTitle()).to.eventually.equal('Dizer');
-        await element(by.buttonText('Cadastro')).click();
-        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/register');
+    Given(/^I am logged in with an admin account with user "([^\"]*)"$/, {timeout: 10000}, async (user : string) => {
+        loginAsUser(user);
+    })
+
+    Given(/^I am logged in with user "([^\"]*)"$/, {timeout: 10000}, async (user : string) => {
+        loginAsUser(user);
     })
 
     When(/^I write "([^\"]*)" in "Usuário" field$/, async (id) => {
