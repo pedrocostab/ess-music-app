@@ -43,6 +43,10 @@ defineSupportCode(function ({ Given, When, Then }) {
         await browser.get("http://localhost:4200/"+page);
     })
 
+    When(/^I click on "([^\"]*)"$/, async (buttonText) => {
+        await $(buttonText).click();
+    });
+
     // Given(/^I cannot see a student with CPF "(\d*)" in the students list$/, async (cpf) => {
     //     await assertElementsWithSameCPF(0,cpf);
     // });
