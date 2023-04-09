@@ -30,6 +30,7 @@ import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/pl
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
+import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
 import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 
 const routes: Routes = [
@@ -53,15 +54,16 @@ const routes: Routes = [
   { path: 'cadastrar-artista', component: CadastraArtistaComponent },
   { path: 'visualizar-artistas-admin/:id/cadastrar-album', component: CadastraAlbumComponent },
   { path: 'visualizar-artistas-admin', component: VisualizacaoAdminArtistasComponent },
-  { path: 'playlistAdmin', component: PlaylistAdminComponent },
+  { path: 'playlistAdmin/:id', component: PlaylistAdminComponent },
   { path: 'editar-musica/:id', component: EditaMusicaComponent },
   { path: 'editar-album/:id', component: EditaAlbumComponent },
   { path: 'playlistsCategoria', component: PlaylistsCategoriaComponent },
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent },
-  {path: 'editar-artista/:id', component: EditaArtistaComponent},
-  {path: 'cadastraPlaylist', component: CadastraPlaylistComponent},
-  {path: 'resultadosPesquisa', component: ResultadosPesquisaComponent}
+  { path: 'editar-playlist/:id', component: EditarPlaylistComponent },
+  { path: 'editar-artista/:id', component: EditaArtistaComponent},
+  { path: 'cadastraPlaylist', component: CadastraPlaylistComponent},
+  { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent}
 ]
 
 

@@ -32,4 +32,14 @@ export class PlaylistService {
       if (res.status === 201) {return playlist;} else {return null;}
     }));
   }
+
+  getPlaylistById(playlistId: string) {
+    return this.http.get(this.taURL + '/playlists/' + playlistId, {'observe': 'body'})
+      .pipe(map(res => res as Playlist));
+  }
+
+  getPlaylists(): Observable<Playlist[]> {
+    return this.http.get(this.taURL + "/playlists", {"observe": "body"})
+      .pipe(map(res => res as Playlist[]));
+  }
 }
