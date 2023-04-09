@@ -7,7 +7,7 @@ Feature: Registration and maintenance of Users (insert, remove, update)
     And users could update theirs information at the "Dizer"
 
 Scenario: Registering new users
-    Given I am on the "register" page
+    Given I am on the "Registro de novo usuário" page
     When I write "pcsb" in "Usuário"
     And I write "Pedro Basilio" in "Nome"
     And I write "pcsb01" in "Senha"
@@ -16,7 +16,7 @@ Scenario: Registering new users
     Then I see a registration completed message
 
 Scenario: Register new User with an invalid email
-    Given I am on the "register" page
+    Given I am on the "Registro de novo usuário" page
     When I write "pcsb" in "Usuário"
     And I write "Pedro Basilio" in "Name"
     And I write "pcsb" in "email"
@@ -27,7 +27,7 @@ Scenario: Register new User with an invalid email
 
 
 Scenario: Register new User with password less than 6 digits
-    Given I am on the "register" page
+    Given I am on the "Registro de novo usuário" page
     When I write "dri" in "Usuário"
     And I write "Drielle" in "Name"
     And I write "drielle@cin.ufpe.br" in "email"
@@ -37,7 +37,7 @@ Scenario: Register new User with password less than 6 digits
     And I see the "Senha" field highlighted
 
 Scenario: Registering new users without user
-    Given I am on the "register" page
+    Given I am on the "Registro de novo usuário" page
     When I write "Pedro Basilio" in "Nome"
     And I write "pcsb01" in "Senha"
     And I write "pcsb@cin.ufpe.br" in "Email"
@@ -46,7 +46,7 @@ Scenario: Registering new users without user
     And I see the "Usuario" field highlighted
 
 Scenario: Registering new users without email
-    Given I am on the "register" page
+    Given I am on the "Registro de novo usuário" page
     When I write "pcsb" in "Usuário"
     And I write "Pedro Basilio" in "Nome"
     And I write "pcsb01" in "Senha"
@@ -55,7 +55,7 @@ Scenario: Registering new users without email
     And I see the "Email" field highlighted
 
 Scenario: Registering new users without password
-    Given I am on the "register" page
+    Given I am on the "Registro de novo usuário" page
     When I write "pcsb" in "Usuário"
     And I write "Pedro Basilio" in "Nome"
     And I write "pcsb@cin.ufpe.br" in "Email"
@@ -64,7 +64,7 @@ Scenario: Registering new users without password
     And I see the "Senha" field highlighted
 
 Scenario: Registering new users without name
-    Given I am on the "register" page
+    Given I am on the "Registro de novo usuário" page
     When I write "pcsb" in "Usuário"
     And I write "pcsb01" in "Senha"
     And I write "pcsb@cin.ufpe.br" in "Email"
@@ -73,7 +73,7 @@ Scenario: Registering new users without name
     And I see the "Nome" field highlighted
 
 Scenario: User logged in wants to change his password
-    Given I am on the "userEdit" page
+    Given I am on the "Editar Perfil" page
     And I am logged in with user "pcsb" and password "pcsb01"
     When I click on "Alterar Senha" option
     And I write "01pcsb" in "Nova Senha"
@@ -81,7 +81,7 @@ Scenario: User logged in wants to change his password
     Then I see a password changed successfully message
 
 Scenario: User logged in wants to change his password to a less than 6 digits password
-    Given I am on the "userEdit" page
+    Given I am on the "Editar Perfil" page
     And I am logged in with user "pcsb" and password "pcsb01"
     When I click on "Alterar Senha" option
     And I write "01pcsb" in "Nova Senha"
@@ -90,7 +90,7 @@ Scenario: User logged in wants to change his password to a less than 6 digits pa
     And I see the "Nova Senha" field highlighted
 
 Scenario: User logged in wants to change his password without password
-    Given I am on the "userEdit" page
+    Given I am on the "Editar Perfil" page
     And I am logged in with user "pcsb" and password "pcsb01"
     When I click on "Alterar Senha" option
     And I click on "Alterar"
@@ -98,7 +98,7 @@ Scenario: User logged in wants to change his password without password
     And I see the "Nova Senha" field highlighted
 
 Scenario: Logged in user wants to delete his account
-    Given I am on the "userEdit" page
+    Given I am on the "Editar Perfil" page
     And I am logged in with email "pcsb@cin.ufpe.br" and password "01pcsb"
     When I click on "Deletar Perfil" option
     And I click "Sim"
@@ -107,7 +107,7 @@ Scenario: Logged in user wants to delete his account
 
 Scenario: Administrator wants to remove a User from the system
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "email" user "pcsb@cin.ufpe.br"
     When I click on the "Remover" button on the "e-mail" user "pcsb@cin.ufpe.br" line
@@ -116,7 +116,7 @@ Scenario: Administrator wants to remove a User from the system
 
 Scenario: Administrator wants to edit a User from the system
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -138,7 +138,7 @@ Scenario: Administrator wants to edit a User from the system
 
 Scenario: Administrator wants to edit a User password to a password less than 6 digits
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -155,7 +155,7 @@ Scenario: Administrator wants to edit a User password to a password less than 6 
 
 Scenario: Administrator wants to edit a User email to a invalid email
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -172,7 +172,7 @@ Scenario: Administrator wants to edit a User email to a invalid email
 
 Scenario: Administrator wants to edit a User information without email
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -188,7 +188,7 @@ Scenario: Administrator wants to edit a User information without email
 
 Scenario: Administrator wants to edit a User information without password
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -204,7 +204,7 @@ Scenario: Administrator wants to edit a User information without password
 
     Scenario: Administrator wants to edit a User information without name
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -220,7 +220,7 @@ Scenario: Administrator wants to edit a User information without password
 
 Scenario: Administrator wants to edit a user role
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -240,7 +240,7 @@ Scenario: Administrator wants to edit a user role
 
 Scenario: Administrator wants to edit a user role without selecting a role
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -253,7 +253,7 @@ Scenario: Administrator wants to edit a user role without selecting a role
 
 Scenario: Administrator wants to add a new User
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "pcsb" at "Usuário" field
@@ -273,7 +273,7 @@ Scenario: Administrator wants to add a new User
 
 Scenario: Administrator wants to add a new User with an invalid email
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "pcsb" at "Usuário" field
@@ -287,7 +287,7 @@ Scenario: Administrator wants to add a new User with an invalid email
 
 Scenario: Administrator wants to add a new User with an invalid password
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "pcsb" at "Usuário" field
@@ -301,7 +301,7 @@ Scenario: Administrator wants to add a new User with an invalid password
 
 Scenario: Administrator wants to add a new User without user field
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "Pedro Costa" at "Nome" field
@@ -314,7 +314,7 @@ Scenario: Administrator wants to add a new User without user field
 
     Scenario: Administrator wants to add a new User without email
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "pcsb" at "Usuário" field
@@ -327,7 +327,7 @@ Scenario: Administrator wants to add a new User without user field
 
     Scenario: Administrator wants to add a new User without password
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "pcsb" at "Usuário" field
@@ -340,7 +340,7 @@ Scenario: Administrator wants to add a new User without user field
 
     Scenario: Administrator wants to add a new User without name
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "pcsb" at "Usuário" field
@@ -353,7 +353,7 @@ Scenario: Administrator wants to add a new User without user field
 
     Scenario: Administrator wants to add a new User without role
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
-    And I am on the "lista-usuarios" page
+    And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
     When I click on the "Adicionar Usuario" button
     And I write "pcsb" at "Usuário" field
