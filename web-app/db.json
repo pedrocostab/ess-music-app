@@ -294,16 +294,15 @@
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
-      "tituloAlbum": "Hot Pink",
-      "artistaNome": "Doja cat AAAAAAAA"
+      "artistaNome": "Doja cat AAAAAAAA",
+      "tituloAlbum": "Hot Pink"
     }
   ],
   "playlists": [
     {
       "titulo": "Treino",
       "privacidade": "Pública",
-      "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
+      "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
       "id": 1
     }
   ]

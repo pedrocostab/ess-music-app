@@ -32,6 +32,7 @@ import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
 import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
+import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-playlist.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -63,7 +64,8 @@ const routes: Routes = [
   { path: 'editar-playlist/:id', component: EditarPlaylistComponent },
   { path: 'editar-artista/:id', component: EditaArtistaComponent},
   { path: 'cadastraPlaylist', component: CadastraPlaylistComponent},
-  { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent}
+  { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent},
+  {path: 'selecionarPlaylist', component: SelecionarPlaylistComponent}
 ]
 
 
