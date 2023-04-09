@@ -10,7 +10,7 @@
     </div>
     <ul>
         <li>Editar Informações</li>
-      <li><a routerLink="/cadastrar-musicas" ><button>Cadastrar Álbuns/EPs</button></a></li>
+      <li><a routerLink="/cadastrar-musicas" ><button>Cadastrar Álbuns</button></a></li>
     </ul>
     <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Músicas</p>
     <div class="tableMusicas">
@@ -34,6 +34,19 @@
               </td>
               <td>{{artistaNome}}</td>
               <td>{{musica.titulo}}</td>
+              <td class="opcoes-header">
+                <div class="opcoes-wrapper">
+                  <div class="dropdown">
+                    <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                    <div class="dropdown-content">
+                      <a href="#"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</a>
+                      <a href="#"><span class="material-icons">edit_note</span>Editar informações</a>
+                      <a href="#"><span class="material-icons">playlist_remove</span>Remover música</a>
+                      <a href="#"><span class="material-icons">album</span>Ir para o álbum</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
           </ng-container>          
         </tbody>        
@@ -44,7 +57,7 @@
             Mostrar Mais
         </li>
       </ul>
-      <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Álbuns / Eps</p>
+      <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Álbuns</p>
       <table class="tabela-albuns" id="tabelaAlbum">
         <tr>
           <td *ngFor="let album of albums"><a [routerLink]="[artistaId, album.id, 'cadastrar-musica']"><img src="{{album.url_foto_album}}"></a><br>{{album.nome}}<br><span class="ano-lancamento">{{album.ano_lancamento}}</span></td>
