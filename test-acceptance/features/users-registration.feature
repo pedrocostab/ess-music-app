@@ -77,16 +77,16 @@ Scenario: Registering new users without name
     And I see the "Nome" field highlighted
 
 Scenario: User logged in wants to change his password
-    Given I am on the "Editar Perfil" page
-    And I am logged in with user "pcsb" and password "pcsb01"
-    When I click on "Alterar Senha" option
+    Given I am logged in with user "pcsb"
+    And I am on the "Editar Perfil" page
+    When I click on "Alterar Senha"
     And I write "01pcsb" in "Nova Senha"
     And I click on "Alterar"
     Then I see a password changed successfully message
 
 Scenario: User logged in wants to change his password to a less than 6 digits password
-    Given I am on the "Editar Perfil" page
-    And I am logged in with user "pcsb" and password "pcsb01"
+    Given I am logged in with user "pcsb"
+    And I am on the "Editar Perfil" page
     When I click on "Alterar Senha" option
     And I write "01pcsb" in "Nova Senha"
     And I click on "Alterar"
@@ -94,8 +94,8 @@ Scenario: User logged in wants to change his password to a less than 6 digits pa
     And I see the "Nova Senha" field highlighted
 
 Scenario: User logged in wants to change his password without password
-    Given I am on the "Editar Perfil" page
-    And I am logged in with user "pcsb" and password "pcsb01"
+    Given I am logged in with user "pcsb"
+    And I am on the "Editar Perfil" page
     When I click on "Alterar Senha" option
     And I write nothing in "Nova Senha" field
     And I click on "Alterar"
@@ -103,15 +103,15 @@ Scenario: User logged in wants to change his password without password
     And I see the "Nova Senha" field highlighted
 
 Scenario: Logged in user wants to delete his account
-    Given I am on the "Editar Perfil" page
-    And I am logged in with user "pcsb" and password "pcsb01"
-    When I click on "Deletar Perfil" option
+    Given I am logged in with user "pcsb"
+    And I am on the "Editar Perfil" page
+    When I click on "Deletar Perfil"
     And I click "Sim"
     Then I get a message that the user "pcsb@cin.ufpe.br" has been deleted
     And I am logged out on the "Pagina Inicial" page
 
 Scenario: Administrator wants to remove a User from the system
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "email" user "pcsb@cin.ufpe.br"
@@ -120,7 +120,7 @@ Scenario: Administrator wants to remove a User from the system
     Then I check that the "Email" user "pcsb@cin.ufpe.br" is no longer on the list of system users
 
 Scenario: Administrator wants to edit a User from the system
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -142,7 +142,7 @@ Scenario: Administrator wants to edit a User from the system
     And I see the "Ativo" user field checked
 
 Scenario: Administrator wants to edit a User password to a password less than 6 digits
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -159,7 +159,7 @@ Scenario: Administrator wants to edit a User password to a password less than 6 
     And I see the "Senha" field highlighted
 
 Scenario: Administrator wants to edit a User email to a invalid email
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -176,7 +176,7 @@ Scenario: Administrator wants to edit a User email to a invalid email
     And I see the "Email" field highlighted
 
 Scenario: Administrator wants to edit a User information without email
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -193,7 +193,7 @@ Scenario: Administrator wants to edit a User information without email
     And I see the "Email" field highlighted
 
 Scenario: Administrator wants to edit a User information without password
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -210,7 +210,7 @@ Scenario: Administrator wants to edit a User information without password
     And I see the "Senha" field highlighted
 
     Scenario: Administrator wants to edit a User information without name
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -227,7 +227,7 @@ Scenario: Administrator wants to edit a User information without password
     And I see the "Nome" field highlighted
 
 Scenario: Administrator wants to edit a user role
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -247,7 +247,7 @@ Scenario: Administrator wants to edit a user role
     And I see the "Ativo" user field checked
 
 Scenario: Administrator wants to edit a user role without selecting a role
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "Usuario" user "pcsb"
@@ -261,10 +261,10 @@ Scenario: Administrator wants to edit a user role without selecting a role
     Then I get a Error message "Por favor, selecione um cargo!"
 
 Scenario: Administrator wants to add a new User
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario" 
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -281,10 +281,10 @@ Scenario: Administrator wants to add a new User
     And I see the "Ativo" user field checked
 
 Scenario: Administrator wants to add a new User with an invalid email
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -295,10 +295,10 @@ Scenario: Administrator wants to add a new User with an invalid email
     Then I see a error message "Por favor, insira um dado válido!"
 
 Scenario: Administrator wants to add a new User with an invalid password
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb0" in "Senha" field
@@ -309,10 +309,10 @@ Scenario: Administrator wants to add a new User with an invalid password
     Then I see a error message "Por favor, insira um dado válido!"
 
 Scenario: Administrator wants to add a new User without user field
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -323,10 +323,10 @@ Scenario: Administrator wants to add a new User without user field
     Then I see a error message "Por favor, insira um dado válido!"
 
     Scenario: Administrator wants to add a new User without email
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -337,10 +337,10 @@ Scenario: Administrator wants to add a new User without user field
     Then I see a error message "Por favor, insira um dado válido!"
 
     Scenario: Administrator wants to add a new User without password
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -351,10 +351,10 @@ Scenario: Administrator wants to add a new User without user field
     Then I see a error message "Por favor, insira um dado válido!"
 
     Scenario: Administrator wants to add a new User without name
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "pcsb02" in "Senha" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -365,10 +365,10 @@ Scenario: Administrator wants to add a new User without user field
     Then I see a error message "Por favor, insira um dado válido!"
 
     Scenario: Administrator wants to add a new User without role
-    Given I am logged in with an admin account with user "admin" and password "ad12ad"
+    Given I am logged in with an admin account with user "admin"
     And I'm on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on the "Adicionar Usuario" button
+    When I click on "Adicionar Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field

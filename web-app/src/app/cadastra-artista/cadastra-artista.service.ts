@@ -12,6 +12,7 @@ export class CadastraArtistaService {
   private headers = new HttpHeaders({'Content-Type': 'application/json'});
   private taURL = 'http://localhost:3000';
 
+
   constructor(private http: HttpClient) { }
 
     create(artista: Artista): Observable<Artista|null> {
@@ -26,11 +27,9 @@ export class CadastraArtistaService {
       .pipe(map(res => res as Artista[]));
   }
 
-  getArtistaById(artista: Artista): Observable<Artista|null> {
-    return this.http.get(this.taURL + '/artistas/' + artista.id)
-      .pipe(map(res => {
-        if (res === 200) { return artista} else {return null}
-      }))
+  getArtistaById(artistaId: String): Observable<Artista> {
+    return this.http.get(this.taURL + '/artistas/' + artistaId, {"observe": "body"})
+      .pipe(map(res => res as Artista));
   }
 
   deleteArtistaById(artistaId: string) {
