@@ -28,6 +28,7 @@ import { EditaAlbumComponent } from './edita-album/edita-album.component';
 import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
+import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 
 const routes: Routes = [
@@ -57,10 +58,10 @@ const routes: Routes = [
   { path: 'playlistsCategoria', component: PlaylistsCategoriaComponent },
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent },
+  {path: 'editar-artista/:id', component: EditaArtistaComponent},
   {path: 'cadastraPlaylist', component: CadastraPlaylistComponent}
 
 
-]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
