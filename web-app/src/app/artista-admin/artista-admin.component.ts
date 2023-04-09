@@ -4,6 +4,7 @@ import { CadastraAlbumService } from '../cadastra-album/cadastra-album.service';
 import { MusicaService } from '../musicas/musicas.service';
 import { Album } from '../album/album';
 import { Musica } from '../musicas/musica';
+import { CadastraArtistaService } from '../cadastra-artista/cadastra-artista.service';
 
 @Component({
   selector: 'app-artista-admin',
@@ -11,7 +12,7 @@ import { Musica } from '../musicas/musica';
   styleUrls: ['./artista-admin.component.css']
 })
 export class ArtistaAdminComponent implements OnInit {
-  constructor(private route: ActivatedRoute, private cadastraAlbum: CadastraAlbumService, private musicaService: MusicaService, private router: Router) {}
+  constructor(private route: ActivatedRoute, private cadastraAlbum: CadastraAlbumService, private musicaService: MusicaService, private router: Router, private artistaService: CadastraArtistaService) {}
   artistaId: string = '';
   artistaNome: string = '';
   artistaGeneroMusical: string = '';
@@ -47,5 +48,11 @@ export class ArtistaAdminComponent implements OnInit {
   removerMusica(musicaId: Number) {
     this.musicaService.deleteMusicaById(String(musicaId))
     window.location.reload();
+  }
+  
+  deletarArtista() {
+    this.artistaService.deleteArtistaById(this.artistaId).subscribe(() => {
+      this.router.navigate(['visualizar-artistas-admin']);
+    });
   }
 }

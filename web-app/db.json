@@ -65,12 +65,6 @@
   ],
   "artistas": [
     {
-      "id": 1,
-      "nome": "doja cat",
-      "genero_musical": "hip hop",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
-    },
-    {
       "id": 2,
       "nome": "Rihanna",
       "genero_musical": "Pop/R&B",

@@ -40,4 +40,8 @@ export class MusicasComponent implements OnInit {
       });
   }
   
+  cancelCreateMusica() {
+    window.history.back();
+  }
+  
 }
