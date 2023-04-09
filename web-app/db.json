@@ -4,7 +4,7 @@
     {
       "id": "admin@dizer.com",
       "name": "Admin",
-      "password": "admin",
+      "password": "$2b$10$nywPnAWVfamTzXgZmhhr/ei0YjIbh1kEb3DZ7MIvR6l0Rb1.oTqVq",
       "email": "admin@dizer.com",
       "gender": "male",
       "role": "admin",
@@ -13,7 +13,7 @@
     {
       "id": "teste2",
       "name": "teste2",
-      "password": "teste2",
+      "password": "$2b$10$SEsR1HmYU7qDiBzTl9S07uP6e7gKHRzUogr.Sz1RZkTM/8CfuvVvS",
       "email": "teste@teste",
       "gender": "",
       "role": "usuario",
@@ -22,7 +22,7 @@
     {
       "id": "aaa",
       "name": "aaa",
-      "password": "aaaaaa",
+      "password": "$2b$10$lfsboDI62QWvLrNAVIVg..7KvrxnB9UF2fIA/OM1GJHv7MGiYMv46",
       "email": "aaa@aaa.com",
       "gender": "",
       "role": "",
@@ -30,14 +30,14 @@
     },
     {
       "name": "bbb",
-      "password": "bbbbbb",
+      "password": "$2b$10$r75YkJ1EfRKlNyYxwTxUuuOHfN7l01wRbObi8jwuXIrrhPQTtH1c2",
       "email": "bbb@bbb.com",
       "isactive": true,
       "id": "2dlp1m7"
     },
     {
       "name": "bbb",
-      "password": "bbbbbb",
+      "password": "$2b$10$r75YkJ1EfRKlNyYxwTxUuuOHfN7l01wRbObi8jwuXIrrhPQTtH1c2",
       "email": "bbb@bbb.com",
       "isactive": true,
       "id": "4hd2QFg"
@@ -45,7 +45,7 @@
     {
       "id": "bbb",
       "name": "bbb",
-      "password": "bbbbbb",
+      "password": "$2b$10$r75YkJ1EfRKlNyYxwTxUuuOHfN7l01wRbObi8jwuXIrrhPQTtH1c2",
       "email": "bbb@bbb.com",
       "gender": "",
       "role": "",
@@ -54,7 +54,7 @@
     {
       "id": "aeiou",
       "name": "aeiou",
-      "password": "123456",
+      "password": "$2b$10$Afzj2ABAxzMR.dZno97JXeax0nsXe5ACAxtXk6Lt19NM9rsljj9Va",
       "email": "aeiou@aeiou.com",
       "role": "",
       "isactive": true
@@ -62,7 +62,7 @@
     {
       "id": "aaaa",
       "name": "aaa",
-      "password": "aaaaaa",
+      "password": "$2b$10$lfsboDI62QWvLrNAVIVg..7KvrxnB9UF2fIA/OM1GJHv7MGiYMv46",
       "email": "aaa@aaa.com",
       "role": "user",
       "isactive": true
@@ -70,7 +70,7 @@
     {
       "id": "aaab",
       "name": "aaa",
-      "password": "aaaaaa",
+      "password": "$2b$10$lfsboDI62QWvLrNAVIVg..7KvrxnB9UF2fIA/OM1GJHv7MGiYMv46",
       "email": "aaa@aaa.com",
       "role": "user",
       "isactive": true
@@ -78,7 +78,7 @@
     {
       "id": "lucas",
       "name": "lucas",
-      "password": "123456",
+      "password": "$2b$10$Afzj2ABAxzMR.dZno97JXeax0nsXe5ACAxtXk6Lt19NM9rsljj9Va",
       "email": "bbo@bbb.com",
       "role": "user",
       "isactive": true
@@ -86,7 +86,7 @@
     {
       "id": "bibi",
       "name": "bibi",
-      "password": "123123",
+      "password": "$2b$10$l0qtH4eE/.IO2VJRGvAYe.p0Ggfq9ykC7a4LnUxgvBjW5RHSObhWO",
       "email": "bibi@bibi.com",
       "role": "user",
       "isactive": true
@@ -104,6 +104,14 @@
       "name": "blau",
       "password": "$2a$10$nCFfKw/9gJLEUGBr5LViFu/K/Wyzm1H5VPpHeS5zFoyET3kLmDv/a",
       "email": "blau@blau.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "romulodaniell",
+      "name": "Romulo Daniell",
+      "password": "$2a$10$ZF2gfbON6droqPBkjuvquepUtjD51nSOG5R0UwC9COkx7KcSuAE6G",
+      "email": "romulodaniell@dizer.com",
       "role": "user",
       "isactive": true
     }
@@ -153,10 +161,10 @@
   ],
   "artistas": [
     {
-      "id": 2,
       "nome": "Rihanna",
       "genero_musical": "Pop/R&B",
-      "url_foto_artista": "https://i.guim.co.uk/img/media/fb824f7321345241e96684bba7678482655f6026/0_0_1576_2362/master/1576.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=22e4c259d5829deb507f667cdaaa45dc"
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/fcb5c35b5ab6fe90565b8647b607ed99.jpg#fcb5c35b5ab6fe90565b8647b607ed99",
+      "id": 2
     },
     {
       "id": 3,
@@ -165,24 +173,18 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
     },
     {
-      "id": 4,
-      "nome": "Doja cat",
-      "genero_musical": "hip hop",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
-    },
-    {
-      "id": 5,
-      "nome": "Arctic Monkeys",
-      "genero_musical": "Indie Rock",
-      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/a9788abf3dd8ebd18e55ec6809c8995c.jpg#a9788abf3dd8ebd18e55ec6809c8995c"
+      "nome": "Doja Cat",
+      "genero_musical": "hip hop / rap",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
+      "id": 4
     }
   ],
   "albums": [
     {
       "nome": "Planet Her (Deluxe)",
       "artistaId": 4,
-      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "artistaNome": "Doja cat",
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "artistaNome": "Doja Cat",
       "ano_lancamento": "2021",
       "id": 1
     },
@@ -190,46 +192,62 @@
       "nome": "Hot Pink",
       "artistaId": 4,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
+      "artistaNome": "Doja Cat",
       "ano_lancamento": "2019",
       "id": 2
     },
     {
       "id": 3,
-      "nome": "The Car",
-      "ano_lancamento": 2022,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "artistaId": 5,
-      "artistaNome": "Arctic Monkeys"
+      "nome": "ANTi (Deluxe)",
+      "ano_lancamento": 2016,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
     },
     {
       "id": 4,
-      "nome": "Tranquility Base Hotel + Casino",
-      "ano_lancamento": 2018,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "artistaId": 5,
-      "artistaNome": "Arctic Monkeys"
+      "nome": "Unapologetic (Deluxe)",
+      "ano_lancamento": 2012,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
     },
     {
       "id": 5,
-      "nome": "AM",
-      "ano_lancamento": 2013,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "artistaId": 5,
-      "artistaNome": "Arctic Monkeys"
+      "nome": "Talk That Talk (Deluxe)",
+      "ano_lancamento": 2011,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
     },
     {
       "id": 6,
-      "nome": "Suck It and See",
-      "ano_lancamento": 2011,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "artistaId": 5,
-      "artistaNome": "Arctic Monkeys"
+      "nome": "Loud",
+      "ano_lancamento": 2010,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 7,
+      "nome": "Midnights (3am Edition)",
+      "ano_lancamento": 2022,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "artistaId": 3,
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 8,
+      "nome": "evermore (deluxe version)",
+      "ano_lancamento": 2021,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "artistaId": 3,
+      "artistaNome": "Taylor Swift"
     }
   ],
   "musicas": [
     {
-      "titulo": "Go To Town",
+      "titulo": " Woman",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -238,7 +256,7 @@
       "id": 1
     },
     {
-      "titulo": "Roll With Us",
+      "titulo": "Naked",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -247,7 +265,7 @@
       "id": 2
     },
     {
-      "titulo": "Only girl",
+      "titulo": "Payday (Feat. Young Thug)",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -256,535 +274,1102 @@
       "id": 3
     },
     {
-      "titulo": "Fancy",
+      "titulo": "Get Into It (Yuh)",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Amala",
+      "tituloAlbum": "Planet Her (Deluxe)",
       "id": 4
     },
     {
       "titulo": "Cyber Sex",
       "albumId": 2,
       "artistaId": 4,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
+      "capaAlbum": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "artistaNome": "Doja cat AAAAAAAA",
       "tituloAlbum": "Hot Pink",
       "id": 5
     },
     {
+      "titulo": "Consideration (Feat. SZA)",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "artistaNome": "Rihanna",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "titulo": "James Joint",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 8,
+      "titulo": "Kiss It Better",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 9,
+      "titulo": "Work (Feat. Drake)",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 10,
+      "titulo": "Desperado",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 11,
+      "titulo": "Needed Me",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 12,
+      "titulo": "Yeah, I Said It",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 13,
+      "titulo": "Same Ol' Mistakes",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 14,
+      "titulo": "Never Ending",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 15,
+      "titulo": "Love On The Brain",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 16,
+      "titulo": "Higher",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 17,
+      "titulo": "Close To You",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 18,
+      "titulo": "Goodnight Gotham",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 19,
+      "titulo": "Pose",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 20,
+      "titulo": "Sex With Me",
+      "albumId": 3,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "tituloAlbum": "ANTi (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 21,
+      "titulo": "Phresh Out the Runway",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 22,
+      "titulo": " Diamonds",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 23,
+      "titulo": "Numb (feat. Eminem)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 24,
+      "titulo": "Pour It Up",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 25,
+      "titulo": "Loveeeeeee Song (feat. Future)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 26,
+      "titulo": "Jump",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 27,
+      "titulo": "Right Now (feat. David Guetta)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 28,
+      "titulo": "What Now",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 29,
+      "titulo": "Stay (feat. Mikky Ekko)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 30,
+      "titulo": "Nobody's Business (feat. Chris Brown)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 31,
+      "titulo": "Love Without Tragedy / Mother Mary",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 32,
+      "titulo": "Get It Over With",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 33,
+      "titulo": "No Love Allowed",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 34,
+      "titulo": "Lost in Paradise",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 35,
+      "titulo": "Half Of Me (Explicit)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 36,
+      "titulo": "Diamonds (Dave Aude 100 Extended Mix)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 37,
+      "titulo": "Diamonds (Gregor Salto Downtempo Remix)",
+      "albumId": 4,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "tituloAlbum": "Unapologetic (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 38,
+      "titulo": "You Da One",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 39,
+      "titulo": "Where Have You Been",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 40,
+      "titulo": " We Found Love (feat. Calvin Harris)",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 41,
+      "titulo": " Talk That Talk (feat. Jay-Z) ",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 42,
+      "titulo": "Cockiness (Love It)",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 43,
+      "titulo": " Birthday Cake",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 44,
+      "titulo": "We All Want Love",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 45,
+      "titulo": "Drunk on Love",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 46,
+      "titulo": "Roc Me Out",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 47,
+      "titulo": "Watch n' Learn",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 48,
+      "titulo": "Farewell",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 49,
+      "titulo": "Red Lipstick",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 50,
+      "titulo": "Do Ya Thang",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 51,
+      "titulo": "Fool in Love",
+      "albumId": 5,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "tituloAlbum": "Talk That Talk (Deluxe)",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 52,
+      "titulo": "S&M",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 53,
+      "titulo": "What's My Name? (feat. Drake)",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 54,
+      "titulo": "Cheers (Drink to That)",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 55,
+      "titulo": "Fading",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 56,
+      "titulo": "Only Girl (In the World)",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 57,
+      "titulo": "California King Bed",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 58,
+      "titulo": "Man Down",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 59,
+      "titulo": "Raining Men (feat. Nicki Minaj)",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 60,
+      "titulo": "Complicated",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 61,
+      "titulo": "Skin",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 62,
+      "titulo": "Love the Way You Lie, Pt. II (feat. Eminem)",
+      "albumId": 6,
+      "artistaId": 2,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "tituloAlbum": "Loud",
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 63,
       "titulo": "Won't Bite (Feat. Smino)",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 6
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 64,
       "titulo": "Rules",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 7
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 65,
       "titulo": "Bottom Bitch",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 8
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 66,
       "titulo": "Say So",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 9
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 67,
       "titulo": "Like That (Feat. Gucci Mane)",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 10
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 68,
       "titulo": "Talk Dirty",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 11
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 69,
       "titulo": " Addiction",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 12
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 70,
       "titulo": "Streets",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 13
+      "artistaNome": "Doja Cat"
     },
     {
-      "titulo": "Shine",
+      "id": 71,
+      "titulo": " Shine",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 14
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 72,
       "titulo": "Better Than Me",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 15
+      "artistaNome": "Doja Cat"
     },
     {
+      "id": 73,
       "titulo": "Juicy (Feat. Tyga)",
       "albumId": 2,
       "artistaId": 4,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 16
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 17,
-      "titulo": " There’d Better Be a Mirrorball",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 74,
+      "titulo": " Need to Know",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 18,
-      "titulo": " I Ain’t Quite Where I Think I Am",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 75,
+      "titulo": "I Don't Do Drugs (Feat. Ariana Grande)",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 19,
-      "titulo": "Sculptures of Anything Goes",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 76,
+      "titulo": "Love to Dream",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 20,
-      "titulo": "Jet Skis on the Moat",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 77,
+      "titulo": " You Right (Feat. The Weeknd)",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 21,
-      "titulo": "Body Paint",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 78,
+      "titulo": "Been Like This",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 22,
-      "titulo": "The Car",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 79,
+      "titulo": "Options (Feat. JID)",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 23,
-      "titulo": "Big Ideas",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 80,
+      "titulo": "Ain't Shit",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 24,
-      "titulo": "Hello You",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 81,
+      "titulo": "Imagine",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 25,
-      "titulo": "Mr Schwartz",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 82,
+      "titulo": " Alone",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 26,
-      "titulo": "Perfect Sense",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 83,
+      "titulo": "Kiss Me More (Feat. SZA)",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 27,
-      "titulo": "Star Treatment",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 84,
+      "titulo": "You Right (Extended) (Feat. The Weeknd)",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 28,
-      "titulo": "One Point Perspective",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 85,
+      "titulo": "Up and Down",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 29,
-      "titulo": " American Sports",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 86,
+      "titulo": " Tonight (Feat. Eve)",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 30,
-      "titulo": "Tranquility Base Hotel + Casino",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 87,
+      "titulo": "Ride",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 31,
-      "titulo": "Golden Trunks",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 88,
+      "titulo": "Why Why (Feat. Guna)",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "artistaNome": "Doja Cat"
     },
     {
-      "id": 32,
-      "titulo": "Four Out of Five",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 89,
+      "titulo": "Lavender Haze",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 33,
-      "titulo": " The World's First Ever Monster Truck Front Flip",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 90,
+      "titulo": "Maroon",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 34,
-      "titulo": " Science Fiction",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 91,
+      "titulo": "Anti-Hero",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 35,
-      "titulo": "She Looks Like Fun",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 92,
+      "titulo": "Snow On The Beach (feat. Lana Del Rey)",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 36,
-      "titulo": "Batphone",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 93,
+      "titulo": "You're on Your Own, Kid",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 37,
-      "titulo": "The Ultracheese",
-      "albumId": 4,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
-      "tituloAlbum": "Tranquility Base Hotel + Casino",
-      "artistaNome": "Arctic Monkeys"
+      "id": 94,
+      "titulo": "Midnight Rain",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 38,
-      "titulo": "Do I Wanna Know?",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 95,
+      "titulo": "Question...?",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 39,
-      "titulo": " R U Mine?",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 96,
+      "titulo": "Vigilante Shit",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 40,
-      "titulo": "One for the Road",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 97,
+      "titulo": "Bejeweled",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 41,
-      "titulo": "Arabella",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 98,
+      "titulo": "Labyrinth",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 42,
-      "titulo": "I Want It All",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 99,
+      "titulo": "Karma",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 43,
-      "titulo": "No. 1 Party Anthem",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 100,
+      "titulo": "Sweet Nothing",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 44,
-      "titulo": "Mad Sounds",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 101,
+      "titulo": "Mastermind",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 45,
-      "titulo": "Fireside",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 102,
+      "titulo": "The Great War",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 46,
-      "titulo": " Why'd You Only Call Me When You're High?",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 103,
+      "titulo": "Bigger Than the Whole Sky",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 47,
-      "titulo": "Snap Out of It",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 104,
+      "titulo": "Paris",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 48,
-      "titulo": "Knee Socks",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 105,
+      "titulo": "High Infidelity",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 49,
-      "titulo": "I Wanna Be Yours",
-      "albumId": 5,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
+      "id": 106,
+      "titulo": "Glitch",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 50,
-      "titulo": "She's Thunderstorms",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 107,
+      "titulo": "Would've, Could've, Should've",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 51,
-      "titulo": " Black Treacle",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 108,
+      "titulo": "Dear Reader",
+      "albumId": 7,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "tituloAlbum": "Midnights (3am Edition)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 52,
-      "titulo": "Brick by Brick",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 109,
+      "titulo": "willow",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 53,
-      "titulo": "The Hellcat Spangled Shalalala",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 110,
+      "titulo": "champagne problems",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 54,
-      "titulo": "Don't Sit Down 'Cause I've Moved Your Chair",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 111,
+      "titulo": "gold rush",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 55,
-      "titulo": "Library Pictures",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 112,
+      "titulo": "'tis the damn season",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 56,
-      "titulo": "All My Own Stunts",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 113,
+      "titulo": "tolerate it",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 57,
-      "titulo": "Reckless Serenade",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 114,
+      "titulo": "no body, no crime (feat. HAIM)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 58,
-      "titulo": " Piledriver Waltz",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 115,
+      "titulo": "happiness",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 59,
-      "titulo": "Love Is a Laserquest",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 116,
+      "titulo": "dorothea",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 60,
-      "titulo": "Suck It and See",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 117,
+      "titulo": " coney island (feat. The National)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 61,
-      "titulo": " That's Where You're Wrong",
-      "albumId": 6,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "tituloAlbum": "Suck It and See",
-      "artistaNome": "Arctic Monkeys"
+      "id": 118,
+      "titulo": "ivy",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     },
     {
-      "id": 62,
-      "titulo": " That's Where You're Wrong",
-      "albumId": 3,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
+      "id": 119,
+      "titulo": "cowboy like me",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 120,
+      "titulo": "long story short",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 121,
+      "titulo": "marjorie",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 122,
+      "titulo": "closure",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 123,
+      "titulo": "evermore (feat. Bon Iver)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 124,
+      "titulo": "right where you left me  (bonus track)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 125,
+      "titulo": "it's time to go (bonus track)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     }
   ]
 }

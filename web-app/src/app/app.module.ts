@@ -48,6 +48,7 @@ import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/pl
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
+import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -84,8 +85,9 @@ import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
     PlaylistsCategoriaComponent,
     PlaylistsCategoriaAdminComponent,
     BibliotecaUsuarioComponent,
-    CadastraPlaylistComponent
-    EditaArtistaComponent
+    CadastraPlaylistComponent,
+    EditaArtistaComponent,
+    ResultadosPesquisaComponent
 
   ],
   imports: [

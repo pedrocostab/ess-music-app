@@ -1,0 +1,141 @@
+    ul {
+    list-style: none;
+    padding: 8px 0;
+  }
+  
+  li {
+    display: inline-block;
+    width: 205.99px;
+    padding: 8px 0;
+    background-color: rgba(137, 7, 198, 1);
+    border-radius: 12px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      color: white;
+      cursor: pointer;
+    } 
+
+    .texto-inicial{
+        margin-top: 20px;
+    }
+  
+  .container {
+    top: 150px;
+    margin-left: 10px;
+    text-transform: capitalize;
+  }
+  
+  .paragrafo {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .tableGeral{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  table {
+    width: 80%;
+    border-spacing: 0px;
+  }
+  tbody{
+    border-radius: 10px;
+  }
+  td {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  tr.cor-diferente {
+    background-color: rgba(76, 76, 79, 1);
+  }
+  
+  tbody{
+    background-color: rgba(38, 38, 40, 0.87);
+  }
+  
+  tr{
+    height: 1rem;
+  }
+  
+  td img{
+    height: 3rem;
+    width: 3rem;
+    
+  }
+  
+  td.album-capa {
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  td.album-capa img{
+    border-radius: 50%;
+  }
+  
+  .opcoes-header {
+    position: relative;
+  }
+  
+  .opcoes-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+    background-color: rgba(38, 38, 40, 0.87);
+    width: 205.99px;
+    padding: 8px 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+     
+     
+  
+    
+   
