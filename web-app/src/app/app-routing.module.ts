@@ -30,18 +30,19 @@ import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/pl
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
+import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'lista-usuarios', component: UserlistingComponent, canActivate: [AuthGuard] },
-  { path: 'lista-musicas', component: ListaMusicasComponent, canActivate: [AuthGuard] },
-  { path: 'initial-page', component: InitialPageComponent, canActivate: [AuthGuard] },
-  { path: 'userAdmin', component: UserAdminComponent, canActivate: [AuthGuard] },
-  { path: 'user', component: UserComponent, canActivate: [AuthGuard] },
-  { path: 'artista', component: ArtistaComponent, canActivate: [AuthGuard] },
-  { path: 'userEdit', component: UserEditComponent, canActivate: [AuthGuard] },
+  { path: 'lista-usuarios', component: UserlistingComponent},
+  { path: 'lista-musicas', component: ListaMusicasComponent},
+  { path: 'initial-page', component: InitialPageComponent},
+  { path: 'userAdmin', component: UserAdminComponent},
+  { path: 'user', component: UserComponent},
+  { path: 'artista', component: ArtistaComponent},
+  { path: 'userEdit', component: UserEditComponent},
   { path: 'playlistUser', component: PlaylistUserComponent },
   { path: 'playlistCategoria', component: PlaylistCategoriaComponent },
   { path: 'playlistSeguida', component: PlaylistSeguidaComponent },
@@ -59,7 +60,8 @@ const routes: Routes = [
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent },
   {path: 'editar-artista/:id', component: EditaArtistaComponent},
-  {path: 'cadastraPlaylist', component: CadastraPlaylistComponent}
+  {path: 'cadastraPlaylist', component: CadastraPlaylistComponent},
+  {path: 'resultadosPesquisa', component: ResultadosPesquisaComponent}
 ]
 
 
