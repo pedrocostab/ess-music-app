@@ -12,8 +12,8 @@ import { ToastrService } from 'ngx-toastr';
 export class UpdatepopupComponent implements OnInit {
 
   constructor(private builder: FormBuilder, private service: AuthService,
-    @Inject(MAT_DIALOG_DATA) public data: any, private toastr:ToastrService,
-    private dialog:MatDialogRef<UpdatepopupComponent>) {
+    @Inject(MAT_DIALOG_DATA) public data: any, private toastr: ToastrService,
+    private dialog: MatDialogRef<UpdatepopupComponent>) {
 
   }
 
@@ -23,11 +23,13 @@ export class UpdatepopupComponent implements OnInit {
       this.rolelist = res;
     })
     if (this.data.usercode != null && this.data.usercode != '') {
-      this.service.Getbycode(this.data.usercode).subscribe(res => {
+      this.service.GetbyCode(this.data.usercode).subscribe(res => {
         this.editdata = res;
-        this.registerform.setValue({id:this.editdata.id, name:this.editdata.name, email:this.editdata.email,
-        password:this.editdata.password, role:this.editdata.role, gender:this.editdata.gender,
-        isactive:this.editdata.isactive})
+        this.registerform.setValue({
+          id: this.editdata.id, name: this.editdata.name, email: this.editdata.email,
+          password: this.editdata.password, role: this.editdata.role, gender: this.editdata.gender,
+          isactive: this.editdata.isactive
+        })
       })
     }
   }
@@ -44,12 +46,12 @@ export class UpdatepopupComponent implements OnInit {
   });
 
   updateuser() {
-    if(this.registerform.valid){
-      this.service.Updateuser(this.registerform.value.id, this.registerform.value).subscribe(res=>{
+    if (this.registerform.valid) {
+      this.service.Updateuser(this.registerform.value.id, this.registerform.value).subscribe(res => {
         this.toastr.success('Informação alterada com sucesso!');
         this.dialog.close();
       })
-    }else{
+    } else {
       this.toastr.warning('Por favor, selecione um cargo!')
     }
   }

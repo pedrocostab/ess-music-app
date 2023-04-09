@@ -14,14 +14,14 @@ import { AlterarSenhaPopupComponent } from '../alterar-senha-popup/alterar-senha
 })
 export class UserEditComponent {
 
-  constructor(private service: AuthService, private dialog:MatDialog) {
+  constructor(private service: AuthService, private dialog: MatDialog) {
     this.Loadinfouser();
   }
 
   user: any;
 
-  Loadinfouser(){
-    this.user = this.service.Getbycode(sessionStorage.getItem('username')).subscribe(res=> {
+  Loadinfouser() {
+    this.user = this.service.GetbyCode(sessionStorage.getItem('username')).subscribe(res => {
       this.user = res;
     });
   }
@@ -32,11 +32,11 @@ export class UserEditComponent {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',
       width: '50%',
-      data:{
-        usercode:code
+      data: {
+        usercode: code
       }
     })
-    popup.afterClosed().subscribe(res=>{
+    popup.afterClosed().subscribe(res => {
       this.service.deletarUsuario(codeId);
       window.location.replace('');
     });
@@ -46,11 +46,11 @@ export class UserEditComponent {
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '500ms',
       width: '50%',
-      data:{
-        usercode:code
+      data: {
+        usercode: code
       }
     })
-    popup.afterClosed().subscribe(res=>{
+    popup.afterClosed().subscribe(res => {
       this.user();
     });
   }

@@ -20,7 +20,7 @@ export class AlterarSenhaPopupComponent {
 
 
   ngOnInit(): void {
-    this.user = this.service.Getbycode(sessionStorage.getItem('username')).subscribe(res=> {
+    this.user = this.service.GetbyCode(sessionStorage.getItem('username')).subscribe(res => {
       this.user = res;
       this.registerform.setValue({
         id: this.user.id, name: this.user.name, email: this.user.email,
@@ -33,7 +33,7 @@ export class AlterarSenhaPopupComponent {
   registerform = this.builder.group({
     id: this.builder.control(''),
     name: this.builder.control(''),
-    password:this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
+    password: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
     email: this.builder.control(''),
     gender: this.builder.control(''),
     role: this.builder.control(''),
