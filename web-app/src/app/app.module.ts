@@ -29,7 +29,24 @@ import { EditpopupComponent } from './editpopup/editpopup.component';
 import { AddpopupComponent } from './addpopup/addpopup.component';
 import { DeletepopupComponent } from './deletepopup/deletepopup.component';
 import { UserSeDeletapopupComponent } from './user-se-deletapopup/user-se-deletapopup.component';
-
+import { AlterarSenhaPopupComponent } from './alterar-senha-popup/alterar-senha-popup.component';
+import { PlaylistUserComponent } from './playlist-user/playlist-user.component';
+import { PlaylistCategoriaComponent } from './playlist-categoria/playlist-categoria.component';
+import { PlaylistSeguidaComponent } from './playlist-seguida/playlist-seguida.component';
+import { ArtistaAdminComponent } from './artista-admin/artista-admin.component';
+import { AlbumComponent } from './album/album.component';
+import { AlbumAdminComponent } from './album-admin/album-admin.component';
+import { CadastraArtistaComponent } from './cadastra-artista/cadastra-artista.component';
+import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.component';
+import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
+import { CadastraAlbumService } from './cadastra-album/cadastra-album.service';
+import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
+import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
+import { EditaAlbumComponent } from './edita-album/edita-album.component';
+import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
+import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
+import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
+import { HistoricComponent } from './historic/historic.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +66,24 @@ import { UserSeDeletapopupComponent } from './user-se-deletapopup/user-se-deleta
     EditpopupComponent,
     AddpopupComponent,
     DeletepopupComponent,
-    UserSeDeletapopupComponent
+    UserSeDeletapopupComponent,
+    AlterarSenhaPopupComponent,
+    PlaylistUserComponent,
+    PlaylistCategoriaComponent,
+    PlaylistSeguidaComponent,
+    ArtistaAdminComponent,
+    AlbumComponent,
+    AlbumAdminComponent,
+    CadastraArtistaComponent,
+    CadastraAlbumComponent,
+    VisualizacaoAdminArtistasComponent,
+    PlaylistAdminComponent,
+    EditaMusicaComponent,
+    EditaAlbumComponent,
+    PlaylistsCategoriaComponent,
+    PlaylistsCategoriaAdminComponent,
+    BibliotecaUsuarioComponent,
+    HistoricComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +95,7 @@ import { UserSeDeletapopupComponent } from './user-se-deletapopup/user-se-deleta
     FormsModule,
     ToastrModule.forRoot()
   ],
-  providers: [MusicaService],
+  providers: [MusicaService, CadastraAlbumService],
   // providers: [],
   bootstrap: [AppComponent]
 })
