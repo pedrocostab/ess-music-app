@@ -23,6 +23,10 @@ export class CadastraArtistaComponent {
         });
   }
 
+  cancelCreateArtista() {
+    window.history.back();
+  }
+  
   ngOnInit(): void {}
 
 }

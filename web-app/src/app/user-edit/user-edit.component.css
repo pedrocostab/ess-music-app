@@ -38,6 +38,7 @@
   .container {
     top: 150px;
     margin-left: 10px;
+    text-transform: capitalize;
   }
 
   .header {

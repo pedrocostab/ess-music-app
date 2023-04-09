@@ -38,6 +38,7 @@
   .container {
     top: 150px;
     margin-left: 10px;
+    text-transform: capitalize;
   }
   
   .paragrafo {
@@ -67,6 +68,7 @@
   }
   td {
     text-align: center;
+    text-transform: capitalize;
   }
   
   tr.cor-diferente {
@@ -98,6 +100,52 @@
     border-radius: 50%;
   }
   
+  .opcoes-header {
+    position: relative;
+  }
+  
+  .opcoes-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+    background-color: rgba(38, 38, 40, 0.87);
+    width: 205.99px;
+    padding: 8px 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+     
+     
   
     
    

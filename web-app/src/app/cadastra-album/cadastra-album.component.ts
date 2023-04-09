@@ -37,4 +37,8 @@ export class CadastraAlbumComponent implements OnInit {
       });
   }
   
+  cancelCreateAlbum() {
+    window.history.back();
+  }
+  
 }

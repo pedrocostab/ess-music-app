@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Musica } from './musica';
 import { MusicaService } from './musicas.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 
 
 export class MusicasComponent implements OnInit {
-  constructor(private cadastraMusicaService: MusicaService, private route: ActivatedRoute) {}
+  constructor(private cadastraMusicaService: MusicaService, private route: ActivatedRoute, private router: Router) {}
   artistId: string = '';
   albumId: string = '';
   musica: Musica = new Musica();
@@ -40,4 +40,8 @@ export class MusicasComponent implements OnInit {
       });
   }
   
+  cancelCreateMusica() {
+    window.history.back();
+  }
+
 }

@@ -38,6 +38,7 @@ button {
 .container {
   top: 150px;
   margin-left: 10px;
+    text-transform: capitalize;
 }
 
 .paragrafo {
@@ -67,6 +68,7 @@ tbody{
 }
 td {
   text-align: center;
+    text-transform: capitalize;
 }
 
 tr.cor-diferente {
