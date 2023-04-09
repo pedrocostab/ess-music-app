@@ -165,28 +165,28 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
     },
     {
-      "id": 4,
-      "nome": "Doja cat",
-      "genero_musical": "hip hop",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+      "nome": "Doja Cat",
+      "genero_musical": "hip hop / rap",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
+      "id": 4
     }
   ],
   "albums": [
     {
-      "nome": "Amala",
+      "nome": "Planet Her",
       "artistaId": 4,
       "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "artistaNome": "Doja cat",
+      "artistaNome": "Doja Cat",
       "ano_lancamento": "2021",
       "id": 1
     },
     {
-      "id": 2,
       "nome": "Hot Pink",
-      "ano_lancamento": 63,
-      "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
       "artistaId": 4,
-      "artistaNome": "Doja cat"
+      "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "artistaNome": "Doja Cat",
+      "ano_lancamento": 63,
+      "id": 2
     }
   ],
   "musicas": [
@@ -196,7 +196,7 @@
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Amala",
+      "tituloAlbum": "Planet Her",
       "id": 1
     },
     {
@@ -205,7 +205,7 @@
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Amala",
+      "tituloAlbum": "Planet Her",
       "id": 2
     },
     {
@@ -214,7 +214,7 @@
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Amala",
+      "tituloAlbum": "Planet Her",
       "id": 3
     },
     {
@@ -225,6 +225,15 @@
       "artistaNome": "Doja cat",
       "tituloAlbum": "Amala",
       "id": 4
+    },
+    {
+      "id": 5,
+      "titulo": "bixaaaaaaaaaaa",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "tituloAlbum": "Hot Pink",
+      "artistaNome": "Doja cat AAAAAAAA"
     }
   ]
 }
