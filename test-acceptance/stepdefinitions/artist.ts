@@ -43,25 +43,7 @@ async function loginAsUser(user_id: string, psswd: string = null){
     await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + "/initial-page");
 }
 
-function fieldAliasToFieldId(alias: string){
-    switch(alias){
-        case 'nome do artista':
-            return 'artista-nome';
-        case 'gênero musical':
-            return 'artista-genero_musical';
-        case 'url_foto':
-            return 'artista-url_foto_artista';
-        default:
-            return null;
-    }
-}
-
-
 defineSupportCode(function ({ Given, When, Then }) {
-
-    Given(/^Estou logado como o usuário Administrador de email "([^\"]*)" e senha "([^\"]*)"$/, {timeout: 10000}, async (email: string, password: string) => {
-        await loginAsUser(email, password);
-    })
 
     Given(/^Estou na página de "Cadastrar novo artista"$/, async () => {
         await $("a[routerLink='/userAdmin']").click();
@@ -76,17 +58,16 @@ defineSupportCode(function ({ Given, When, Then }) {
         await $("#artista-url_foto_artista").sendKeys(<string> url_photo);
     })
 
-
-    When(/^Clico em "Adicionar"$/, async() => {
-        await element(by.buttonText('Adicionar')).click();
+    Then(/^O campo "nome do artista" fica realçado$/, async () => {
+        await expect($(`#artista-nome.ng-invalid`));
     })
 
-    Then(/^O sistema mostra uma mensagem de "([^\"]*)"$/, async (message: string) => {
-        await expect(element(by.cssContainingText('*', message)).isPresent()).to.eventually.equal(true);
+    Then(/^O campo "gênero musical" fica realçado$/, async () => {
+        await expect($(`#artista-genero_musical.ng-invalid`));
     })
 
-    Then(/^O campo "([^\"]*)" fica realçado$/, async (field: string) => {
-        await expect($(`#${fieldAliasToFieldId(field)}.ng-invalid`));
+    Then(/^O campo "url_foto" fica realçado$/, async () => {
+        await expect($(`#artista-url_foto_artista.ng-invalid`));
     })
 
 })
