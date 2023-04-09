@@ -1,0 +1,23 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .player-controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
