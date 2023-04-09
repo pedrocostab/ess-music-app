@@ -1,0 +1,12 @@
+<div class="content-cadastrar">
+    <h1>Editar a música</h1>
+    <table>
+       <tr>
+          <td><input id="musica-titulo" [(ngModel)]="musicaAntiga.titulo" placeholder="Digite aqui o nome da música"></td>
+       </tr>
+    </table>
+    <div class="content-cadastrar-buttons">
+      <button id="register-musica" (click)="cancelEditarMusica()">Cancelar</button>
+      <button id="register-musica" (click)="editarMusica(musicaAntiga)">Salvar Alteração</button>
+    </div>
+ </div>

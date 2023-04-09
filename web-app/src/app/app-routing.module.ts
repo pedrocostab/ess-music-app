@@ -22,6 +22,7 @@ import { CadastraArtistaComponent } from './cadastra-artista/cadastra-artista.co
 import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.component';
 import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
 import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
+import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
@@ -44,7 +45,8 @@ const routes: Routes = [
   {path: 'cadastrar-artista', component: CadastraArtistaComponent},
   {path: 'visualizar-artistas-admin/:id/cadastrar-album', component: CadastraAlbumComponent},
   {path: 'visualizar-artistas-admin', component: VisualizacaoAdminArtistasComponent},
-  {path: 'playlistAdmin', component: PlaylistAdminComponent}
+  {path: 'playlistAdmin', component: PlaylistAdminComponent},
+  {path: 'editar-musica/:id', component: EditaMusicaComponent }
 ]
 
 @NgModule({

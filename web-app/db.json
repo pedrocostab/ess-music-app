@@ -101,5 +101,15 @@
       "artistaNome": "Doja cat"
     }
   ],
-  "musicas": []
+  "musicas": [
+    {
+      "titulo": "Go To Town",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Planet Her",
+      "id": 1
+    }
+  ]
 }

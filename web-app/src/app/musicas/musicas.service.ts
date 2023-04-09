@@ -11,9 +11,9 @@ export class MusicaService {
 
   constructor(private http: HttpClient) { }
 
-  createMusica(artistaId: string, albumId: string, musica: any): Observable<any | null>{
+  createMusica(artistaId: string, albumId: string, musica: Musica): Observable<any | null>{
     const newMusica = {
-      id: parseInt(musica.id),
+      id: musica.id,
       titulo: musica.titulo,
       albumId: parseInt(albumId),
       artistaId: parseInt(artistaId),
@@ -55,6 +55,11 @@ export class MusicaService {
 
   deleteMusicaById(musicaId: string) {
     this.http.delete(this.taURL + "/musicas/" + musicaId, { observe: 'response' }).subscribe(res => res);
+  }
+
+  getMusicaById(musicaId: string) {
+    return this.http.get(this.taURL + '/musicas/' + musicaId, {'observe': 'body'})
+      .pipe(map(res => res as Musica));
   }
 
   private catch(erro: any): Promise<any>{
