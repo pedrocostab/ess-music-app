@@ -84,7 +84,7 @@ import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
     PlaylistsCategoriaComponent,
     PlaylistsCategoriaAdminComponent,
     BibliotecaUsuarioComponent,
-    CadastraPlaylistComponent
+    CadastraPlaylistComponent,
     EditaArtistaComponent
 
   ],
