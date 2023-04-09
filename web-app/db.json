@@ -2,7 +2,7 @@
   "user": [
     {},
     {
-      "id": "admin",
+      "id": "admin@dizer.com",
       "name": "Admin",
       "password": "admin",
       "email": "admin@dizer.com",
@@ -16,7 +16,95 @@
       "password": "teste2",
       "email": "teste@teste",
       "gender": "",
+      "role": "usuario",
+      "isactive": false
+    },
+    {
+      "id": "aaa",
+      "name": "aaa",
+      "password": "aaaaaa",
+      "email": "aaa@aaa.com",
+      "gender": "",
       "role": "",
+      "isactive": true
+    },
+    {
+      "name": "bbb",
+      "password": "bbbbbb",
+      "email": "bbb@bbb.com",
+      "isactive": true,
+      "id": "2dlp1m7"
+    },
+    {
+      "name": "bbb",
+      "password": "bbbbbb",
+      "email": "bbb@bbb.com",
+      "isactive": true,
+      "id": "4hd2QFg"
+    },
+    {
+      "id": "bbb",
+      "name": "bbb",
+      "password": "bbbbbb",
+      "email": "bbb@bbb.com",
+      "gender": "",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "aeiou",
+      "name": "aeiou",
+      "password": "123456",
+      "email": "aeiou@aeiou.com",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "aaaa",
+      "name": "aaa",
+      "password": "aaaaaa",
+      "email": "aaa@aaa.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "aaab",
+      "name": "aaa",
+      "password": "aaaaaa",
+      "email": "aaa@aaa.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "lucas",
+      "name": "lucas",
+      "password": "123456",
+      "email": "bbo@bbb.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "bibi",
+      "name": "bibi",
+      "password": "123123",
+      "email": "bibi@bibi.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "bibibi",
+      "name": "bibibi",
+      "password": "$2a$10$VEbWfHjLbOibQvnDGMBHbeEka3qTm3d.FZOYMfnfigO1xaS8U77wO",
+      "email": "bibibi@bibibi.com",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "blau",
+      "name": "blau",
+      "password": "$2a$10$nCFfKw/9gJLEUGBr5LViFu/K/Wyzm1H5VPpHeS5zFoyET3kLmDv/a",
+      "email": "blau@blau.com",
+      "role": "user",
       "isactive": true
     }
   ],
@@ -81,25 +169,622 @@
       "nome": "Doja cat",
       "genero_musical": "hip hop",
       "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Arctic Monkeys",
+      "genero_musical": "Indie Rock",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/a9788abf3dd8ebd18e55ec6809c8995c.jpg#a9788abf3dd8ebd18e55ec6809c8995c"
     }
   ],
   "albums": [
     {
-      "id": 1,
-      "nome": "Planet Her",
-      "ano_lancamento": 2021,
-      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "nome": "Planet Her (Deluxe)",
       "artistaId": 4,
-      "artistaNome": "Doja cat"
+      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "ano_lancamento": "2021",
+      "id": 1
     },
     {
-      "id": 2,
       "nome": "Hot Pink",
-      "ano_lancamento": 0,
-      "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
       "artistaId": 4,
-      "artistaNome": "Doja cat"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "ano_lancamento": "2019",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nome": "The Car",
+      "ano_lancamento": 2022,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 4,
+      "nome": "Tranquility Base Hotel + Casino",
+      "ano_lancamento": 2018,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 5,
+      "nome": "AM",
+      "ano_lancamento": 2013,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 6,
+      "nome": "Suck It and See",
+      "ano_lancamento": 2011,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
     }
   ],
-  "musicas": []
+  "musicas": [
+    {
+      "titulo": "Go To Town",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "id": 1
+    },
+    {
+      "titulo": "Roll With Us",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "id": 2
+    },
+    {
+      "titulo": "Only girl",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Planet Her (Deluxe)",
+      "id": 3
+    },
+    {
+      "titulo": "Fancy",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 4
+    },
+    {
+      "titulo": "Cyber Sex",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 5
+    },
+    {
+      "titulo": "Won't Bite (Feat. Smino)",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 6
+    },
+    {
+      "titulo": "Rules",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 7
+    },
+    {
+      "titulo": "Bottom Bitch",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 8
+    },
+    {
+      "titulo": "Say So",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 9
+    },
+    {
+      "titulo": "Like That (Feat. Gucci Mane)",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 10
+    },
+    {
+      "titulo": "Talk Dirty",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 11
+    },
+    {
+      "titulo": " Addiction",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 12
+    },
+    {
+      "titulo": "Streets",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 13
+    },
+    {
+      "titulo": "Shine",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 14
+    },
+    {
+      "titulo": "Better Than Me",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 15
+    },
+    {
+      "titulo": "Juicy (Feat. Tyga)",
+      "albumId": 2,
+      "artistaId": 4,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Hot Pink",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "titulo": " There’d Better Be a Mirrorball",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 18,
+      "titulo": " I Ain’t Quite Where I Think I Am",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 19,
+      "titulo": "Sculptures of Anything Goes",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 20,
+      "titulo": "Jet Skis on the Moat",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 21,
+      "titulo": "Body Paint",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 22,
+      "titulo": "The Car",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 23,
+      "titulo": "Big Ideas",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 24,
+      "titulo": "Hello You",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 25,
+      "titulo": "Mr Schwartz",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 26,
+      "titulo": "Perfect Sense",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 27,
+      "titulo": "Star Treatment",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 28,
+      "titulo": "One Point Perspective",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 29,
+      "titulo": " American Sports",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 30,
+      "titulo": "Tranquility Base Hotel + Casino",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 31,
+      "titulo": "Golden Trunks",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 32,
+      "titulo": "Four Out of Five",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 33,
+      "titulo": " The World's First Ever Monster Truck Front Flip",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 34,
+      "titulo": " Science Fiction",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 35,
+      "titulo": "She Looks Like Fun",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 36,
+      "titulo": "Batphone",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 37,
+      "titulo": "The Ultracheese",
+      "albumId": 4,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/6b9b7db3259575dc62e89048e7e0690b.jpg",
+      "tituloAlbum": "Tranquility Base Hotel + Casino",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 38,
+      "titulo": "Do I Wanna Know?",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 39,
+      "titulo": " R U Mine?",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 40,
+      "titulo": "One for the Road",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 41,
+      "titulo": "Arabella",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 42,
+      "titulo": "I Want It All",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 43,
+      "titulo": "No. 1 Party Anthem",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 44,
+      "titulo": "Mad Sounds",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 45,
+      "titulo": "Fireside",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 46,
+      "titulo": " Why'd You Only Call Me When You're High?",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 47,
+      "titulo": "Snap Out of It",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 48,
+      "titulo": "Knee Socks",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 49,
+      "titulo": "I Wanna Be Yours",
+      "albumId": 5,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
+      "tituloAlbum": "AM",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 50,
+      "titulo": "She's Thunderstorms",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 51,
+      "titulo": " Black Treacle",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 52,
+      "titulo": "Brick by Brick",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 53,
+      "titulo": "The Hellcat Spangled Shalalala",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 54,
+      "titulo": "Don't Sit Down 'Cause I've Moved Your Chair",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 55,
+      "titulo": "Library Pictures",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 56,
+      "titulo": "All My Own Stunts",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 57,
+      "titulo": "Reckless Serenade",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 58,
+      "titulo": " Piledriver Waltz",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 59,
+      "titulo": "Love Is a Laserquest",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 60,
+      "titulo": "Suck It and See",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 61,
+      "titulo": " That's Where You're Wrong",
+      "albumId": 6,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
+      "tituloAlbum": "Suck It and See",
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 62,
+      "titulo": " That's Where You're Wrong",
+      "albumId": 3,
+      "artistaId": 5,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
+      "tituloAlbum": "The Car",
+      "artistaNome": "Arctic Monkeys"
+    }
+  ]
 }

@@ -9,7 +9,7 @@
   </div>
 </div>
 <ul>
-    <li>Editar Informações</li>
+    <li><button (click)="editarAlbum(album.id)">Editar Informações</button></li>
     <li><button (click)="cadastrarMusicas()">Cadastrar Musicas</button></li>
     <li><button (click)="removerAlbum()">Excluir album</button></li>
 </ul>
@@ -35,6 +35,18 @@
           </td>
           <td>{{musica.artistaNome}}</td>
           <td>{{musica.tituloAlbum}}</td>
+          <td class="opcoes-header">
+            <div class="opcoes-wrapper">
+              <div class="dropdown">
+                <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                <div class="dropdown-content">
+                  <li href="#"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</li>
+                  <li (click)="editarMusica(musica.id)"><span class="material-icons">edit_note</span>Editar informações</li>
+                  <li (click)="removerMusica(musica.id)"><span class="material-icons">highlight_off</span>Remover música</li>
+                </div>
+              </div>
+            </div>
+          </td>
         </tr>
       </ng-container>
     </tbody>
