@@ -3,6 +3,16 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr'
 import { AuthService } from '../service/auth.service';
+import * as bcrypt from 'bcryptjs';
+
+export async function hashPassword(password: string) {
+  const salt = await bcrypt.genSalt(10)
+  const hashedPassword = await bcrypt.hash(password, salt)
+  return hashedPassword
+}
+export function comparePasswords(password: string, hashedPassword: string) {
+  return bcrypt.compareSync(password, hashedPassword)
+}
 
 
 function findEmailInJson(json: any[], email: string): boolean {
@@ -35,16 +45,19 @@ export class RegisterComponent {
     isactive: this.builder.control(true)
   });
   userlist: any;
+  hashedPassword: any;
+
   proceedregistration() {
 
     //Registro com sucesso
     if (this.registerform.valid) {
-      this.service.GetAll().subscribe(res => {
+      this.service.GetAll().subscribe(async res => {
         this.userlist = res
 
         const emailRegistered = findEmailInJson(this.userlist, this.registerform.value.email ?? "")
 
         if (!emailRegistered) {
+          this.registerform.value.password = await hashPassword(this.registerform.value.password ?? "")
           this.service.Proceedregister(this.registerform.value).subscribe(res => {
             this.toastr.success('Registro feito com sucesso!');
             this.router.navigate(['login'])

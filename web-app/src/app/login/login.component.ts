@@ -3,6 +3,11 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr'
 import { AuthService } from '../service/auth.service';
+import * as bcrypt from 'bcryptjs';
+
+export function comparePasswords(password: string, hashedPassword: string) {
+  return bcrypt.compareSync(password, hashedPassword)
+}
 
 @Component({
   selector: 'app-login',
@@ -29,7 +34,8 @@ export class LoginComponent {
         this.userdata = res;
         console.log(this.userdata);
         //Se acertar a senha:
-        if (this.userdata.password === this.loginform.value.password) {
+        const validPassword = comparePasswords(this.loginform.value.password ?? "", this.userdata.password)
+        if (validPassword) {
           //Se o usuário tiver permissao para entrar:
           if (this.userdata.isactive) {
             sessionStorage.setItem('username', this.userdata.id);

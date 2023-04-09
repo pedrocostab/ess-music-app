@@ -91,6 +91,22 @@
       "email": "bbo@bbb.com",
       "role": "user",
       "isactive": true
+    },
+    {
+      "id": "bibi",
+      "name": "bibi",
+      "password": "123123",
+      "email": "bibi@bibi.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "bibibi",
+      "name": "bibibi",
+      "password": "$2a$10$VEbWfHjLbOibQvnDGMBHbeEka3qTm3d.FZOYMfnfigO1xaS8U77wO",
+      "email": "bibibi@bibibi.com",
+      "role": "user",
+      "isactive": true
     }
   ],
   "role": [
