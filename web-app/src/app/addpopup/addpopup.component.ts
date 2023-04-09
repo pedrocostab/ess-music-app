@@ -45,7 +45,7 @@ export class AddpopupComponent {
     isactive: this.builder.control(true)
   });
 
-  adduser() {
+  async adduser() {
     if (this.registerform.valid) {
       this.registerform.value.password = await bcrypt.hash(this.registerform.value.password ?? '', 10);
       this.service.Adduser(this.registerform.value).subscribe(res => {

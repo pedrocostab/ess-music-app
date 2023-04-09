@@ -29,7 +29,7 @@
     {
       "id": "lucas",
       "name": "lucas",
-      "password": "$2b$10$Afzj2ABAxzMR.dZno97JXeax0nsXe5ACAxtXk6Lt19NM9rsljj9Va",
+      "password": "$2a$10$dmvbnXbU3weW2tbE3CgLxe4vj7B.awR7J9InMjr6JkLgg2STFhPGq",
       "email": "bbo@bbb.com",
       "role": "user",
       "isactive": true
@@ -95,6 +95,14 @@
       "name": "Drielle",
       "password": "senha1",
       "email": "senha@cin.ufpe.br",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "teste23",
+      "name": "teste2",
+      "password": "$2a$10$QwZZcYzklQE1CjsUeyAQy./BjMhT/haxAIYkDYt87JQl0p3HHjhwO",
+      "email": "teste@teste",
       "role": "usuario",
       "isactive": true
     }
