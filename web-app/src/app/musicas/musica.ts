@@ -1,7 +1,8 @@
 export class Musica {
-    nome: string = '';
-    artista_banda: string = '';
-    ano_lancamento: number = 0;
-  
-    constructor() { }
-  }
+    id: number = 0;
+    titulo: string = '';
+    albumId: number = 0;
+    artistaId: number = 0;
+    capaAlbum: string = '';
+    constructor() {}
+}
