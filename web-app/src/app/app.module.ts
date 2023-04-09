@@ -85,7 +85,7 @@ import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pe
     PlaylistsCategoriaComponent,
     PlaylistsCategoriaAdminComponent,
     BibliotecaUsuarioComponent,
-    CadastraPlaylistComponent,
+    CadastraPlaylistComponent,,
     EditaArtistaComponent,
     ResultadosPesquisaComponent
 

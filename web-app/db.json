@@ -173,15 +173,21 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
     },
     {
-      "nome": "Doja Cat",
-      "genero_musical": "hip hop / rap",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
-      "id": 4
+      "id": 4,
+      "nome": "Doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Arctic Monkeys",
+      "genero_musical": "Indie Rock",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/a9788abf3dd8ebd18e55ec6809c8995c.jpg#a9788abf3dd8ebd18e55ec6809c8995c"
     }
   ],
   "albums": [
     {
-      "nome": "Planet Her (Deluxe)",
+      "nome": "Planet Her",
       "artistaId": 4,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
       "artistaNome": "Doja Cat",
@@ -252,7 +258,7 @@
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her (Deluxe)",
+      "tituloAlbum": "Planet Her",
       "id": 1
     },
     {
@@ -261,7 +267,7 @@
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her (Deluxe)",
+      "tituloAlbum": "Planet Her",
       "id": 2
     },
     {
@@ -270,7 +276,7 @@
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her (Deluxe)",
+      "tituloAlbum": "Planet Her",
       "id": 3
     },
     {
@@ -283,14 +289,17 @@
       "id": 4
     },
     {
-      "titulo": "Cyber Sex",
+      "id": 5,
+      "titulo": "bixaaaaaaaaaaa",
       "albumId": 2,
       "artistaId": 4,
-      "capaAlbum": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
-      "artistaNome": "Doja cat AAAAAAAA",
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
-      "id": 5
-    },
+      "artistaNome": "Doja cat AAAAAAAA"
+    }
+  ],
+  "playlists": [
     {
       "titulo": "Consideration (Feat. SZA)",
       "albumId": 3,
