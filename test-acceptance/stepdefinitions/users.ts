@@ -8,7 +8,7 @@ var base_url = "http://localhost:3000/";
 const base_front_url = "http://localhost:4200";
 
 defineSupportCode(function ({ Given, When, Then }) {
-    Given(/^I am on the "Registro de novo usuário" page$/, {timeout: 10000}, async () => {
+    Given(/^I am on the "Registro de novo usuário" page$/, { timeout: 10000 }, async () => {
         await browser.get(base_front_url);
         await expect(browser.getTitle()).to.eventually.equal('Dizer');
         await element(by.buttonText('Cadastro')).click();
@@ -16,19 +16,19 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
 
     When(/^I write "([^\"]*)" in "Usuário"$/, async (id) => {
-        await $("input[formControlName='id']").sendKeys(<string> id);
+        await $("input[formControlName='id']").sendKeys(<string>id);
     })
 
     When(/^I write "([^\"]*)" in "Nome"$/, async (name) => {
-        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='name']").sendKeys(<string>name);
     })
 
     When(/^I write "([^\"]*)" in "Senha"$/, async (password) => {
-        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='password']").sendKeys(<string>password);
     })
 
     When(/^I write "([^\"]*)" in "Email"$/, async (email) => {
-        await $("input[formControlName='email']").sendKeys(<string> email);
+        await $("input[formControlName='email']").sendKeys(<string>email);
     })
 
     When(/^I click on "Enviar"$/, async () => {
