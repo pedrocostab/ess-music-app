@@ -53,6 +53,30 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/register');
     })
 
+    Given(/^I am on the "Editar Perfil" page$/, {timeout: 10000}, async () => {
+        await browser.get(base_front_url+'/user');
+        await element(by.buttonText('Editar Perfil')).click();
+        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/userEdit');
+    })
+
+    Given(/^I am on the "Lista de Usuários" page$/, {timeout: 10000}, async () => {
+        await browser.get(base_front_url+'/userAdmin');
+        await element(by.buttonText('Visualizar Usuários')).click();
+        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/lista-usuarios');
+    })
+
+
+    Given(/^I see a list of system users$/, {timeout: 10000}, async () => {
+        const listaUsuarios = await this.page.$(".lista-usuarios");
+        expect(listaUsuarios).to.exist;
+        // await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/lista-usuarios');
+    })
+
+    Given(/^I see a list of system users with "3" users$/, {timeout: 10000}, async () => {
+        const listaUsuarios = await this.page.$$(".lista-usuarios li");
+        expect(listaUsuarios).to.have.lengthOf.at.least(3);
+    })
+    
     Given(/^I am logged in with an admin account with user "([^\"]*)"$/, {timeout: 10000}, async (user : string) => {
         loginAsUser(user);
     })
@@ -77,8 +101,8 @@ defineSupportCode(function ({ Given, When, Then }) {
         await $("input[formControlName='email']").sendKeys(<string> email);
     })
 
-    When(/^I write "([^\"]*)" in "Nova Senha" field$/, async (email) => {
-        await $("input[formControlName='password']").sendKeys(<string> email);
+    When(/^I write "([^\"]*)" in "Nova Senha" field$/, async (password) => {
+        await $("input[formControlName='password']").sendKeys(<string> password);
     })
 
 
@@ -114,11 +138,41 @@ defineSupportCode(function ({ Given, When, Then }) {
         await element(by.buttonText('Adicionar Usuario')).click();
     })
 
-    When(/^When I write nothing in "([^\"]*)" field$/, async (campo) => {
-        // Implemente o código para deixar o campo em branco
-        const campoInput = await this.page.$(`input[formControlName=${campo}]`);
-        await campoInput.clear();
+    When(/^When I write nothing in "Email" field$/, async () => {
+        const campo = "";
+        await $("input[formControlName='email']").sendKeys(<string> campo);
       });
+
+    When(/^When I write nothing in "Nome" field$$/, async () => {
+        const campo = "";
+        await $("input[formControlName='name']").sendKeys(<string> campo);
+    })
+
+    When(/^When I write nothing in "Nova Senha" field$/, async () => {
+        const campo = "";
+        await $("input[formControlName='password']").sendKeys(<string> campo);
+      });
+
+    When(/^When I write nothing in "Senha" field$$/, async () => {
+        const campo = "";
+        await $("input[formControlName='password']").sendKeys(<string> campo);
+    })
+
+    When(/^When I write nothing in "Usuario" field$/, async () => {
+        const campo = "";
+        await $("input[formControlName='id']").sendKeys(<string> campo);
+      });
+
+    When(/^When I write nothing in "Tipo de Usuario" field$$/, async () => {
+        const campo = "";
+        await $("input[formControlName='role']").sendKeys(<string> campo);
+    })
+    
+    // When(/^When I write nothing in "([^\"]*)" field$/, async (campo) => {
+    //     // Implemente o código para deixar o campo em branco
+    //     const campoInput = await this.page.$(`input[formControlName=${campo}]`);
+    //     await campoInput.clear();
+    //   });
 
     Then(/^I see a registration completed message$/, async () => {
         await expect(element(by.cssContainingText('*', 'Registro feito com sucesso!')).isPresent()).to.eventually.equal(true);
