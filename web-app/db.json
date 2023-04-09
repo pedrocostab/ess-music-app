@@ -105,7 +105,7 @@
       "name": "bibibi",
       "password": "$2a$10$VEbWfHjLbOibQvnDGMBHbeEka3qTm3d.FZOYMfnfigO1xaS8U77wO",
       "email": "bibibi@bibibi.com",
-      "role": "user",
+      "role": "admin",
       "isactive": true
     }
   ],

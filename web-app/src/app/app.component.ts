@@ -7,26 +7,26 @@ import { AuthService } from './service/auth.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements DoCheck  {
+export class AppComponent implements DoCheck {
   title = 'Dizer';
-  ismenurequired=false;
-  isadminuser=false;
+  ismenurequired = false;
+  isadminuser = false;
   isuser = true;
-  constructor(private router:Router, private service:AuthService){
+  constructor(private router: Router, private service: AuthService) {
 
   }
   ngDoCheck(): void {
-    let currenturl=this.router.url;
-    if(currenturl=='/login' || currenturl=='/register' || currenturl=='/'){
-      this.ismenurequired=false;
-    }else{
-      this.ismenurequired=true;
+    let currenturl = this.router.url;
+    if (currenturl == '/login' || currenturl == '/register' || currenturl == '/') {
+      this.ismenurequired = false;
+    } else {
+      this.ismenurequired = true;
     }
-    if(this.service.GetUserrole()==='admin'){
-      this.isadminuser=true;
+    if (this.service.GetUserRole() === 'admin') {
+      this.isadminuser = true;
       this.isuser = false;
-    }else{
-      this.isadminuser=false;
+    } else {
+      this.isadminuser = false;
       this.isuser = true;
     }
   }

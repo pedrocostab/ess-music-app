@@ -14,7 +14,6 @@ export function comparePasswords(password: string, hashedPassword: string) {
   return bcrypt.compareSync(password, hashedPassword)
 }
 
-
 function findEmailInJson(json: any[], email: string): boolean {
   for (let i = 0; i < json.length; i++) {
     const item = json[i];

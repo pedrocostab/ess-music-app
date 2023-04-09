@@ -39,7 +39,7 @@ export class AuthService {
     return sessionStorage.getItem('username') != null;
   }
 
-  GetUserrole() {
+  GetUserRole() {
     return sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole')?.toString() : '';
   }
 
