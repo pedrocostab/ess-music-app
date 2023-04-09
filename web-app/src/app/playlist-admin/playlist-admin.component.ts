@@ -23,4 +23,8 @@ export class PlaylistAdminComponent {
   editarPlaylist(playlistId: number) {
     this.router.navigate(['editar-playlist', playlistId]);
   }
+
+  deletePlaylist(playlistId: number) {
+    this.playlistService.deletePlaylist(String(playlistId))
+  }
 }
