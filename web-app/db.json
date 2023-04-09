@@ -71,5 +71,52 @@
     {
       "name": "typicode"
     }
+  ],
+  "artistas": [
+    {
+      "id": 1,
+      "nome": "doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "nome": "Hot Pink",
+      "ano_lancamento": 2019,
+      "url_foto_album": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/87/Doja_Cat_-_Hot_Pink.png/220px-Doja_Cat_-_Hot_Pink.png",
+      "artistaId": 1
+    },
+    {
+      "id": 2,
+      "nome": "Amala",
+      "ano_lancamento": 2018,
+      "url_foto_album": "https://akamai.sscdn.co/uploadfile/letras/albuns/c/6/2/6/966811601045036-tb_180.jpg",
+      "artistaId": 1
+    }
+  ],
+  "musicas": [
+    {
+      "id": 1,
+      "titulo": "Fancy",
+      "albumId": 2,
+      "artistaId": 1,
+      "capaAlbum": "https://akamai.sscdn.co/uploadfile/letras/albuns/c/6/2/6/966811601045036-tb_180.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Go To Town",
+      "albumId": 2,
+      "artistaId": 1,
+      "capaAlbum": "https://akamai.sscdn.co/uploadfile/letras/albuns/c/6/2/6/966811601045036-tb_180.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Say So",
+      "albumId": 1,
+      "artistaId": 1,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/87/Doja_Cat_-_Hot_Pink.png/220px-Doja_Cat_-_Hot_Pink.png"
+    }
   ]
 }
