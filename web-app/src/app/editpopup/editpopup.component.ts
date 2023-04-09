@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../service/auth.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
+import * as bcrypt from 'bcryptjs';
 
 @Component({
   selector: 'app-editpopup',
@@ -43,8 +44,9 @@ export class EditpopupComponent implements OnInit {
     isactive: this.builder.control(false)
   });
 
-  updateuser() {
+  async updateuser() {
     if (this.registerform.valid) {
+      this.registerform.value.password = await bcrypt.hash(this.registerform.value.password ?? '', 10);
       this.service.Updateuser(this.registerform.value.id, this.registerform.value).subscribe(res => {
         this.toastr.success('Informação alterada com sucesso!');
         this.dialog.close();
