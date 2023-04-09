@@ -10,7 +10,7 @@
     </div>
     <ul>
       <li>Editar Informações</li>
-      <li><button (click)="cadastrarAlbum()">Cadastrar Álbuns/EPs</button></li>
+      <li><button (click)="cadastrarAlbum()">Cadastrar Álbuns</button></li>
       <li><button (click)="deletarArtista()">Deletar Artista</button></li>
     </ul>
     <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Músicas</p>
@@ -42,7 +42,7 @@
                     <ul class="dropdown-content">
                       <li href="#"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</li>
                       <li (click)="editarMusica(musica.id)"><span class="material-icons">edit_note</span>Editar informações</li>
-                      <li (click)="removerMusica(musica.id)"><span class="material-icons">playlist_remove</span>Remover música</li>
+                      <li (click)="removerMusica(musica.id)"><span class="material-icons">highlight_off</span>Remover música</li>
                       <li href="#"><span class="material-icons">album</span>Ir para o álbum</li>
                     </ul>
                   </div>
