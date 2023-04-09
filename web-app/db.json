@@ -2,7 +2,7 @@
   "user": [
     {},
     {
-      "id": "admin",
+      "id": "admin@dizer.com",
       "name": "Admin",
       "password": "admin",
       "email": "admin@dizer.com",
@@ -16,7 +16,95 @@
       "password": "teste2",
       "email": "teste@teste",
       "gender": "",
+      "role": "usuario",
+      "isactive": false
+    },
+    {
+      "id": "aaa",
+      "name": "aaa",
+      "password": "aaaaaa",
+      "email": "aaa@aaa.com",
+      "gender": "",
       "role": "",
+      "isactive": true
+    },
+    {
+      "name": "bbb",
+      "password": "bbbbbb",
+      "email": "bbb@bbb.com",
+      "isactive": true,
+      "id": "2dlp1m7"
+    },
+    {
+      "name": "bbb",
+      "password": "bbbbbb",
+      "email": "bbb@bbb.com",
+      "isactive": true,
+      "id": "4hd2QFg"
+    },
+    {
+      "id": "bbb",
+      "name": "bbb",
+      "password": "bbbbbb",
+      "email": "bbb@bbb.com",
+      "gender": "",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "aeiou",
+      "name": "aeiou",
+      "password": "123456",
+      "email": "aeiou@aeiou.com",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "aaaa",
+      "name": "aaa",
+      "password": "aaaaaa",
+      "email": "aaa@aaa.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "aaab",
+      "name": "aaa",
+      "password": "aaaaaa",
+      "email": "aaa@aaa.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "lucas",
+      "name": "lucas",
+      "password": "123456",
+      "email": "bbo@bbb.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "bibi",
+      "name": "bibi",
+      "password": "123123",
+      "email": "bibi@bibi.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "bibibi",
+      "name": "bibibi",
+      "password": "$2a$10$VEbWfHjLbOibQvnDGMBHbeEka3qTm3d.FZOYMfnfigO1xaS8U77wO",
+      "email": "bibibi@bibibi.com",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "blau",
+      "name": "blau",
+      "password": "$2a$10$nCFfKw/9gJLEUGBr5LViFu/K/Wyzm1H5VPpHeS5zFoyET3kLmDv/a",
+      "email": "blau@blau.com",
+      "role": "user",
       "isactive": true
     }
   ],

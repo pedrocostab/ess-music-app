@@ -22,7 +22,7 @@ export class EditpopupComponent implements OnInit {
       this.rolelist = res;
     })
     if (this.data.usercode != null && this.data.usercode != '') {
-      this.service.Getbycode(this.data.usercode).subscribe(res => {
+      this.service.GetbyCode(this.data.usercode).subscribe(res => {
         this.editdata = res;
         this.registerform.setValue({
           id: this.editdata.id, name: this.editdata.name, email: this.editdata.email,
