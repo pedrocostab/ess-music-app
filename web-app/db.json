@@ -75,8 +75,31 @@
       "nome": "Taylor Swift",
       "genero_musical": "Pop/Country",
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
+    },
+    {
+      "id": 4,
+      "nome": "Doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 1,
+      "nome": "Planet Her",
+      "ano_lancamento": 2021,
+      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaId": 4,
+      "artistaNome": "Doja cat"
+    },
+    {
+      "id": 2,
+      "nome": "Hot Pink",
+      "ano_lancamento": 0,
+      "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "artistaId": 4,
+      "artistaNome": "Doja cat"
+    }
+  ],
   "musicas": []
 }
