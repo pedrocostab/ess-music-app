@@ -41,8 +41,14 @@ import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.componen
 import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
 import { CadastraAlbumService } from './cadastra-album/cadastra-album.service';
 import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
+<<<<<<< HEAD
 import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 import { EditaAlbumComponent } from './edita-album/edita-album.component';
+=======
+import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
+import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
+import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
+>>>>>>> 43c24a6ee2002b78a7e2003efe95f1c66f8bae88
 
 @NgModule({
   declarations: [
@@ -74,8 +80,14 @@ import { EditaAlbumComponent } from './edita-album/edita-album.component';
     CadastraAlbumComponent,
     VisualizacaoAdminArtistasComponent,
     PlaylistAdminComponent,
+<<<<<<< HEAD
     EditaMusicaComponent,
     EditaAlbumComponent
+=======
+    PlaylistsCategoriaComponent,
+    PlaylistsCategoriaAdminComponent,
+    BibliotecaUsuarioComponent
+>>>>>>> 43c24a6ee2002b78a7e2003efe95f1c66f8bae88
   ],
   imports: [
     BrowserModule,
