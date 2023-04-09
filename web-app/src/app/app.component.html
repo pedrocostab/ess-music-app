@@ -6,13 +6,12 @@
                     <img src="./../../assets/taylor.png" alt="Foto de perfil">
                 </li>
                 <li><a routerLink="/initial-page">Home</a></li>
-                <li><a routerLink="/user">Perfil</a></li>
-                <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="">Biblioteca</a></li>
+                <li [ngClass]="{'hide-item': !isuser}"><a routerLink="/user">Perfil</a></li>
+                <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/playlistsCategoria">Playlists</a></li>
+                <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/bibliotecaUsuario">Biblioteca</a></li>
                 <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/Histórico">Histórico</a></li>
-                <li><a routerLink="">Playlists</a></li>
+                <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/playlistsCategoriaAdmin">Playlists</a></li>
                 <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/userAdmin">Admin</a></li>
-                <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/cadastrar-musicas">Cadastrar Musica</a></li>
-                <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/lista-musicas">Lista Musica</a></li>
                 <li>
                     <form action="#" method="get">
                         <input type="text" name="q" placeholder="Pesquisar músicas, artistas, álbuns...">
