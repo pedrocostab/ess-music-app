@@ -36,7 +36,11 @@ import { PlaylistSeguidaComponent } from './playlist-seguida/playlist-seguida.co
 import { ArtistaAdminComponent } from './artista-admin/artista-admin.component';
 import { AlbumComponent } from './album/album.component';
 import { AlbumAdminComponent } from './album-admin/album-admin.component';
-
+import { CadastraArtistaComponent } from './cadastra-artista/cadastra-artista.component';
+import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.component';
+import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
+import { CadastraAlbumService } from './cadastra-album/cadastra-album.service';
+import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +67,11 @@ import { AlbumAdminComponent } from './album-admin/album-admin.component';
     PlaylistSeguidaComponent,
     ArtistaAdminComponent,
     AlbumComponent,
-    AlbumAdminComponent
+    AlbumAdminComponent,
+    CadastraArtistaComponent,
+    CadastraAlbumComponent,
+    VisualizacaoAdminArtistasComponent,
+    PlaylistAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +83,7 @@ import { AlbumAdminComponent } from './album-admin/album-admin.component';
     FormsModule,
     ToastrModule.forRoot()
   ],
-  providers: [MusicaService],
+  providers: [MusicaService, CadastraAlbumService],
   // providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,13 +1,8 @@
-<input id="musica-ano_lancamento-input" placeholder="Digite aqui o ano de lançamento" type="text" name="search" [(ngModel)]="filter">
 <table>
   <tr>
      <th>Nome</th>
-     <th>Artista/Banda</th>
-     <th>Ano lançamento</th>
   </tr>
   <tr *ngFor="let musica of musicas">
-     <td id="musica-{{musica.nome}}-{{musica.artista_banda}}-{{musica.ano_lancamento}}">{{musica.nome}}</td>
-      <td>{{musica.artista_banda}}</td>
-     <td>{{musica.ano_lancamento}}</td>
+     <td id="musica-{{musica.titulo}}">{{musica.titulo}}</td>
   </tr>
 </table>
