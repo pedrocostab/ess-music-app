@@ -46,10 +46,7 @@ import { EditaAlbumComponent } from './edita-album/edita-album.component';
 import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
-<<<<<<< HEAD
 import { HistoricComponent } from './historic/historic.component';
-=======
->>>>>>> 076e156a791e3d008d66cb306951476fc5e9ee2c
 
 @NgModule({
   declarations: [
@@ -85,12 +82,8 @@ import { HistoricComponent } from './historic/historic.component';
     EditaAlbumComponent,
     PlaylistsCategoriaComponent,
     PlaylistsCategoriaAdminComponent,
-<<<<<<< HEAD
     BibliotecaUsuarioComponent,
     HistoricComponent
-=======
-    BibliotecaUsuarioComponent
->>>>>>> 076e156a791e3d008d66cb306951476fc5e9ee2c
   ],
   imports: [
     BrowserModule,
