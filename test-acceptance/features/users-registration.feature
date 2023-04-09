@@ -18,7 +18,7 @@ Scenario: Registering new users
 Scenario: Register new User with an invalid email
     Given I am on the "Registro de novo usuário" page
     When I write "pcsb" in "Usuário"
-    And I write "Pedro Basilio" in "Name"
+    And I write "Pedro Basilio" in "Nome"
     And I write "pcsb" in "email"
     And I write "pcsb01" in "Password"
     And I click on "Enviar"
@@ -29,7 +29,7 @@ Scenario: Register new User with an invalid email
 Scenario: Register new User with password less than 6 digits
     Given I am on the "Registro de novo usuário" page
     When I write "dri" in "Usuário"
-    And I write "Drielle" in "Name"
+    And I write "Drielle" in "Nome"
     And I write "drielle@cin.ufpe.br" in "email"
     And I write "dri01" in "Password"
     And I click on "Enviar"
@@ -115,9 +115,9 @@ Scenario: Administrator wants to remove a User from the system
     And I'm on the "Lista de Usuários" page
     And I see a list of system users
     And I see the "email" user "pcsb@cin.ufpe.br"
-    When I click on the "Remover" button on the "e-mail" user "pcsb@cin.ufpe.br" line
+    When I click on the "Remover" button on the "Email" user "pcsb@cin.ufpe.br" line
     And I click "Sim"
-    Then I check that the "e-mail" user "pcsb@cin.ufpe.br" is no longer on the list of system users
+    Then I check that the "Email" user "pcsb@cin.ufpe.br" is no longer on the list of system users
 
 Scenario: Administrator wants to edit a User from the system
     Given I am logged in with an "admin" account with email "admin@dizer.com" and password "admin"
