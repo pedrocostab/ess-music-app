@@ -27,6 +27,9 @@ export class MusicaService {
         newMusica.capaAlbum = album.url_foto_album;
         newMusica.tituloAlbum = album.nome;
         newMusica.artistaNome = album.artistaNome;
+        if(artistaId == null) {
+          newMusica.artistaId = album.artistaId;
+        }
         return this.http.post(this.taURL + "/musicas", JSON.stringify(newMusica), {headers: this.headers, observe: "response"})
       }),
       map(res => {
@@ -49,6 +52,11 @@ export class MusicaService {
     return this.http.get(this.taURL + '/musicas?albumId=' + albumId, {'observe': 'body'})
       .pipe(map(res => res as Musica[]));
   }
+
+  deleteMusicaById(musicaId: string) {
+    this.http.delete(this.taURL + "/musicas/" + musicaId, { observe: 'response' }).subscribe(res => res);
+  }
+  
 
   private catch(erro: any): Promise<any>{
     console.error('Oops, something went wrong',erro);

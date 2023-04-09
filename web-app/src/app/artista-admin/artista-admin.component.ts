@@ -44,4 +44,8 @@ export class ArtistaAdminComponent implements OnInit {
     this.router.navigate(['albumAdmin', this.artistaId]);
   }
 
+  removerMusica(musicaId: Number) {
+    this.musicaService.deleteMusicaById(String(musicaId))
+    window.location.reload();
+  }
 }

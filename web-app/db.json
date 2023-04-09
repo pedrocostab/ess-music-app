@@ -104,8 +104,8 @@
   ],
   "musicas": [
     {
-      "id": 1,
-      "titulo": "you right",
+      "id": 2,
+      "titulo": "Alone",
       "albumId": 1,
       "artistaId": 1,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -113,7 +113,7 @@
       "artistaNome": "doja cat"
     },
     {
-      "id": 2,
+      "id": 3,
       "titulo": "kiss me more",
       "albumId": 1,
       "artistaId": 1,
