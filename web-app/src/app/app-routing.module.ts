@@ -27,6 +27,7 @@ import { EditaAlbumComponent } from './edita-album/edita-album.component';
 import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
+import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
@@ -54,8 +55,8 @@ const routes: Routes = [
   {path: 'editar-album/:id', component: EditaAlbumComponent},
   {path: 'playlistsCategoria', component: PlaylistsCategoriaComponent},
   {path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent},
-  {path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent}
-
+  {path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent},
+  {path: 'editar-artista/:id', component: EditaArtistaComponent}
 ]
 
 @NgModule({
