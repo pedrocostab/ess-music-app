@@ -6,10 +6,6 @@ import { AuthService } from '../service/auth.service';
 import * as bcrypt from 'bcryptjs';
 import { Subscription } from 'rxjs';
 
-export function comparePasswords(password: string, hashedPassword: string): boolean {
-  return bcrypt.compareSync(password, hashedPassword);
-}
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -41,7 +37,7 @@ export class LoginComponent {
         this.userdata = res;
         //console.log(this.userdata);
         // Se acertar a senha:
-        const validPassword = comparePasswords(this.loginform.value.password ?? '', this.userdata.password);
+        const validPassword = bcrypt.compareSync(this.loginform.value.password ?? '', this.userdata.password);
         if (validPassword) {
           // Se o usuário tiver permissão para entrar:
           if (this.userdata.isactive) {

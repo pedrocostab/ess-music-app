@@ -1,22 +1,11 @@
 <div class="admin-container-home">
     <div class = "header">
-    <div class="circle">
-      <img src="./../../assets/daniellFotoPerfil.jpg" alt="Minha imagem">
-    </div>
-    <div class="container">
-      <p style="font-size: 30px;">{{user.name}}</p>
+    <div class="texto-inicial">
+      <p style="font-size: 30px;">Resultados...</p>
     </div>
     </div>
-    <ul>
-      <li><a routerLink="/userEdit" ><button>Editar Perfil</button></a></li>
-      <li><a routerLink="" ><button>Criar playlist</button></a></li>
-    </ul>
-    
-      
-    
-    <p class="paragrafo" style="font-size: 20px;">Últimos 7 dias</p>
 
-    <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Últimas músicas reproduzidas</p>
+    <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Músicas</p>
     <div class="tableGeral">
       
       <table>
@@ -122,9 +111,105 @@
         </tbody>
       </table>
     </div>
-    <ul>
-        <li>
-            Mostrar Mais
-        </li>
-      </ul> 
+      <p class="paragrafo" style="font-size: 30px; font-weight: bold;"><br>Álbuns</p>
+      <div class="tableGeral">
+      
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th># Título</th>
+              <th># Artista</th>
+              <th># Ano</th>
+            </tr>
+          </thead>
+          <tbody>            
+            <tr class="cor-diferente">
+              <td class="album-capa">
+                <img src="./../../assets/evermore.jpg" alt="">
+              </td>
+              <td>evermore (deluxe)</td>
+              <td>Taylor Swift</td>
+              <td>2020</td>
+              <td class="opcoes-header">
+                <div class="opcoes-wrapper">
+                  <div class="dropdown">
+                    <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                    <div class="dropdown-content">
+                      <a href="#"><span class="material-icons">album</span>Ir para o álbum</a>
+                    </div>
+                  </div>
+                </div>
+            </tr>
+            <tr>
+              <td class="album-capa">
+                <img src="./../../assets/anti.jpg" alt="">
+              </td>
+              <td>ANTi (Deluxe)</td>
+              <td>Rihanna</td>
+              <td>2016</td>
+              <td class="opcoes-header">
+                <div class="opcoes-wrapper">
+                  <div class="dropdown">
+                    <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                    <div class="dropdown-content">
+                      <a href="#"><span class="material-icons">album</span>Ir para o álbum</a>
+                    </div>
+                  </div>
+                </div>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="paragrafo" style="font-size: 30px; font-weight: bold;"><br>Artistas</p>
+    <div class="tableGeral" >
+      
+        <table >
+          <thead>
+            <tr>
+              <th>#</th>
+              <th># Nome</th>
+              <th># Gênero</th>
+              <th># Nacionalidade</th>
+            </tr>
+          </thead>
+          <tbody>            
+            <tr class="cor-diferente">
+              <td class="album-capa">
+                <img src="./../../assets/taylorPerfil.jpeg" alt="">
+              </td>
+              <td>Taylor Swift</td>
+              <td>Pop</td>
+              <td>Estados Unidos</td>
+              <td class="opcoes-header">
+                <div class="opcoes-wrapper">
+                  <div class="dropdown">
+                    <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                    <div class="dropdown-content">
+                      <a href="#"><span class="material-icons">mic_external_on</span>Ir para o artista</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="album-capa">
+                <img src="./../../assets/rihannaPerfil.png" alt="">
+              </td>
+              <td>Rihanna</td>
+              <td>R&B</td>
+              <td>Barbados</td>
+              <td class="opcoes-header">
+                <div class="opcoes-wrapper">
+                  <div class="dropdown">
+                    <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                    <div class="dropdown-content">
+                      <a href="#"><span class="material-icons">mic_external_on</span>Ir para o artista</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 </div>

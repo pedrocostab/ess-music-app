@@ -1,16 +1,16 @@
 <div class="admin-container-home">
     <div class = "header">
     <div class="circle">
-      <img src="../../assets/playlistTreino.png" alt="Minha imagem">
+      <img src="{{playlist.url_foto_playlist}}" alt="Minha imagem">
     </div>
     <div class="container">
-      <p style="font-size: 30px;">Músicas para treinar</p>
-      <h2 class="informacoesPlaylist">Treino<br>Pública</h2>
+      <p style="font-size: 30px;">{{playlist.titulo}}</p>
+      <h2 class="informacoesPlaylist">Categoria que ainda não tem<br>{{playlist.privacidade}}</h2>
     </div>
     </div>
     <ul>
-        <li>Editar Informações</li>
-      <li>Remover playlist</li>
+      <li (click)="editarPlaylist(playlist.id)">Editar Informações</li>
+      <li (click)="deletePlaylist(playlist.id)">Remover playlist</li>
     </ul>
 
     <br>

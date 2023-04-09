@@ -4,7 +4,7 @@
     {
       "id": "admin@dizer.com",
       "name": "Admin",
-      "password": "admin",
+      "password": "$2b$10$nywPnAWVfamTzXgZmhhr/ei0YjIbh1kEb3DZ7MIvR6l0Rb1.oTqVq",
       "email": "admin@dizer.com",
       "gender": "male",
       "role": "admin",
@@ -13,64 +13,15 @@
     {
       "id": "teste2",
       "name": "teste2",
-      "password": "teste2",
+      "password": "teste4",
       "email": "teste@teste",
-      "gender": "",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
-      "id": "aaa",
-      "name": "aaa",
-      "password": "aaaaaa",
-      "email": "aaa@aaa.com",
-      "gender": "",
-      "role": "",
-      "isactive": true
-    },
-    {
-      "name": "bbb",
-      "password": "bbbbbb",
-      "email": "bbb@bbb.com",
-      "isactive": true,
-      "id": "2dlp1m7"
-    },
-    {
-      "name": "bbb",
-      "password": "bbbbbb",
-      "email": "bbb@bbb.com",
-      "isactive": true,
-      "id": "4hd2QFg"
-    },
-    {
-      "id": "bbb",
-      "name": "bbb",
-      "password": "bbbbbb",
-      "email": "bbb@bbb.com",
-      "gender": "",
-      "role": "",
-      "isactive": true
-    },
-    {
-      "id": "aeiou",
-      "name": "aeiou",
-      "password": "123456",
-      "email": "aeiou@aeiou.com",
-      "role": "",
-      "isactive": true
-    },
-    {
-      "id": "aaaa",
-      "name": "aaa",
-      "password": "aaaaaa",
-      "email": "aaa@aaa.com",
-      "role": "user",
+      "role": "admin",
       "isactive": true
     },
     {
       "id": "aaab",
       "name": "aaa",
-      "password": "aaaaaa",
+      "password": "$2b$10$lfsboDI62QWvLrNAVIVg..7KvrxnB9UF2fIA/OM1GJHv7MGiYMv46",
       "email": "aaa@aaa.com",
       "role": "user",
       "isactive": true
@@ -78,7 +29,7 @@
     {
       "id": "lucas",
       "name": "lucas",
-      "password": "123456",
+      "password": "$2a$10$dmvbnXbU3weW2tbE3CgLxe4vj7B.awR7J9InMjr6JkLgg2STFhPGq",
       "email": "bbo@bbb.com",
       "role": "user",
       "isactive": true
@@ -86,7 +37,7 @@
     {
       "id": "bibi",
       "name": "bibi",
-      "password": "123123",
+      "password": "$2b$10$l0qtH4eE/.IO2VJRGvAYe.p0Ggfq9ykC7a4LnUxgvBjW5RHSObhWO",
       "email": "bibi@bibi.com",
       "role": "user",
       "isactive": true
@@ -105,6 +56,54 @@
       "password": "$2a$10$nCFfKw/9gJLEUGBr5LViFu/K/Wyzm1H5VPpHeS5zFoyET3kLmDv/a",
       "email": "blau@blau.com",
       "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "romulodaniell",
+      "name": "Romulo Daniell",
+      "password": "$2a$10$ZF2gfbON6droqPBkjuvquepUtjD51nSOG5R0UwC9COkx7KcSuAE6G",
+      "email": "romulodaniell@dizer.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "pcsb",
+      "name": "Pedro Basilio",
+      "password": "$2a$10$.3cKPA2zToTmjqTHm1MKPOULi4mUIpo2i0Aolh1yVwTgBZj6jztOm",
+      "email": "pcsb@cin.ufpe.br",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "testeadmin",
+      "name": "teste insercao",
+      "password": "teste02",
+      "email": "teste@cin.ufpe.br",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "drielle",
+      "name": "Drielle",
+      "password": "senha1",
+      "email": "dri@cin.ufpe.br",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "senha1",
+      "name": "Drielle",
+      "password": "senha1",
+      "email": "senha@cin.ufpe.br",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "teste23",
+      "name": "teste2",
+      "password": "$2a$10$QwZZcYzklQE1CjsUeyAQy./BjMhT/haxAIYkDYt87JQl0p3HHjhwO",
+      "email": "teste@teste",
+      "role": "usuario",
       "isactive": true
     }
   ],
@@ -153,10 +152,10 @@
   ],
   "artistas": [
     {
-      "id": 2,
       "nome": "Rihanna",
       "genero_musical": "Pop/R&B",
-      "url_foto_artista": "https://i.guim.co.uk/img/media/fb824f7321345241e96684bba7678482655f6026/0_0_1576_2362/master/1576.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=22e4c259d5829deb507f667cdaaa45dc"
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/fcb5c35b5ab6fe90565b8647b607ed99.jpg#fcb5c35b5ab6fe90565b8647b607ed99",
+      "id": 2
     },
     {
       "id": 3,
@@ -175,7 +174,7 @@
     {
       "nome": "Planet Her",
       "artistaId": 4,
-      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
       "artistaNome": "Doja Cat",
       "ano_lancamento": "2021",
       "id": 1
@@ -183,15 +182,63 @@
     {
       "nome": "Hot Pink",
       "artistaId": 4,
-      "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
       "artistaNome": "Doja Cat",
-      "ano_lancamento": 63,
+      "ano_lancamento": "2019",
       "id": 2
+    },
+    {
+      "id": 3,
+      "nome": "ANTi (Deluxe)",
+      "ano_lancamento": 2016,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 4,
+      "nome": "Unapologetic (Deluxe)",
+      "ano_lancamento": 2012,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 5,
+      "nome": "Talk That Talk (Deluxe)",
+      "ano_lancamento": 2011,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 6,
+      "nome": "Loud",
+      "ano_lancamento": 2010,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 7,
+      "nome": "Midnights (3am Edition)",
+      "ano_lancamento": 2022,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "artistaId": 3,
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 8,
+      "nome": "evermore (deluxe version)",
+      "ano_lancamento": 2021,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "artistaId": 3,
+      "artistaNome": "Taylor Swift"
     }
   ],
   "musicas": [
     {
-      "titulo": "Go To Town",
+      "titulo": " Woman",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -200,7 +247,7 @@
       "id": 1
     },
     {
-      "titulo": "Roll With Us",
+      "titulo": "Naked",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -209,7 +256,7 @@
       "id": 2
     },
     {
-      "titulo": "Only girl",
+      "titulo": "Payday (Feat. Young Thug)",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -218,12 +265,12 @@
       "id": 3
     },
     {
-      "titulo": "Fancy",
+      "titulo": "Get Into It (Yuh)",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Amala",
+      "tituloAlbum": "Planet Her (Deluxe)",
       "id": 4
     },
     {
@@ -231,9 +278,18 @@
       "titulo": "bixaaaaaaaaaaa",
       "albumId": 2,
       "artistaId": 4,
-      "capaAlbum": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
-      "tituloAlbum": "Hot Pink",
-      "artistaNome": "Doja cat AAAAAAAA"
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat AAAAAAAA",
+      "tituloAlbum": "Hot Pink"
+    }
+  ],
+  "playlists": [
+    {
+      "titulo": "Treino",
+      "privacidade": "Pública",
+      "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
+      "id": 1
     }
   ]
+  "playlists": []
 }
