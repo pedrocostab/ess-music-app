@@ -9,8 +9,8 @@
     </div>
     </div>
     <ul>
-        <li>Editar Informações</li>
-      <li><a routerLink="/cadastrar-musicas" ><button>Cadastrar Álbuns/EPs</button></a></li>
+      <li>Editar Informações</li>
+      <li><button (click)="cadastrarAlbum()">Cadastrar Álbuns/EPs</button></li>
     </ul>
     <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Músicas</p>
     <div class="tableMusicas">
@@ -33,7 +33,7 @@
                 <p>{{musica.titulo}}</p>
               </td>
               <td>{{artistaNome}}</td>
-              <td>{{musica.titulo}}</td>
+              <td>{{musica.tituloAlbum}}</td>
             </tr>
           </ng-container>          
         </tbody>        
@@ -47,7 +47,7 @@
       <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Álbuns / Eps</p>
       <table class="tabela-albuns" id="tabelaAlbum">
         <tr>
-          <td *ngFor="let album of albums"><a [routerLink]="[artistaId, album.id, 'cadastrar-musica']"><img src="{{album.url_foto_album}}"></a><br>{{album.nome}}<br><span class="ano-lancamento">{{album.ano_lancamento}}</span></td>
+          <td *ngFor="let album of albums"><a (click)="visualizarAlbum(album.id)"><img src="{{album.url_foto_album}}"></a><br>{{album.nome}}<br><span class="ano-lancamento">{{album.ano_lancamento}}</span></td>
         </tr>
       </table>
       <ul>

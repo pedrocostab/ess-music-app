@@ -1,15 +1,16 @@
 <div class="admin-container-home">
 <div class = "header">
   <div class="square">
-    <img src="../../assets/anti.jpg" alt="Minha imagem">
+    <img src="{{album.url_foto_album}}" alt="Minha imagem">
   </div>
   <div class="container">
-    <p style="font-size: 30px;">ANTi (Deluxe)</p>
-    <h2 class="informacoesAlbum">Rihanna<br>Álbum - 2016<br>16 músicas</h2>
+    <p style="font-size: 30px;">{{album.nome}}</p>
+    <h2 class="informacoesAlbum">{{album.artistaNome}}<br>Álbum - {{album.ano_lancamento}}<br>{{musicas.length}} músicas</h2>
   </div>
 </div>
 <ul>
     <li>Editar Informações</li>
+    <li><button (click)="cadastrarMusicas()">Cadastrar Musicas</button></li>
 </ul>
 <br>
 <div class="tableGeral">
@@ -22,135 +23,19 @@
         <th># Álbum</th>
       </tr>
     </thead>
-    <tbody>            
-      <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Consideration (Feat. SZA)</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr>
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>James Joint</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Kiss It Bette</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr>
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Work (Feat. Drake)</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Desperado </td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr>
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Woo</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Needed Me</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-    <tr>
-        <td class="album-capa">
-            <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Yeah, I Said It</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-    </tr>
-    <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Sme Ol' Mistakes</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr>
-        <td class="album-capa">
-            <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Never Ending</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-    </tr>
-    <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Love On The Brain</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr>
-        <td class="album-capa">
-            <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Higher</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-    </tr>
-    <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Close To You</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr>
-        <td class="album-capa">
-            <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Goodnight Gotham</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-    </tr>
-    <tr class="cor-diferente">
-        <td class="album-capa">
-          <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Pose</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-      </tr>
-      <tr>
-        <td class="album-capa">
-            <img src="./../../assets/anti.jpg" alt="">
-        </td>
-        <td>Sex With Me</td>
-        <td>Rihanna</td>
-        <td>ANTi (Deluxe)</td>
-    </tr>
+    <tbody>
+      <ng-container *ngFor="let musica of musicas; let i = index">
+        <tr [ngClass]="{ 'cor-diferente': i % 2 == 0 }">
+          <td class="album-capa">
+            <img src="{{musica.capaAlbum}}" alt="">
+          </td>
+          <td>
+            <p>{{musica.titulo}}</p>
+          </td>
+          <td>{{musica.artistaNome}}</td>
+          <td>{{musica.tituloAlbum}}</td>
+        </tr>
+      </ng-container>
     </tbody>
   </table>
 </div>

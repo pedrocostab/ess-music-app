@@ -39,7 +39,7 @@ const routes: Routes = [
   {path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:url_foto_artista/artistaAdmin', component: ArtistaAdminComponent },
   {path: 'album', component: AlbumComponent},
   {path: 'albumAdmin/:id', component: AlbumAdminComponent},
-  {path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:url_foto_artista/artistaAdmin/:artistaId/:albumId/cadastrar-musica', component: MusicasComponent},
+  {path: 'albumAdmin/:albumId/cadastrar-musica', component: MusicasComponent},
   {path: 'cadastrar-artista', component: CadastraArtistaComponent},
   {path: 'visualizar-artistas-admin/:id/cadastrar-album', component: CadastraAlbumComponent},
   {path: 'visualizar-artistas-admin', component: VisualizacaoAdminArtistasComponent}

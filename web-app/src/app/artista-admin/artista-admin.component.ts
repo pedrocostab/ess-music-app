@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CadastraAlbumService } from '../cadastra-album/cadastra-album.service';
 import { MusicaService } from '../musicas/musicas.service';
 import { Album } from '../album/album';
@@ -11,7 +11,7 @@ import { Musica } from '../musicas/musica';
   styleUrls: ['./artista-admin.component.css']
 })
 export class ArtistaAdminComponent implements OnInit {
-  constructor(private route: ActivatedRoute, private cadastraAlbum: CadastraAlbumService, private musicaService: MusicaService) {}
+  constructor(private route: ActivatedRoute, private cadastraAlbum: CadastraAlbumService, private musicaService: MusicaService, private router: Router) {}
   artistaId: string = '';
   artistaNome: string = '';
   artistaGeneroMusical: string = '';
@@ -28,11 +28,20 @@ export class ArtistaAdminComponent implements OnInit {
 
     this.cadastraAlbum.getAlbumsByArtista(this.artistaId).subscribe(albums => {
       this.albums = albums;
+      console.log(albums)
     });
 
     this.musicaService.getMusicasByArtista(this.artistaId).subscribe(musicas => {
       this.musicas = musicas;
     });
+  }
+
+  cadastrarAlbum() {
+    this.router.navigate(['visualizar-artistas-admin', this.artistaId, 'cadastrar-album']);
+  }
+
+  visualizarAlbum(albumId: Number) {
+    this.router.navigate(['albumAdmin', this.artistaId]);
   }
 
 }
