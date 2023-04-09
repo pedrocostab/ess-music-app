@@ -29,7 +29,6 @@ export class ArtistaAdminComponent implements OnInit {
 
     this.cadastraAlbum.getAlbumsByArtista(this.artistaId).subscribe(albums => {
       this.albums = albums;
-      console.log(albums)
     });
 
     this.musicaService.getMusicasByArtista(this.artistaId).subscribe(musicas => {
@@ -42,7 +41,7 @@ export class ArtistaAdminComponent implements OnInit {
   }
 
   visualizarAlbum(albumId: Number) {
-    this.router.navigate(['albumAdmin', this.artistaId]);
+    this.router.navigate(['albumAdmin', String(albumId)]);
   }
 
   removerMusica(musicaId: Number) {

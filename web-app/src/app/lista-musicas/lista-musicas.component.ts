@@ -19,6 +19,7 @@ export class ListaMusicasComponent implements OnInit {
     this.musicaService.getMusicas()
       .subscribe((musicas) => {
         this.musicas = musicas;
+        console.log(musicas)
       });
   }
 
