@@ -11,15 +11,6 @@
       "isactive": true
     },
     {
-      "id": "pcsb",
-      "name": "Pedro Basilio",
-      "password": "pcsb01",
-      "email": "pcsb@cin.ufpe.br",
-      "gender": "",
-      "role": "",
-      "isactive": true
-    },
-    {
       "id": "teste2",
       "name": "teste2",
       "password": "teste2",

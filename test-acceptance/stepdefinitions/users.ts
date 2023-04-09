@@ -36,7 +36,7 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
 
     Then(/^I see a registration completed message$/, async () => {
-        await expect(element(by.cssContainingText('*', 'Registro feito com sucesso!')).isPresent()).toBe(true);
+        await expect(element(by.cssContainingText('*', 'Registro feito com sucesso!')).isPresent()).to.eventually.equal(true);
     })
 
 })
