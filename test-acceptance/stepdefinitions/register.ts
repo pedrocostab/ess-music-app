@@ -4,17 +4,19 @@ let chai = require('chai').use(require('chai-as-promised'));
 let expect = chai.expect;
 import request = require("request-promise");
 
-var base_url = "http://localhost:3000/";
+var base_url = "http://localhost:3000/user";
 
 let sameCPF = ((elem, cpf) => elem.element(by.name('cpflist')).getText().then(text => text === cpf));
 let sameName = ((elem, name) => elem.element(by.name('nomelist')).getText().then(text => text === name));
 
 let pAND = ((p,q) => p.then(a => q.then(b => a && b)))
 
-async function criarAluno(name, cpf) {
-    await $("input[name='namebox']").sendKeys(<string> name);
-    await $("input[name='cpfbox']").sendKeys(<string> cpf);
-    await element(by.buttonText('Adicionar')).click();
+async function criarUsuario(id, name, password, email) {
+    await $("input[name='id']").sendKeys(<string> id);
+    await $("input[name='name']").sendKeys(<string> name);
+    await $("input[name='password']").sendKeys(<string> password);
+    await $("input[name='email']").sendKeys(<string> email);    
+    await element(by.buttonText('Enviar')).click();
 }
 
 async function assertTamanhoEqual(set,n) {
