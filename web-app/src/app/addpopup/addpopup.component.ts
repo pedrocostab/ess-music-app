@@ -3,6 +3,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../service/auth.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
+import * as bcrypt from 'bcryptjs';
+
 
 @Component({
   selector: 'app-addpopup',
@@ -45,6 +47,7 @@ export class AddpopupComponent {
 
   adduser() {
     if (this.registerform.valid) {
+      this.registerform.value.password = await bcrypt.hash(this.registerform.value.password ?? '', 10);
       this.service.Adduser(this.registerform.value).subscribe(res => {
         this.toastr.success('Usuário cadastrado com sucesso!');
         this.dialog.close();
