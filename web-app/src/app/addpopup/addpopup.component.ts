@@ -11,8 +11,8 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AddpopupComponent {
   constructor(private builder: FormBuilder, private service: AuthService,
-    @Inject(MAT_DIALOG_DATA) public data: any, private toastr:ToastrService,
-    private dialog:MatDialogRef<AddpopupComponent>) {
+    @Inject(MAT_DIALOG_DATA) public data: any, private toastr: ToastrService,
+    private dialog: MatDialogRef<AddpopupComponent>) {
 
   }
 
@@ -22,33 +22,35 @@ export class AddpopupComponent {
       this.rolelist = res;
     })
     if (this.data.usercode != null && this.data.usercode != '') {
-      this.service.Getbycode(this.data.usercode).subscribe(res => {
+      this.service.GetbyCode(this.data.usercode).subscribe(res => {
         this.editdata = res;
-        this.registerform.setValue({id:this.editdata.id, name:this.editdata.name, email:this.editdata.email,
-        password:this.editdata.password, role:this.editdata.role, gender:this.editdata.gender,
-        isactive:this.editdata.isactive})
+        this.registerform.setValue({
+          id: this.editdata.id, name: this.editdata.name, email: this.editdata.email,
+          password: this.editdata.password, role: this.editdata.role, gender: this.editdata.gender,
+          isactive: this.editdata.isactive
+        })
       })
     }
   }
   rolelist: any;
 
-  registerform=this.builder.group({
-    id:this.builder.control('', Validators.required),
-    name:this.builder.control('', Validators.required),
-    password:this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
-    email:this.builder.control('', Validators.compose([Validators.required, Validators.email])),
-    gender:this.builder.control(''),
-    role:this.builder.control(''),
-    isactive:this.builder.control(true)
+  registerform = this.builder.group({
+    id: this.builder.control('', Validators.required),
+    name: this.builder.control('', Validators.required),
+    password: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
+    email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
+    gender: this.builder.control(''),
+    role: this.builder.control(''),
+    isactive: this.builder.control(true)
   });
 
   adduser() {
-    if(this.registerform.valid){
-      this.service.Adduser(this.registerform.value).subscribe(res=>{
+    if (this.registerform.valid) {
+      this.service.Adduser(this.registerform.value).subscribe(res => {
         this.toastr.success('Usuário cadastrado com sucesso!');
         this.dialog.close();
       })
-    }else{
+    } else {
       this.toastr.warning('Por favor, insira um dado válido!')
     }
   }
