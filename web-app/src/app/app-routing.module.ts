@@ -60,7 +60,7 @@ const routes: Routes = [
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent },
   {path: 'editar-artista/:id', component: EditaArtistaComponent},
   {path: 'cadastraPlaylist', component: CadastraPlaylistComponent}
-
+]
 
 
 @NgModule({
