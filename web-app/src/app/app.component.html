@@ -1,35 +1,27 @@
 <html>
-
-    <nav>
-        <body>
-
-            <div class="barra-de-inicio" *ngIf="ismenurequired" role="banner">
-                <ul>
-                    <li class="circulo-foto">
-                        <img src="./../../assets/taylor.png" alt="Foto de perfil">
+    <body>
+        <nav class="barra-de-inicio" *ngIf="ismenurequired" role="banner">
+            <ul>
+                <li class="circulo-foto">
+                    <img src="./../../assets/taylor.png" alt="Foto de perfil">
+                </li>
+                <li><a routerLink="/initial-page">Home</a></li>
+                <li><a routerLink="/user">Perfil</a></li>
+                <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="">Biblioteca</a></li>
+                <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/Histórico">Histórico</a></li>
+                <li><a routerLink="">Playlists</a></li>
+                <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/userAdmin">Admin</a></li>
+                <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/cadastrar-musicas">Cadastrar Musica</a></li>
+                <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/lista-musicas">Lista Musica</a></li>
+                <li>
+                    <form action="#" method="get">
+                        <input type="text" name="q" placeholder="Pesquisar músicas, artistas, álbuns...">
+                        <button type="submit">Buscar</button>
+                    </form>
                     </li>
-                    <li><a routerLink="/initial-page">Home</a></li>
-                    <li><a routerLink="/user">Perfil</a></li>
-                    <li><a *ngIf="isuser" routerLink="">Biblioteca</a></li>
-                    <li><a *ngIf="isuser" routerLink="/Histórico">Histórico</a></li>
-                    <li><a routerLink="">Playlists</a></li>
-                    <li><a *ngIf="isadminuser" routerLink="/userAdmin">Admin</a></li>
-                    <li><a *ngIf="isadminuser" routerLink="/cadastrar-musicas">Cadastrar Musica</a></li>
-                    <li><a *ngIf="isadminuser" routerLink="/lista-musicas">Lista Musica</a></li>
-                    <li>
-                        <form action="#" method="get">
-                          <input type="text" name="q" placeholder="Pesquisar músicas, artistas, álbuns...">
-                          <button type="submit">Buscar</button>
-                        </form>
-                      </li>
-                    <ul><li class="logout-item"><a routerLink="/login">Logout</a></li></ul>
-                    
-    
-                </ul>
-
-                
-            </div>
-            <router-outlet></router-outlet>
-        </body>
-    </nav>
+                <li class="logout-item"><a routerLink="/login">Logout</a></li>
+            </ul>
+        </nav>
+        <router-outlet></router-outlet>
+    </body>
 </html>
