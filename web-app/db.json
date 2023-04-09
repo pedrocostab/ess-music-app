@@ -25,8 +25,8 @@
       "password": "teste2",
       "email": "teste@teste",
       "gender": "",
-      "role": "",
-      "isactive": true
+      "role": "usuario",
+      "isactive": false
     },
     {
       "id": "aaa",
@@ -106,6 +106,14 @@
       "password": "$2a$10$VEbWfHjLbOibQvnDGMBHbeEka3qTm3d.FZOYMfnfigO1xaS8U77wO",
       "email": "bibibi@bibibi.com",
       "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "blau",
+      "name": "blau",
+      "password": "$2a$10$nCFfKw/9gJLEUGBr5LViFu/K/Wyzm1H5VPpHeS5zFoyET3kLmDv/a",
+      "email": "blau@blau.com",
+      "role": "user",
       "isactive": true
     }
   ],
