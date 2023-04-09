@@ -85,17 +85,17 @@
   ],
   "albums": [
     {
-      "id": 1,
-      "nome": "Planet Her",
-      "ano_lancamento": 2021,
-      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "nome": "Amala",
       "artistaId": 4,
-      "artistaNome": "Doja cat"
+      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "ano_lancamento": "2021",
+      "id": 1
     },
     {
       "id": 2,
       "nome": "Hot Pink",
-      "ano_lancamento": 0,
+      "ano_lancamento": 63,
       "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
       "artistaId": 4,
       "artistaNome": "Doja cat"
@@ -108,8 +108,35 @@
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her",
+      "tituloAlbum": "Amala",
       "id": 1
+    },
+    {
+      "titulo": "Roll With Us",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 2
+    },
+    {
+      "titulo": "Only girl",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 3
+    },
+    {
+      "titulo": "Fancy",
+      "albumId": 1,
+      "artistaId": 4,
+      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "artistaNome": "Doja cat",
+      "tituloAlbum": "Amala",
+      "id": 4
     }
   ]
 }

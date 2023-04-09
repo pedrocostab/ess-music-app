@@ -45,8 +45,6 @@ export class EditaMusicaComponent implements OnInit {
     });
   }
   
-  
-
   cancelEditarMusica() {
     window.history.back();
   }
