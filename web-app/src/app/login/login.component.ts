@@ -10,9 +10,9 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private builder: FormBuilder, private toastr: ToastrService, 
+  constructor(private builder: FormBuilder, private toastr: ToastrService,
     private service: AuthService, private router: Router) {
-      sessionStorage.clear();
+    sessionStorage.clear();
   }
 
   userdata: any;
@@ -25,18 +25,9 @@ export class LoginComponent {
   proceedlogin() {
     //Login com sucesso
     if (this.loginform.valid) {
-      //   this.service.Proceedregister(this.loginform.value).subscribe(res=> {
-      //     this.toastr.success('Registro feito com sucesso!');
-      //     this.router.navigate(['login'])
-      //   })
-      // } 
-      // //Falha no Login
-      // else {
-      //   this.toastr.warning('Por favor, colocar um dado válido!')
-      // }
-      this.service.Getbycode(this.loginform.value.username).subscribe(res => {
+      this.service.GetbyCode(this.loginform.value.username).subscribe(res => {
         this.userdata = res;
-        // console.log(this.userdata);
+        console.log(this.userdata);
         //Se acertar a senha:
         if (this.userdata.password === this.loginform.value.password) {
           //Se o usuário tiver permissao para entrar:
