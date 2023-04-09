@@ -44,8 +44,8 @@ export class AuthService {
     return sessionStorage.getItem('userrole')?.toString() || '';
   }
 
-  deletarUsuario(code: any): Observable<any> {
-    return this.http.delete<any>(`${this.apiurl}/${code}`);
+  deletarUsuario(code: any) {
+    this.http.delete(this.apiurl + '/' + code).subscribe(res => res)
   }
 }
 

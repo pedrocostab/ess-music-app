@@ -26,7 +26,7 @@ export class EditpopupComponent implements OnInit {
         this.editdata = res;
         this.registerform.setValue({
           id: this.editdata.id, name: this.editdata.name, email: this.editdata.email,
-          password: this.editdata.password, role: this.editdata.role, gender: this.editdata.gender,
+          password: this.editdata.password, role: this.editdata.role,
           isactive: this.editdata.isactive
         })
       })
@@ -39,7 +39,6 @@ export class EditpopupComponent implements OnInit {
     name: this.builder.control('', Validators.required),
     password: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
     email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
-    gender: this.builder.control(''),
     role: this.builder.control(''),
     isactive: this.builder.control(false)
   });

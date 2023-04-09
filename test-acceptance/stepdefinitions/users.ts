@@ -46,7 +46,7 @@ async function getUserFromDb(user_id: string){
 }
 
 defineSupportCode(function ({ Given, When, Then }) {
-    Given(/^I am on the "Registro de novo usuário" page$/, {timeout: 10000}, async () => {
+    Given(/^I am on the "Registro de novo usuário" page$/, { timeout: 10000 }, async () => {
         await browser.get(base_front_url);
         await expect(browser.getTitle()).to.eventually.equal('Dizer');
         await element(by.buttonText('Cadastro')).click();
