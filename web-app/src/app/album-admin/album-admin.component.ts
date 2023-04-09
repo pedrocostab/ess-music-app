@@ -42,4 +42,14 @@ export class AlbumAdminComponent {
   editarAlbum(id: number): void {
     this.router.navigate(['editar-album', id]);
   }
+
+  removerMusica(musicaId: Number) {
+    this.musicaService.deleteMusicaById(String(musicaId))
+    window.location.reload();
+  }
+  
+
+  editarMusica(id: number): void {
+    this.router.navigate(['editar-musica', id]);
+  }
 }
