@@ -41,6 +41,7 @@ Scenario: Registering new users without user
     When I write "Pedro Basilio" in "Nome"
     And I write "pcsb01" in "Senha"
     And I write "pcsb@cin.ufpe.br" in "Email"
+    And I write nothing at "Usuario" field
     And I click on "Enviar"
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Usuario" field highlighted
@@ -50,6 +51,7 @@ Scenario: Registering new users without email
     When I write "pcsb" in "Usuário"
     And I write "Pedro Basilio" in "Nome"
     And I write "pcsb01" in "Senha"
+    And I write nothing at "Email" field
     And I click on "Enviar"
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Email" field highlighted
@@ -59,6 +61,7 @@ Scenario: Registering new users without password
     When I write "pcsb" in "Usuário"
     And I write "Pedro Basilio" in "Nome"
     And I write "pcsb@cin.ufpe.br" in "Email"
+    And I write nothing at "Password" field
     And I click on "Enviar"
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Senha" field highlighted
@@ -68,6 +71,7 @@ Scenario: Registering new users without name
     When I write "pcsb" in "Usuário"
     And I write "pcsb01" in "Senha"
     And I write "pcsb@cin.ufpe.br" in "Email"
+    And I write nothing at "Nome" field
     And I click on "Enviar"
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Nome" field highlighted
@@ -93,6 +97,7 @@ Scenario: User logged in wants to change his password without password
     Given I am on the "Editar Perfil" page
     And I am logged in with user "pcsb" and password "pcsb01"
     When I click on "Alterar Senha" option
+    And I write nothing at "Nova Senha" field
     And I click on "Alterar"
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Nova Senha" field highlighted
@@ -182,6 +187,7 @@ Scenario: Administrator wants to edit a User information without email
     When I click on the "Editar" button on the "Usuario" user "pcsb" line
     And I write "Pedro Costa" at "Nome" field
     And I write "pcsb01" at "Senha" field
+    And I write nothing at "Email" field
     And I click "Atualizar"
     Then I get a Error message "Por favor colocar um dado válido"
     And I see the "Email" field highlighted
@@ -198,6 +204,7 @@ Scenario: Administrator wants to edit a User information without password
     When I click on the "Editar" button on the "Usuario" user "pcsb" line
     And I write "Pedro Costa" at "Nome" field
     And I write "pcsb2@cin.ufpe.br" at "Email" field
+    And I write nothing at "Senha" field
     And I click "Atualizar"
     Then I get a Error message "Por favor colocar um dado válido"
     And I see the "Senha" field highlighted
@@ -214,6 +221,7 @@ Scenario: Administrator wants to edit a User information without password
     When I click on the "Editar" button on the "Usuario" user "pcsb" line
     And I write "pcsb01" at "Senha" field
     And I write "pcsb2@cin.ufpe.br" at "Email" field
+    And I write nothing at "Nome" field
     And I click "Atualizar"
     Then I get a Error message "Por favor colocar um dado válido"
     And I see the "Nome" field highlighted
@@ -248,6 +256,7 @@ Scenario: Administrator wants to edit a user role without selecting a role
     And I see the "Cargo" user "Usuario"
     And I see the "Ativo" user field checked
     When I click on the "Ativar" button on the "Usuario" user "pcsb" line
+    And I select nothing at "Tipo de Usuario" field
     And I click "Atualizar"
     Then I get a Error message "Por favor, selecione um cargo!"
 
@@ -309,6 +318,7 @@ Scenario: Administrator wants to add a new User without user field
     And I write "pcsb2@cin.ufpe.br" at "Email" field
     And I select "Usuario" at "Tipo de Usuario" field
     And I select the checkbox of "Ativo" field
+    And I write nothing at "Usuario" field
     And I click "Adicionar"
     Then I see a error message "Por favor, insira um dado válido!"
 
@@ -322,6 +332,7 @@ Scenario: Administrator wants to add a new User without user field
     And I write "pcsb02" at "Senha" field
     And I select "Usuario" at "Tipo de Usuario" field
     And I select the checkbox of "Ativo" field
+    And I write nothing at "Email" field
     And I click "Adicionar"
     Then I see a error message "Por favor, insira um dado válido!"
 
@@ -335,6 +346,7 @@ Scenario: Administrator wants to add a new User without user field
     And I write "pcsb2@cin.ufpe.br" at "Email" field
     And I select "Usuario" at "Tipo de Usuario" field
     And I select the checkbox of "Ativo" field
+    And I write nothing at "Senha" field
     And I click "Adicionar"
     Then I see a error message "Por favor, insira um dado válido!"
 
@@ -348,6 +360,7 @@ Scenario: Administrator wants to add a new User without user field
     And I write "pcsb2@cin.ufpe.br" at "Email" field
     And I select "Usuario" at "Tipo de Usuario" field
     And I select the checkbox of "Ativo" field
+    And I write nothing at "Nome" field
     And I click "Adicionar"
     Then I see a error message "Por favor, insira um dado válido!"
 
@@ -361,5 +374,6 @@ Scenario: Administrator wants to add a new User without user field
     And I write "pcsb02" at "Senha" field
     And I write "pcsb2@cin.ufpe.br" at "Email" field
     And I select the checkbox of "Ativo" field
+    And I write nothing at "Tipo de Usuario" field
     And I click "Adicionar"
     Then I see a error message "Por favor, insira um dado válido!"

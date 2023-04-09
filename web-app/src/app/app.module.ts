@@ -40,6 +40,7 @@ import { CadastraArtistaComponent } from './cadastra-artista/cadastra-artista.co
 import { CadastraAlbumComponent } from './cadastra-album/cadastra-album.component';
 import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artistas/visualizacao-admin-artistas.component';
 import { CadastraAlbumService } from './cadastra-album/cadastra-album.service';
+import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { CadastraAlbumService } from './cadastra-album/cadastra-album.service';
     AlbumAdminComponent,
     CadastraArtistaComponent,
     CadastraAlbumComponent,
-    VisualizacaoAdminArtistasComponent
+    VisualizacaoAdminArtistasComponent,
+    PlaylistAdminComponent
   ],
   imports: [
     BrowserModule,
