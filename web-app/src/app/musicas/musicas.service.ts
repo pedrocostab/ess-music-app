@@ -56,7 +56,6 @@ export class MusicaService {
   deleteMusicaById(musicaId: string) {
     this.http.delete(this.taURL + "/musicas/" + musicaId, { observe: 'response' }).subscribe(res => res);
   }
-  
 
   private catch(erro: any): Promise<any>{
     console.error('Oops, something went wrong',erro);

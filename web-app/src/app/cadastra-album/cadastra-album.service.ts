@@ -1,9 +1,10 @@
 // Importe as dependências necessárias
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { EMPTY, Observable, forkJoin, of } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { Album } from "../album/album"
 import { Injectable } from '@angular/core';
+import { Musica } from '../musicas/musica';
 
 @Injectable({
   providedIn: 'root'
@@ -48,6 +49,26 @@ export class CadastraAlbumService {
     return this.http.get(this.taURL + '/albums?artistaId=' + artistaId, {'observe': 'body'})
       .pipe(map(res => res as Album[]));
   }
+
+  deleteAlbumById(albumId: string): Observable<any> {
+    return this.http.get<Musica[]>(this.taURL + '/musicas?albumId=' + albumId).pipe(
+      switchMap((musicas: Musica[]) => {
+        if (musicas.length === 0) {
+          // Se não houver músicas, exclui o álbum diretamente
+          return this.http.delete(this.taURL + '/albums/' + albumId);
+        } else {
+          // Se houver músicas, exclui cada música e depois o álbum
+          const deleteMusicasObservables = musicas.map(musica =>
+            this.http.delete(this.taURL + '/musicas/' + musica.id)
+          );
+          // Usa forkJoin para aguardar a exclusão de todas as músicas antes de excluir o álbum
+          return forkJoin(deleteMusicasObservables).pipe(
+            switchMap(() => this.http.delete(this.taURL + '/albums/' + albumId))
+          );
+        }
+      })
+    );
+  }  
 
   private catch(erro: any): Promise<any>{
     console.error('Oops, something went wrong',erro);

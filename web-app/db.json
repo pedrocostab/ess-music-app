@@ -83,34 +83,6 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
     }
   ],
-  "albums": [
-    {
-      "id": 1,
-      "nome": "Planet Her",
-      "ano_lancamento": 2021,
-      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "artistaId": 1,
-      "artistaNome": "doja cat"
-    }
-  ],
-  "musicas": [
-    {
-      "id": 2,
-      "titulo": "Alone",
-      "albumId": 1,
-      "artistaId": 1,
-      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "tituloAlbum": "Planet Her",
-      "artistaNome": "doja cat"
-    },
-    {
-      "id": 3,
-      "titulo": "kiss me more",
-      "albumId": 1,
-      "artistaId": 1,
-      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "tituloAlbum": "Planet Her",
-      "artistaNome": "doja cat"
-    }
-  ]
+  "albums": [],
+  "musicas": []
 }

@@ -4,6 +4,7 @@ import { Musica } from '../musicas/musica';
 import { MusicaService } from '../musicas/musicas.service';
 import { Album } from '../album/album';
 import { CadastraAlbumService } from '../cadastra-album/cadastra-album.service';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-album-admin',
@@ -31,4 +32,12 @@ export class AlbumAdminComponent {
   cadastrarMusicas() {
     this.router.navigate(['albumAdmin', this.albumId, 'cadastrar-musica']);
   }
+
+  removerAlbum() {
+    this.albumService.deleteAlbumById(this.albumId).subscribe(() => {
+      this.router.navigate(['visualizar-artistas-admin']);
+    });
+  }
+  
+  
 }
