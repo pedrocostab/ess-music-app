@@ -1,19 +1,19 @@
 <div class="content-cadastrar">
-    <h1>Criar uma nova playlist    <span class="material-icons">queue_music</span></h1>
+    <h1>Criar uma nova playlist <span class="material-icons">queue_music</span></h1>
     <table>
        <tr>
-          <td><input id="album-nome"placeholder="Digite aqui o nome da playlist"></td>
+          <td><input id="playlist-nome" [(ngModel)]="playlist.titulo" placeholder="Digite aqui o nome da playlist"></td>
        </tr>
        <br>
        <tr>
-          <td><input id="album-ano_lancamento"placeholder="Privacidade"></td>
+          <td><input id="playlist-privacidade" [(ngModel)]="playlist.privacidade" placeholder="Privacidade"></td>
        </tr>
        <br>
        <tr>
-          <td><input id="album-url_foto_album" laceholder="Digite aqui uma url da foto dessa playlist"></td>
+          <td><input id="playlist-url_foto_playlist" [(ngModel)]="playlist.url_foto_playlist" placeholder="Digite aqui uma url da foto para essa playlist"></td>
        </tr>
     </table>
     <div class="content-cadastrar-buttons">
-      <button id="register-album">Cancelar</button>
-      <button id="register-album">Criar</button>
+      <button id="register-playlist" (click)="cancelarCadastrarPlaylist()">Cancelar</button>
+      <button id="register-playlist" (click)="cadastraPlaylist()">Criar</button>
  </div>

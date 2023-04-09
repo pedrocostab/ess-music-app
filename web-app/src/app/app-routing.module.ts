@@ -35,13 +35,13 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'lista-usuarios', component: UserlistingComponent, canActivate: [AuthGuard] },
-  { path: 'lista-musicas', component: ListaMusicasComponent, canActivate: [AuthGuard] },
-  { path: 'initial-page', component: InitialPageComponent, canActivate: [AuthGuard] },
-  { path: 'userAdmin', component: UserAdminComponent, canActivate: [AuthGuard] },
-  { path: 'user', component: UserComponent, canActivate: [AuthGuard] },
-  { path: 'artista', component: ArtistaComponent, canActivate: [AuthGuard] },
-  { path: 'userEdit', component: UserEditComponent, canActivate: [AuthGuard] },
+  { path: 'lista-usuarios', component: UserlistingComponent},
+  { path: 'lista-musicas', component: ListaMusicasComponent},
+  { path: 'initial-page', component: InitialPageComponent},
+  { path: 'userAdmin', component: UserAdminComponent},
+  { path: 'user', component: UserComponent},
+  { path: 'artista', component: ArtistaComponent},
+  { path: 'userEdit', component: UserEditComponent},
   { path: 'playlistUser', component: PlaylistUserComponent },
   { path: 'playlistCategoria', component: PlaylistCategoriaComponent },
   { path: 'playlistSeguida', component: PlaylistSeguidaComponent },
@@ -58,10 +58,9 @@ const routes: Routes = [
   { path: 'playlistsCategoria', component: PlaylistsCategoriaComponent },
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent },
-  {path: 'editar-artista/:id', component: EditaArtistaComponent},
-  {path: 'cadastraPlaylist', component: CadastraPlaylistComponent}
-
-
+  { path: 'editar-artista/:id', component: EditaArtistaComponent },
+  { path: 'cadastraPlaylist', component: CadastraPlaylistComponent }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
