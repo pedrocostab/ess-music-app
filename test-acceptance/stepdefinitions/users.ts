@@ -53,6 +53,13 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/register');
     })
 
+    Given(/^I am logged in with an admin account with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user, password) => {
+        await browser.get(base_front_url);
+        await expect(browser.getTitle()).to.eventually.equal('Dizer');
+        await element(by.buttonText('Cadastro')).click();
+        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/register');
+    })
+
     When(/^I write "([^\"]*)" in "Usuário" field$/, async (id) => {
         await $("input[formControlName='id']").sendKeys(<string> id);
     })
@@ -68,6 +75,11 @@ defineSupportCode(function ({ Given, When, Then }) {
     When(/^I write "([^\"]*)" in "Email" field$/, async (email) => {
         await $("input[formControlName='email']").sendKeys(<string> email);
     })
+
+    When(/^I write "([^\"]*)" in "Nova Senha" field$/, async (email) => {
+        await $("input[formControlName='password']").sendKeys(<string> email);
+    })
+
 
     When(/^I click on "Enviar"$/, async () => {
         await element(by.buttonText('Enviar')).click();
@@ -95,6 +107,10 @@ defineSupportCode(function ({ Given, When, Then }) {
 
     When(/^I click on "Deletar Perfil"$/, async () => {
         await element(by.buttonText('Deletar Perfil')).click();
+    })
+
+    When(/^I click on "Adicionar Usuario"$/, async () => {
+        await element(by.buttonText('Adicionar Usuario')).click();
     })
 
     When(/^When I write nothing in "([^\"]*)" field$/, async (campo) => {
