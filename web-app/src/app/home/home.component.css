@@ -1,4 +1,8 @@
 
+.title{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 div.container-home {
     display: flex;
     align-items: center;
@@ -17,12 +21,12 @@ div.container-home-content {
 
 div.container-home-content h1 {
     font-size: 5rem;
-    text-shadow: 3px 2px 10px #9039D4;
+    text-shadow: 3px 2px 10px rgba(137, 7, 198, 1);
 }
 
 div.container-home-content h3 {
     font-size: 2rem;
-    text-shadow: 3px 2px 10px #9039D4;
+    text-shadow: 3px 2px 10px rgba(137, 7, 198, 1);
 }
 
 div.container-home-content {
@@ -66,14 +70,13 @@ div.container-home-buttons {
 
 div.container-home-buttons button {
     box-shadow: 0px 0px 7px 0px #3c2a71;
-	background:linear-gradient(to bottom, #865bcc 5%, #3c2a71 100%);
-	background-color:#865bcc;
+	background-color:rgba(137, 7, 198, 1);
 	border-radius: 50px;
 	border:transparent;
 	cursor:pointer;
 	color:#ffffff;
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     width: 10rem;
     height: 3rem;
 	padding: 10px 15px;

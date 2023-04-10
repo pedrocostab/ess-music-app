@@ -5,7 +5,7 @@
                 <li class="circulo-foto">
                     <img src="./../../assets/taylor.png" alt="Foto de perfil">
                 </li>
-                <li><a routerLink="/initial-page">Home</a></li>
+                <li [ngClass]="{'hide-item': !isuser}"><a routerLink="/initial-page">Home</a></li>
                 <li [ngClass]="{'hide-item': !isuser}"><a routerLink="/user">Perfil</a></li>
                 <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/playlistsCategoria">Playlists</a></li>
                 <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/bibliotecaUsuario">Biblioteca</a></li>

@@ -44,7 +44,12 @@ export class LoginComponent {
             if (this.userdata.isactive) {
               localStorage.setItem('username', this.userdata.id);
               localStorage.setItem('userrole', this.userdata.role);
-              this.router.navigate(['/initial-page']);
+              if(this.userdata.role === 'admin'){
+                this.router.navigate(['/userAdmin']);
+              } else {
+                this.router.navigate(['/initial-page']);
+              }
+              
             } else {
               this.toastr.error('Por favor, renove seu cadastro na Dizer ou contate nosso suporte');
             }
