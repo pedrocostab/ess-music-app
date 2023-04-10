@@ -62,9 +62,24 @@ defineSupportCode(function ({ Given, When, Then }) {
         await element(by.cssContainingText('div', 'Por favor colocar um dado válido')).isPresent();
     })
 
-    Then(/^I see the "Email" field highlighted"$/, { timeout: 10000 }, async () => {
+    Then(/^I see the "Email" field highlighted$/, { timeout: 10000 }, async () => {
         // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
-        await expect($(`div.mat-mdc-text-field-wrapper.mdc-text-field.ng-tns-c8-3.mdc-text-field--filled.mdc-text-field--invalid`).isPresent()).to.eventually.equal(true);
+        await expect($("input[formControlName='email'].ng-invalid").isPresent()).to.eventually.equal(true);
+    })
+
+    Then(/^I see the "Senha" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='password'].ng-invalid").isPresent()).to.eventually.equal(true);
+    })
+
+    Then(/^I see the "Usuario" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='id'].ng-invalid").isPresent()).to.eventually.equal(true);
+    })
+
+    Then(/^I see the "Nome" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='name'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
 
 })
