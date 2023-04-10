@@ -298,5 +298,11 @@
       "tituloAlbum": "Hot Pink"
     }
   ],
-  "playlists": []
+  "playlists": [],
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Pop music"
+    }
+  ]
 }
