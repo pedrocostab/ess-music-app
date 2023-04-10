@@ -6,6 +6,7 @@ import { Album } from '../album/album';
 import { CadastraAlbumService } from '../cadastra-album/cadastra-album.service';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import { Categoria } from '../criar-categoria/categoria';
 
 @Component({
   selector: 'app-edita-artista',
@@ -17,6 +18,8 @@ export class EditaArtistaComponent {
   musicas: Musica[] = [];
   albums: Album[] = [];
   artista: Artista = new Artista;
+  categorias: Categoria[] = [];
+  categoriasSelecionadas: Categoria[] = [];
 
   private taURL = 'http://localhost:3000';
 
@@ -36,18 +39,27 @@ export class EditaArtistaComponent {
     this.albumService.getAlbumsByArtista(String(this.id)).subscribe(albums => {
       this.albums = albums
     })
+
+    this.http.get<any[]>(this.taURL+'/categorias').subscribe(
+      (categorias) => {
+        this.categorias = categorias;
+      },
+      (error) => {
+        console.error('Erro ao carregar categorias:', error);
+      }
+    );
   }
 
   editarArtista(artista: Artista) {
     const novoNome = (<HTMLInputElement>document.getElementById("artista-nome")).value;
-    const novoGenero = (<HTMLInputElement>document.getElementById("artista-genero")).value;
+    const novoGenero = (<HTMLInputElement>document.getElementById("artista-categoria")).value;
     const novaImagem = (<HTMLInputElement>document.getElementById("artista-imagem")).value;
   
     // Requisição PUT para atualizar o artista
     this.http.put(this.taURL + "/artistas/" + String(artista.id), {
       nome: novoNome || this.artista.nome,
       genero_musical: novoGenero || this.artista.genero_musical,
-      url_foto_artista: novaImagem || this.artista.url_foto_artista,
+      categoria: novaImagem || this.artista.categoria,
     }).subscribe(() => {
       console.log('Artista atualizado com sucesso!');
   

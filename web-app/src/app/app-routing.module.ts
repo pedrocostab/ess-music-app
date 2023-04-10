@@ -48,7 +48,7 @@ const routes: Routes = [
   { path: 'playlistUser', component: PlaylistUserComponent },
   { path: 'playlistCategoria', component: PlaylistCategoriaComponent },
   { path: 'playlistSeguida', component: PlaylistSeguidaComponent },
-  { path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:url_foto_artista/artistaAdmin', component: ArtistaAdminComponent },
+  { path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:categoria/artistaAdmin', component: ArtistaAdminComponent },
   { path: 'album', component: AlbumComponent },
   { path: 'albumAdmin/:id', component: AlbumAdminComponent },
   { path: 'albumAdmin/:albumId/cadastrar-musica', component: MusicasComponent },

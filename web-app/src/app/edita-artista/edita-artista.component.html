@@ -6,11 +6,15 @@
        </tr>
        <br>
        <tr>
-          <td><input id="artista-genero" [(ngModel)]="artista.genero_musical" placeholder="Digite aqui o gênero musical desse artista"></td>
+         <td>
+           <select id="artista-categoria" [(ngModel)]="artista.genero_musical">
+             <option *ngFor="let categoria of categorias" [value]="categoria.titulo">{{ categoria.titulo }}</option>
+           </select>
+         </td>
        </tr>
        <br>
        <tr>
-          <td><input id="artista-imagem" [(ngModel)]="artista.url_foto_artista" placeholder="Digite aqui uma url de uma foto do artista"></td>
+          <td><input id="artista-imagem" [(ngModel)]="artista.categoria" placeholder="Digite aqui uma url de uma foto do artista"></td>
        </tr>
     </table>
     <div class="content-cadastrar-buttons">

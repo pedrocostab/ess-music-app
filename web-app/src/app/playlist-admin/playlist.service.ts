@@ -20,13 +20,19 @@ export class PlaylistService {
   }
 
   createPlaylist(playlist: Playlist): Observable<Playlist | null>{
+    const novaPrivacidade = (<HTMLInputElement>document.getElementById("playlist-privacidade")).value;
+    const novaCategoria = (<HTMLInputElement>document.getElementById("playlist-categoria")).value;
+
     const newPlaylists = {
       id: playlist.id,
       titulo: playlist.titulo,
-      privacidade: playlist.privacidade,
+      privacidade: novaPrivacidade,
+      categoria: novaCategoria,
       url_foto_playlist: playlist.url_foto_playlist,
       usuario_dono: this.user
     };
+
+    console.log(playlist.privacidade)
 
     return this.http.post(this.taURL + "/playlists", JSON.stringify(newPlaylists), {headers: this.headers, observe: "response"})
     .pipe(map(res => {

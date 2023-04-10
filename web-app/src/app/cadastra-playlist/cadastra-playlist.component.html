@@ -6,9 +6,22 @@
        </tr>
        <br>
        <tr>
-          <td><input id="playlist-privacidade" [(ngModel)]="playlist.privacidade" placeholder="Privacidade"></td>
+          <td>
+            <select id="playlist-privacidade">
+              <option value="Pública">Pública</option>
+              <option value="Privada">Privada</option>
+            </select>
+          </td>
        </tr>
        <br>
+       <tr>
+         <td>
+            <select id="playlist-categoria" [(ngModel)]="playlist.categoria">
+               <option *ngFor="let categoria of categorias" [value]="categoria.titulo">{{ categoria.titulo }}</option>
+            </select>
+         </td>
+      </tr>
+      <br>
        <tr>
           <td><input id="playlist-url_foto_playlist" [(ngModel)]="playlist.url_foto_playlist" placeholder="Digite aqui uma url da foto para essa playlist"></td>
        </tr>
