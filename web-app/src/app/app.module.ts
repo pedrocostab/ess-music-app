@@ -51,6 +51,7 @@ import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
 import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
+import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-playlist.component';
 
 @NgModule({
   declarations: [
@@ -91,8 +92,8 @@ import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.compo
     EditaArtistaComponent,
     EditarPlaylistComponent,
     ResultadosPesquisaComponent,
-    CriarCategoriaComponent
-
+    CriarCategoriaComponent,
+    SelecionarPlaylistComponent
   ],
   imports: [
     BrowserModule,
