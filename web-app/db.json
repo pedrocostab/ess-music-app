@@ -281,6 +281,159 @@
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
       "artistaNome": "Doja cat AAAAAAAA",
       "tituloAlbum": "Hot Pink"
+    },
+    {
+      "id": 6,
+      "titulo": "willow",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 7,
+      "titulo": "champagne problems",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 8,
+      "titulo": "gold rush",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 9,
+      "titulo": "'tis the damn season",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 10,
+      "titulo": "tolerate it",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 11,
+      "titulo": "no body, no crime (feat. HAIM)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 12,
+      "titulo": "happiness",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 13,
+      "titulo": "dorothea",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 14,
+      "titulo": "coney island (feat. The National)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 15,
+      "titulo": "ivy",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 16,
+      "titulo": "cowboy like me",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 17,
+      "titulo": "long story short",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 18,
+      "titulo": "marjorie",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 19,
+      "titulo": "closure",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 20,
+      "titulo": "evermore (feat. Bon Iver)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 21,
+      "titulo": "right where you left me (bonus track)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 22,
+      "titulo": "it's time to go (bonus track)",
+      "albumId": 8,
+      "artistaId": 3,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "tituloAlbum": "evermore (deluxe version)",
+      "artistaNome": "Taylor Swift"
     }
   ],
   "playlists": [
@@ -291,5 +444,4 @@
       "id": 1
     }
   ]
-  "playlists": []
 }
