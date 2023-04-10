@@ -22,7 +22,7 @@ export class EditaMusicaComponent implements OnInit {
 
 
   ngOnInit() {
-    this.id = + this.route.snapshot.params['id'];
+    this.id = this.route.snapshot.params['id'];
     this.musicaService.getMusicaById(String(this.id)).subscribe(musica => {
       this.musicaAntiga = musica;
     });

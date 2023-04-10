@@ -246,18 +246,10 @@
   ],
   "playlists": [
     {
-      "id": 1,
       "titulo": "Treino",
       "privacidade": "Pública",
       "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
-      "usuario_dono": {
-        "id": "bibs",
-        "name": "bibs",
-        "password": "$2a$10$L6SROA3Rh2cOidEGmHRYzOMHuoSSTVQUA3ShzPF7i.MpPngQ/9tQ.",
-        "email": "bibs@bibs.com",
-        "role": "admin",
-        "isactive": true
-      }
+      "id": 1
     }
   ]
 }
