@@ -108,11 +108,11 @@
       "isactive": true
     },
     {
-      "id": "bibs",
-      "name": "bibs",
-      "password": "$2a$10$L6SROA3Rh2cOidEGmHRYzOMHuoSSTVQUA3ShzPF7i.MpPngQ/9tQ.",
-      "email": "bibs@bibs.com",
-      "role": "admin",
+      "id": "romulodaniell",
+      "name": "Romulo Daniell",
+      "password": "$2a$10$ZF2gfbON6droqPBkjuvquepUtjD51nSOG5R0UwC9COkx7KcSuAE6G",
+      "email": "romulodaniell@dizer.com",
+      "role": "user",
       "isactive": true
     }
   ],
@@ -161,10 +161,10 @@
   ],
   "artistas": [
     {
-      "id": 2,
       "nome": "Rihanna",
       "genero_musical": "Pop/R&B",
-      "url_foto_artista": "https://i.guim.co.uk/img/media/fb824f7321345241e96684bba7678482655f6026/0_0_1576_2362/master/1576.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=22e4c259d5829deb507f667cdaaa45dc"
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/fcb5c35b5ab6fe90565b8647b607ed99.jpg#fcb5c35b5ab6fe90565b8647b607ed99",
+      "id": 2
     },
     {
       "id": 3,
@@ -173,17 +173,23 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
     },
     {
-      "nome": "Doja Cat",
-      "genero_musical": "hip hop / rap",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
-      "id": 4
+      "id": 4,
+      "nome": "Doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Arctic Monkeys",
+      "genero_musical": "Indie Rock",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/a9788abf3dd8ebd18e55ec6809c8995c.jpg#a9788abf3dd8ebd18e55ec6809c8995c"
     }
   ],
   "albums": [
     {
       "nome": "Planet Her",
       "artistaId": 4,
-      "url_foto_album": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
       "artistaNome": "Doja Cat",
       "ano_lancamento": "2021",
       "id": 1
@@ -191,15 +197,63 @@
     {
       "nome": "Hot Pink",
       "artistaId": 4,
-      "url_foto_album": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
       "artistaNome": "Doja Cat",
-      "ano_lancamento": 63,
+      "ano_lancamento": "2019",
       "id": 2
+    },
+    {
+      "id": 3,
+      "nome": "ANTi (Deluxe)",
+      "ano_lancamento": 2016,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 4,
+      "nome": "Unapologetic (Deluxe)",
+      "ano_lancamento": 2012,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 5,
+      "nome": "Talk That Talk (Deluxe)",
+      "ano_lancamento": 2011,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 6,
+      "nome": "Loud",
+      "ano_lancamento": 2010,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "artistaId": 2,
+      "artistaNome": "Rihanna"
+    },
+    {
+      "id": 7,
+      "nome": "Midnights (3am Edition)",
+      "ano_lancamento": 2022,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "artistaId": 3,
+      "artistaNome": "Taylor Swift"
+    },
+    {
+      "id": 8,
+      "nome": "evermore (deluxe version)",
+      "ano_lancamento": 2021,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "artistaId": 3,
+      "artistaNome": "Taylor Swift"
     }
   ],
   "musicas": [
     {
-      "titulo": "Go To Town",
+      "titulo": " Woman",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -208,7 +262,7 @@
       "id": 1
     },
     {
-      "titulo": "Roll With Us",
+      "titulo": "Naked",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -217,7 +271,7 @@
       "id": 2
     },
     {
-      "titulo": "Only girl",
+      "titulo": "Payday (Feat. Young Thug)",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
@@ -226,12 +280,12 @@
       "id": 3
     },
     {
-      "titulo": "Fancy",
+      "titulo": "Get Into It (Yuh)",
       "albumId": 1,
       "artistaId": 4,
       "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
       "artistaNome": "Doja cat",
-      "tituloAlbum": "Amala",
+      "tituloAlbum": "Planet Her (Deluxe)",
       "id": 4
     },
     {
@@ -239,7 +293,8 @@
       "titulo": "bixaaaaaaaaaaa",
       "albumId": 2,
       "artistaId": 4,
-      "capaAlbum": "https://rollingstone.uol.com.br/media/uploads/doja-cat-disco-hot-pink_reproducao_twitter.jpg",
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
+      "artistaNome": "Doja cat",
       "tituloAlbum": "Hot Pink",
       "artistaNome": "Doja cat AAAAAAAA"
     }

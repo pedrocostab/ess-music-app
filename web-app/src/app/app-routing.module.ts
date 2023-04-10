@@ -31,6 +31,7 @@ import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usua
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
+import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -59,10 +60,12 @@ const routes: Routes = [
   { path: 'playlistsCategoria', component: PlaylistsCategoriaComponent },
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent },
-  { path: 'editar-artista/:id', component: EditaArtistaComponent },
-  { path: 'cadastraPlaylist', component: CadastraPlaylistComponent },
   { path: 'editar-playlist/:id', component: EditarPlaylistComponent },
+  { path: 'editar-artista/:id', component: EditaArtistaComponent},
+  { path: 'cadastraPlaylist', component: CadastraPlaylistComponent},
+  { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent}
 ]
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

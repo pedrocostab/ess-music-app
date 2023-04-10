@@ -48,6 +48,7 @@ import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/pl
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
+import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
 
 @NgModule({
@@ -87,7 +88,8 @@ import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.compo
     BibliotecaUsuarioComponent,
     CadastraPlaylistComponent,
     EditaArtistaComponent,
-    EditarPlaylistComponent
+    EditarPlaylistComponent,
+    ResultadosPesquisaComponent
 
   ],
   imports: [
