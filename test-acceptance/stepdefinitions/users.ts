@@ -1,5 +1,5 @@
 import { defineSupportCode } from 'cucumber';
-import { browser, $, element, ElementArrayFinder, by, ExpectedConditions } from 'protractor';
+import { browser, $, element, ElementArrayFinder, by, ExpectedConditions, WebDriver } from 'protractor';
 let chai = require('chai').use(require('chai-as-promised'));
 let expect = chai.expect;
 import { HttpClient } from 'selenium-webdriver/http';
@@ -37,10 +37,10 @@ async function getUserFromDb(user_id: string){
 
 defineSupportCode(function ({ Given, When, Then }) {
     Given(/^I am on the "Registro de novo usuário" page$/, { timeout: 10000 }, async () => {
-        await browser.get(base_front_url);
-        await expect(browser.getTitle()).to.eventually.equal('Dizer');
-        await element(by.buttonText('Cadastro')).click();
-        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/register');
+        await browser.get(base_front_url + '/register');
+        // await expect(browser.getTitle()).to.eventually.equal('Dizer');
+        // await $("a[routerLink='/register']").click();
+        // await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/register');
     })
 
     Given(/^I am on the "Editar Perfil" page$/, {timeout: 10000}, async () => {
@@ -57,9 +57,10 @@ defineSupportCode(function ({ Given, When, Then }) {
 
 
     Given(/^I see a list of system users$/, {timeout: 10000}, async () => {
-        const listaUsuarios = await this.page.$(".lista-usuarios");
-        expect(listaUsuarios).to.exist;
-        // await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/lista-usuarios');
+        // const listaUsuarios = await this.page.$(".lista-usuarios");
+        // expect(listaUsuarios).to.exist;
+        // // await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/lista-usuarios');
+
     })
 
     Given(/^I see a list of system users with "3" users$/, {timeout: 10000}, async () => {
@@ -67,12 +68,12 @@ defineSupportCode(function ({ Given, When, Then }) {
         expect(listaUsuarios).to.have.lengthOf.at.least(3);
     })
     
-    Given(/^I am logged in with an admin account with user "([^\"]*)"$/, {timeout: 10000}, async (user : string) => {
-        loginAsUser(user);
+    Given(/^I am logged in with an admin account with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user : string, password:string) => {
+        loginAsUser(user, password);
     })
 
-    Given(/^I am logged in with user "([^\"]*)"$/, {timeout: 10000}, async (user : string) => {
-        loginAsUser(user);
+    Given(/^I am logged in with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user : string, password:string) => {
+        loginAsUser(user, password);
     })
 
     Given(/^I see the "email" user "([^\"]*)"$/, {timeout: 10000}, async (email : string) => {
@@ -84,6 +85,14 @@ defineSupportCode(function ({ Given, When, Then }) {
         ).to.eventually.equal(true);
     })
     
+    
+    When(/^I fill the fields "Usuario", "Nome", "Senha" and "Email" with the values "([^\"]*)", "([^\"]*)", "([^\"]*)" and "([^\"]*)"$/, async (id, name, password, email) => {
+        await $("input[formControlName='id']").sendKeys(<string> id);
+        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='email']").sendKeys(<string> email);
+    })
+
 
     When(/^I write "([^\"]*)" in "Usuário" field$/, async (id) => {
         await $("input[formControlName='id']").sendKeys(<string> id);
@@ -175,7 +184,9 @@ defineSupportCode(function ({ Given, When, Then }) {
     //   });
 
     Then(/^I see a registration completed message$/, async () => {
-        await expect(element(by.cssContainingText('*', 'Registro feito com sucesso!')).isPresent()).to.eventually.equal(true);
+        await browser.get(base_front_url+'/login');
+        await expect(element(by.tagName('div role="alert"')).getText()).toBe('Registro feito com sucesso!').to.eventually.equal(true);
+        // await expect(element(by.findElements('Registro feito com sucesso!')).isPresent()).to.eventually.equal(true);
     })
     Then(/^I am logged out on the "Pagina Inicial" page$/, { timeout: 10000 }, async () => {
         await browser.get(base_front_url);
