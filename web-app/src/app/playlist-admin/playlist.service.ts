@@ -9,12 +9,12 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class PlaylistService {
-  private headers = new HttpHeaders({'Content-Type': 'application/json'});
+  private headers = new HttpHeaders({ 'Content-Type': 'application/json' });
   private taURL = 'http://localhost:3000';
   user: any;
 
   constructor(private http: HttpClient, private service: AuthService, private router: Router) {
-    this.service.GetbyCode(sessionStorage.getItem('username')).subscribe(res => {
+    this.service.GetbyCode(localStorage.getItem('username')).subscribe(res => {
       this.user = res;
     });
   }
@@ -32,21 +32,19 @@ export class PlaylistService {
       usuario_dono: this.user
     };
 
-    console.log(playlist.privacidade)
-
-    return this.http.post(this.taURL + "/playlists", JSON.stringify(newPlaylists), {headers: this.headers, observe: "response"})
-    .pipe(map(res => {
-      if (res.status === 201) {return playlist;} else {return null;}
-    }));
+    return this.http.post(this.taURL + "/playlists", JSON.stringify(newPlaylists), { headers: this.headers, observe: "response" })
+      .pipe(map(res => {
+        if (res.status === 201) { return playlist; } else { return null; }
+      }));
   }
 
   getPlaylistById(playlistId: string) {
-    return this.http.get(this.taURL + '/playlists/' + playlistId, {'observe': 'body'})
+    return this.http.get(this.taURL + '/playlists/' + playlistId, { 'observe': 'body' })
       .pipe(map(res => res as Playlist));
   }
 
   getPlaylists(): Observable<Playlist[]> {
-    return this.http.get(this.taURL + "/playlists", {"observe": "body"})
+    return this.http.get(this.taURL + "/playlists", { "observe": "body" })
       .pipe(map(res => res as Playlist[]));
   }
 
