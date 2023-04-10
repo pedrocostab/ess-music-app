@@ -82,4 +82,32 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect($("input[formControlName='name'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
 
+    Given(/^I am logged in with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user : string, password:string) => {
+        loginAsUser(user, password);
+    })
+
+    Given(/^I am on the "Editar Perfil" page$/, {timeout: 10000}, async () => {
+        await browser.get(base_front_url+'/userEdit');
+    })
+
+    When(/^I click on "Alterar Senha"$/, async () => {
+        // await element(by.buttonText('Alterar Senha')).click();
+        await element(by.partialLinkText('Alterar Senha')).click();
+        // await expect($(`#botao-alterarsenha`)).click();
+
+    })
+
+    When(/^I write "([^\"]*)" in "Nova Senha"$/, async (password) => {
+        await $("input[formControlName='password']").sendKeys(<string> password);
+    })
+
+    When(/^I click on "Alterar"$/, async () => {
+        await element(by.buttonText('Alterar')).click();
+    })
+
+    Then(/^I see a password changed successfully message$/, { timeout : 10000 }, async () => {
+        await element(by.cssContainingText('div', 'Senha alterada com sucesso!')).isPresent();
+    })
+
+
 })
