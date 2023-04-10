@@ -85,6 +85,16 @@ defineSupportCode(function ({ Given, When, Then }) {
         loginAsUser(user);
     })
 
+    Given(/^I see the "email" user "([^\"]*)"$/, {timeout: 10000}, async (email : string) => {
+        await expect(
+            element(by.cssContainingText('td', email))
+                .element(by.xpath('..'))
+                .element(by.cssContainingText('th', 'Email'))
+                .isPresent()
+        ).to.eventually.equal(true);
+    })
+    
+
     When(/^I write "([^\"]*)" in "Usuário" field$/, async (id) => {
         await $("input[formControlName='id']").sendKeys(<string> id);
     })
@@ -177,5 +187,11 @@ defineSupportCode(function ({ Given, When, Then }) {
     Then(/^I see a registration completed message$/, async () => {
         await expect(element(by.cssContainingText('*', 'Registro feito com sucesso!')).isPresent()).to.eventually.equal(true);
     })
-
+    Then(/^I am logged out on the "Pagina Inicial" page$/, { timeout: 10000 }, async () => {
+        await browser.get(base_front_url);
+        await expect(browser.getTitle()).to.eventually.equal('Dizer');
+    })
+    Then(/^I get a Error message "Por favor colocar um dado válido"$/, async () => {
+        await expect(element(by.cssContainingText('*', 'Por favor colocar um dado válido')).isPresent()).to.eventually.equal(true);
+    })
 })
