@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { Playlist } from './playlist';
 import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class PlaylistService {
   private taURL = 'http://localhost:3000';
   user: any;
 
-  constructor(private http: HttpClient, private service: AuthService) {
+  constructor(private http: HttpClient, private service: AuthService, private router: Router) {
     this.service.GetbyCode(sessionStorage.getItem('username')).subscribe(res => {
       this.user = res;
     });
@@ -41,5 +42,11 @@ export class PlaylistService {
   getPlaylists(): Observable<Playlist[]> {
     return this.http.get(this.taURL + "/playlists", {"observe": "body"})
       .pipe(map(res => res as Playlist[]));
+  }
+
+  deletePlaylist(playlistId: string) {
+    this.http.delete(this.taURL + "/playlists/" + playlistId, { observe: 'response' }).subscribe(res => {
+      this.router.navigate(['playlistsCategoriaAdmin']);
+    });
   }
 }

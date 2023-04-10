@@ -18,6 +18,7 @@
   }
   
   li {
+    cursor: pointer;
     display: inline-block;
     width: 205.99px;
     padding: 8px 0;
