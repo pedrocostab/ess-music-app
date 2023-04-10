@@ -12,16 +12,16 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class UserComponent {
 
-    constructor(private service: AuthService, private dialog: MatDialog) {
-      this.Loadinfouser();
-    }
-  
-    user: any;
-  
-    Loadinfouser() {
-      this.user = this.service.GetbyCode(sessionStorage.getItem('username')).subscribe(res => {
-        this.user = res;
-      });
-    }
+  constructor(private service: AuthService, private dialog: MatDialog) {
+    this.Loadinfouser();
+  }
+
+  user: any;
+
+  Loadinfouser() {
+    this.user = this.service.GetbyCode(localStorage.getItem('username')).subscribe(res => {
+      this.user = res;
+    });
+  }
 
 }
