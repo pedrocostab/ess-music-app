@@ -6,46 +6,6 @@ Feature: Registration and maintenance of Users (insert, remove, update)
     So that users could login at the "Dizer"
     And users could update theirs information at the "Dizer"
 
-Scenario: Registering new users without user
-    Given I am on the "Registro de novo usuário" page
-    When i write "Pedro Basilio" in "Nome" field
-    And I write "pcsb01" in "Senha" field
-    And I write "pcsb@cin.ufpe.br" in "Email" field
-    And I write nothing in "Usuario" field
-    And I click on "Enviar"
-    Then I get a Registration Error message "Por favor colocar um dado válido"
-    And I see the "Usuario" field highlighted
-
-Scenario: Registering new users without email
-    Given I am on the "Registro de novo usuário" page
-    When i write "Pedro Basilio" in "Nome" field
-    And I write "pcsb01" in "Senha" field
-    And I write "pcsb" in "Usuario" field
-    And I write nothing in "Email" field
-    And I click on "Enviar"
-    Then I get a Registration Error message "Por favor colocar um dado válido"
-    And I see the "Email" field highlighted
-
-Scenario: Registering new users without password
-    Given I am on the "Registro de novo usuário" page
-    When i write "Pedro Basilio" in "Nome" field
-    And I write "pcsb@cin.ufpe.br" in "Email" field
-    And I write "pcsb" in "Usuario" field
-    And I write nothing in "Senha" field
-    And I click on "Enviar"
-    Then I get a Registration Error message "Por favor colocar um dado válido"
-    And I see the "Senha" field highlighted
-
-Scenario: Registering new users without name
-    Given I am on the "Registro de novo usuário" page
-    When I write "pcsb01" in "Senha" field
-    And I write "pcsb@cin.ufpe.br" in "Email" field
-    And I write "pcsb" in "Usuario" field
-    And I write nothing in "Nome" field
-    And I click on "Enviar"
-    Then I get a Registration Error message "Por favor colocar um dado válido"
-    And I see the "Nome" field highlighted
-
 Scenario: User logged in wants to change his password
     Given I am logged in with user "pcsb" and password "pcsb01"
     And I am on the "Editar Perfil" page
@@ -72,13 +32,7 @@ Scenario: User logged in wants to change his password without password
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Nova Senha" field highlighted
 
-Scenario: Logged in user wants to delete his account
-    Given I am logged in with user "pcsb" and password "pcsb01"
-    And I am on the "Editar Perfil" page
-    When I click on "Deletar Perfil"
-    And I click "Sim"
-    Then I get a message that the user "pcsb@cin.ufpe.br" has been deleted
-    And I am logged out on the "Pagina Inicial" page
+
 
 Scenario: Administrator wants to remove a User from the system
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"

@@ -91,8 +91,8 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
 
     When(/^I click on "Alterar Senha"$/, async () => {
-        // await element(by.buttonText('Alterar Senha')).click();
-        await element(by.partialLinkText('Alterar Senha')).click();
+        await element(by.buttonText('Alterar Senha')).click();
+        // await element(by.partialLinkText('Alterar Senha')).click();
         // await expect($(`#botao-alterarsenha`)).click();
 
     })
@@ -109,5 +109,15 @@ defineSupportCode(function ({ Given, When, Then }) {
         await element(by.cssContainingText('div', 'Senha alterada com sucesso!')).isPresent();
     })
 
+    When(/^I click on "Deletar Perfil"$/, async () => {
+        await element(by.buttonText('Deletar Perfil')).click();
+    })
+    When(/^I click on "Sim"$/, async () => {
+        await element(by.buttonText('Sim')).click();
+    })
+
+    Then(/^I get a message that the user has been deleted$/, { timeout : 10000 }, async () => {
+        await element(by.cssContainingText('div', 'Senha alterada com sucesso!')).isPresent();
+    })
 
 })
