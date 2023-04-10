@@ -1,5 +1,5 @@
 import { defineSupportCode } from 'cucumber';
-import { browser, $, element, ElementArrayFinder, by } from 'protractor';
+import { browser, $, element, ElementArrayFinder, by, ExpectedConditions } from 'protractor';
 let chai = require('chai').use(require('chai-as-promised'));
 let expect = chai.expect;
 import { HttpClient } from 'selenium-webdriver/http';
@@ -10,28 +10,18 @@ const base_front_url = "http://localhost:4200";
 
 const httpClient = new HttpClient(base_url);
 
-async function loginAsUser(user_id: string){
-    const usr = await getUserFromDb(user_id);
-    const psswd = JSON.parse(usr.body).password;
-
+async function loginAsUser(user_id: string, password: string){
     //Navegar até página de login
     await browser.get(base_front_url);
     await element(by.buttonText('Login')).click();
     await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/login');
 
     //Realizar login
-    await $("input[formControlName='id']").sendKeys(<string> user_id);
-    await $("input[formControlName='password']").sendKeys(<string> psswd);
+    await $("input[formControlName='username']").sendKeys(<string> user_id);
+    await $("input[formControlName='password']").sendKeys(<string> password);
     await element(by.buttonText('Login')).click();
+    await browser.wait(ExpectedConditions.urlIs(base_front_url + "/initial-page") , 30000);
     await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + "/initial-page");
-}
-
-async function criarUsuario(id, name, password, email) {
-    await $("input[name='id']").sendKeys(<string> id);
-    await $("input[name='name']").sendKeys(<string> name);
-    await $("input[name='password']").sendKeys(<string> password);
-    await $("input[name='email']").sendKeys(<string> email);    
-    await element(by.buttonText('Enviar')).click();
 }
 
 async function getUserFromDb(user_id: string){
