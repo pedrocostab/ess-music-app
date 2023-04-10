@@ -13,58 +13,9 @@
     {
       "id": "teste2",
       "name": "teste2",
-      "password": "$2b$10$SEsR1HmYU7qDiBzTl9S07uP6e7gKHRzUogr.Sz1RZkTM/8CfuvVvS",
+      "password": "teste4",
       "email": "teste@teste",
-      "gender": "",
-      "role": "usuario",
-      "isactive": false
-    },
-    {
-      "id": "aaa",
-      "name": "aaa",
-      "password": "$2b$10$lfsboDI62QWvLrNAVIVg..7KvrxnB9UF2fIA/OM1GJHv7MGiYMv46",
-      "email": "aaa@aaa.com",
-      "gender": "",
-      "role": "",
-      "isactive": true
-    },
-    {
-      "name": "bbb",
-      "password": "$2b$10$r75YkJ1EfRKlNyYxwTxUuuOHfN7l01wRbObi8jwuXIrrhPQTtH1c2",
-      "email": "bbb@bbb.com",
-      "isactive": true,
-      "id": "2dlp1m7"
-    },
-    {
-      "name": "bbb",
-      "password": "$2b$10$r75YkJ1EfRKlNyYxwTxUuuOHfN7l01wRbObi8jwuXIrrhPQTtH1c2",
-      "email": "bbb@bbb.com",
-      "isactive": true,
-      "id": "4hd2QFg"
-    },
-    {
-      "id": "bbb",
-      "name": "bbb",
-      "password": "$2b$10$r75YkJ1EfRKlNyYxwTxUuuOHfN7l01wRbObi8jwuXIrrhPQTtH1c2",
-      "email": "bbb@bbb.com",
-      "gender": "",
-      "role": "",
-      "isactive": true
-    },
-    {
-      "id": "aeiou",
-      "name": "aeiou",
-      "password": "$2b$10$Afzj2ABAxzMR.dZno97JXeax0nsXe5ACAxtXk6Lt19NM9rsljj9Va",
-      "email": "aeiou@aeiou.com",
-      "role": "",
-      "isactive": true
-    },
-    {
-      "id": "aaaa",
-      "name": "aaa",
-      "password": "$2b$10$lfsboDI62QWvLrNAVIVg..7KvrxnB9UF2fIA/OM1GJHv7MGiYMv46",
-      "email": "aaa@aaa.com",
-      "role": "user",
+      "role": "admin",
       "isactive": true
     },
     {
@@ -78,7 +29,7 @@
     {
       "id": "lucas",
       "name": "lucas",
-      "password": "$2b$10$Afzj2ABAxzMR.dZno97JXeax0nsXe5ACAxtXk6Lt19NM9rsljj9Va",
+      "password": "$2a$10$dmvbnXbU3weW2tbE3CgLxe4vj7B.awR7J9InMjr6JkLgg2STFhPGq",
       "email": "bbo@bbb.com",
       "role": "user",
       "isactive": true
@@ -113,6 +64,46 @@
       "password": "$2a$10$ZF2gfbON6droqPBkjuvquepUtjD51nSOG5R0UwC9COkx7KcSuAE6G",
       "email": "romulodaniell@dizer.com",
       "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "pcsb",
+      "name": "Pedro Basilio",
+      "password": "$2a$10$.3cKPA2zToTmjqTHm1MKPOULi4mUIpo2i0Aolh1yVwTgBZj6jztOm",
+      "email": "pcsb@cin.ufpe.br",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "testeadmin",
+      "name": "teste insercao",
+      "password": "teste02",
+      "email": "teste@cin.ufpe.br",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "drielle",
+      "name": "Drielle",
+      "password": "senha1",
+      "email": "dri@cin.ufpe.br",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "senha1",
+      "name": "Drielle",
+      "password": "senha1",
+      "email": "senha@cin.ufpe.br",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "teste23",
+      "name": "teste2",
+      "password": "$2a$10$QwZZcYzklQE1CjsUeyAQy./BjMhT/haxAIYkDYt87JQl0p3HHjhwO",
+      "email": "teste@teste",
+      "role": "usuario",
       "isactive": true
     }
   ],
@@ -173,16 +164,10 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
     },
     {
-      "id": 4,
-      "nome": "Doja cat",
-      "genero_musical": "hip hop",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
-    },
-    {
-      "id": 5,
-      "nome": "Arctic Monkeys",
-      "genero_musical": "Indie Rock",
-      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/a9788abf3dd8ebd18e55ec6809c8995c.jpg#a9788abf3dd8ebd18e55ec6809c8995c"
+      "nome": "Doja Cat",
+      "genero_musical": "hip hop / rap",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
+      "id": 4
     }
   ],
   "albums": [
