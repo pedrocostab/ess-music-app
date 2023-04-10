@@ -25,7 +25,7 @@ export class ArtistaAdminComponent implements OnInit {
     this.artistaId = this.route.snapshot.params['id'];
     this.artistaNome = this.route.snapshot.params['nome'];
     this.artistaGeneroMusical = this.route.snapshot.params['genero_musical'];
-    this.artistaUrlFoto = this.route.snapshot.params['url_foto_artista'];
+    this.artistaUrlFoto = this.route.snapshot.params['categoria'];
 
     this.cadastraAlbum.getAlbumsByArtista(this.artistaId).subscribe(albums => {
       this.albums = albums;

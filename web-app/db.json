@@ -153,20 +153,20 @@
   "artistas": [
     {
       "nome": "Rihanna",
-      "genero_musical": "Pop/R&B",
-      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/fcb5c35b5ab6fe90565b8647b607ed99.jpg#fcb5c35b5ab6fe90565b8647b607ed99",
+      "genero_musical": "Pop music",
+      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/fcb5c35b5ab6fe90565b8647b607ed99.jpg#fcb5c35b5ab6fe90565b8647b607ed99",
       "id": 2
     },
     {
-      "id": 3,
       "nome": "Taylor Swift",
-      "genero_musical": "Pop/Country",
-      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370"
+      "genero_musical": "Country",
+      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370",
+      "id": 3
     },
     {
       "nome": "Doja Cat",
-      "genero_musical": "hip hop / rap",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
+      "genero_musical": "Pop music",
+      "categoria": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
       "id": 4
     },
     {
@@ -206,52 +206,52 @@
       "id": 2
     },
     {
-      "id": 3,
       "nome": "ANTi (Deluxe)",
-      "ano_lancamento": 2016,
+      "artistaId": 2,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
-      "artistaId": 2,
-      "artistaNome": "Rihanna"
+      "artistaNome": "Rihanna",
+      "ano_lancamento": 2016,
+      "id": 3
     },
     {
-      "id": 4,
       "nome": "Unapologetic (Deluxe)",
-      "ano_lancamento": 2012,
+      "artistaId": 2,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
-      "artistaId": 2,
-      "artistaNome": "Rihanna"
+      "artistaNome": "Rihanna",
+      "ano_lancamento": 2012,
+      "id": 4
     },
     {
-      "id": 5,
       "nome": "Talk That Talk (Deluxe)",
-      "ano_lancamento": 2011,
+      "artistaId": 2,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
-      "artistaId": 2,
-      "artistaNome": "Rihanna"
+      "artistaNome": "Rihanna",
+      "ano_lancamento": 2011,
+      "id": 5
     },
     {
-      "id": 6,
       "nome": "Loud",
-      "ano_lancamento": 2010,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
       "artistaId": 2,
-      "artistaNome": "Rihanna"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+      "artistaNome": "Rihanna",
+      "ano_lancamento": 2010,
+      "id": 6
     },
     {
-      "id": 7,
       "nome": "Midnights (3am Edition)",
-      "ano_lancamento": 2022,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
       "artistaId": 3,
-      "artistaNome": "Taylor Swift"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2bb1c215a957801b0dc8c26925b95c50.jpg",
+      "artistaNome": "Taylor Swift",
+      "ano_lancamento": 2022,
+      "id": 7
     },
     {
-      "id": 8,
       "nome": "evermore (deluxe version)",
-      "ano_lancamento": 2021,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
       "artistaId": 3,
-      "artistaNome": "Taylor Swift"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2b1ed6bdaba7aa57d94c1bdfb805e972.jpg",
+      "artistaNome": "Taylor Swift",
+      "ano_lancamento": 2021,
+      "id": 8
     },
     {
       "id": 9,
@@ -3035,10 +3035,38 @@
   ],
   "playlists": [
     {
-      "titulo": "Treino",
+      "id": 1,
+      "titulo": "Treino eeee",
       "privacidade": "Pública",
-      "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
-      "id": 1
+      "categoria": "Pop music",
+      "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
+      "usuario_dono": {
+        "id": "admin@dizer.com",
+        "name": "Admin",
+        "password": "$2b$10$nywPnAWVfamTzXgZmhhr/ei0YjIbh1kEb3DZ7MIvR6l0Rb1.oTqVq",
+        "email": "admin@dizer.com",
+        "gender": "male",
+        "role": "admin",
+        "isactive": true
+      }
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Pop music"
+    },
+    {
+      "id": 2,
+      "titulo": "Country"
+    },
+    {
+      "id": 3,
+      "titulo": "Rock"
+    },
+    {
+      "id": 4,
+      "titulo": "MPB"
     }
   ]
 }

@@ -12,6 +12,7 @@
       <li><a routerLink="/lista-musicas" ><button>Visualizar Músicas</button></a></li>
       <li><a routerLink="/visualizar-artistas-admin">Visualizar Artistas</a></li>
       <li><a routerLink="/cadastrar-artista">Cadastrar artista</a></li>
+      <li><a routerLink="/cadastrar-categoria">Cadastrar categoria</a></li>
     </ul>
     <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Artistas Cadastrados</p>
     <div class="tableGeral">
@@ -20,7 +21,7 @@
           <tr>
             <th>#</th>
             <th># Título</th>
-            <th># Ano Lançamento</th>
+            <th># Categorias</th>
             <th># Cadastrar Album</th>
             <th># Visualizar Artista</th>
           </tr>
@@ -28,14 +29,14 @@
         <tbody>            
             <tr class="cor-diferente" *ngFor="let artista of artistas">
                 <td class="album-capa">
-                    <img src="{{artista.url_foto_artista}}" alt="">
+                    <img src="{{artista.categoria}}" alt="">
                 </td>
                 <td>
                     <p>{{artista.nome}}</p> 
                 </td>
                 <td>{{artista.genero_musical}}</td>
                 <td><a [routerLink]="[artista.id, 'cadastrar-album']"><button>Cadastrar Novo Album</button></a></td>
-                <td><a [routerLink]="[artista.id, artista.nome, artista.genero_musical, artista.url_foto_artista, 'artistaAdmin']"><button>Visualizar Artista</button></a></td>
+                <td><a [routerLink]="[artista.id, artista.nome, artista.genero_musical, artista.categoria, 'artistaAdmin']"><button>Visualizar Artista</button></a></td>
             </tr>
         </tbody>
       </table>
