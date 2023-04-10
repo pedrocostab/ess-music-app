@@ -92,9 +92,6 @@ defineSupportCode(function ({ Given, When, Then }) {
 
     When(/^I click on "Alterar Senha"$/, async () => {
         await element(by.buttonText('Alterar Senha')).click();
-        // await element(by.partialLinkText('Alterar Senha')).click();
-        // await expect($(`#botao-alterarsenha`)).click();
-
     })
 
     When(/^I write "([^\"]*)" in "Nova Senha"$/, async (password) => {
@@ -116,8 +113,27 @@ defineSupportCode(function ({ Given, When, Then }) {
         await element(by.buttonText('Sim')).click();
     })
 
-    Then(/^I get a message that the user has been deleted$/, { timeout : 10000 }, async () => {
-        await element(by.cssContainingText('div', 'Senha alterada com sucesso!')).isPresent();
+    Then(/^I am logged out on the "Pagina Inicial" page$/, { timeout : 10000 }, async () => {
+        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url);
     })
+
+    Given(/^I am logged in with an admin account with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user : string, password:string) => {
+        loginAsUser(user, password);
+    })
+
+    Given(/^I am on the "Lista de Usuários" page$/, {timeout: 10000}, async () => {
+        await browser.get(base_front_url+'/lista-usuarios');
+        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/lista-usuarios');
+    })
+
+    Given(/^I see a list of system users$/, {timeout: 10000}, async () => {
+        await expect($("ng-reflect-data-source='[object Object]'").isPresent()).to.eventually.equal(true);
+    })
+
+    Given(/^I see the collumns "Usuario", "Nome", "Email", "Tipo de Usuário" and "Status" with the values "([^\"]*)", "([^\"]*)", "([^\"]*)", "([^\"]*)" and "([^\"]*)"$/, {timeout: 10000}, async () => {
+        await expect($("ng-reflect-data-source='[object Object]'").isPresent()).to.eventually.equal(true);
+    })
+
+    
 
 })

@@ -6,6 +6,13 @@ Feature: Registration and maintenance of Users (insert, remove, update)
     So that users could login at the "Dizer"
     And users could update theirs information at the "Dizer"
 
+Scenario: Logged in user wants to delete his account
+    Given I am logged in with user "pcsb" and password "pcsb01"
+    And I am on the "Editar Perfil" page
+    When I click on "Deletar Perfil"
+    And I click "Sim"
+    Then I am logged out on the "Pagina Inicial" page
+
 Scenario: User logged in wants to change his password
     Given I am logged in with user "pcsb" and password "pcsb01"
     And I am on the "Editar Perfil" page
@@ -42,28 +49,6 @@ Scenario: Administrator wants to remove a User from the system
     When I click on the "Remover" button on the "Email" user "pcsb@cin.ufpe.br" line
     And I click "Sim"
     Then I check that the "Email" user "pcsb@cin.ufpe.br" is no longer on the list of system users
-
-Scenario: Administrator wants to edit a User from the system
-    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
-    And I'm on the "Lista de Usuários" page
-    And I see a list of system users
-    And I see the "Usuario" user "pcsb"
-    And I see the "email" user "pcsb@cin.ufpe.br"
-    And I see the "Nome" user "Pedro Basilio"
-    And I see the "Tipo de Usuario" user "Usuario"
-    And I see the "Ativo" user field checked
-    When I click on the "Editar" button on the "Usuario" user "pcsb" line
-    And I write "Pedro Costa" in "Nome" field
-    And I write "pcsb02" in "Senha" field
-    And I write "pcsb2@cin.ufpe.br" in "Email" field
-    And I click "Atualizar"
-    Then I see a success message "Informação alterada com sucesso!"
-    And I see a list of system users
-    And I see the "Usuario" user "pcsb"
-    And I see the "email" user "pcsb2@cin.ufpe.br"
-    And I see the "Nome" user "Pedro Costa"
-    And I see the "Tipo de Usuario" user "Usuario"
-    And I see the "Ativo" user field checked
 
 Scenario: Administrator wants to edit a User password to a password less than 6 digits
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
