@@ -37,11 +37,9 @@
       "role": "user",
       "isactive": true,
       "historico": [
-        2,
         1,
-        3,
         2,
-        1
+        3
       ]
     },
     {

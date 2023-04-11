@@ -10,7 +10,6 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   apiurl = 'http://localhost:3000/user';
-  apiMusicUrl = 'http://localhost:3000/musicas'
 
   GetAll(): Observable<any[]> {
     return this.http.get<any[]>(this.apiurl);
@@ -20,15 +19,13 @@ export class AuthService {
     return this.http.get<any>(`${this.apiurl}/${code}`);
   }
 
-  GetMusicbyCode(code: any): Observable<any> {
-    return this.http.get<any>(`${this.apiMusicUrl}/${code}`);
-  }
 
   GetAllRole(): Observable<any[]> {
     return this.http.get<any[]>('http://localhost:3000/role');
   }
 
   Proceedregister(inputdata: any): Observable<any> {
+    inputdata.historic = []
     return this.http.post<any>(this.apiurl, inputdata);
   }
 

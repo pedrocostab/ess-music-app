@@ -35,10 +35,10 @@ export class TocadorComponent {
   }
 
   tocar() {
-      const historicoAntigo = this.user.historico || []; // Verifica se já existe um histórico. Caso não exista, usa um array vazio
-      historicoAntigo.unshift(this.musicaId)
+      const historicoAtualizado = this.user.historico || []; // Verifica se já existe um histórico. Caso não exista, usa um array vazio
+      historicoAtualizado.unshift(this.musicaId)
       //const historicoAtualizado = [ this.musicaId, ...historicoAntigo]; // Adiciona o novo ID da música ao histórico antigo
-      this.http.patch(`http://localhost:3000/user/${this.user.id}/`, {"historico" : historicoAntigo}).subscribe();
+      this.http.patch(`http://localhost:3000/user/${this.user.id}/`, {"historico" : historicoAtualizado}).subscribe();
       console.log({string:'Música ouvida'});
       }
 
