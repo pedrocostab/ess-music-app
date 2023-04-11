@@ -13,7 +13,7 @@
       <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Playlists seguidas por você</p>
       <table class="tabela-playlists" id="tabelaPlaylists">
         <tr>
-          <td><img src="./../../assets/playlistTreinoCategoria.jpg"><br>Músicas para treinar<br><span class="categoria">Treino</span></td>
+          <td *ngFor="let playlist of playlistsSeguidas"><img src="{{playlist.url_foto_playlist}}"><br>{{playlist.titulo}}<br><span class="categoria">{{playlist.categoria}}</span></td>
         </tr>
       </table>
     </div>
