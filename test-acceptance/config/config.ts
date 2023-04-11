@@ -6,15 +6,18 @@ export let config: Config = {
 
     SELENIUM_PROMISE_MANAGER: false,
 
+    // directConnect: true, // para rodar no grad
+
     capabilities: {
         browserName: 'chrome'
+        // browserName: 'firefox' // para rodar no grad
     },
 
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
 
     specs: [
-        '../../features/*.feature'
+        '../../features/artista.feature'
     ],
 
     onPrepare: () => {
