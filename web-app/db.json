@@ -12,36 +12,6 @@
       "historico": []
     },
     {
-      "id": "teste2",
-      "name": "teste2",
-      "password": "teste2",
-      "email": "teste@teste",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "jv111",
-      "name": "joaovictor",
-      "password": "jvsf123",
-      "email": "jvsf@hotmai.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "asd",
-      "name": "asd",
-      "password": "123456",
-      "email": "asd@gmail.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
       "id": "lukita",
       "name": "lucas",
       "password": "123456",
@@ -54,7 +24,7 @@
     {
       "id": "pcsb",
       "name": "Pedro Basilio",
-      "password": "$2a$10$OEqwLgban/PoSr2PLe5bPeVCsdHouxFo6ttpsch7V3lFobSoLZLsG",
+      "password": "$2a$10$JbqntgKTYwz.WRgzrOsCueYcokImwy1SQ2XusSBW1BnXoutZIWnHe",
       "email": "pcsb@cin.ufpe.br",
       "role": "user",
       "isactive": true
@@ -62,7 +32,7 @@
     {
       "id": "pcsb1",
       "name": "Pedro Basilio",
-      "password": "$2a$10$LjnzGLAzfzVh4QasM8psHOQGGvET.7bkaDb/O3P7FD1Yb8SNNIeiS",
+      "password": "$2a$10$.uTArMgtOYd8tfrOEnILVeT6l7LdUYTDzjdfBuFdZ7PJO3nGsiqtK",
       "email": "pcsb1@cin.ufpe.br",
       "role": "user",
       "isactive": true
@@ -80,6 +50,21 @@
       "name": "Alex",
       "password": "$2a$10$00haHcUSRRgdI.RM4y46.uQXbICnZEFF5APmBJTe9UtbwGb46o5iq",
       "email": "alex@dizer.com",
+      "role": "user",
+      "isactive": true
+    {
+      "id": "pcsb3",
+      "name": "pcsb",
+      "password": "$2a$10$0LfwlL5S4sMr7vTG/jwkCOSVNLsZeY/PD14rRB40acF8dxUQKUXre",
+      "email": "pcsb@aspokpok",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "pcsb2",
+      "name": "Pedro",
+      "password": "$2a$10$Q.5/gqHD/rN1gR4Trs0qjec5K7tctSHettD80DWA4ncf97qN0bGWK",
+      "email": "pcsb@cpasodkfpoaskf",
       "role": "user",
       "isactive": true
     }
