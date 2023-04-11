@@ -36,7 +36,13 @@
       "email": "jvsf@cin.ufpe.br",
       "role": "user",
       "isactive": true,
-      "historico": []
+      "historico": [
+        2,
+        1,
+        3,
+        2,
+        1
+      ]
     }
   ],
   "role": [
