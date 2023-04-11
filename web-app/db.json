@@ -53,7 +53,7 @@
       "role": "user",
       "isactive": true
     },
-      {
+    {
       "id": "pcsb3",
       "name": "pcsb",
       "password": "$2a$10$0LfwlL5S4sMr7vTG/jwkCOSVNLsZeY/PD14rRB40acF8dxUQKUXre",
@@ -66,6 +66,22 @@
       "name": "Pedro",
       "password": "$2a$10$Q.5/gqHD/rN1gR4Trs0qjec5K7tctSHettD80DWA4ncf97qN0bGWK",
       "email": "pcsb@cpasodkfpoaskf",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "floquinho",
+      "name": "floquinho",
+      "password": "$2a$10$S32KHiJTwedUCrPJQv9a5.MoyOrW0lGCoD.eG9X143Ziy/Z1IPTny",
+      "email": "floquinho@floquinho.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "eliabinho",
+      "name": "eliabinho",
+      "password": "$2a$10$4VgwfNsYXZF1eSAd7g8X/OYWcbrOjlzKdBJnbd0GxYqyOlEjxM2ru",
+      "email": "eliabinho@eliabinho.com",
       "role": "user",
       "isactive": true
     }
@@ -3734,47 +3750,68 @@
   ],
   "playlists": [
     {
-      "titulo": "Treino",
+      "id": 1,
+      "titulo": "Rihanna não faz mais show",
       "privacidade": "Pública",
-      "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
       "categoria": "Pop music",
+      "url_foto_playlist": "https://veja.abril.com.br/wp-content/uploads/2023/02/GettyImages-1465427889.jpg?quality=70&strip=info&w=1280&h=720&crop=1",
+      "musicas": [
+      ],
+      "seguidores": [
+        {
+          "id": "floquinho",
+          "name": "floquinho",
+          "password": "$2a$10$S32KHiJTwedUCrPJQv9a5.MoyOrW0lGCoD.eG9X143Ziy/Z1IPTny",
+          "email": "floquinho@floquinho.com",
+          "role": "user",
+          "isactive": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "playlist",
+      "privacidade": "Pública",
+      "categoria": "Country",
+      "url_foto_playlist": "https://conteudo.imguol.com.br/c/splash/bb/2022/09/25/rihanna-fara-show-do-intervalo-no-super-bowl-1664136688125_v2_4x3.jpg",
       "usuario_dono": {
-        "id": "vitinho",
-        "name": "vitinho",
-        "password": "$2a$10$IR2TYr1sgZPVeT1NODmFxOwH6nkvhubch1cUIYy1OyloOmaB/Pt7O",
-        "email": "vitinho@vitinho.com",
-        "role": "admin",
+        "id": "floquinho",
+        "name": "floquinho",
+        "password": "$2a$10$S32KHiJTwedUCrPJQv9a5.MoyOrW0lGCoD.eG9X143Ziy/Z1IPTny",
+        "email": "floquinho@floquinho.com",
+        "role": "user",
         "isactive": true
       },
       "musicas": [
+      ],
+      "seguidores": [
         {
-          "id": 90,
-          "titulo": "Need to Know",
-          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
-          "albumId": 1,
-          "artistaId": 4,
-          "artistaNome": "Doja Cat",
-          "tituloAlbum": "Planet Her"
-        },
-        {
-          "id": 137,
-          "titulo": "You Da One",
-          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
-          "albumId": 5,
-          "artistaId": 2,
-          "artistaNome": "Rihanna",
-          "tituloAlbum": "Talk That Talk (Deluxe)"
-        },
-        {
-          "id": 154,
-          "titulo": " Fading",
-          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
-          "albumId": 6,
-          "artistaId": 2,
-          "artistaNome": "Rihanna",
-          "tituloAlbum": "Loud"
+          "id": "eliabinho",
+          "name": "eliabinho",
+          "password": "$2a$10$4VgwfNsYXZF1eSAd7g8X/OYWcbrOjlzKdBJnbd0GxYqyOlEjxM2ru",
+          "email": "eliabinho@eliabinho.com",
+          "role": "user",
+          "isactive": true
         }
       ]
+    },
+    {
+      "id": 3,
+      "titulo": "Lana diva feminista",
+      "privacidade": "Pública",
+      "categoria": "Rock",
+      "url_foto_playlist": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Lana_Del_Rey_%40_Grammy_Museum_10_13_2019_%2849311023203%29.jpg",
+      "usuario_dono": {
+        "id": "eliabinho",
+        "name": "eliabinho",
+        "password": "$2a$10$4VgwfNsYXZF1eSAd7g8X/OYWcbrOjlzKdBJnbd0GxYqyOlEjxM2ru",
+        "email": "eliabinho@eliabinho.com",
+        "role": "user",
+        "isactive": true
+      },
+      "musicas": [
+      ],
+      "seguidores": []
     }
   ],
   "categorias": [

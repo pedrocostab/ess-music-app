@@ -12,11 +12,17 @@ import { Router } from '@angular/router';
 export class BibliotecaUsuarioComponent {
   user: any
   playlists: Playlist[] = []
+  playlistsSeguidas: Playlist[] = []
+
   constructor(private playlistService: PlaylistService, private service: AuthService, private router: Router){
     this.service.GetbyCode(localStorage.getItem('username')).subscribe(res => {
       this.playlistService.getPlaylists().subscribe((playlists) => {
         this.playlists = playlists.filter(playlist => {
           return JSON.stringify(playlist.usuario_dono) === JSON.stringify(res)
+        });
+
+        this.playlistsSeguidas = playlists.filter(playlist => {
+          return playlist.seguidores.some(seguidor => seguidor.id === res.id)
         });
       });
     });
