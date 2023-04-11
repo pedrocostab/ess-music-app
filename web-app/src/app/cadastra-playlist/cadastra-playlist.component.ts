@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { PlaylistService } from '../playlist-admin/playlist.service';
 import { Playlist } from '../playlist-admin/playlist';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Categoria } from '../criar-categoria/categoria';
 
 @Component({
   selector: 'app-cadastra-playlist',
@@ -10,10 +12,13 @@ import { Router } from '@angular/router';
 })
 
 export class CadastraPlaylistComponent implements OnInit {
-  constructor(private playlistService: PlaylistService, private router: Router) {}
+  constructor(private playlistService: PlaylistService, private router: Router, private http: HttpClient) {}
   playlist: Playlist = new Playlist();
-  
+  categorias: Categoria[] = [];
+  categoriasSelecionadas: Categoria[] = [];
+
   cadastraPlaylist() {
+    console.log(this.playlist)
     this.playlistService.createPlaylist(this.playlist)
     .subscribe({
       next: (result: Playlist | null) => {
@@ -30,7 +35,16 @@ export class CadastraPlaylistComponent implements OnInit {
     });
   }
 
-  ngOnInit(){}
+  ngOnInit(){
+    this.http.get<any[]>('http://localhost:3000/categorias').subscribe(
+      (categorias) => {
+        this.categorias = categorias;
+      },
+      (error) => {
+        console.error('Erro ao carregar categorias:', error);
+      }
+    );
+  }
 
   cancelarCadastrarPlaylist() {
     window.history.back()

@@ -43,13 +43,13 @@ import { CadastraAlbumService } from './cadastra-album/cadastra-album.service';
 import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
 import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 import { EditaAlbumComponent } from './edita-album/edita-album.component';
-import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
+import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
 import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-playlist.component';
 
 @NgModule({
@@ -84,15 +84,15 @@ import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-pl
     PlaylistAdminComponent,
     EditaMusicaComponent,
     EditaAlbumComponent,
-    PlaylistsCategoriaComponent,
+    PlaylistCategoriaComponent,
     PlaylistsCategoriaAdminComponent,
     BibliotecaUsuarioComponent,
     CadastraPlaylistComponent,
     EditaArtistaComponent,
     EditarPlaylistComponent,
     ResultadosPesquisaComponent,
+    CriarCategoriaComponent,
     SelecionarPlaylistComponent
-
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,7 @@ export class CadastraArtistaService {
 
   constructor(private http: HttpClient) { }
 
-    create(artista: Artista): Observable<Artista|null> {
+  create(artista: Artista): Observable<Artista|null> {
     return this.http.post(this.taURL + "/artistas",JSON.stringify(artista), {headers: this.headers, observe: "response"})
       .pipe(map(res => {
         if (res.status === 201) {return artista;} else {return null;}

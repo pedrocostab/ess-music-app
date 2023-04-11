@@ -14,8 +14,8 @@
                 <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/userAdmin">Admin</a></li>
                 <li>
                     <form action="#" method="get">
-                        <input type="text" name="q" placeholder="Pesquisar músicas, artistas, álbuns...">
-                        <button type="submit">Buscar</button>
+                        <input type="text" id="pesquisar-coisas" placeholder="Pesquisar músicas, artistas, álbuns...">
+                        <button type="submit" (click)="pesquisar()">Buscar</button>
                     </form>
                     </li>
                 <li class="logout-item"><a routerLink="/login">Logout</a></li>
