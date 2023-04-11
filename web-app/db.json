@@ -216,6 +216,18 @@
       "genero_musical": "Hip-Hop/rap",
       "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/5c48bc72245061760acbbdd824cff618.jpg#5c48bc72245061760acbbdd824cff618",
       "id": 12
+    },
+    {
+      "id": 13,
+      "nome": "The Strokes",
+      "genero_musical": "Alternativa/indie",
+      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/6278187d866420fa64426c66c37d99a6.jpg#6278187d866420fa64426c66c37d99a6"
+    },
+    {
+      "id": 14,
+      "nome": "Arcade Fire",
+      "genero_musical": "Alternativa/indie",
+      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/e65080dd59e70c884bfb0dc763073f5e.jpg#e65080dd59e70c884bfb0dc763073f5e"
     }
   ],
   "albums": [
@@ -538,6 +550,70 @@
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
       "artistaId": 12,
       "artistaNome": "Kendrick Lamar"
+    },
+    {
+      "id": 41,
+      "nome": "The New Abnormal",
+      "ano_lancamento": 2020,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaId": 13,
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 42,
+      "nome": "Comedown Machine",
+      "ano_lancamento": 2013,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "artistaId": 13,
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 43,
+      "nome": "Angles",
+      "ano_lancamento": 2011,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "artistaId": 13,
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 44,
+      "nome": "First Impressions of Earth",
+      "ano_lancamento": 2005,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "artistaId": 13,
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 45,
+      "nome": "WE",
+      "ano_lancamento": 2022,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "artistaId": 14,
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "nome": "Her (Original Score)",
+      "artistaId": 14,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "ano_lancamento": "2021",
+      "id": 46
+    },
+    {
+      "id": 47,
+      "nome": "Everything Now",
+      "ano_lancamento": 2017,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "artistaId": 14,
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 48,
+      "nome": "Reflektor",
+      "ano_lancamento": 2013,
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "artistaId": 14,
+      "artistaNome": "Arcade Fire"
     }
   ],
   "musicas": [
@@ -5850,6 +5926,843 @@
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
       "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
       "artistaNome": "Kendrick Lamar"
+    },
+    {
+      "id": 593,
+      "titulo": "The Adults Are Talking",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 594,
+      "titulo": "Selfless",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 595,
+      "titulo": "Brooklyn Bridge to Chorus",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 596,
+      "titulo": "Bad Decisions",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 597,
+      "titulo": "Eternal Summer",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 598,
+      "titulo": "At the Door",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 599,
+      "titulo": "Why Are Sunday's So Depressing",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 600,
+      "titulo": "Not the Same Anymore",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 601,
+      "titulo": "Ode to the Mets",
+      "albumId": 41,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "tituloAlbum": "The New Abnormal",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 602,
+      "titulo": "Tap Out",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 603,
+      "titulo": "All the Time",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 604,
+      "titulo": "One Way Trigger",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 605,
+      "titulo": "Welcome to Japan",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 606,
+      "titulo": "80's Comedown Machine",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 607,
+      "titulo": "50/50",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 608,
+      "titulo": "Slow Animals",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 609,
+      "titulo": "Partners in Crime",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 610,
+      "titulo": "Chances",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 611,
+      "titulo": "Happy Ending",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 612,
+      "titulo": "Call It Fate, Call It Karma",
+      "albumId": 42,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
+      "tituloAlbum": "Comedown Machine",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 613,
+      "titulo": "Machu Picchu",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 614,
+      "titulo": "Under Cover of Darkness",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 615,
+      "titulo": "Two Kinds of Happiness",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 616,
+      "titulo": "You're So Right",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 617,
+      "titulo": "Taken for a Fool",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 618,
+      "titulo": "Games",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 619,
+      "titulo": "Call Me Back",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 620,
+      "titulo": "Gratisfaction",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 621,
+      "titulo": "Metabolism",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 622,
+      "titulo": "Life Is Simple in the Moonlight",
+      "albumId": 43,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
+      "tituloAlbum": "Angles",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 623,
+      "titulo": "You Only Live Once",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 624,
+      "titulo": "Juicebox",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 625,
+      "titulo": "Heart In a Cage",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 626,
+      "titulo": "Razorblade",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 627,
+      "titulo": "On the Other Side",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 628,
+      "titulo": "Vision of Division",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 629,
+      "titulo": "Ask Me Anything",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 630,
+      "titulo": "Electricityscape",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 631,
+      "titulo": "Killing Lies",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 632,
+      "titulo": "Fear of Sleep",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 633,
+      "titulo": "15 Minutes",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 634,
+      "titulo": "Ize of the World",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 635,
+      "titulo": "Evening Sun",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 636,
+      "titulo": "Red Light",
+      "albumId": 44,
+      "artistaId": 13,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "tituloAlbum": "First Impressions of Earth",
+      "artistaNome": "The Strokes"
+    },
+    {
+      "id": 637,
+      "titulo": "Age of Anxiety I",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 638,
+      "titulo": "Age of Anxiety II (Rabbit Hole)",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 639,
+      "titulo": "Prelude",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 640,
+      "titulo": "End of The Empire I-III",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 641,
+      "titulo": "End of the Empire IV (Sagittarius A*)",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 642,
+      "titulo": "The Lightning I",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 643,
+      "titulo": "The Lightning II",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 644,
+      "titulo": "Unconditional I (Lookout Kid)",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 645,
+      "titulo": "Unconditional II (Race and Religion) (feat. Peter Gabriel)",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 646,
+      "titulo": "We",
+      "albumId": 45,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "tituloAlbum": "WE",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "titulo": " Sleepwalker",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 647
+    },
+    {
+      "titulo": "Milk & Honey",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 648
+    },
+    {
+      "titulo": "Loneliness #3 (Night Talking)",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 649
+    },
+    {
+      "titulo": "Divorce Papers",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 650
+    },
+    {
+      "titulo": "Morning Talk / Supersymmetry",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 651
+    },
+    {
+      "titulo": "Some Other Place",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 652
+    },
+    {
+      "titulo": "Song On The Beach",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 653
+    },
+    {
+      "titulo": "Loneliness #4 (Other People's Letters)",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "artistaNome": "Arcade Fire",
+      "tituloAlbum": "Her (Original Score)",
+      "id": 654
+    },
+    {
+      "id": 655,
+      "titulo": "Owl",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "tituloAlbum": "Her (Original Score)",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 656,
+      "titulo": "Photograph",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "tituloAlbum": "Her (Original Score)",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 657,
+      "titulo": "Milk & Honey (Alan Watts & 641)",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "tituloAlbum": "Her (Original Score)",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 658,
+      "titulo": "We're All Leaving",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "tituloAlbum": "Her (Original Score)",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 659,
+      "titulo": "Dimensions",
+      "albumId": 46,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/5acab529b57135ad4e1bbb0a11839b0c.jpg",
+      "tituloAlbum": "Her (Original Score)",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 660,
+      "titulo": "Everything_Now (continued)",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 661,
+      "titulo": "Everything Now",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 662,
+      "titulo": "Signs of Life",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 663,
+      "titulo": "Creature Comfort",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 664,
+      "titulo": "Peter Pan",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 665,
+      "titulo": "Chemistry",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 666,
+      "titulo": "Infinite Content",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 667,
+      "titulo": " Infinite_Content",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 668,
+      "titulo": "Electric Blue",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 669,
+      "titulo": "Good God Damn",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 670,
+      "titulo": "Put Your Money on Me",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 671,
+      "titulo": "We Don't Deserve Love",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 672,
+      "titulo": "Everything Now (continued)",
+      "albumId": 47,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "tituloAlbum": "Everything Now",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 673,
+      "titulo": "Reflektor",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 674,
+      "titulo": "We Exist",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 675,
+      "titulo": "Flashbulb Eyes",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 676,
+      "titulo": "Here Comes the Night Time",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 677,
+      "titulo": "Normal Person",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 678,
+      "titulo": "You Already Know",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 679,
+      "titulo": "Joan of Arc",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 680,
+      "titulo": "Here Comes the Night Time II",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 681,
+      "titulo": "Awful Sound (Oh Eurydice)",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 682,
+      "titulo": "It’s Never Over (Hey Orpheus)",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 683,
+      "titulo": "Porno",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 684,
+      "titulo": "Afterlife",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
+    },
+    {
+      "id": 685,
+      "titulo": "Supersymmetry",
+      "albumId": 48,
+      "artistaId": 14,
+      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "tituloAlbum": "Reflektor",
+      "artistaNome": "Arcade Fire"
     }
   ],
   "playlists": [
@@ -5910,6 +6823,10 @@
     {
       "id": 10,
       "titulo": "R&B/soul"
+    },
+    {
+      "id": 11,
+      "titulo": "Alternativa/indie"
     }
   ]
 }
