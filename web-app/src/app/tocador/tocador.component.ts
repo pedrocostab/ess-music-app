@@ -31,12 +31,12 @@ export class TocadorComponent {
     this.musicaService.getMusicaById(String(this.musicaId)).subscribe(res => {
       this.artistaTitulo = res.artistaNome;
     })
-    
+
   }
 
   tocar() {
       const historicoAntigo = this.user.historico || []; // Verifica se já existe um histórico. Caso não exista, usa um array vazio
-      console.log(historicoAntigo.unshift(this.musicaId))
+      historicoAntigo.unshift(this.musicaId)
       //const historicoAtualizado = [ this.musicaId, ...historicoAntigo]; // Adiciona o novo ID da música ao histórico antigo
       this.http.patch(`http://localhost:3000/user/${this.user.id}/`, {"historico" : historicoAntigo}).subscribe();
       console.log({string:'Música ouvida'});
@@ -48,7 +48,6 @@ export class TocadorComponent {
 
   avancar(){
     this.musicaId += 1;
-    console.log(this.musicaId)
     this.musicaService.getMusicaById(String(this.musicaId)).subscribe(res => {
       this.musicaTitulo = res.titulo;
     })
