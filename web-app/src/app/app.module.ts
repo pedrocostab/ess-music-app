@@ -53,6 +53,7 @@ import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pe
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
 import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
 import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-playlist.component';
+import { CategoriaPlaylistsComponent } from './categoria-playlists/categoria-playlists.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,8 @@ import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-pl
     EditarPlaylistComponent,
     ResultadosPesquisaComponent,
     CriarCategoriaComponent,
-    SelecionarPlaylistComponent
+    SelecionarPlaylistComponent,
+    CategoriaPlaylistsComponent
   ],
   imports: [
     BrowserModule,

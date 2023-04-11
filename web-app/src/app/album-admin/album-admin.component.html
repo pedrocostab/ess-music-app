@@ -40,7 +40,7 @@
               <div class="dropdown">
                 <button class="dropbtn"><span class="material-icons">more_vert</span></button>
                 <div class="dropdown-content">
-                  <li href="#"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</li>
+                  <li (click)="adicionarMusicaPlaylist(musica.id)"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</li>
                   <li (click)="editarMusica(musica.id)"><span class="material-icons">edit_note</span>Editar informações</li>
                   <li (click)="removerMusica(musica.id)"><span class="material-icons">highlight_off</span>Remover música</li>
                 </div>
@@ -52,3 +52,8 @@
     </tbody>
   </table>
 </div>
+
+<br>
+<br>
+<br>
+<br>

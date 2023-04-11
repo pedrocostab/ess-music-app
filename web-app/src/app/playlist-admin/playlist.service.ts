@@ -29,7 +29,8 @@ export class PlaylistService {
       privacidade: novaPrivacidade,
       categoria: novaCategoria,
       url_foto_playlist: playlist.url_foto_playlist,
-      usuario_dono: this.user
+      usuario_dono: this.user,
+      musicas: [{}]
     };
 
     return this.http.post(this.taURL + "/playlists", JSON.stringify(newPlaylists), { headers: this.headers, observe: "response" })
@@ -51,6 +52,25 @@ export class PlaylistService {
   deletePlaylist(playlistId: string) {
     this.http.delete(this.taURL + "/playlists/" + playlistId, { observe: 'response' }).subscribe(res => {
       this.router.navigate(['playlistsCategoriaAdmin']);
+    });
+  }
+
+  deletaMusicaPlaylist(playlistId: number, musicaId: number) {
+    this.getPlaylistById(String(playlistId)).subscribe((playlist) => {
+      // cria uma nova instância da playlist com a nova música adicionada
+      const novaPlaylist = {
+        id: playlist.id,
+        titulo: playlist.titulo,
+        privacidade: playlist.privacidade,
+        url_foto_playlist: playlist.url_foto_playlist,
+        categoria: playlist.categoria,
+        usuario_dono: playlist.usuario_dono,
+        musicas: playlist.musicas.filter(m => m.id !== musicaId) // remove a música com o id correspondente da playlist
+      }
+
+      this.http.put(this.taURL + "/playlists/" + String(playlistId), novaPlaylist).subscribe(() => {
+        console.log('Música removida da playlist com sucesso!');
+      })
     });
   }
 }

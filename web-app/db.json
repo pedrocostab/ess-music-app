@@ -43,6 +43,24 @@
         2,
         1
       ]
+    },
+    {
+      "id": "joaosaores",
+      "name": "joao victor",
+      "password": "$2a$10$d.lt2eAsNQCLo/UoKXnPwujAU6YdjoxM6m2p0r52H4ZETFudtDQCy",
+      "email": "joaosoares@dizer.com",
+      "role": "user",
+      "isactive": true,
+      "historico": []
+    },
+    {
+      "id": "alex",
+      "name": "Alex",
+      "password": "$2a$10$00haHcUSRRgdI.RM4y46.uQXbICnZEFF5APmBJTe9UtbwGb46o5iq",
+      "email": "alex@dizer.com",
+      "role": "user",
+      "isactive": true,
+      "historico": []
     }
   ],
   "role": [
@@ -102,20 +120,8 @@
       "id": 3
     },
     {
-      "id": 4,
       "nome": "Doja cat",
-      "genero_musical": "hip hop",
-      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
-    },
-    {
-      "id": 5,
-      "nome": "Lana del Rey",
-      "genero_musical": "Indie",
-      "url_foto_artista": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcScC_UYqbsa7x6ffWvuBlQpfDlYKCMUUu9DqMnC4CTdeBwYAP6kkpiRTJnNbnrcefgDp78QggXSvfMs3A0&psig=AOvVaw2DBg5P8F6zU4zaJpEY1QFx&ust=1681179278001000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIiV6v6env4CFQAAAAAdAAAAABAE"
-    },
-    {
-      "nome": "Doja Cat",
-      "categoria": "Pop music",
+      "categoria": "Hip-Hop/rap",
       "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
       "id": 4
     },
@@ -138,40 +144,22 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/avatar170s/6b02b78c1a6f34a27a0a6f39a1739f6b"
     },
     {
-      "id": 8,
-      "nome": "Bruno Miranda",
-      "genero_musical": "Pop",
-      "url_foto_artista": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": 9,
-      "nome": "",
-      "genero_musical": "Forró",
-      "url_foto_artista": "https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      "id": 10,
-      "nome": "André Rouche",
-      "genero_musical": "",
-      "url_foto_artista": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      "id": 11,
       "nome": "Ivete Saganlo",
-      "genero_musical": "Indie",
-      "url_foto_artista": ""
+      "categoria": "MPB",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/ef0e63b189e0155bf24f4268cf3bf6de.jpg#ef0e63b189e0155bf24f4268cf3bf6de",
+      "id": 11
     },
     {
-      "id": 13,
       "nome": "The Strokes",
-      "genero_musical": "Alternativa/indie",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/6278187d866420fa64426c66c37d99a6.jpg#6278187d866420fa64426c66c37d99a6"
+      "categoria": "Alternativa/indie",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/6278187d866420fa64426c66c37d99a6.jpg#6278187d866420fa64426c66c37d99a6",
+      "id": 13
     },
     {
-      "id": 14,
       "nome": "Arcade Fire",
-      "genero_musical": "Alternativa/indie",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/e65080dd59e70c884bfb0dc763073f5e.jpg#e65080dd59e70c884bfb0dc763073f5e"
+      "categoria": "Alternativa/indie",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/e65080dd59e70c884bfb0dc763073f5e.jpg#e65080dd59e70c884bfb0dc763073f5e",
+      "id": 14
     }
   ],
   "albums": [
@@ -179,7 +167,7 @@
       "nome": "Planet Her",
       "artistaId": 4,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
-      "artistaNome": "Doja Cat",
+      "artistaNome": "Doja cat",
       "ano_lancamento": "2021",
       "id": 1
     },
@@ -187,7 +175,7 @@
       "nome": "Hot Pink",
       "artistaId": 4,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja Cat",
+      "artistaNome": "Doja cat",
       "ano_lancamento": "2019",
       "id": 2
     },
@@ -344,44 +332,44 @@
       "artistaNome": "Ariana Grande"
     },
     {
-      "id": 41,
       "nome": "The New Abnormal",
-      "ano_lancamento": 2020,
+      "artistaId": 13,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
-      "artistaId": 13,
-      "artistaNome": "The Strokes"
+      "artistaNome": "The Strokes",
+      "ano_lancamento": 2020,
+      "id": 41
     },
     {
-      "id": 42,
       "nome": "Comedown Machine",
-      "ano_lancamento": 2013,
+      "artistaId": 13,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/36a064d8029e4b9c9d52c07961fbeed2.jpg",
-      "artistaId": 13,
-      "artistaNome": "The Strokes"
+      "artistaNome": "The Strokes",
+      "ano_lancamento": 2013,
+      "id": 42
     },
     {
-      "id": 43,
       "nome": "Angles",
-      "ano_lancamento": 2011,
+      "artistaId": 13,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/65d41ffa467f4d16adf8bf876c586c78.jpg",
-      "artistaId": 13,
-      "artistaNome": "The Strokes"
+      "artistaNome": "The Strokes",
+      "ano_lancamento": 2011,
+      "id": 43
     },
     {
-      "id": 44,
       "nome": "First Impressions of Earth",
-      "ano_lancamento": 2005,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
       "artistaId": 13,
-      "artistaNome": "The Strokes"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/f41698e47228486ac81690028794f18d.jpg",
+      "artistaNome": "The Strokes",
+      "ano_lancamento": 2005,
+      "id": 44
     },
     {
-      "id": 45,
       "nome": "WE",
-      "ano_lancamento": 2022,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
       "artistaId": 14,
-      "artistaNome": "Arcade Fire"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e2f83f8e6dd69f6a3579031bc9c4dce2.jpg",
+      "artistaNome": "Arcade Fire",
+      "ano_lancamento": 2022,
+      "id": 45
     },
     {
       "nome": "Her (Original Score)",
@@ -392,20 +380,20 @@
       "id": 46
     },
     {
-      "id": 47,
       "nome": "Everything Now",
-      "ano_lancamento": 2017,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
       "artistaId": 14,
-      "artistaNome": "Arcade Fire"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/d344ad55c902ed4a74794b0f342aef05.jpg",
+      "artistaNome": "Arcade Fire",
+      "ano_lancamento": 2017,
+      "id": 47
     },
     {
-      "id": 48,
       "nome": "Reflektor",
-      "ano_lancamento": 2013,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
       "artistaId": 14,
-      "artistaNome": "Arcade Fire"
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+      "artistaNome": "Arcade Fire",
+      "ano_lancamento": 2013,
+      "id": 48
     }
   ],
   "musicas": [
@@ -1850,159 +1838,6 @@
       "artistaNome": "Rihanna"
     },
     {
-      "id": 162,
-      "titulo": "Do I Wanna Know?",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 163,
-      "titulo": "R U Mine?",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 164,
-      "titulo": "One for the Road",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 165,
-      "titulo": "Arabella",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 166,
-      "titulo": "I Want It All",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 167,
-      "titulo": "No. 1 Party Anthem",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 168,
-      "titulo": "Mad Sounds",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 169,
-      "titulo": "Fireside",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 170,
-      "titulo": "Why'd You Only Call Me When You're High?",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 171,
-      "titulo": " Snap Out of It",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 172,
-      "titulo": "Knee Socks",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 173,
-      "titulo": "I Wanna Be Yours",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 174,
-      "titulo": "There’d Better Be a Mirrorball",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 175,
-      "titulo": "I Ain’t Quite Where I Think I Am",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 176,
-      "titulo": "Sculptures of Anything Goes",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 177,
-      "titulo": "Jet Skis on the Moat",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 178,
-      "titulo": "Body Paint",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
       "id": 179,
       "titulo": "The Car",
       "albumId": 11,
@@ -3083,76 +2918,76 @@
       "artistaNome": "Ariana Grande"
     },
     {
-      "id": 593,
       "titulo": "The Adults Are Talking",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 593
     },
     {
-      "id": 594,
       "titulo": "Selfless",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 594
     },
     {
-      "id": 595,
       "titulo": "Brooklyn Bridge to Chorus",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 595
     },
     {
-      "id": 596,
       "titulo": "Bad Decisions",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 596
     },
     {
-      "id": 597,
       "titulo": "Eternal Summer",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 597
     },
     {
-      "id": 598,
       "titulo": "At the Door",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 598
     },
     {
-      "id": 599,
       "titulo": "Why Are Sunday's So Depressing",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 599
     },
     {
-      "id": 600,
       "titulo": "Not the Same Anymore",
       "albumId": 41,
       "artistaId": 13,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/576554c542da76c08f0e80c129afcb0e.jpg",
+      "artistaNome": "The Strokes",
       "tituloAlbum": "The New Abnormal",
-      "artistaNome": "The Strokes"
+      "id": 600
     },
     {
       "id": 601,
@@ -3922,20 +3757,10 @@
   ],
   "playlists": [
     {
-      "id": 1,
-      "titulo": "Treino eeee",
+      "titulo": "Treino",
       "privacidade": "Pública",
-      "categoria": "Pop music",
-      "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
-      "usuario_dono": {
-        "id": "admin@dizer.com",
-        "name": "Admin",
-        "password": "$2b$10$nywPnAWVfamTzXgZmhhr/ei0YjIbh1kEb3DZ7MIvR6l0Rb1.oTqVq",
-        "email": "admin@dizer.com",
-        "gender": "male",
-        "role": "admin",
-        "isactive": true
-      }
+      "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
+      "id": 1
     }
   ],
   "categorias": [
@@ -3958,6 +3783,10 @@
     {
       "id": 11,
       "titulo": "Alternativa/indie"
+    },
+    {
+      "id": 12,
+      "titulo": "Hip-Hop/rap"
     }
   ]
 }

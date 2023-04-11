@@ -1,3 +1,5 @@
+import { Musica } from "../musicas/musica";
+
 export class Playlist {
     id: number = 0;
     titulo: string = '';
@@ -5,5 +7,6 @@ export class Playlist {
     url_foto_playlist: string = '';
     categoria: string = '';
     usuario_dono: string = '';
+    musicas: Musica[] = [];
     constructor() {}
 }
