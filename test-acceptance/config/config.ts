@@ -6,8 +6,11 @@ export let config: Config = {
 
     SELENIUM_PROMISE_MANAGER: false,
 
+    directConnect: true, // para rodar no grad
+
     capabilities: {
-        browserName: 'chrome'
+        // browserName: 'chrome'
+        browserName: 'firefox' // para rodar no grad
     },
 
     framework: 'custom',
