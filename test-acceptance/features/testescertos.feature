@@ -53,3 +53,18 @@ Scenario: Registering new users without name
     And I click on "Enviar"
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Nome" field highlighted
+
+Scenario: User logged in wants to change his password
+    Given I am logged in with user "pcsb1" and password "pcsb01"
+    And I am on the "Editar Perfil" page
+    When I click on "Alterar Senha"
+    And I write "01pcsb" in "Nova Senha"
+    And I click on "Alterar"
+    Then I see a password changed successfully message
+
+Scenario: Logged in user wants to delete his account
+    Given I am logged in with user "pcsb2" and password "pcsb01"
+    And I am on the "Editar Perfil" page
+    When I click on "Deletar Perfil"
+    And I click "Sim"
+    Then I am logged out on the "Pagina Inicial" page

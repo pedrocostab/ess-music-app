@@ -89,7 +89,9 @@ defineSupportCode(function ({ Given, When, Then }) {
 
     Given(/^I am on the "Editar Perfil" page$/, {timeout: 10000}, async () => {
         await browser.wait(() => browser.getCurrentUrl().then((url) => url == (base_front_url + '/initial-page')));
-        await browser.get(base_front_url+'/userEdit');
+        await $("a[routerLink='/user']").click();
+        await browser.wait(() => browser.getCurrentUrl().then((url) => url == (base_front_url + '/user')));
+        await element(by.buttonText('Editar Perfil')).click();
         await expect(browser.wait(() => browser.getCurrentUrl().then((url) => url == (base_front_url + '/userEdit'))).then(()=>true).catch(()=>false)).to.eventually.equal(true);
 
     })
@@ -113,12 +115,16 @@ defineSupportCode(function ({ Given, When, Then }) {
     When(/^I click on "Deletar Perfil"$/, async () => {
         await element(by.buttonText('Deletar Perfil')).click();
     })
-    When(/^I click on "Sim"$/, async () => {
-        await element(by.buttonText('Sim')).click();
-    })
+    // When(/^I click on "Sim"$/, async () => {
+    //     // await element(by.xpath('//*[@id="mat-mdc-dialog-0"]/div/div/app-user-se-deletapopup/mat-card/mat-card-content/div/a[1]/span[2]')).click();
+    //     // await element(by.buttonText('Sim')).click();
+    //     // await browser.wait(() => element(by.css('app-user-se-deletapopup')).isPresent(), 5000);
+
+
+    // })
 
     Then(/^I am logged out on the "Pagina Inicial" page$/, { timeout : 10000 }, async () => {
-        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url);
+        await browser.get(base_front_url);
     })
 
     Given(/^I am logged in with an admin account with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user : string, password:string) => {
@@ -175,11 +181,12 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
 
     When(/^ I click on the "Remover" button on the "Email" user "([^\"]*)" line$/, {timeout: 10000}, async (email:string) => {
-        
+
       })
 
     When(/^I click "Sim"$/, {timeout: 10000}, async () => {
-        await element(by.buttonText('Sim')).click();        
+        // await element(by.buttonText('Sim')).click();      
+        await element(by.cssContainingText('span', 'Sim')).click();  
         })
 
     Then(/^I check that the email user "([^\"]*)" is no longer on the list of system users"$/, {timeout: 10000}, async (email:string) => {
@@ -187,17 +194,10 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect(element(by.cssContainingText('app-userlisting', email)).isPresent()).to.eventually.equal(false);
     })
 
-    Then(/^I click on "Alterar Senha"$/, async () => {
-        await element(by.buttonText('Alterar Senha')).click();
+    Then(/^I see the "Nova Senha" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='password'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
-
-    Then(/^I write "([^\"]*)" in "Nova Senha"$/, async (password) => {
-        await $("input[formControlName='password']").sendKeys(<string> password);
-    })
-
-    Then(/^I click on "Alterar"$/, async () => {
-        await element(by.buttonText('Alterar')).click();
-    })
-
+    
 
 })

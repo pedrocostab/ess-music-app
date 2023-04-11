@@ -19,12 +19,6 @@ Scenario: Administrator wants to edit a User from the system
     And I see the collumns fields "Usuario", "Nome", "Email", "Tipo de Usuário" and "Status" with the values "pcsb", "Pedro Costa", "pcsb2@cin.ufpe.br", "user" and "Ativo"
 
 
-Scenario: Logged in user wants to delete his account
-    Given I am logged in with user "pcsb" and password "pcsb01"
-    And I am on the "Editar Perfil" page
-    When I click on "Deletar Perfil"
-    And I click "Sim"
-    Then I am logged out on the "Pagina Inicial" page
 
 Scenario: User logged in wants to change his password
     Given I am logged in with user "pcsb" and password "pcsb01"
