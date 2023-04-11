@@ -27,6 +27,7 @@ import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 import { EditaAlbumComponent } from './edita-album/edita-album.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
+import { HistoricComponent } from './historic/historic.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
@@ -65,7 +66,9 @@ const routes: Routes = [
   { path: 'editar-artista/:id', component: EditaArtistaComponent, canActivate: [AuthGuard] },
   { path: 'cadastraPlaylist', component: CadastraPlaylistComponent, canActivate: [AuthGuard] },
   { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent, canActivate: [AuthGuard] },
-  { path: 'adiciona-musica-playlist/:id', component: SelecionarPlaylistComponent, canActivate: [AuthGuard] }
+  { path: 'cadastrar-categoria', component: CriarCategoriaComponent},
+  { path: 'adiciona-musica-playlist/:id', component: SelecionarPlaylistComponent, canActivate: [AuthGuard] },
+  { path: 'historic', component: HistoricComponent, canActivate:[AuthGuard]}
 ]
 
 @NgModule({

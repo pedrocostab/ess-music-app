@@ -45,6 +45,8 @@ import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 import { EditaAlbumComponent } from './edita-album/edita-album.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
+import { HistoricComponent } from './historic/historic.component';
+import { TocadorComponent } from './tocador/tocador.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
@@ -87,6 +89,8 @@ import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-pl
     PlaylistCategoriaComponent,
     PlaylistsCategoriaAdminComponent,
     BibliotecaUsuarioComponent,
+    HistoricComponent,
+    TocadorComponent,
     CadastraPlaylistComponent,
     EditaArtistaComponent,
     EditarPlaylistComponent,
