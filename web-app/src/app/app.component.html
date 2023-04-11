@@ -22,6 +22,6 @@
             </ul>
         </nav>
         <router-outlet></router-outlet>
-        <app-tocador></app-tocador>
+        <app-tocador *ngIf="ismenurequired"></app-tocador>
     </body>
 </html>

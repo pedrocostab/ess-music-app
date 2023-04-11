@@ -8,7 +8,8 @@
       "email": "admin@dizer.com",
       "gender": "male",
       "role": "admin",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
       "id": "teste2",
@@ -17,7 +18,8 @@
       "email": "teste@teste",
       "gender": "",
       "role": "",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
       "id": "jv111",
@@ -26,7 +28,34 @@
       "email": "jvsf@hotmai.com",
       "gender": "",
       "role": "",
-      "isactive": true
+      "isactive": true,
+      "historico": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "asd",
+      "name": "asd",
+      "password": "123456",
+      "email": "asd@gmail.com",
+      "gender": "",
+      "role": "",
+      "isactive": true,
+      "historico": []
+    },
+    {
+      "id": "lukita",
+      "name": "lucas",
+      "password": "123456",
+      "email": "lukita@gmail.com",
+      "gender": "",
+      "role": "",
+      "isactive": true,
+      "historico": [
+        1
+      ]
     }
   ],
   "role": [
@@ -90,6 +119,12 @@
       "nome": "Doja cat",
       "genero_musical": "hip hop",
       "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Lana del Rey",
+      "genero_musical": "Indie",
+      "url_foto_artista": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcScC_UYqbsa7x6ffWvuBlQpfDlYKCMUUu9DqMnC4CTdeBwYAP6kkpiRTJnNbnrcefgDp78QggXSvfMs3A0&psig=AOvVaw2DBg5P8F6zU4zaJpEY1QFx&ust=1681179278001000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIiV6v6env4CFQAAAAAdAAAAABAE"
     }
   ],
   "albums": [

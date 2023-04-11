@@ -23,6 +23,7 @@ export class AuthService {
   }
 
   Proceedregister(inputdata:any) {
+    inputdata.historico = []
     return this.http.post(this.apiurl, inputdata);
   }
 
