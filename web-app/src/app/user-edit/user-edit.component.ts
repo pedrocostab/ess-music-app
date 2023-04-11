@@ -13,6 +13,7 @@ import { AlterarSenhaPopupComponent } from '../alterar-senha-popup/alterar-senha
   styleUrls: ['./user-edit.component.css']
 })
 export class UserEditComponent {
+  toastr: any;
 
   constructor(private service: AuthService, private dialog: MatDialog) {
     this.Loadinfouser();

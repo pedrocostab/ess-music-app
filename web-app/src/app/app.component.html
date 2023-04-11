@@ -5,7 +5,7 @@
                 <li class="circulo-foto">
                     <img src="./../../assets/taylor.png" alt="Foto de perfil">
                 </li>
-                <li [ngClass]="{'hide-item': !isuser}"><a routerLink="/initial-page">Home</a></li>
+                <li><a routerLink="/initial-page">Home</a></li>
                 <li [ngClass]="{'hide-item': !isuser}"><a routerLink="/user">Perfil</a></li>
                 <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/playlistsCategoria">Playlists</a></li>
                 <li [ngClass]="{'hide-item': !isuser}"><a *ngIf="isuser" routerLink="/bibliotecaUsuario">Biblioteca</a></li>
@@ -14,8 +14,8 @@
                 <li [ngClass]="{'hide-item': !isadminuser}"><a *ngIf="isadminuser" routerLink="/userAdmin">Admin</a></li>
                 <li>
                     <form action="#" method="get">
-                        <input type="text" name="q" placeholder="Pesquisar músicas, artistas, álbuns...">
-                        <button type="submit">Buscar</button>
+                        <input type="text" id="pesquisar-coisas" placeholder="Pesquisar músicas, artistas, álbuns...">
+                        <button type="submit" (click)="pesquisar()">Buscar</button>
                     </form>
                     </li>
                 <li class="logout-item"><a routerLink="/login">Logout</a></li>
