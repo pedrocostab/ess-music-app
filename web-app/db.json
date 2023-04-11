@@ -51,7 +51,7 @@
       "isactive": true,
       "historico": []
     },
-    { 
+    {
       "id": "pcsb",
       "name": "Pedro Basilio",
       "password": "$2a$10$OEqwLgban/PoSr2PLe5bPeVCsdHouxFo6ttpsch7V3lFobSoLZLsG",
@@ -3955,20 +3955,10 @@
   ],
   "playlists": [
     {
-      "id": 1,
-      "titulo": "Treino eeee",
+      "titulo": "Treino",
       "privacidade": "Pública",
-      "categoria": "Pop music",
-      "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
-      "usuario_dono": {
-        "id": "admin@dizer.com",
-        "name": "Admin",
-        "password": "$2b$10$nywPnAWVfamTzXgZmhhr/ei0YjIbh1kEb3DZ7MIvR6l0Rb1.oTqVq",
-        "email": "admin@dizer.com",
-        "gender": "male",
-        "role": "admin",
-        "isactive": true
-      }
+      "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
+      "id": 1
     }
   ],
   "categorias": [
