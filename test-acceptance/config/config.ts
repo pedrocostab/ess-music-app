@@ -10,7 +10,7 @@ export let config: Config = {
 
     capabilities: {
         // browserName: 'chrome'
-        browserName: 'firefox' // para rodar no grad
+        browserName: 'chrome' // para rodar no grad
     },
 
     framework: 'custom',

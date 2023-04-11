@@ -22,20 +22,13 @@
       "historico": []
     },
     {
-      "id": "pcsb",
-      "name": "Pedro Basilio",
-      "password": "$2a$10$JbqntgKTYwz.WRgzrOsCueYcokImwy1SQ2XusSBW1BnXoutZIWnHe",
-      "email": "pcsb@cin.ufpe.br",
-      "role": "user",
-      "isactive": true
-    },
-    {
       "id": "pcsb1",
       "name": "Pedro Basilio",
       "password": "$2a$10$.uTArMgtOYd8tfrOEnILVeT6l7LdUYTDzjdfBuFdZ7PJO3nGsiqtK",
       "email": "pcsb1@cin.ufpe.br",
       "role": "user",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
       "id": "joaosaores",
@@ -43,7 +36,8 @@
       "password": "$2a$10$d.lt2eAsNQCLo/UoKXnPwujAU6YdjoxM6m2p0r52H4ZETFudtDQCy",
       "email": "joaosoares@dizer.com",
       "role": "user",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
       "id": "alex",
@@ -51,20 +45,32 @@
       "password": "$2a$10$00haHcUSRRgdI.RM4y46.uQXbICnZEFF5APmBJTe9UtbwGb46o5iq",
       "email": "alex@dizer.com",
       "role": "user",
-      "isactive": true
+      "isactive": true,
+      "historico": []
+    },
     {
       "id": "pcsb3",
       "name": "pcsb",
       "password": "$2a$10$0LfwlL5S4sMr7vTG/jwkCOSVNLsZeY/PD14rRB40acF8dxUQKUXre",
       "email": "pcsb@aspokpok",
       "role": "user",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
       "id": "pcsb2",
       "name": "Pedro",
       "password": "$2a$10$Q.5/gqHD/rN1gR4Trs0qjec5K7tctSHettD80DWA4ncf97qN0bGWK",
       "email": "pcsb@cpasodkfpoaskf",
+      "role": "user",
+      "isactive": true,
+      "historico": []
+    },
+    {
+      "id": "pcsb",
+      "name": "Pedro  Basilio",
+      "password": "$2a$10$nzRQ9tZbaO7NoqrendLvtuIIU/5qBslf/y3UolPUqA6YpJ70DkiKa",
+      "email": "pcsb@cin.ufpe.br",
       "role": "user",
       "isactive": true
     }
