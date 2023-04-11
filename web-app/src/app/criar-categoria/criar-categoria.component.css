@@ -11,7 +11,7 @@
 }
 
 .content-cadastrar table {
-    width: 80%;
+    width: 100%;
 }
 
 .content-cadastrar input {
@@ -54,14 +54,4 @@
     box-shadow: 0px 0px 7px 0px #712a2a;
     background:linear-gradient(to bottom, #cc5b5b 5%, #712a2a 100%);
 	background-color:#cc5b5b;
-}
-
-#artista-categoria {
-    background-color: #262626;
-    border: none;
-    height: 3rem;
-    width: 100%;
-    padding: 1rem 2rem;
-    border-radius: 15px;
-    color: #ffffff;
 }

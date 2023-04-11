@@ -25,13 +25,13 @@ import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artista
 import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
 import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 import { EditaAlbumComponent } from './edita-album/edita-album.component';
-import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
 import { CadastraPlaylistComponent } from './cadastra-playlist/cadastra-playlist.component';
 import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.component';
 import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
+import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
 import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-playlist.component';
 
 const routes: Routes = [
@@ -67,7 +67,6 @@ const routes: Routes = [
   { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent, canActivate: [AuthGuard] },
   { path: 'selecionarPlaylist', component: SelecionarPlaylistComponent, canActivate: [AuthGuard] }
 ]
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

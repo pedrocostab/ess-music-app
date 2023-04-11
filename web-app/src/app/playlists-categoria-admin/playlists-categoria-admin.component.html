@@ -21,7 +21,7 @@
       <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Playlists de Treino</p>
       <table class="tabela-playlists" id="tabelaPlaylists">
         <tr>
-          <td *ngFor="let playlist of playlists"><img src="{{playlist.url_foto_playlist}}" (click)="redirecionaTelaPlaylist(playlist.id)"><br>{{playlist.titulo}}<br><span class="categoria">Categoria que ainda falta</span></td>
+          <td *ngFor="let playlist of playlists"><img src="{{playlist.url_foto_playlist}}" (click)="redirecionaTelaPlaylist(playlist.id)"><br>{{playlist.titulo}}<br><span class="categoria">{{playlist.categoria}}</span></td>
         </tr>
       </table>
       <ul>
