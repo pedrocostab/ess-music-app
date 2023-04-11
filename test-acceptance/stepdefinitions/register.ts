@@ -199,5 +199,9 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect($("input[formControlName='password'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
     
+    // When(/^I click on "Alterar Senha" option"$/, async () => {
+    //     await $("input[formControlName='password']").sendKeys(<string> '');
+    // })
+    
 
 })

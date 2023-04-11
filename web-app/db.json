@@ -68,8 +68,8 @@
     },
     {
       "id": "pcsb",
-      "name": "Pedro  Basilio",
-      "password": "$2a$10$nzRQ9tZbaO7NoqrendLvtuIIU/5qBslf/y3UolPUqA6YpJ70DkiKa",
+      "name": "Pedro Basilio",
+      "password": "$2a$10$8TdlV/ILNEmXuM/Y1f8mI.VrKH/U1FEjW3QXaPmKDAEzEUfXfODF6",
       "email": "pcsb@cin.ufpe.br",
       "role": "user",
       "isactive": true

@@ -24,6 +24,7 @@ export class AuthService {
   }
 
   Proceedregister(inputdata: any): Observable<any> {
+    inputdata.historic=[];
     return this.http.post<any>(this.apiurl, inputdata);
   }
 
