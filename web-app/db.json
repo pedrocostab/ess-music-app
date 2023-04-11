@@ -29,9 +29,7 @@
       "gender": "",
       "role": "",
       "isactive": true,
-      "historico": [
-        5
-      ]
+      "historico": []
     },
     {
       "id": "asd",
@@ -51,9 +49,7 @@
       "gender": "",
       "role": "",
       "isactive": true,
-      "historico": [
-        3
-      ]
+      "historico": []
     },
     { 
       "id": "pcsb",
@@ -70,9 +66,7 @@
       "email": "pcsb1@cin.ufpe.br",
       "role": "user",
       "isactive": true,
-      "historico": [
-        3
-      ]
+      "historico": []
     }
   ],
   "role": [
