@@ -30,9 +30,7 @@
       "role": "",
       "isactive": true,
       "historico": [
-        1,
-        2,
-        3
+        5
       ]
     },
     {
@@ -54,7 +52,7 @@
       "role": "",
       "isactive": true,
       "historico": [
-        1
+        3
       ]
     }
   ],
