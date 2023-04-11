@@ -153,69 +153,39 @@
   "artistas": [
     {
       "nome": "Rihanna",
-      "genero_musical": "R&B/soul",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/fcb5c35b5ab6fe90565b8647b607ed99.jpg#fcb5c35b5ab6fe90565b8647b607ed99",
+      "categoria": "Pop music",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/fcb5c35b5ab6fe90565b8647b607ed99.jpg#fcb5c35b5ab6fe90565b8647b607ed99",
       "id": 2
     },
     {
       "nome": "Taylor Swift",
-      "genero_musical": "Pop/Country",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370",
+      "categoria": "Country",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370",
       "id": 3
     },
     {
       "nome": "Doja Cat",
-      "genero_musical": "Hip-Hop/rap",
-      "categoria": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
+      "categoria": "Pop music",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
       "id": 4
     },
     {
+      "id": 5,
       "nome": "Arctic Monkeys",
-      "genero_musical": "Indie Rock",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/132f7eda9c30086db8d149eac4586e9e.jpg#132f7eda9c30086db8d149eac4586e9e",
-      "id": 5
+      "categoria": "Indie Rock",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/2cc82f42b8d2ee5f67b8520153f07033.jpg#2cc82f42b8d2ee5f67b8520153f07033"
     },
     {
+      "id": 6,
       "nome": "Troye Sivan",
-      "genero_musical": "Pop",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/fade00902b809244fd145a01e096002b.jpg#fade00902b809244fd145a01e096002b",
-      "id": 6
+      "categoria": "Pop",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/fade00902b809244fd145a01e096002b.jpg#fade00902b809244fd145a01e096002b"
     },
     {
+      "id": 7,
       "nome": "Ariana Grande",
-      "genero_musical": "Pop",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/4e8955f7315fb6b6330e21ab6b7cae5b.jpg#4e8955f7315fb6b6330e21ab6b7cae5b",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "nome": "Cardi b",
-      "genero_musical": "Hip-Hop/rap",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/c631ee87e7dce547f9db777106a00ec6.jpg#c631ee87e7dce547f9db777106a00ec6"
-    },
-    {
-      "id": 9,
-      "nome": "The Weeknd",
-      "genero_musical": "R&B/soul",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/988a35e49a0093595a1c5cccad16560f.jpg#988a35e49a0093595a1c5cccad16560f"
-    },
-    {
-      "id": 10,
-      "nome": "SZA",
-      "genero_musical": "R&B/soul",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/33b4567a03d0abeae9578765880bf2fd.jpg#33b4567a03d0abeae9578765880bf2fd"
-    },
-    {
-      "id": 11,
-      "nome": "Beyoncé",
-      "genero_musical": "R&B/soul",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/bb32b5af505bb272d0b3c6e60c93d664.jpg#bb32b5af505bb272d0b3c6e60c93d664"
-    },
-    {
-      "nome": "Kendrick Lamar",
-      "genero_musical": "Hip-Hop/rap",
-      "categoria": "https://lastfm.freetls.fastly.net/i/u/770x0/5c48bc72245061760acbbdd824cff618.jpg#5c48bc72245061760acbbdd824cff618",
-      "id": 12
+      "categoria": "Pop",
+      "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/avatar170s/6b02b78c1a6f34a27a0a6f39a1739f6b"
     }
   ],
   "albums": [
@@ -284,12 +254,12 @@
       "id": 8
     },
     {
+      "id": 9,
       "nome": "folklore (deluxe)",
-      "artistaId": 3,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg",
-      "artistaNome": "Taylor Swift",
       "ano_lancamento": 2020,
-      "id": 9
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b8da93ab6d8aa00384998fdae7451d92.jpg",
+      "artistaId": 3,
+      "artistaNome": "Taylor Swift"
     },
     {
       "id": 10,
@@ -300,244 +270,92 @@
       "artistaNome": "Taylor Swift"
     },
     {
+      "id": 11,
       "nome": "The Car",
-      "artistaId": 5,
+      "ano_lancamento": 2022,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "artistaNome": "Arctic Monkeys",
-      "ano_lancamento": 2022,
-      "id": 11
+      "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
     },
     {
+      "id": 12,
       "nome": "Tranquility Base Hotel & Casino",
-      "artistaId": 5,
+      "ano_lancamento": 2018,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/c7f6da092ec3fd3bdb02e3ff71c56fea.jpg",
-      "artistaNome": "Arctic Monkeys",
-      "ano_lancamento": 2018,
-      "id": 12
+      "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
     },
     {
+      "id": 13,
       "nome": "AM",
-      "artistaId": 5,
+      "ano_lancamento": 2013,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "artistaNome": "Arctic Monkeys",
-      "ano_lancamento": 2013,
-      "id": 13
-    },
-    {
-      "nome": "Suck It and See",
       "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
+    },
+    {
+      "id": 14,
+      "nome": "Suck It and See",
+      "ano_lancamento": 2011,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e8faaf58a491491ea00e6d3b7ac5d7db.jpg",
-      "artistaNome": "Arctic Monkeys",
-      "ano_lancamento": 2011,
-      "id": 14
+      "artistaId": 5,
+      "artistaNome": "Arctic Monkeys"
     },
     {
+      "id": 15,
       "nome": "In a Dream",
-      "artistaId": 6,
+      "ano_lancamento": 2020,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/23a3bf2ada01082ca2ad710bbf530ca7.jpg",
-      "artistaNome": "Troye Sivan",
-      "ano_lancamento": 2020,
-      "id": 15
+      "artistaId": 6,
+      "artistaNome": "Troye Sivan"
     },
     {
+      "id": 16,
       "nome": "Bloom",
-      "artistaId": 6,
+      "ano_lancamento": 2018,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/29e68c20ff98bdfb9d14a866f5cf403b.jpg",
-      "artistaNome": "Troye Sivan",
-      "ano_lancamento": 2018,
-      "id": 16
-    },
-    {
-      "nome": "Blue Neighbourhood (Deluxe)",
       "artistaId": 6,
+      "artistaNome": "Troye Sivan"
+    },
+    {
+      "id": 17,
+      "nome": "Blue Neighbourhood (Deluxe)",
+      "ano_lancamento": 2015,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/f018307055339656a43de6f27b992268.jpg",
-      "artistaNome": "Troye Sivan",
-      "ano_lancamento": 2015,
-      "id": 17
+      "artistaId": 6,
+      "artistaNome": "Troye Sivan"
     },
     {
+      "id": 18,
       "nome": "Positions (Deluxe)",
-      "artistaId": 7,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "ano_lancamento": 2021,
-      "id": 18
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
+      "artistaId": 7,
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 19,
       "nome": "thank u, next",
-      "artistaId": 7,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/71f67dcd8d59ad01b70aaa0f6aa7a47f.jpg",
-      "artistaNome": "Ariana Grande",
       "ano_lancamento": 2019,
-      "id": 19
+      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/71f67dcd8d59ad01b70aaa0f6aa7a47f.jpg",
+      "artistaId": 7,
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 20,
       "nome": "Sweetener",
-      "artistaId": 7,
+      "ano_lancamento": 2018,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/cd8c5ce4dad43c822c00dec987d295ca.jpg",
-      "artistaNome": "Ariana Grande",
-      "ano_lancamento": 2018,
-      "id": 20
-    },
-    {
-      "nome": "Dangerous Woman",
       "artistaId": 7,
+      "artistaNome": "Ariana Grande"
+    },
+    {
+      "id": 21,
+      "nome": "Dangerous Woman",
+      "ano_lancamento": 2015,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/c01e49f1304ed48f058e28387f85749a.jpg",
-      "artistaNome": "Ariana Grande",
-      "ano_lancamento": 2015,
-      "id": 21
-    },
-    {
-      "id": 22,
-      "nome": "Invasion of Privacy",
-      "ano_lancamento": 2018,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "artistaId": 8,
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 23,
-      "nome": "Gangsta Bitch Music Vol. 2",
-      "ano_lancamento": 2017,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "artistaId": 8,
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 24,
-      "nome": "Gangsta Bitch Music Vol 1",
-      "ano_lancamento": 2016,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "artistaId": 8,
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 25,
-      "nome": "Dawn FM",
-      "ano_lancamento": 2022,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "artistaId": 9,
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 26,
-      "nome": "After Hours",
-      "ano_lancamento": 2020,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "artistaId": 9,
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 27,
-      "nome": "Starboy",
-      "ano_lancamento": 2016,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "artistaId": 9,
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 28,
-      "nome": "Beauty Behind the Madness",
-      "ano_lancamento": 2015,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "artistaId": 9,
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 29,
-      "nome": "SOS",
-      "ano_lancamento": 2023,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "artistaId": 10,
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 30,
-      "nome": "Ctrl (Deluxe)",
-      "ano_lancamento": 2022,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "artistaId": 10,
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 31,
-      "nome": "Ctrl",
-      "ano_lancamento": 2017,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "artistaId": 10,
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 32,
-      "nome": "Z",
-      "ano_lancamento": 2014,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "artistaId": 10,
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 33,
-      "nome": "RENAISSANCE",
-      "ano_lancamento": 2022,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "artistaId": 11,
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 34,
-      "nome": "Lemonade",
-      "ano_lancamento": 2016,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "artistaId": 11,
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 35,
-      "nome": "BEYONCÉ (Platinum Edition)",
-      "ano_lancamento": 2013,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "artistaId": 11,
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 36,
-      "nome": "4 (Expanded Edition)",
-      "ano_lancamento": 2011,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "artistaId": 11,
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 37,
-      "nome": "Mr. Morale & the Big Steppers",
-      "ano_lancamento": 2022,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "artistaId": 12,
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 38,
-      "nome": "DAMN.",
-      "ano_lancamento": 2017,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "artistaId": 12,
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 39,
-      "nome": "To Pimp a Butterfly",
-      "ano_lancamento": 2015,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "artistaId": 12,
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 40,
-      "nome": "good kid, m.A.A.d city (Deluxe)",
-      "ano_lancamento": 2012,
-      "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "artistaId": 12,
-      "artistaNome": "Kendrick Lamar"
+      "artistaId": 7,
+      "artistaNome": "Ariana Grande"
     }
   ],
   "musicas": [
@@ -1982,49 +1800,49 @@
       "artistaNome": "Rihanna"
     },
     {
+      "id": 162,
       "titulo": "Do I Wanna Know?",
       "albumId": 13,
       "artistaId": 5,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "artistaNome": "Arctic Monkeys",
       "tituloAlbum": "AM",
-      "id": 162
+      "artistaNome": "Arctic Monkeys"
     },
     {
+      "id": 163,
       "titulo": "R U Mine?",
       "albumId": 13,
       "artistaId": 5,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "artistaNome": "Arctic Monkeys",
       "tituloAlbum": "AM",
-      "id": 163
+      "artistaNome": "Arctic Monkeys"
     },
     {
+      "id": 164,
       "titulo": "One for the Road",
       "albumId": 13,
       "artistaId": 5,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "artistaNome": "Arctic Monkeys",
       "tituloAlbum": "AM",
-      "id": 164
+      "artistaNome": "Arctic Monkeys"
     },
     {
+      "id": 165,
       "titulo": "Arabella",
       "albumId": 13,
       "artistaId": 5,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "artistaNome": "Arctic Monkeys",
       "tituloAlbum": "AM",
-      "id": 165
+      "artistaNome": "Arctic Monkeys"
     },
     {
+      "id": 166,
       "titulo": "I Want It All",
       "albumId": 13,
       "artistaId": 5,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "artistaNome": "Arctic Monkeys",
       "tituloAlbum": "AM",
-      "id": 166
+      "artistaNome": "Arctic Monkeys"
     },
     {
       "id": 167,
@@ -2666,94 +2484,94 @@
       "artistaNome": "Troye Sivan"
     },
     {
+      "id": 238,
       "titulo": "shut up",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 238
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 239,
       "titulo": " 34+35",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 239
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 240,
       "titulo": "motive (feat. Doja Cat)",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 240
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 241,
       "titulo": "just like magic",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 241
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 242,
       "titulo": "off the table (feat. The Weeknd)",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 242
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 243,
       "titulo": " six thirty",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 243
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 244,
       "titulo": " safety net (feat. Ty Dolla $ign)",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 244
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 245,
       "titulo": "my hair",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 245
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 246,
       "titulo": "nasty",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 246
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 247,
       "titulo": " west side",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 247
+      "artistaNome": "Ariana Grande"
     },
     {
       "id": 248,
@@ -2765,13 +2583,13 @@
       "artistaNome": "Ariana Grande"
     },
     {
+      "id": 249,
       "titulo": "positions",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 249
+      "artistaNome": "Ariana Grande"
     },
     {
       "id": 250,
@@ -2783,22 +2601,22 @@
       "artistaNome": "Ariana Grande"
     },
     {
+      "id": 251,
       "titulo": "pov",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 251
+      "artistaNome": "Ariana Grande"
     },
     {
+      "id": 252,
       "titulo": "someone like u (interlude)",
       "albumId": 18,
       "artistaId": 7,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/83cb1ada0e3a8b563f8298a88d51670f.jpg",
-      "artistaNome": "Ariana Grande",
       "tituloAlbum": "Positions (Deluxe)",
-      "id": 252
+      "artistaNome": "Ariana Grande"
     },
     {
       "id": 253,
@@ -3213,2643 +3031,6 @@
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/c01e49f1304ed48f058e28387f85749a.jpg",
       "tituloAlbum": "Dangerous Woman",
       "artistaNome": "Ariana Grande"
-    },
-    {
-      "id": 299,
-      "titulo": "Get Up 10",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 300,
-      "titulo": "Drip (feat. Migos)",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 301,
-      "titulo": "Bickenhead",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 302,
-      "titulo": "Bodak Yellow",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 303,
-      "titulo": "Be Careful",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 304,
-      "titulo": " Best Life (feat. Chance The Rapper)",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 305,
-      "titulo": "I Like It (feat. Bad Bunny & J Balvin)",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 306,
-      "titulo": "Ring (Feat. Kehlani)",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 307,
-      "titulo": "Money Bag",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "titulo": "Bartier Cardi (Feat. Feat. 21 Savage)",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "artistaNome": "Cardi b",
-      "tituloAlbum": "Invasion of Privacy",
-      "id": 308
-    },
-    {
-      "id": 309,
-      "titulo": "She Bad (Feat. YG)",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 310,
-      "titulo": "Thru Your Phone",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 311,
-      "titulo": "I Do (Feat. SZA)",
-      "albumId": 22,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/aab4ff2e4b4c65e96ee83630e2f53b78.jpg",
-      "tituloAlbum": "Invasion of Privacy",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 312,
-      "titulo": "Bronx Season",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 313,
-      "titulo": " Lick",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 314,
-      "titulo": "Hectic",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 315,
-      "titulo": "Leave That Bitch Alone (Skit)",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 316,
-      "titulo": "Leave That Bitch Alone",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 317,
-      "titulo": "Rollin",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 318,
-      "titulo": "Back It Up",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 319,
-      "titulo": "Never Give Up",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 321,
-      "titulo": "Pull Up",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 322,
-      "titulo": "Pop Off",
-      "albumId": 23,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/59692e78945a168ba3d69cf059a11cb0.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol. 2",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 323,
-      "titulo": "Intro (Skit)",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 324,
-      "titulo": "Trust Issues",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 325,
-      "titulo": "On Fleek",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 326,
-      "titulo": "Washpoppin",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 327,
-      "titulo": "Her Perspective (Skit)",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 328,
-      "titulo": "Selfish",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 329,
-      "titulo": "I Gotta Hurt You",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 330,
-      "titulo": "Foreva",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 331,
-      "titulo": "Trick (Skit)",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 332,
-      "titulo": "Trick",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 333,
-      "titulo": "Lit Thot",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 334,
-      "titulo": "Sauce Boyz",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 335,
-      "titulo": "Outro (Skit)",
-      "albumId": 24,
-      "artistaId": 8,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8eadec355d2fc9ef32e2489b2b999087.jpg",
-      "tituloAlbum": "Gangsta Bitch Music Vol 1",
-      "artistaNome": "Cardi b"
-    },
-    {
-      "id": 336,
-      "titulo": " Dawn FM",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 337,
-      "titulo": "Gasoline",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 338,
-      "titulo": "How Do I Make You Love Me?",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 339,
-      "titulo": "Take My Breath",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 340,
-      "titulo": " Sacrifice",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 341,
-      "titulo": "A Tale by Quincy",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 342,
-      "titulo": "Out of Time",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 343,
-      "titulo": "Here We Go… Again (feat. Tyler, the Creator)",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 344,
-      "titulo": "Best Friends",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 345,
-      "titulo": "Is There Someone Else?",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 346,
-      "titulo": "Starry Eyes",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 347,
-      "titulo": "Every Angel Is Terrifying",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 348,
-      "titulo": "Don’t Break My Heart",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 349,
-      "titulo": " I Heard You’re Married (feat. Lil Wayne)",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 350,
-      "titulo": "Less Than Zero",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 351,
-      "titulo": "Phantom Regret by Jim",
-      "albumId": 25,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7da8e979d89d285b5ddf44e64b92f16c.jpg",
-      "tituloAlbum": "Dawn FM",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 352,
-      "titulo": "Alone Again",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 353,
-      "titulo": "Too Late",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 354,
-      "titulo": "Hardest to Love",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 355,
-      "titulo": "Scared to Live",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 356,
-      "titulo": "Snowchild",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 357,
-      "titulo": "Escape from LA",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 358,
-      "titulo": "Heartless",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 359,
-      "titulo": "Faith",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 360,
-      "titulo": "Blinding Lights",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 361,
-      "titulo": "In Your Eyes",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 362,
-      "titulo": "Save Your Tears",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 363,
-      "titulo": "Repeat After Me (Interlude)",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 364,
-      "titulo": "After Hours",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 365,
-      "titulo": "Until I Bleed Out",
-      "albumId": 26,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/7d957bd27dd562bee7aaa89eafa0bbe6.jpg",
-      "tituloAlbum": "After Hours",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 366,
-      "titulo": "Starboy (Feat. Daft Punk)",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 367,
-      "titulo": "Party Monster",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 368,
-      "titulo": "False Alarm",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 369,
-      "titulo": "Reminder",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 370,
-      "titulo": "Rockin'",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 371,
-      "titulo": "Secrets",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 372,
-      "titulo": " True Colors",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 373,
-      "titulo": " True Colors (Feat. Lana Del Rey)",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 374,
-      "titulo": "Sidewalks (Feat. Kendrick Lamar)",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 375,
-      "titulo": "Six Feet Under",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 376,
-      "titulo": "Love to Lay",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 377,
-      "titulo": "A Lonely Night",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 378,
-      "titulo": "Attention",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 379,
-      "titulo": "Ordinary Life",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 380,
-      "titulo": "Nothing Without You",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 381,
-      "titulo": "All I Know (Feat. Future)",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 382,
-      "titulo": "Die for You",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 383,
-      "titulo": "I Feel It Coming (Feat. Daft Punk)",
-      "albumId": 27,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2eff583c50e9ebe32857ca8bedbd25bd.jpg",
-      "tituloAlbum": "Starboy",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 384,
-      "titulo": " Real Life",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 385,
-      "titulo": "Losers",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 386,
-      "titulo": "Tell Your Friends",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 387,
-      "titulo": "Often",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 388,
-      "titulo": "The Hills",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 389,
-      "titulo": "Acquainted",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 390,
-      "titulo": "Can't Feel My Face",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 391,
-      "titulo": "Shameless",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 392,
-      "titulo": "Earned It (Fifty Shades of Grey)",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 393,
-      "titulo": " In the Night",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 394,
-      "titulo": "As You Are",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 395,
-      "titulo": "Dark Times",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 396,
-      "titulo": "Prisoner",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 397,
-      "titulo": "Angel",
-      "albumId": 28,
-      "artistaId": 9,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a54e33c0046d4752bcf56b37adaa97c.jpg",
-      "tituloAlbum": "Beauty Behind the Madness",
-      "artistaNome": "The Weeknd"
-    },
-    {
-      "id": 398,
-      "titulo": "SOS",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 399,
-      "titulo": "Kill Bill",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 400,
-      "titulo": "Seek & Destroy",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 401,
-      "titulo": "Low",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 402,
-      "titulo": "Love Language",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 403,
-      "titulo": "Blind",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 404,
-      "titulo": "Used (feat. Don Toliver)",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 405,
-      "titulo": "Snooze",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 406,
-      "titulo": "Notice Me",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 407,
-      "titulo": "Gone Girl",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 408,
-      "titulo": "Smoking on My Ex Pack",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 409,
-      "titulo": "Ghost in the Machine (feat. Phoebe Bridgers)",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 410,
-      "titulo": "F2F",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 411,
-      "titulo": "Nobody Gets Me",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 412,
-      "titulo": " Conceited",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 413,
-      "titulo": "Special",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 414,
-      "titulo": "Too Late",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 415,
-      "titulo": "Far",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 416,
-      "titulo": "Shirt",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 417,
-      "titulo": "Open Arms (feat. Travis Scott)",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 418,
-      "titulo": "I Hate U",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 419,
-      "titulo": "Good Days",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 420,
-      "titulo": "Forgiveless (feat. Ol' Dirty Bastard)",
-      "albumId": 29,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b2cfb5bdf137f4d6293565205965750f.jpg",
-      "tituloAlbum": "SOS",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 421,
-      "titulo": "Supermodel",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 422,
-      "titulo": "Love Galore (feat. Travis Scott)",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 423,
-      "titulo": "Doves in the Wind (feat. Kendrick Lamar)",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 424,
-      "titulo": "Drew Barrymore",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 425,
-      "titulo": "Prom",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 426,
-      "titulo": "The Weekend",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 427,
-      "titulo": "Go Gina",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 428,
-      "titulo": " Garden (Say It Like Dat)",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 429,
-      "titulo": "Broken Clocks",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 430,
-      "titulo": "Anything",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 431,
-      "titulo": "Wavy (Interlude) (feat. James Fauntleroy)",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 432,
-      "titulo": "Normal Girl",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 433,
-      "titulo": "Pretty Little Birds (feat. Isaiah Rashad)",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 434,
-      "titulo": "20 Something",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 435,
-      "titulo": " Love Galore (Alt Version)",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 436,
-      "titulo": "2AM",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 437,
-      "titulo": "Miles",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 438,
-      "titulo": " Percolator",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 439,
-      "titulo": "Tread Carefully",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 440,
-      "titulo": "Awkward",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 441,
-      "titulo": "Jodie",
-      "albumId": 30,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/71e1f227bf62caabd3bba57d8c0fde0f.jpg",
-      "tituloAlbum": "Ctrl (Deluxe)",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 442,
-      "titulo": "Supermodel",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 443,
-      "titulo": "Love Galore (Feat. Travis Scott)",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 444,
-      "titulo": "Doves In the Wind (Feat. Kendrick Lamar)",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 445,
-      "titulo": "Drew Barrymore",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 446,
-      "titulo": "Prom",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 447,
-      "titulo": "The Weekend",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 448,
-      "titulo": "Go Gina",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 449,
-      "titulo": "Garden (Say It Like Dat)",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 450,
-      "titulo": "Broken Clocks",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 451,
-      "titulo": " Anything",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 452,
-      "titulo": "Wavy (Interlude) (Feat. James Fauntleroy)",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 453,
-      "titulo": "Normal Girl",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 454,
-      "titulo": "Pretty Little Birds (Feat. Isaiah Rashad)",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 455,
-      "titulo": "20 Something",
-      "albumId": 31,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/9dcae165f522e0d818f7e75a3b5b6e16.jpg",
-      "tituloAlbum": "Ctrl",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 456,
-      "titulo": "Ur",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 457,
-      "titulo": "Childs Play (feat. Chance the Rapper)",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 458,
-      "titulo": "Julia",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 459,
-      "titulo": "Warm Winds (feat. Isaiah Rashad)",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 460,
-      "titulo": "HiiiJack",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 461,
-      "titulo": "Green Mile",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 462,
-      "titulo": "Babylon (feat. Kendrick Lamar)",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 463,
-      "titulo": "Sweet November",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 464,
-      "titulo": "Shattered Ring",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 465,
-      "titulo": "Omega",
-      "albumId": 32,
-      "artistaId": 10,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/96d168c57714450bc515f35d6b1d78ff.jpg",
-      "tituloAlbum": "Z",
-      "artistaNome": "SZA"
-    },
-    {
-      "id": 466,
-      "titulo": "I'M THAT GIRL",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 467,
-      "titulo": "COZY",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 468,
-      "titulo": "ALIEN SUPERSTAR",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 469,
-      "titulo": "CUFF IT",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 470,
-      "titulo": "ENERGY",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 471,
-      "titulo": "BREAK MY SOUL",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 472,
-      "titulo": "CHURCH GIRL",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 473,
-      "titulo": "PLASTIC OFF THE SOFA",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 474,
-      "titulo": "VIRGO'S GROOVE",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 475,
-      "titulo": "MOVE",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 476,
-      "titulo": "HEATED",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 477,
-      "titulo": "THIQUE",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 478,
-      "titulo": "ALL UP IN YOUR MIND",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 479,
-      "titulo": "AMERICA HAS A PROBLEM",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 480,
-      "titulo": "PURE/HONEY",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 481,
-      "titulo": "SUMMER RENAISSANCE",
-      "albumId": 33,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/be0d73355d520e5bb627d846a0461bbd.jpg",
-      "tituloAlbum": "RENAISSANCE",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 482,
-      "titulo": "Pray You Catch Me",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 483,
-      "titulo": "Hold Up",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 484,
-      "titulo": "Don't Hurt Yourself (Feat. Jack White)",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 485,
-      "titulo": "Sorry",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 486,
-      "titulo": "6 Inch (feat. The Weeknd)",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 487,
-      "titulo": "Daddy Lessons",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 488,
-      "titulo": "Love Drought",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 489,
-      "titulo": "Sandcastles",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 490,
-      "titulo": "Forward (feat. James Blake)",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 491,
-      "titulo": "Freedom (feat. Kendrick Lamar)",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 492,
-      "titulo": "All Night",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 493,
-      "titulo": "Formation",
-      "albumId": 34,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/1b8a01872a46cf711ba94204728a5d69.jpg",
-      "tituloAlbum": "Lemonade",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 494,
-      "titulo": " Pretty Hurts",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 495,
-      "titulo": "Haunted",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 496,
-      "titulo": "Drunk in Love (feat. JAY Z)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 497,
-      "titulo": "Blow",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 498,
-      "titulo": "No Angel",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 499,
-      "titulo": "Partition",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 500,
-      "titulo": "Jealous",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 501,
-      "titulo": "Rocket",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 502,
-      "titulo": "Mine (feat. Drake)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 503,
-      "titulo": "XO",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 504,
-      "titulo": "***Flawless (feat. Chimamanda Ngozi Adichie)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 505,
-      "titulo": "Superpower (feat. Frank Ocean)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 506,
-      "titulo": "Heaven",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 507,
-      "titulo": "Blue (feat. Blue Ivy)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 508,
-      "titulo": "7/11",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 509,
-      "titulo": "Flawless Remix (feat. Nicki Minaj)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 510,
-      "titulo": "Drunk in Love (feat. Jay Z & Kanye West) (Remix)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 511,
-      "titulo": "Ring Off",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 512,
-      "titulo": "Blow Remix (feat. Pharrell Williams)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 513,
-      "titulo": " Standing on the Sun Remix (feat. Mr. Vegas)",
-      "albumId": 35,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/f987797756a8614d65ee9f80addb040a.jpg",
-      "tituloAlbum": "BEYONCÉ (Platinum Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 514,
-      "titulo": "Love on Top",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 515,
-      "titulo": "Party (feat. André 3000)",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 516,
-      "titulo": "Schoolin' Life",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 517,
-      "titulo": "Countdown",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 518,
-      "titulo": "I Miss You",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 519,
-      "titulo": "Dance for You",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 520,
-      "titulo": "I Care",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 521,
-      "titulo": " Rather Die Young",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 522,
-      "titulo": "1+1",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 523,
-      "titulo": "End of Time",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 524,
-      "titulo": "Run the World (Girls)",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 525,
-      "titulo": "Best Thing I Never Had",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 526,
-      "titulo": "Start Over",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 527,
-      "titulo": "I Was Here",
-      "albumId": 36,
-      "artistaId": 11,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/0ff743da64e84b80c4c220334dbe4372.jpg",
-      "tituloAlbum": "4 (Expanded Edition)",
-      "artistaNome": "Beyoncé"
-    },
-    {
-      "id": 528,
-      "titulo": " United in Grief",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 529,
-      "titulo": "N95",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 530,
-      "titulo": "Worldwide Steppers",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 531,
-      "titulo": "Die Hard",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 532,
-      "titulo": "Father Time (feat. Sampha)",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 533,
-      "titulo": " Rich - Interlude",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 534,
-      "titulo": "Rich Spirit",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 535,
-      "titulo": "We Cry Together",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 536,
-      "titulo": "Purple Hearts",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 537,
-      "titulo": "Count Me Out",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 538,
-      "titulo": "Crown",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 539,
-      "titulo": "Silent Hill",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 540,
-      "titulo": "Savior - Interlude",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 541,
-      "titulo": "Savior",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 542,
-      "titulo": "Auntie Diaries",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 543,
-      "titulo": "Mr. Morale",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 544,
-      "titulo": "Mother I Sober (feat. Beth Gibbons of Portishead)",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 545,
-      "titulo": "Mirror",
-      "albumId": 37,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/98050f67524ffee7af6edd314b767ac4.jpg",
-      "tituloAlbum": "Mr. Morale & the Big Steppers",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 546,
-      "titulo": "Blood",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 547,
-      "titulo": "DNA",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 548,
-      "titulo": "Yah",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 549,
-      "titulo": "Element",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 550,
-      "titulo": " Feel",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 551,
-      "titulo": "Loyalty (Feat. Rihanna)",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 552,
-      "titulo": "Pride",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 553,
-      "titulo": "HUMBLE.",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 554,
-      "titulo": "Lust",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 555,
-      "titulo": "Love (Feat. Zacari)",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 556,
-      "titulo": "XXX (Feat. U2)",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 557,
-      "titulo": "Fear",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 558,
-      "titulo": "God",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 559,
-      "titulo": "Duckworth",
-      "albumId": 38,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/8a59ed3a9c71cb5113325e2026889e4a.jpg",
-      "tituloAlbum": "DAMN.",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 560,
-      "titulo": "Wesley's Theory (feat. George Clinton & Thunderc)",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 561,
-      "titulo": "For Free? (interlude)",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 562,
-      "titulo": "King Kunta",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 563,
-      "titulo": "Institutionalized (Feat. Bilal, Anna Wise, & Snoop D)",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 564,
-      "titulo": "These Walls (feat. Bilal, Anna Wise & Thund)",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 565,
-      "titulo": "u",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 566,
-      "titulo": "Alright",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 567,
-      "titulo": "For Sale? - Interlude",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 568,
-      "titulo": "Momma",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 569,
-      "titulo": "Hood Politics",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 570,
-      "titulo": "How Much a Dollar Cost  (Feat. James Fauntleroy & Ronald Isley)",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 571,
-      "titulo": "Complexion (A Zulu Love) (Feat. Rapsody)",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 572,
-      "titulo": "The Blacker the Berry",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 573,
-      "titulo": "You Ain't Gotta Lie (Momma Said)",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 574,
-      "titulo": "i",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 575,
-      "titulo": "Mortal Man",
-      "albumId": 39,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/86b35c4eb3c479da49c915d8771bbd1a.jpg",
-      "tituloAlbum": "To Pimp a Butterfly",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 576,
-      "titulo": "Sherane a.k.a Master Splinter's Daughter",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 577,
-      "titulo": "Bitch, Don't Kill My Vibe",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 578,
-      "titulo": "Backseat Freestyle",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 579,
-      "titulo": " The Art of Peer Pressure",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 580,
-      "titulo": "Money Trees (feat. Jay Rock)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 581,
-      "titulo": "Poetic Justice",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 582,
-      "titulo": "good kid",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 583,
-      "titulo": "m.A.A.d city (feat. MC Eiht)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 584,
-      "titulo": "Swimming Pools (Drank) (extended version)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 585,
-      "titulo": "Sing About Me, I'm Dying of Thirst",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 586,
-      "titulo": "Real (feat. Anna Wise)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 587,
-      "titulo": "Compton (feat. Dr. Dre)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 588,
-      "titulo": "The Recipe (feat. Dr. Dre) (Bonus Track)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 589,
-      "titulo": "Black Boy Fly (Bonus Track)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 590,
-      "titulo": "Now or Never (feat. Mary J. Blige) (Bonus Track)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 591,
-      "titulo": "Collect Calls (Bonus Track)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
-    },
-    {
-      "id": 592,
-      "titulo": "Swimming Pools (Drank)",
-      "albumId": 40,
-      "artistaId": 12,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "tituloAlbum": "good kid, m.A.A.d city (Deluxe)",
-      "artistaNome": "Kendrick Lamar"
     }
   ],
   "playlists": [
@@ -5886,30 +3067,6 @@
     {
       "id": 4,
       "titulo": "MPB"
-    },
-    {
-      "id": 5,
-      "titulo": "Pop"
-    },
-    {
-      "id": 6,
-      "titulo": "Pop"
-    },
-    {
-      "id": 7,
-      "titulo": "Indie Rock"
-    },
-    {
-      "id": 8,
-      "titulo": "Hip-Hop/rap"
-    },
-    {
-      "id": 9,
-      "titulo": "Pop/Country"
-    },
-    {
-      "id": 10,
-      "titulo": "R&B/soul"
     }
   ]
 }

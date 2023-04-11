@@ -52,14 +52,14 @@ export class EditaArtistaComponent {
 
   editarArtista(artista: Artista) {
     const novoNome = (<HTMLInputElement>document.getElementById("artista-nome")).value;
-    const novoGenero = (<HTMLInputElement>document.getElementById("artista-categoria")).value;
+    const novoCategoria = (<HTMLInputElement>document.getElementById("artista-categoria")).value;
     const novaImagem = (<HTMLInputElement>document.getElementById("artista-imagem")).value;
   
     // Requisição PUT para atualizar o artista
     this.http.put(this.taURL + "/artistas/" + String(artista.id), {
       nome: novoNome || this.artista.nome,
-      genero_musical: novoGenero || this.artista.genero_musical,
-      categoria: novaImagem || this.artista.categoria,
+      categoria: novoCategoria || this.artista.categoria,
+      url_foto_artista: novaImagem || this.artista.categoria,
     }).subscribe(() => {
       console.log('Artista atualizado com sucesso!');
   

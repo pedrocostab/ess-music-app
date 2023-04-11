@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { PlaylistService } from './playlist.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Playlist } from './playlist';
+import { ResultadoPesquisaService } from '../resultados-pesquisa/resultado-pesquisa.service';
 
 @Component({
   selector: 'app-playlist-admin',
@@ -9,7 +10,7 @@ import { Playlist } from './playlist';
   styleUrls: ['./playlist-admin.component.css']
 })
 export class PlaylistAdminComponent {
-  constructor(private playlistService: PlaylistService, private route: ActivatedRoute, private router: Router){}
+  constructor(private playlistService: PlaylistService, private route: ActivatedRoute, private router: Router, private resultados: ResultadoPesquisaService){}
   id:number = 0;
   playlist: Playlist = new Playlist()
 
@@ -26,5 +27,9 @@ export class PlaylistAdminComponent {
 
   deletePlaylist(playlistId: number) {
     this.playlistService.deletePlaylist(String(playlistId))
+  }
+
+  pesquisar(){
+    this.resultados.pesquisar()
   }
 }

@@ -25,7 +25,6 @@ import { VisualizacaoAdminArtistasComponent } from './visualizacao-admin-artista
 import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
 import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 import { EditaAlbumComponent } from './edita-album/edita-album.component';
-import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
 import { EditaArtistaComponent } from './edita-artista/edita-artista.component';
@@ -49,7 +48,7 @@ const routes: Routes = [
   { path: 'playlistUser', component: PlaylistUserComponent },
   { path: 'playlistCategoria', component: PlaylistCategoriaComponent },
   { path: 'playlistSeguida', component: PlaylistSeguidaComponent },
-  { path: 'visualizar-artistas-admin/:id/:nome/:genero_musical/:categoria/artistaAdmin', component: ArtistaAdminComponent },
+  { path: 'visualizar-artistas-admin/:id/:nome/:url_foto_artista/:categoria/artistaAdmin', component: ArtistaAdminComponent },
   { path: 'album', component: AlbumComponent },
   { path: 'albumAdmin/:id', component: AlbumAdminComponent },
   { path: 'albumAdmin/:albumId/cadastrar-musica', component: MusicasComponent },
@@ -59,7 +58,7 @@ const routes: Routes = [
   { path: 'playlistAdmin/:id', component: PlaylistAdminComponent },
   { path: 'editar-musica/:id', component: EditaMusicaComponent },
   { path: 'editar-album/:id', component: EditaAlbumComponent },
-  { path: 'playlistsCategoria', component: PlaylistsCategoriaComponent },
+  { path: 'playlistsCategoria', component: PlaylistCategoriaComponent },
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent },
   { path: 'editar-playlist/:id', component: EditarPlaylistComponent },
@@ -67,9 +66,8 @@ const routes: Routes = [
   { path: 'cadastraPlaylist', component: CadastraPlaylistComponent},
   { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent},
   { path: 'cadastrar-categoria', component: CriarCategoriaComponent},
-  { path: 'selecionarPlaylist', component: SelecionarPlaylistComponent}
+  { path: 'selecionarPlaylist', component: SelecionarPlaylistComponent},
 ]
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
