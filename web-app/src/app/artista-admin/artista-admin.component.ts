@@ -15,7 +15,7 @@ export class ArtistaAdminComponent implements OnInit {
   constructor(private route: ActivatedRoute, private cadastraAlbum: CadastraAlbumService, private musicaService: MusicaService, private router: Router, private artistaService: CadastraArtistaService) {}
   artistaId: string = '';
   artistaNome: string = '';
-  artistaGeneroMusical: string = '';
+  artistaCategoria: string = '';
   artistaUrlFoto: string = '';
   albums: Album[] =  [];
   musicas: Musica[] = [];
@@ -24,8 +24,8 @@ export class ArtistaAdminComponent implements OnInit {
   ngOnInit(): void {
     this.artistaId = this.route.snapshot.params['id'];
     this.artistaNome = this.route.snapshot.params['nome'];
-    this.artistaGeneroMusical = this.route.snapshot.params['genero_musical'];
-    this.artistaUrlFoto = this.route.snapshot.params['categoria'];
+    this.artistaCategoria = this.route.snapshot.params['categoria'];
+    this.artistaUrlFoto = this.route.snapshot.params['url_foto_artista'];
 
     this.cadastraAlbum.getAlbumsByArtista(this.artistaId).subscribe(albums => {
       this.albums = albums;
