@@ -18,7 +18,7 @@ export class TocadorComponent {
   musicaTitulo: string = '';
   musicaId: number = 1; 
   artistaTitulo: string = '';
-  constructor(private http:HttpClient, private service: AuthService, private dialog: MatDialog, private musicaService: MusicaService, private CadastraArtistaService: CadastraArtistaService) {
+  constructor(private http:HttpClient, private service: AuthService, private dialog: MatDialog, private musicaService: MusicaService) {
 
 
     this.user = this.service.GetbyCode(localStorage.getItem('username')).subscribe(res => {
@@ -40,6 +40,7 @@ export class TocadorComponent {
       //const historicoAtualizado = [ this.musicaId, ...historicoAntigo]; // Adiciona o novo ID da música ao histórico antigo
       this.http.patch(`http://localhost:3000/user/${this.user.id}/`, {"historico" : historicoAtualizado}).subscribe();
       console.log({string:'Música ouvida'});
+      this.avancar();
       }
 
   pausar() {
