@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../service/auth.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
+import * as bcrypt from 'bcryptjs';
 
 @Component({
   selector: 'app-editpopup',
@@ -22,11 +23,11 @@ export class EditpopupComponent implements OnInit {
       this.rolelist = res;
     })
     if (this.data.usercode != null && this.data.usercode != '') {
-      this.service.Getbycode(this.data.usercode).subscribe(res => {
+      this.service.GetbyCode(this.data.usercode).subscribe(res => {
         this.editdata = res;
         this.registerform.setValue({
           id: this.editdata.id, name: this.editdata.name, email: this.editdata.email,
-          password: this.editdata.password, role: this.editdata.role, gender: this.editdata.gender,
+          password: this.editdata.password, role: this.editdata.role,
           isactive: this.editdata.isactive
         })
       })
@@ -39,13 +40,13 @@ export class EditpopupComponent implements OnInit {
     name: this.builder.control('', Validators.required),
     password: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(6)])),
     email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
-    gender: this.builder.control(''),
     role: this.builder.control(''),
     isactive: this.builder.control(false)
   });
 
-  updateuser() {
+  async updateuser() {
     if (this.registerform.valid) {
+      this.registerform.value.password = await bcrypt.hash(this.registerform.value.password ?? '', 10);
       this.service.Updateuser(this.registerform.value.id, this.registerform.value).subscribe(res => {
         this.toastr.success('Informação alterada com sucesso!');
         this.dialog.close();

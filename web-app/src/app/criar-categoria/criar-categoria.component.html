@@ -1,0 +1,12 @@
+<div class="content-cadastrar">
+    <h1>Cadastrar nova categoria</h1>
+    <table>
+       <tr>
+          <td><input id="categoria-titulo" [(ngModel)]="categoria.titulo" placeholder="Digite aqui o título da nova categoria"></td>
+       </tr>
+    </table>
+    <div class="content-cadastrar-buttons">
+      <button id="register-categoria" (click)="cancelCreateCategoria()">Cancelar</button>
+      <button id="register-categoria" (click)="createCategoria()">Criar categoria</button>
+    </div>
+</div>

@@ -43,11 +43,8 @@ import { CadastraAlbumService } from './cadastra-album/cadastra-album.service';
 import { PlaylistAdminComponent } from './playlist-admin/playlist-admin.component';
 import { EditaMusicaComponent } from './edita-musica/edita-musica.component';
 import { EditaAlbumComponent } from './edita-album/edita-album.component';
-import { PlaylistsCategoriaComponent } from './playlists-categoria/playlists-categoria.component';
 import { PlaylistsCategoriaAdminComponent } from './playlists-categoria-admin/playlists-categoria-admin.component';
 import { BibliotecaUsuarioComponent } from './biblioteca-usuario/biblioteca-usuario.component';
-import { HistoricComponent } from './historic/historic.component';
-import { TocadorComponent } from './tocador/tocador.component';
 
 @NgModule({
   declarations: [
@@ -81,11 +78,9 @@ import { TocadorComponent } from './tocador/tocador.component';
     PlaylistAdminComponent,
     EditaMusicaComponent,
     EditaAlbumComponent,
-    PlaylistsCategoriaComponent,
+    PlaylistCategoriaComponent,
     PlaylistsCategoriaAdminComponent,
-    BibliotecaUsuarioComponent,
-    HistoricComponent,
-    TocadorComponent
+    BibliotecaUsuarioComponent
   ],
   imports: [
     BrowserModule,

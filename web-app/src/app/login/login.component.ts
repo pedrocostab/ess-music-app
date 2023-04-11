@@ -3,6 +3,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr'
 import { AuthService } from '../service/auth.service';
+import * as bcrypt from 'bcryptjs';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -10,48 +12,63 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private builder: FormBuilder, private toastr: ToastrService, 
-    private service: AuthService, private router: Router) {
-      sessionStorage.clear();
+
+  constructor(
+    private builder: FormBuilder,
+    private toastr: ToastrService,
+    private service: AuthService,
+    private router: Router
+  ) {
   }
 
   userdata: any;
+  subscription: Subscription = new Subscription();
 
   loginform = this.builder.group({
-    username: this.builder.control('', Validators.required),
-    password: this.builder.control('', Validators.required),
-  })
+    username: ['', Validators.required],
+    password: ['', Validators.required],
+  });
 
   proceedlogin() {
-    //Login com sucesso
+    // Login com sucesso
     if (this.loginform.valid) {
-      //   this.service.Proceedregister(this.loginform.value).subscribe(res=> {
-      //     this.toastr.success('Registro feito com sucesso!');
-      //     this.router.navigate(['login'])
-      //   })
-      // } 
-      // //Falha no Login
-      // else {
-      //   this.toastr.warning('Por favor, colocar um dado válido!')
-      // }
-      this.service.Getbycode(this.loginform.value.username).subscribe(res => {
-        this.userdata = res;
-        // console.log(this.userdata);
-        //Se acertar a senha:
-        if (this.userdata.password === this.loginform.value.password) {
-          //Se o usuário tiver permissao para entrar:
-          if (this.userdata.isactive) {
-            sessionStorage.setItem('username', this.userdata.id);
-            sessionStorage.setItem('userrole', this.userdata.role);
-            this.router.navigate(['/initial-page'])
-          } else {
-            this.toastr.error('Por favor, renove seu cadastro na Dizer ou contate nosso suporte');
-          }
+      this.subscription.add(this.service.GetbyCode(this.loginform.value.username).subscribe(
+        (res: any) => {
+          this.userdata = res;
+          //console.log(this.userdata);
 
-        } else {
-          this.toastr.error('Credenciais Inválidas');
+          // Se acertar a senha:
+          const validPassword = bcrypt.compareSync(this.loginform.value.password ?? '', this.userdata.password);
+          if (validPassword) {
+            // Se o usuário tiver permissão para entrar:
+            if (this.userdata.isactive) {
+              localStorage.setItem('username', this.userdata.id);
+              localStorage.setItem('userrole', this.userdata.role);
+              if(this.userdata.role === 'admin'){
+                this.router.navigate(['/userAdmin']);
+              } else {
+                this.router.navigate(['/initial-page']);
+              }
+              
+            } else {
+              this.toastr.error('Por favor, renove seu cadastro na Dizer ou contate nosso suporte');
+            }
+          } else {
+            this.toastr.error('Credênciais Inválidas ou Usuário não existente');
+          }
+        },
+        (error) => {
+          if (error.status === 404) {
+            this.toastr.error('Credênciais Inválidas ou Usuário não existente');
+          } else {
+            console.error(error);
+          }
         }
-      })
+      ));
     }
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }

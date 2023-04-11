@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { ResultadoPesquisaService } from '../resultados-pesquisa/resultado-pesquisa.service';
 
 @Component({
-  selector: 'app-playlists-categoria',
-  templateUrl: './playlists-categoria.component.html',
-  styleUrls: ['./playlists-categoria.component.css']
+  selector: 'app-playlist-categoria',
+  templateUrl: './playlist-categoria.component.html',
+  styleUrls: ['./playlist-categoria.component.css']
 })
-export class PlaylistsCategoriaComponent {
+export class PlaylistCategoriaComponent {
+ constructor(private resultados: ResultadoPesquisaService){}
 
+ pesquisar(){
+  this.resultados.pesquisar()
+}
 }

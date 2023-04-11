@@ -1,0 +1,103 @@
+<div class="admin-container-home">
+  <div class = "header">
+    <div class="texto-inicial">
+      <p style="font-size: 30px;">Resultados...</p>
+    </div>
+  </div>
+
+  <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Músicas</p>
+  <div class="tableGeral">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th># Título</th>
+          <th># Artista</th>
+          <th># Álbum</th>
+        </tr>
+      </thead>
+      <tbody>            
+        <tr class="cor-diferente" *ngFor="let musica of musicas">
+          <td class="album-capa">
+            <img src="{{musica.capaAlbum}}" alt="{{musica.titulo}}">
+          </td>
+          <td>{{musica.titulo}}</td>
+          <td>{{musica.artistaNome}}</td>
+          <td>{{musica.tituloAlbum}}</td>
+          <td class="opcoes-header">
+            <div class="opcoes-wrapper">
+              <div class="dropdown">
+                <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                <div class="dropdown-content">
+                  <a href="#"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</a>
+                  <a href="#"><span class="material-icons">album</span>Ir para o álbum</a>
+                </div>
+              </div>
+            </div>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <p class="paragrafo" style="font-size: 30px; font-weight: bold;"><br>Álbuns</p>
+    <div class="tableGeral">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th># Título</th>
+            <th># Artista</th>
+            <th># Ano</th>
+          </tr>
+        </thead>
+        <tbody>            
+          <tr class="cor-diferente" *ngFor="let album of albuns">
+            <td class="album-capa">
+              <img src="{{album.url_foto_album}}" alt="{{album.nome}}">
+            </td>
+            <td>{{album.nome}}</td>
+            <td>{{album.artistaNome}}</td>
+            <td>{{album.ano_lancamento}}</td>
+            <td class="opcoes-header">
+              <div class="opcoes-wrapper">
+                <div class="dropdown">
+                  <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                  <div class="dropdown-content">
+                    <a href="#"><span class="material-icons">album</span>Ir para o álbum</a>
+                  </div>
+                </div>
+              </div>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="paragrafo" style="font-size: 30px; font-weight: bold;"><br>Artistas</p>
+  <div class="tableGeral" >
+      <table >
+        <thead>
+          <tr>
+            <th>#</th>
+            <th># Nome</th>
+            <th># Gênero</th>
+          </tr>
+        </thead>
+        <tbody>            
+          <tr class="cor-diferente" *ngFor="let artista of artistas">
+            <td class="album-capa">
+              <img src="{{artista.url_foto_artista}}" alt="{{artista.nome}}">
+            </td>
+            <td>{{artista.nome}}</td>
+            <td>{{artista.categoria}}</td>
+            <td class="opcoes-header">
+              <div class="opcoes-wrapper">
+                <div class="dropdown">
+                  <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                  <div class="dropdown-content">
+                    <a href="#"><span class="material-icons">mic_external_on</span>Ir para o artista</a>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
