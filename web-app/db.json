@@ -11,99 +11,19 @@
       "isactive": true
     },
     {
-      "id": "teste2",
-      "name": "teste2",
-      "password": "teste4",
-      "email": "teste@teste",
-      "role": "admin",
-      "isactive": true
-    },
-    {
-      "id": "aaab",
-      "name": "aaa",
-      "password": "$2b$10$lfsboDI62QWvLrNAVIVg..7KvrxnB9UF2fIA/OM1GJHv7MGiYMv46",
-      "email": "aaa@aaa.com",
-      "role": "user",
-      "isactive": true
-    },
-    {
-      "id": "lucas",
-      "name": "lucas",
-      "password": "$2a$10$dmvbnXbU3weW2tbE3CgLxe4vj7B.awR7J9InMjr6JkLgg2STFhPGq",
-      "email": "bbo@bbb.com",
-      "role": "user",
-      "isactive": true
-    },
-    {
-      "id": "bibi",
-      "name": "bibi",
-      "password": "$2b$10$l0qtH4eE/.IO2VJRGvAYe.p0Ggfq9ykC7a4LnUxgvBjW5RHSObhWO",
-      "email": "bibi@bibi.com",
-      "role": "user",
-      "isactive": true
-    },
-    {
-      "id": "bibibi",
-      "name": "bibibi",
-      "password": "$2a$10$VEbWfHjLbOibQvnDGMBHbeEka3qTm3d.FZOYMfnfigO1xaS8U77wO",
-      "email": "bibibi@bibibi.com",
-      "role": "admin",
-      "isactive": true
-    },
-    {
-      "id": "blau",
-      "name": "blau",
-      "password": "$2a$10$nCFfKw/9gJLEUGBr5LViFu/K/Wyzm1H5VPpHeS5zFoyET3kLmDv/a",
-      "email": "blau@blau.com",
-      "role": "user",
-      "isactive": true
-    },
-    {
-      "id": "romulodaniell",
-      "name": "Romulo Daniell",
-      "password": "$2a$10$ZF2gfbON6droqPBkjuvquepUtjD51nSOG5R0UwC9COkx7KcSuAE6G",
-      "email": "romulodaniell@dizer.com",
-      "role": "user",
-      "isactive": true
-    },
-    {
       "id": "pcsb",
       "name": "Pedro Basilio",
-      "password": "$2a$10$.3cKPA2zToTmjqTHm1MKPOULi4mUIpo2i0Aolh1yVwTgBZj6jztOm",
+      "password": "$2a$10$OEqwLgban/PoSr2PLe5bPeVCsdHouxFo6ttpsch7V3lFobSoLZLsG",
       "email": "pcsb@cin.ufpe.br",
       "role": "user",
       "isactive": true
     },
     {
-      "id": "testeadmin",
-      "name": "teste insercao",
-      "password": "teste02",
-      "email": "teste@cin.ufpe.br",
-      "role": "usuario",
-      "isactive": true
-    },
-    {
-      "id": "drielle",
-      "name": "Drielle",
-      "password": "senha1",
-      "email": "dri@cin.ufpe.br",
-      "role": "usuario",
-      "isactive": true
-    },
-    {
-      "id": "senha1",
-      "name": "Drielle",
-      "password": "senha1",
-      "email": "senha@cin.ufpe.br",
-      "role": "usuario",
-      "isactive": true
-    },
-    {
-      "id": "teste23",
-      "name": "teste2",
-      "password": "$2a$10$QwZZcYzklQE1CjsUeyAQy./BjMhT/haxAIYkDYt87JQl0p3HHjhwO",
-      "email": "teste@teste",
-      "role": "usuario",
+      "id": "pcsb1",
+      "name": "Pedro Basilio",
+      "password": "$2a$10$LjnzGLAzfzVh4QasM8psHOQGGvET.7bkaDb/O3P7FD1Yb8SNNIeiS",
+      "email": "pcsb1@cin.ufpe.br",
+      "role": "user",
       "isactive": true
     }
   ],
@@ -186,6 +106,30 @@
       "nome": "Ariana Grande",
       "categoria": "Pop",
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/avatar170s/6b02b78c1a6f34a27a0a6f39a1739f6b"
+    },
+    {
+      "id": 8,
+      "nome": "Bruno Miranda",
+      "genero_musical": "Pop",
+      "url_foto_artista": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 9,
+      "nome": "",
+      "genero_musical": "Forró",
+      "url_foto_artista": "https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 10,
+      "nome": "André Rouche",
+      "genero_musical": "",
+      "url_foto_artista": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 11,
+      "nome": "Ivete Saganlo",
+      "genero_musical": "Indie",
+      "url_foto_artista": ""
     }
   ],
   "albums": [

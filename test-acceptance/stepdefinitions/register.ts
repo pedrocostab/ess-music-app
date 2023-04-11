@@ -1,97 +1,139 @@
-// import { defineSupportCode } from 'cucumber';
-// import { browser, $, element, ElementArrayFinder, by } from 'protractor';
-// let chai = require('chai').use(require('chai-as-promised'));
-// let expect = chai.expect;
-// import request = require("request-promise");
-
-// var base_url = "http://localhost:3000/user";
-
-// let sameCPF = ((elem, cpf) => elem.element(by.name('cpflist')).getText().then(text => text === cpf));
-// let sameName = ((elem, name) => elem.element(by.name('nomelist')).getText().then(text => text === name));
-
-// let pAND = ((p,q) => p.then(a => q.then(b => a && b)))
-
-// async function criarUsuario(id, name, password, email) {
-//     await $("input[name='id']").sendKeys(<string> id);
-//     await $("input[name='name']").sendKeys(<string> name);
-//     await $("input[name='password']").sendKeys(<string> password);
-//     await $("input[name='email']").sendKeys(<string> email);    
-//     await element(by.buttonText('Enviar')).click();
-// }
-
-// async function assertTamanhoEqual(set,n) {
-//     await set.then(elems => expect(Promise.resolve(elems.length)).to.eventually.equal(n));
-// }
-
-// async function assertElementsWithSameCPFAndName(n,cpf,name) { 
-//     var allalunos : ElementArrayFinder = element.all(by.name('alunolist'));
-//     var samecpfsandname = allalunos.filter(elem => pAND(sameCPF(elem,cpf),sameName(elem,name)));
-//     await assertTamanhoEqual(samecpfsandname,n);
-// }
-
-// async function assertElementsWithSameCPF(n,cpf) {
-//     var allalunos : ElementArrayFinder = element.all(by.name('alunolist'));
-//     var samecpfs = allalunos.filter(elem => sameCPF(elem,cpf));
-//     await assertTamanhoEqual(samecpfs,n); 
-// }
-
-// defineSupportCode(function ({ Given, When, Then }) {
+import { defineSupportCode } from 'cucumber';
+import { browser, $, element, ElementArrayFinder, by, ExpectedConditions } from 'protractor';
+let chai = require('chai').use(require('chai-as-promised'));
+let expect = chai.expect;
+import { HttpClient } from 'selenium-webdriver/http';
+import request = require("request-promise");
 
 
+var base_url = "http://localhost:3000/";
+const base_front_url = "http://localhost:4200";
 
-//     Given(/^I am on the "([^\"]*)" page$/, async (page) => {
-//         await browser.get("http://localhost:4200/"+page);
-//     })
+const httpClient = new HttpClient(base_url);
 
-//     When(/^I click on "([^\"]*)"$/, async (buttonText) => {
-//         await $(buttonText).click();
-//     });
+async function loginAsUser(user_id: string, password: string){
+    //Navegar até página de login
+    await browser.get(base_front_url);
+    await element(by.buttonText('Login')).click();
+    await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/login');
 
-//     // Given(/^I cannot see a student with CPF "(\d*)" in the students list$/, async (cpf) => {
-//     //     await assertElementsWithSameCPF(0,cpf);
-//     // });
+    //Realizar login
+    await $("input[formControlName='username']").sendKeys(<string> user_id);
+    await $("input[formControlName='password']").sendKeys(<string> password);
+    await element(by.buttonText('Login')).click();
+    await browser.wait(ExpectedConditions.urlIs(base_front_url + "/initial-page") , 30000);
+    await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + "/initial-page");
+}
 
-//     // When(/^I try to register the student "([^\"]*)" with CPF "(\d*)"$/, async (name, cpf) => {
-//     //     await criarAluno(name,cpf);
-//     // });
+async function getUserFromDb(user_id: string){
+    return httpClient.send(
+        {
+            method: "get",
+            path: "/user/" + user_id,
+            headers: null,
+            data: null
+        }
+    )
+}
 
-//     // Then(/^I can see "([^\"]*)" with CPF "(\d*)" in the students list$/, async (name, cpf) => {
-//     //     await assertElementsWithSameCPFAndName(1,cpf,name);
-//     // });
+defineSupportCode(function ({ Given, When, Then }) {
+    Given(/^I am on the "Registro de novo usuário" page$/, { timeout: 10000 }, async () => {
+        await browser.get(base_front_url + '/register');
+    })
+    
+    When(/^I fill the fields "Usuario", "Nome", "Senha" and "Email" with the values "([^\"]*)", "([^\"]*)", "([^\"]*)" and "([^\"]*)"$/, async (id, name, password, email) => {
+        await $("input[formControlName='id']").sendKeys(<string> id);
+        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='email']").sendKeys(<string> email);
+    })
 
-//     // Given(/^I can see a student with CPF "(\d*)" in the students list$/, async (cpf) => {
-//     //     await criarAluno("Clarissa",cpf);
-//     //     await assertElementsWithSameCPF(1,cpf); 
-//     // });
+    When(/^I click on "Enviar"$/, async () => {
+        await element(by.buttonText('Enviar')).click();
+    })
 
-//     // Then(/^I cannot see "([^\"]*)" with CPF "(\d*)" in the students list$/, async (name, cpf) => {
-//     //     await assertElementsWithSameCPFAndName(0,cpf,name);
-//     // });
+    Then(/^I see a registration completed message$/, { timeout : 10000 }, async () => {
+        await browser.get(base_front_url+'/login');
+        await element(by.cssContainingText('div', 'Registro feito com sucesso!')).isPresent();
+    })
 
-//     // Then(/^I can see an error message$/, async () => {
-//     //     var allmsgs : ElementArrayFinder = element.all(by.name('msgcpfexistente'));
-//     //     await assertTamanhoEqual(allmsgs,1);
-//     // });
+    Then(/^I get a Registration Error message "Por favor colocar um dado válido"$/, { timeout: 10000 }, async () => {
+        await browser.get(base_front_url+'/register');
+        await element(by.cssContainingText('div', 'Por favor colocar um dado válido')).isPresent();
+    })
 
-//     // Given(/^the system has no student with CPF "(\d*)"$/, async (cpf) => {
-//     //    await request.get(base_url + "alunos")
-//     //             .then(body => 
-//     //                expect(body.includes(`"cpf":"${cpf}"`)).to.equal(false));
-//     // });
+    Then(/^I see the "Email" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='email'].ng-invalid").isPresent()).to.eventually.equal(true);
+    })
 
-//     // When(/^I register the student "([^\"]*)" with CPF "(\d*)"$/, async (name, cpf) => {
-//     //     let aluno = {"nome": name, "cpf" : cpf, "email":""};
-//     //     var options:any = {method: 'POST', uri: (base_url + "aluno"), body:aluno, json: true};
-//     //     await request(options)
-//     //           .then(body => 
-//     //                expect(JSON.stringify(body)).to.equal(
-//     //                    '{"success":"O aluno foi cadastrado com sucesso"}'));
-//     // });
+    Then(/^I see the "Senha" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='password'].ng-invalid").isPresent()).to.eventually.equal(true);
+    })
 
-//     // Then(/^the system now stores "([^\"]*)" with CPF "(\d*)"$/, async (name, cpf) => {
-//     //     let resposta = `{"nome":"${name}","cpf":"${cpf}","email":"","metas":{}`;
-//     //     await request.get(base_url + "alunos")
-//     //                  .then(body => expect(body.includes(resposta)).to.equal(true));
-//     // });
+    Then(/^I see the "Usuario" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='id'].ng-invalid").isPresent()).to.eventually.equal(true);
+    })
 
-// })
+    Then(/^I see the "Nome" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
+        await expect($("input[formControlName='name'].ng-invalid").isPresent()).to.eventually.equal(true);
+    })
+
+    Given(/^I am logged in with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user : string, password:string) => {
+        loginAsUser(user, password);
+    })
+
+    Given(/^I am on the "Editar Perfil" page$/, {timeout: 10000}, async () => {
+        await browser.get(base_front_url+'/userEdit');
+    })
+
+    When(/^I click on "Alterar Senha"$/, async () => {
+        await element(by.buttonText('Alterar Senha')).click();
+    })
+
+    When(/^I write "([^\"]*)" in "Nova Senha"$/, async (password) => {
+        await $("input[formControlName='password']").sendKeys(<string> password);
+    })
+
+    When(/^I click on "Alterar"$/, async () => {
+        await element(by.buttonText('Alterar')).click();
+    })
+
+    Then(/^I see a password changed successfully message$/, { timeout : 10000 }, async () => {
+        await element(by.cssContainingText('div', 'Senha alterada com sucesso!')).isPresent();
+    })
+
+    When(/^I click on "Deletar Perfil"$/, async () => {
+        await element(by.buttonText('Deletar Perfil')).click();
+    })
+    When(/^I click on "Sim"$/, async () => {
+        await element(by.buttonText('Sim')).click();
+    })
+
+    Then(/^I am logged out on the "Pagina Inicial" page$/, { timeout : 10000 }, async () => {
+        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url);
+    })
+
+    Given(/^I am logged in with an admin account with user "([^\"]*)" and password "([^\"]*)"$/, {timeout: 10000}, async (user : string, password:string) => {
+        loginAsUser(user, password);
+    })
+
+    Given(/^I am on the "Lista de Usuários" page$/, {timeout: 10000}, async () => {
+        await browser.get(base_front_url+'/lista-usuarios');
+        await expect(browser.getCurrentUrl()).to.eventually.equal(base_front_url + '/lista-usuarios');
+    })
+
+    Given(/^I see a list of system users$/, {timeout: 10000}, async () => {
+        await expect($("ng-reflect-data-source='[object Object]'").isPresent()).to.eventually.equal(true);
+    })
+
+    Given(/^I see the collumns "Usuario", "Nome", "Email", "Tipo de Usuário" and "Status" with the values "([^\"]*)", "([^\"]*)", "([^\"]*)", "([^\"]*)" and "([^\"]*)"$/, {timeout: 10000}, async () => {
+        await expect($("ng-reflect-data-source='[object Object]'").isPresent()).to.eventually.equal(true);
+    })
+
+    
+
+})
