@@ -8,9 +8,50 @@
       "email": "admin@dizer.com",
       "gender": "male",
       "role": "admin",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
+      "id": "teste2",
+      "name": "teste2",
+      "password": "teste2",
+      "email": "teste@teste",
+      "gender": "",
+      "role": "",
+      "isactive": true,
+      "historico": []
+    },
+    {
+      "id": "jv111",
+      "name": "joaovictor",
+      "password": "jvsf123",
+      "email": "jvsf@hotmai.com",
+      "gender": "",
+      "role": "",
+      "isactive": true,
+      "historico": []
+    },
+    {
+      "id": "asd",
+      "name": "asd",
+      "password": "123456",
+      "email": "asd@gmail.com",
+      "gender": "",
+      "role": "",
+      "isactive": true,
+      "historico": []
+    },
+    {
+      "id": "lukita",
+      "name": "lucas",
+      "password": "123456",
+      "email": "lukita@gmail.com",
+      "gender": "",
+      "role": "",
+      "isactive": true,
+      "historico": []
+    },
+    { 
       "id": "pcsb",
       "name": "Pedro Basilio",
       "password": "$2a$10$OEqwLgban/PoSr2PLe5bPeVCsdHouxFo6ttpsch7V3lFobSoLZLsG",
@@ -49,6 +90,8 @@
       "email": "romulodaniell@dizer.com",
       "role": "user",
       "isactive": true
+      "isactive": true,
+      "historico": []
     }
   ],
   "role": [
@@ -106,6 +149,18 @@
       "categoria": "Country",
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/d651025ce0f11bfdba128f44f1d2e370.jpg#d651025ce0f11bfdba128f44f1d2e370",
       "id": 3
+    },
+    {
+      "id": 4,
+      "nome": "Doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Lana del Rey",
+      "genero_musical": "Indie",
+      "url_foto_artista": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcScC_UYqbsa7x6ffWvuBlQpfDlYKCMUUu9DqMnC4CTdeBwYAP6kkpiRTJnNbnrcefgDp78QggXSvfMs3A0&psig=AOvVaw2DBg5P8F6zU4zaJpEY1QFx&ust=1681179278001000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIiV6v6env4CFQAAAAAdAAAAABAE"
     },
     {
       "nome": "Doja Cat",
