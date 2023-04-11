@@ -12,36 +12,6 @@
       "historico": []
     },
     {
-      "id": "teste2",
-      "name": "teste2",
-      "password": "teste2",
-      "email": "teste@teste",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "jv111",
-      "name": "joaovictor",
-      "password": "jvsf123",
-      "email": "jvsf@hotmai.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "asd",
-      "name": "asd",
-      "password": "123456",
-      "email": "asd@gmail.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
       "id": "lukita",
       "name": "lucas",
       "password": "123456",
@@ -51,10 +21,10 @@
       "isactive": true,
       "historico": []
     },
-    { 
+    {
       "id": "pcsb",
       "name": "Pedro Basilio",
-      "password": "$2a$10$OEqwLgban/PoSr2PLe5bPeVCsdHouxFo6ttpsch7V3lFobSoLZLsG",
+      "password": "$2a$10$oHiYlkwjsSyPX3HLzpJ01OqGpvbA.QIpBMT2KIfPCWfkD2.FroVqS",
       "email": "pcsb@cin.ufpe.br",
       "role": "user",
       "isactive": true
@@ -84,14 +54,12 @@
       "isactive": true
     },
     {
-      "id": "romulodaniell",
-      "name": "Romulo Daniell",
-      "password": "$2a$10$5ivWQvEzTs6AVqPiGVagjuKl7KrqA95bYAhmW7w8EVVFFj.yXih4i",
-      "email": "romulodaniell@dizer.com",
-      "role": "user",
+      "id": "testeadicionaradmin",
+      "name": "testeadicionaradmin",
+      "password": "$2a$10$yiB4Q2qeOCRt9EP8J8p4seeOQQfnExNjngdv0sMM3emhkVWI81EEq",
+      "email": "testeadicionaradmin@teste",
+      "role": "admin",
       "isactive": true
-      "isactive": true,
-      "historico": []
     }
   ],
   "role": [
