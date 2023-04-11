@@ -126,8 +126,20 @@
       "id": 3
     },
     {
+      "id": 4,
       "nome": "Doja cat",
-      "categoria": "Hip-Hop/rap",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Lana del Rey",
+      "genero_musical": "Indie",
+      "url_foto_artista": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcScC_UYqbsa7x6ffWvuBlQpfDlYKCMUUu9DqMnC4CTdeBwYAP6kkpiRTJnNbnrcefgDp78QggXSvfMs3A0&psig=AOvVaw2DBg5P8F6zU4zaJpEY1QFx&ust=1681179278001000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIiV6v6env4CFQAAAAAdAAAAABAE"
+    },
+    {
+      "nome": "Doja Cat",
+      "categoria": "Pop music",
       "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg",
       "id": 4
     },
@@ -150,7 +162,19 @@
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/avatar170s/6b02b78c1a6f34a27a0a6f39a1739f6b"
     },
     {
-      "nome": "Ivete Saganlo",
+      "id": 8,
+      "nome": "Bruno Miranda",
+      "genero_musical": "Pop",
+      "url_foto_artista": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 10,
+      "nome": "André Rouche",
+      "genero_musical": "",
+      "url_foto_artista": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "nome": "Ivete Sangalo",
       "categoria": "MPB",
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/770x0/ef0e63b189e0155bf24f4268cf3bf6de.jpg#ef0e63b189e0155bf24f4268cf3bf6de",
       "id": 11
@@ -403,42 +427,6 @@
     }
   ],
   "musicas": [
-    {
-      "titulo": " Woman",
-      "albumId": 1,
-      "artistaId": 4,
-      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her",
-      "id": 1
-    },
-    {
-      "titulo": "Naked",
-      "albumId": 1,
-      "artistaId": 4,
-      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her",
-      "id": 2
-    },
-    {
-      "titulo": "Payday (Feat. Young Thug)",
-      "albumId": 1,
-      "artistaId": 4,
-      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her",
-      "id": 3
-    },
-    {
-      "titulo": "Get Into It (Yuh)",
-      "albumId": 1,
-      "artistaId": 4,
-      "capaAlbum": "https://upload.wikimedia.org/wikipedia/en/6/61/Doja_Cat_-_Planet_Her.png",
-      "artistaNome": "Doja cat",
-      "tituloAlbum": "Planet Her (Deluxe)",
-      "id": 4
-    },
     {
       "id": 6,
       "titulo": "willow",
@@ -1088,15 +1076,6 @@
       "artistaNome": "Taylor Swift"
     },
     {
-      "id": 78,
-      "titulo": "Cyber Sex",
-      "albumId": 2,
-      "artistaId": 4,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "tituloAlbum": "Hot Pink",
-      "artistaNome": "Doja Cat"
-    },
-    {
       "id": 79,
       "titulo": "Won't Bite (feat. Smino)",
       "albumId": 2,
@@ -1463,15 +1442,6 @@
       "artistaId": 2,
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/770x0/d4a339a2bd2bc5fe470e0b0c10444903.jpg#d4a339a2bd2bc5fe470e0b0c10444903",
       "tituloAlbum": "ANTi (Deluxe)",
-      "artistaNome": "Rihanna"
-    },
-    {
-      "id": 120,
-      "titulo": "Phresh Out the Runway",
-      "albumId": 4,
-      "artistaId": 2,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/2d95b09c19504252f1a5b670ef1b2076.jpg",
-      "tituloAlbum": "Unapologetic (Deluxe)",
       "artistaNome": "Rihanna"
     },
     {
@@ -3765,8 +3735,45 @@
     {
       "titulo": "Treino",
       "privacidade": "Pública",
-      "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
-      "id": 1
+      "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
+      "categoria": "Pop music",
+      "usuario_dono": {
+        "id": "vitinho",
+        "name": "vitinho",
+        "password": "$2a$10$IR2TYr1sgZPVeT1NODmFxOwH6nkvhubch1cUIYy1OyloOmaB/Pt7O",
+        "email": "vitinho@vitinho.com",
+        "role": "admin",
+        "isactive": true
+      },
+      "musicas": [
+        {
+          "id": 90,
+          "titulo": "Need to Know",
+          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+          "albumId": 1,
+          "artistaId": 4,
+          "artistaNome": "Doja Cat",
+          "tituloAlbum": "Planet Her"
+        },
+        {
+          "id": 137,
+          "titulo": "You Da One",
+          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+          "albumId": 5,
+          "artistaId": 2,
+          "artistaNome": "Rihanna",
+          "tituloAlbum": "Talk That Talk (Deluxe)"
+        },
+        {
+          "id": 154,
+          "titulo": " Fading",
+          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
+          "albumId": 6,
+          "artistaId": 2,
+          "artistaNome": "Rihanna",
+          "tituloAlbum": "Loud"
+        }
+      ]
     }
   ],
   "categorias": [
