@@ -15,6 +15,9 @@
       <button *ngIf="seguir" (click)="toggleSeguir()">Seguir Playlist</button>
       <button *ngIf="!seguir" (click)="toggleSeguir()">Deixar de Seguir Playlist</button>
     </li>
+    <li [ngStyle]="{'display': isDonoPlaylist ? 'block' : 'none' }">
+      <button (click)="handleClick()">Clique aqui para pegar o link de compartilhamento</button>
+    </li>
   </ul>
 
   <br>

@@ -121,4 +121,14 @@ export class PlaylistAdminComponent {
     this.seguirPlaylist()
     this.seguir = !this.seguir;
   }
+
+  handleClick() {
+    const tempElement = document.createElement('textarea');
+    tempElement.value = window.location.href;
+    document.body.appendChild(tempElement);
+    tempElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempElement);
+  }
+  
 }
