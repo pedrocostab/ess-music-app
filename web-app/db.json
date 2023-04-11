@@ -12,50 +12,20 @@
       "historico": []
     },
     {
-      "id": "lukita",
-      "name": "lucas",
-      "password": "123456",
-      "email": "lukita@gmail.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
+      "id": "pcsb",
+      "name": "Pedro Basilio",
+      "password": "$2a$10$xNrXxKDNv5GhFunRIlgsAOtM1EaymVizLkO2f7il2zeNxx0BT3AZe",
+      "email": "pcsb@cin.ufpe.br",
+      "role": "user",
+      "isactive": true
     },
     {
       "id": "pcsb1",
-      "name": "Pedro Basilio",
-      "password": "$2a$10$.uTArMgtOYd8tfrOEnILVeT6l7LdUYTDzjdfBuFdZ7PJO3nGsiqtK",
-      "email": "pcsb1@cin.ufpe.br",
+      "name": "Pedro Santos",
+      "password": "$2a$10$.gEKGtFyo4C0OlvNRDpDxuGABQ20HVtf553sor1heDQzUP6Ul2jBe",
+      "email": "pcsbasilio@cin.ufpe.br",
       "role": "user",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "joaosaores",
-      "name": "joao victor",
-      "password": "$2a$10$d.lt2eAsNQCLo/UoKXnPwujAU6YdjoxM6m2p0r52H4ZETFudtDQCy",
-      "email": "joaosoares@dizer.com",
-      "role": "user",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "alex",
-      "name": "Alex",
-      "password": "$2a$10$00haHcUSRRgdI.RM4y46.uQXbICnZEFF5APmBJTe9UtbwGb46o5iq",
-      "email": "alex@dizer.com",
-      "role": "user",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "pcsb3",
-      "name": "pcsb",
-      "password": "$2a$10$0LfwlL5S4sMr7vTG/jwkCOSVNLsZeY/PD14rRB40acF8dxUQKUXre",
-      "email": "pcsb@aspokpok",
-      "role": "user",
-      "isactive": true,
-      "historico": []
+      "isactive": true
     },
     {
       "id": "pcsb2",
@@ -65,14 +35,6 @@
       "role": "user",
       "isactive": true,
       "historico": []
-    },
-    {
-      "id": "pcsb",
-      "name": "Pedro Basilio",
-      "password": "$2a$10$8TdlV/ILNEmXuM/Y1f8mI.VrKH/U1FEjW3QXaPmKDAEzEUfXfODF6",
-      "email": "pcsb@cin.ufpe.br",
-      "role": "user",
-      "isactive": true
     }
   ],
   "role": [

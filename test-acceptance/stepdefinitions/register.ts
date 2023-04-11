@@ -115,13 +115,6 @@ defineSupportCode(function ({ Given, When, Then }) {
     When(/^I click on "Deletar Perfil"$/, async () => {
         await element(by.buttonText('Deletar Perfil')).click();
     })
-    // When(/^I click on "Sim"$/, async () => {
-    //     // await element(by.xpath('//*[@id="mat-mdc-dialog-0"]/div/div/app-user-se-deletapopup/mat-card/mat-card-content/div/a[1]/span[2]')).click();
-    //     // await element(by.buttonText('Sim')).click();
-    //     // await browser.wait(() => element(by.css('app-user-se-deletapopup')).isPresent(), 5000);
-
-
-    // })
 
     Then(/^I am logged out on the "Pagina Inicial" page$/, { timeout : 10000 }, async () => {
         await browser.get(base_front_url);
@@ -163,12 +156,29 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
     
     When(/^I click on the "Editar" button on the "Usuario" user "([^\"]*)" line$/, async (user:string) => {
-        await element(by.xpath("//*[contains(@id,'Editar')]"));
+        // await element(by.xpath("//*[contains(@id,'Editar')]"));
     //    await element(by.cssContainingText('td', user)).element(by.xpath('..')).element(by.buttonText('Editar')).click();
+    await browser.wait(() => element(by.css('table')).isPresent(), 5000);
+    const usr = element(by.cssContainingText('td', user));
+    await expect(usr.isPresent()).to.eventually.equal(true);
+    const row = usr.element(by.xpath('..'));
+    const edt = row.element(by.cssContainingText('span', 'Editar'));
+    await edt.click(); 
+
+    })
+
+    When(/^I write "([^\"]*)" in "Nome" field, "([^\"]*)" in "Senha" field, "([^\"]*)" in "Email" field$/, async (name, password, email) => {
+        await browser.wait(() => element(by.cssContainingText('h1', 'Editar Usuário')).isPresent(), 5000);
+        await $("input[formControlName='name']").clear();
+        await $("input[formControlName='password']").clear();
+        await $("input[formControlName='email']").clear();
+        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='email']").sendKeys(<string> email);
     })
 
     When(/^I click "Atualizar"$/, async () => {
-        await element(by.cssContainingText('td' ,'Atualizar'));
+        await element(by.cssContainingText('span' ,'Atualizar')).click();
         })
     
 
@@ -199,9 +209,28 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect($("input[formControlName='password'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
     
-    // When(/^I click on "Alterar Senha" option"$/, async () => {
-    //     await $("input[formControlName='password']").sendKeys(<string> '');
-    // })
-    
+    Then(/^I get a Error message "Por favor, insira um dado válido!"$/, { timeout: 10000 }, async () => {
+        await element(by.cssContainingText('div', 'Por favor, insira um dado válido!')).isPresent();
+    })
+
+    Then(/^I see the collumns fields "Usuario", "Nome", "Email", "Tipo de Usuário" and "Status" with the values "([^\"]*)", "([^\"]*)", "([^\"]*)", "([^\"]*)" and "([^\"]*)"$/, {timeout: 10000}, async (user:string, name:string, email:string, role:string, status:string ) => {
+        await browser.refresh();
+        await browser.wait(() => element(by.css('table')).isPresent(), 5000);
+        const usr = element(by.cssContainingText('td', user));
+        await expect(usr.isPresent()).to.eventually.equal(true);
+        const row = usr.element(by.xpath('..'));
+
+        const nm = row.element(by.cssContainingText('td', name));
+        await expect(nm.isPresent()).to.eventually.equal(true);
+        
+        const eml = row.element(by.cssContainingText('td', email));
+        await expect(eml.isPresent()).to.eventually.equal(true);
+        
+        const rl = row.element(by.cssContainingText('td', role));
+        await expect(rl.isPresent()).to.eventually.equal(true);
+        
+        const stt = row.element(by.cssContainingText('td', status));
+        await expect(stt.isPresent()).to.eventually.equal(true);
+    })
 
 })

@@ -8,7 +8,7 @@ Feature: Registration and maintenance of Users (insert, remove, update)
 
 Scenario: Registering new users
     Given I am on the "Registro de novo usuário" page
-    When I fill the fields "Usuario", "Nome", "Senha" and "Email" with the values "pcsb1", "Pedro Basilio", "pcsb01" and "pcsb1@cin.ufpe.br"
+    When I fill the fields "Usuario", "Nome", "Senha" and "Email" with the values "pcsb4", "Pedro Basilio", "pcsb01" and "pcsb4@cin.ufpe.br"
     And I click on "Enviar"
     Then I see a registration completed message
 
@@ -77,3 +77,35 @@ Scenario: User logged in wants to change his password to a less than 6 digits pa
     And I click on "Alterar"
     Then I get a Registration Error message "Por favor colocar um dado válido"
     And I see the "Nova Senha" field highlighted
+
+Scenario: User logged in wants to change his password without password
+    Given I am logged in with user "pcsb" and password "pcsb01"
+    And I am on the "Editar Perfil" page
+    When I click on "Alterar Senha"
+    And I write " " in "Nova Senha"
+    And I click on "Alterar"
+    Then I get a Registration Error message "Por favor colocar um dado válido"
+    And I see the "Nova Senha" field highlighted
+
+Scenario: Administrator wants to edit a User from the system
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    And I see a list of system users
+    And I see the collumns "Usuario", "Nome", "Email", "Tipo de Usuário" and "Status" with the values "pcsb1", "Pedro Santos", "pcsbasilio@cin.ufpe.br", "user" and "Ativo"
+    When I click on the "Editar" button on the "Usuario" user "pcsb1" line
+    And I write "Pedro Costa" in "Nome" field, "pcsb02" in "Senha" field, "pcsbasilio2@cin.ufpe.br" in "Email" field
+    And I click "Atualizar"
+    Then I see a success message "Informação alterada com sucesso!"
+    And I see a list of system users
+    And I see the collumns fields "Usuario", "Nome", "Email", "Tipo de Usuário" and "Status" with the values "pcsb1", "Pedro Costa", "pcsbasilio2@cin.ufpe.br", "user" and "Ativo"
+
+Scenario: Administrator wants to edit a User password to a password less than 6 digits
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    And I see a list of system users
+    And I see the collumns "Usuario", "Nome", "Email", "Tipo de Usuário" and "Status" with the values "pcsb", "Pedro Basilio", "pcsb@cin.ufpe.br", "user" and "Ativo"
+    When I click on the "Editar" button on the "Usuario" user "pcsb" line
+    And I write "Pedro" in "Nome" field, "0" in "Senha" field, "pcostasb@cin.ufpe.br" in "Email" field
+    And I click "Atualizar"
+    Then I get a Error message "Por favor, insira um dado válido!"
+    And I see the "Senha" field highlighted
