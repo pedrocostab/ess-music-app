@@ -134,8 +134,11 @@ ul {
     display: block;
   }
   
-     
-     
+  .icon-add:before {
+    content: "add";
+  }
   
-    
-   
+  .icon-delete:before {
+    content: "delete";
+  }
+  

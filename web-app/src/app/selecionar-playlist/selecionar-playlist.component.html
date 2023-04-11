@@ -20,7 +20,7 @@
             <td class="opcoes-header">
               <div class="opcoes-wrapper">
                 <div class="dropdown">
-                  <button class="dropbtn" (click)="cadastraMusicaPlaylist(playlist.id)"><span class="material-icons">add</span></button>
+                  <button class="dropbtn" (click)="toggleAdicionar(playlist.id)"><span class="material-icons" [ngClass]="{'icon-add': adicionar, 'icon-delete': !adicionar}"></span></button> 
                 </div>
               </div>
           </tr>
