@@ -12,36 +12,6 @@
       "historico": []
     },
     {
-      "id": "teste2",
-      "name": "teste2",
-      "password": "teste2",
-      "email": "teste@teste",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "jv111",
-      "name": "joaovictor",
-      "password": "jvsf123",
-      "email": "jvsf@hotmai.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "asd",
-      "name": "asd",
-      "password": "123456",
-      "email": "asd@gmail.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
       "id": "lukita",
       "name": "lucas",
       "password": "123456",
@@ -54,7 +24,7 @@
     {
       "id": "pcsb",
       "name": "Pedro Basilio",
-      "password": "$2a$10$OEqwLgban/PoSr2PLe5bPeVCsdHouxFo6ttpsch7V3lFobSoLZLsG",
+      "password": "$2a$10$JbqntgKTYwz.WRgzrOsCueYcokImwy1SQ2XusSBW1BnXoutZIWnHe",
       "email": "pcsb@cin.ufpe.br",
       "role": "user",
       "isactive": true
@@ -62,7 +32,7 @@
     {
       "id": "pcsb1",
       "name": "Pedro Basilio",
-      "password": "$2a$10$LjnzGLAzfzVh4QasM8psHOQGGvET.7bkaDb/O3P7FD1Yb8SNNIeiS",
+      "password": "$2a$10$.uTArMgtOYd8tfrOEnILVeT6l7LdUYTDzjdfBuFdZ7PJO3nGsiqtK",
       "email": "pcsb1@cin.ufpe.br",
       "role": "user",
       "isactive": true
@@ -82,12 +52,19 @@
       "email": "alex@dizer.com",
       "role": "user",
       "isactive": true
+    {
+      "id": "pcsb3",
+      "name": "pcsb",
+      "password": "$2a$10$0LfwlL5S4sMr7vTG/jwkCOSVNLsZeY/PD14rRB40acF8dxUQKUXre",
+      "email": "pcsb@aspokpok",
+      "role": "user",
+      "isactive": true
     },
     {
-      "id": "vitinho",
-      "name": "vitinho",
-      "password": "$2a$10$IR2TYr1sgZPVeT1NODmFxOwH6nkvhubch1cUIYy1OyloOmaB/Pt7O",
-      "email": "vitinho@vitinho.com",
+      "id": "pcsb2",
+      "name": "Pedro",
+      "password": "$2a$10$Q.5/gqHD/rN1gR4Trs0qjec5K7tctSHettD80DWA4ncf97qN0bGWK",
+      "email": "pcsb@cpasodkfpoaskf",
       "role": "user",
       "isactive": true
     }
@@ -149,6 +126,12 @@
       "id": 3
     },
     {
+      "id": 4,
+      "nome": "Doja cat",
+      "genero_musical": "hip hop",
+      "url_foto_artista": "https://www.deezer-blog.com/assets/sites/8/2021/12/doja-cat.jpg"
+    },
+    {
       "id": 5,
       "nome": "Lana del Rey",
       "genero_musical": "Indie",
@@ -177,6 +160,12 @@
       "nome": "Ariana Grande",
       "categoria": "Pop",
       "url_foto_artista": "https://lastfm.freetls.fastly.net/i/u/avatar170s/6b02b78c1a6f34a27a0a6f39a1739f6b"
+    },
+    {
+      "id": 8,
+      "nome": "Bruno Miranda",
+      "genero_musical": "Pop",
+      "url_foto_artista": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": 10,
@@ -208,7 +197,7 @@
       "nome": "Planet Her",
       "artistaId": 4,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
-      "artistaNome": "Doja Cat",
+      "artistaNome": "Doja cat",
       "ano_lancamento": "2021",
       "id": 1
     },
@@ -216,7 +205,7 @@
       "nome": "Hot Pink",
       "artistaId": 4,
       "url_foto_album": "https://lastfm.freetls.fastly.net/i/u/500x500/b0f247dc7b26fd7c91ba720401f200dd.jpg",
-      "artistaNome": "Doja Cat",
+      "artistaNome": "Doja cat",
       "ano_lancamento": "2019",
       "id": 2
     },
@@ -1823,159 +1812,6 @@
       "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
       "tituloAlbum": "Loud",
       "artistaNome": "Rihanna"
-    },
-    {
-      "id": 162,
-      "titulo": "Do I Wanna Know?",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 163,
-      "titulo": "R U Mine?",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 164,
-      "titulo": "One for the Road",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 165,
-      "titulo": "Arabella",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 166,
-      "titulo": "I Want It All",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 167,
-      "titulo": "No. 1 Party Anthem",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 168,
-      "titulo": "Mad Sounds",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 169,
-      "titulo": "Fireside",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 170,
-      "titulo": "Why'd You Only Call Me When You're High?",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 171,
-      "titulo": " Snap Out of It",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 172,
-      "titulo": "Knee Socks",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 173,
-      "titulo": "I Wanna Be Yours",
-      "albumId": 13,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/eb166a52aaba4578c52d3536fd919792.jpg",
-      "tituloAlbum": "AM",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 174,
-      "titulo": "There’d Better Be a Mirrorball",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 175,
-      "titulo": "I Ain’t Quite Where I Think I Am",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 176,
-      "titulo": "Sculptures of Anything Goes",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 177,
-      "titulo": "Jet Skis on the Moat",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
-    },
-    {
-      "id": 178,
-      "titulo": "Body Paint",
-      "albumId": 11,
-      "artistaId": 5,
-      "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/69c2e238f63d5aa2d62181d5b74f34a0.jpg",
-      "tituloAlbum": "The Car",
-      "artistaNome": "Arctic Monkeys"
     },
     {
       "id": 179,
@@ -3897,8 +3733,7 @@
   ],
   "playlists": [
     {
-      "id": 1,
-      "titulo": "Playlist teste",
+      "titulo": "Treino",
       "privacidade": "Pública",
       "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
       "categoria": "Pop music",
@@ -3912,6 +3747,24 @@
       },
       "musicas": [
         {
+          "id": 90,
+          "titulo": "Need to Know",
+          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+          "albumId": 1,
+          "artistaId": 4,
+          "artistaNome": "Doja Cat",
+          "tituloAlbum": "Planet Her"
+        },
+        {
+          "id": 137,
+          "titulo": "You Da One",
+          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+          "albumId": 5,
+          "artistaId": 2,
+          "artistaNome": "Rihanna",
+          "tituloAlbum": "Talk That Talk (Deluxe)"
+        },
+        {
           "id": 154,
           "titulo": " Fading",
           "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/a7cd5b2046514a52ba359e06743693f9.jpg",
@@ -3921,22 +3774,6 @@
           "tituloAlbum": "Loud"
         }
       ]
-    },
-    {
-      "id": 2,
-      "titulo": "testsetsetsetsetesdfrse",
-      "privacidade": "Pública",
-      "url_foto_playlist": "https://pbs.twimg.com/media/Ew3obsvXAAgkquF.jpg",
-      "categoria": "Country",
-      "usuario_dono": {
-        "id": "vitinho",
-        "name": "vitinho",
-        "password": "$2a$10$IR2TYr1sgZPVeT1NODmFxOwH6nkvhubch1cUIYy1OyloOmaB/Pt7O",
-        "email": "vitinho@vitinho.com",
-        "role": "user",
-        "isactive": true
-      },
-      "musicas": []
     }
   ],
   "categorias": [
@@ -3962,7 +3799,7 @@
     },
     {
       "id": 12,
-      "titulo": "MPB Velha"
+      "titulo": "Hip-Hop/rap"
     }
   ]
 }
