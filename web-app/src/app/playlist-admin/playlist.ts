@@ -1,13 +1,13 @@
 import { Musica } from "../musicas/musica";
 
-type user = {
-    id: "",
-    name: "",
-    password: "",
-    email: "",
-    gender: "",
-    role: "",
-    isactive: "",
+interface user {
+    id: string,
+    name: string,
+    password: string,
+    email: string,
+    gender: string,
+    role: string,
+    isactive: boolean,
     historico: []
 }
 
@@ -37,5 +37,6 @@ export class Playlist {
         historico: []
     }
     musicas: Musica[] = [];
+    seguidores: user[] = [];
     constructor() {}
 }

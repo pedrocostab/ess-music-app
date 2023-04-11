@@ -9,8 +9,12 @@
   </div>
   </div>
   <ul>
-    <li (click)="editarPlaylist(playlist.id)">Editar Informações</li>
-    <li (click)="deletePlaylist(playlist.id)">Remover playlist</li>
+    <li [ngStyle]="{'display': isDonoPlaylist ? 'block' : 'none' }" (click)="editarPlaylist(playlist.id)">Editar Informações</li>
+    <li [ngStyle]="{'display': isDonoPlaylist ? 'block' : 'none' }" (click)="deletePlaylist(playlist.id)">Remover playlist</li>
+    <li [ngStyle]="{'display': isDonoPlaylist ? 'none' : 'block' }">
+      <button *ngIf="seguir" (click)="toggleSeguir()">Seguir Playlist</button>
+      <button *ngIf="!seguir" (click)="toggleSeguir()">Deixar de Seguir Playlist</button>
+    </li>
   </ul>
 
   <br>

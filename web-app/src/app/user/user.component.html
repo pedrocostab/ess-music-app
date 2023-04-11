@@ -1,16 +1,20 @@
 <div class="user-container">
     <div class = "header">
-      <div class="circle">
-        <img src="./../../assets/usuarioSemFoto.png" alt="Minha imagem">
-      </div>
-      <div class="container">
-        <p style="font-size: 30px;">{{user.name}}</p>
-      </div>
-      </div>
-      <ul>
-        <li><a routerLink="/userEdit" ><button>Editar Perfil</button></a></li>
-        <li><a routerLink="/cadastraPlaylist" ><button>Criar playlist</button></a></li>
-      </ul>
+    <div class="circle">
+      <img src="./../../assets/usuarioSemFoto.png" alt="Minha imagem">
+    </div>
+    <div class="container">
+      <p style="font-size: 30px;">{{user.name}}</p>
+    </div>
+    </div>
+    <ul>
+      <li><a routerLink="/userEdit" ><button>Editar Perfil</button></a></li>
+      <li><a routerLink="" ><button>Criar playlist</button></a></li>
+    </ul>
+    
+      
+    
+    <p class="paragrafo" style="font-size: 20px;">Últimos 7 dias</p>
 
     <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Últimas músicas reproduzidas</p>
     <div class="tableGeral">
@@ -37,8 +41,8 @@
                 <div class="dropdown">
                   <button class="dropbtn"><span class="material-icons">more_vert</span></button>
                   <div class="dropdown-content">
-                    <!-- <p (click)="cadastraMusicaPlaylist(musica.id)"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</p>
-                    <p (click)="irParaAlbum(musica.albumId)"><span class="material-icons">album</span>Ir para o álbum</p> -->
+                    <a href="#"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</a>
+                    <a href="#"><span class="material-icons">album</span>Ir para o álbum</a>
                   </div>
                 </div>
               </div>
