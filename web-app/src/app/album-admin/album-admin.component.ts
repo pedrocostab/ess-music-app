@@ -48,8 +48,11 @@ export class AlbumAdminComponent {
     window.location.reload();
   }
   
-
   editarMusica(id: number): void {
     this.router.navigate(['editar-musica', id]);
+  }
+  
+  adicionarMusicaPlaylist(musicaId: number){
+    this.router.navigate(['adiciona-musica-playlist', musicaId]);
   }
 }
