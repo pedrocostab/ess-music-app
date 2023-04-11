@@ -34,6 +34,7 @@ import { EditarPlaylistComponent } from './editar-playlist/editar-playlist.compo
 import { ResultadosPesquisaComponent } from './resultados-pesquisa/resultados-pesquisa.component';
 import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
 import { SelecionarPlaylistComponent } from './selecionar-playlist/selecionar-playlist.component';
+import { CategoriaPlaylistsComponent } from './categoria-playlists/categoria-playlists.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -59,7 +60,6 @@ const routes: Routes = [
   { path: 'playlistAdmin/:id', component: PlaylistAdminComponent, canActivate: [AuthGuard] },
   { path: 'editar-musica/:id', component: EditaMusicaComponent, canActivate: [AuthGuard] },
   { path: 'editar-album/:id', component: EditaAlbumComponent, canActivate: [AuthGuard] },
-  { path: 'playlistsCategoria', component: PlaylistCategoriaComponent, canActivate: [AuthGuard] },
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent, canActivate: [AuthGuard] },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent, canActivate: [AuthGuard] },
   { path: 'editar-playlist/:id', component: EditarPlaylistComponent, canActivate: [AuthGuard] },
@@ -67,7 +67,8 @@ const routes: Routes = [
   { path: 'cadastraPlaylist', component: CadastraPlaylistComponent, canActivate: [AuthGuard] },
   { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent, canActivate: [AuthGuard] },
   { path: 'selecionarPlaylist', component: SelecionarPlaylistComponent, canActivate: [AuthGuard] },
-  { path: 'historic', component: HistoricComponent, canActivate:[AuthGuard]}
+  { path: 'historic', component: HistoricComponent, canActivate:[AuthGuard]},
+  {path: 'categoriaPlaylists', component: CategoriaPlaylistsComponent}
 ]
 
 @NgModule({
