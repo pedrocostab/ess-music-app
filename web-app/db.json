@@ -82,16 +82,6 @@
       "email": "alex@dizer.com",
       "role": "user",
       "isactive": true
-    },
-    {
-      "id": "romulodaniell",
-      "name": "Romulo Daniell",
-      "password": "$2a$10$5ivWQvEzTs6AVqPiGVagjuKl7KrqA95bYAhmW7w8EVVFFj.yXih4i",
-      "email": "romulodaniell@dizer.com",
-      "role": "user",
-      "isactive": true
-      "isactive": true,
-      "historico": []
     }
   ],
   "role": [
