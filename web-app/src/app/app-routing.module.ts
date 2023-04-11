@@ -66,9 +66,9 @@ const routes: Routes = [
   { path: 'editar-artista/:id', component: EditaArtistaComponent, canActivate: [AuthGuard] },
   { path: 'cadastraPlaylist', component: CadastraPlaylistComponent, canActivate: [AuthGuard] },
   { path: 'resultadosPesquisa', component: ResultadosPesquisaComponent, canActivate: [AuthGuard] },
-  { path: 'selecionarPlaylist', component: SelecionarPlaylistComponent, canActivate: [AuthGuard] },
-  { path: 'historic', component: HistoricComponent, canActivate:[AuthGuard]},
-  {path: 'categoriaPlaylists', component: CategoriaPlaylistsComponent}
+  { path: 'cadastrar-categoria', component: CriarCategoriaComponent},
+  { path: 'adiciona-musica-playlist/:id', component: SelecionarPlaylistComponent, canActivate: [AuthGuard] },
+  { path: 'historic', component: HistoricComponent, canActivate:[AuthGuard]}
 ]
 
 @NgModule({
