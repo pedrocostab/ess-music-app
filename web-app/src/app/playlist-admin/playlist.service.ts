@@ -29,7 +29,8 @@ export class PlaylistService {
       privacidade: novaPrivacidade,
       categoria: novaCategoria,
       url_foto_playlist: playlist.url_foto_playlist,
-      usuario_dono: this.user
+      usuario_dono: this.user,
+      musicas: [{}]
     };
 
     return this.http.post(this.taURL + "/playlists", JSON.stringify(newPlaylists), { headers: this.headers, observe: "response" })

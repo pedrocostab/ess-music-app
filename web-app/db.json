@@ -25,6 +25,14 @@
       "email": "pcsb1@cin.ufpe.br",
       "role": "user",
       "isactive": true
+    },
+    {
+      "id": "vitinho",
+      "name": "vitinho",
+      "password": "$2a$10$IR2TYr1sgZPVeT1NODmFxOwH6nkvhubch1cUIYy1OyloOmaB/Pt7O",
+      "email": "vitinho@vitinho.com",
+      "role": "admin",
+      "isactive": true
     }
   ],
   "role": [
@@ -3893,19 +3901,38 @@
   "playlists": [
     {
       "id": 1,
-      "titulo": "Treino eeee",
+      "titulo": "Playlist teste",
       "privacidade": "Pública",
-      "categoria": "Pop music",
       "url_foto_playlist": "https://www.smartfit.com.br/news/wp-content/uploads/2020/08/como-melhorar-o-resultado-do-treino.jpg",
+      "categoria": "Pop music",
       "usuario_dono": {
-        "id": "admin@dizer.com",
-        "name": "Admin",
-        "password": "$2b$10$nywPnAWVfamTzXgZmhhr/ei0YjIbh1kEb3DZ7MIvR6l0Rb1.oTqVq",
-        "email": "admin@dizer.com",
-        "gender": "male",
+        "id": "vitinho",
+        "name": "vitinho",
+        "password": "$2a$10$IR2TYr1sgZPVeT1NODmFxOwH6nkvhubch1cUIYy1OyloOmaB/Pt7O",
+        "email": "vitinho@vitinho.com",
         "role": "admin",
         "isactive": true
-      }
+      },
+      "musicas": [
+        {
+          "id": 90,
+          "titulo": "Need to Know",
+          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/3bd5814edfd0051c7221ca8cdbe0ea8f.jpg",
+          "albumId": 1,
+          "artistaId": 4,
+          "artistaNome": "Doja Cat",
+          "tituloAlbum": "Planet Her"
+        },
+        {
+          "id": 137,
+          "titulo": "You Da One",
+          "capaAlbum": "https://lastfm.freetls.fastly.net/i/u/500x500/b8ef5455f3c0918f33ba2ecf83c3e576.jpg",
+          "albumId": 5,
+          "artistaId": 2,
+          "artistaNome": "Rihanna",
+          "tituloAlbum": "Talk That Talk (Deluxe)"
+        }
+      ]
     }
   ],
   "categorias": [
