@@ -58,7 +58,7 @@ const routes: Routes = [
   { path: 'playlistAdmin/:id', component: PlaylistAdminComponent, canActivate: [AuthGuard] },
   { path: 'editar-musica/:id', component: EditaMusicaComponent, canActivate: [AuthGuard] },
   { path: 'editar-album/:id', component: EditaAlbumComponent, canActivate: [AuthGuard] },
-  { path: 'playlistsCategoria', component: PlaylistsCategoriaComponent, canActivate: [AuthGuard] },
+  { path: 'playlistsCategoria', component: PlaylistCategoriaComponent, canActivate: [AuthGuard] },
   { path: 'playlistsCategoriaAdmin', component: PlaylistsCategoriaAdminComponent, canActivate: [AuthGuard] },
   { path: 'bibliotecaUsuario', component: BibliotecaUsuarioComponent, canActivate: [AuthGuard] },
   { path: 'editar-playlist/:id', component: EditarPlaylistComponent, canActivate: [AuthGuard] },

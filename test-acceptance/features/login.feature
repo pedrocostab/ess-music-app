@@ -16,18 +16,18 @@ Scenario: Acesso ao Initial-Page sem realizar um login bem sucedido na aplicaç�
     And eu vejo um erro genérico na tela escrito "Por favor, faça login para acessar essa página!"
 
 Scenario: Login Usuário bem sucedido na aplicação
-    Given o usuário "2biiibiii" de senha "123123" está corretamente registrado no sistema com permissões de "user"
+    Given o usuário "5biiibiii" de senha "123123" está corretamente registrado no sistema com permissões de "user"
     And eu estou na página "login" da aplicação
-    When eu insiro corretamente os dados do campo "Usuário" como "2biiibiii"
+    When eu insiro corretamente os dados do campo "Usuário" como "5biiibiii"
     And eu insiro corretamente os dados do campo "Senha" como "123123"
     And eu envio as credênciais para o servidor
     Then eu sou redirecionado para a página "initial-page"
-    And eu vejo que estou logado com o usuário "2biiibiii"
+    And eu vejo que estou logado com o usuário "5biiibiii"
     And eu vejo que estou logado com permissões de "user"
 
 Scenario: Login Usuário mal sucedido na aplicação senha inválida
     Given eu estou na página "login" da aplicação
-    When eu insiro incorretamente os dados do campo "Usuário" como "2biiibiii"
+    When eu insiro incorretamente os dados do campo "Usuário" como "5biiibiii"
     And eu insiro incorretamente os dados do campo "Senha" como "placeholder"
     And eu envio as credênciais para o servidor
     Then eu vejo um erro genérico na tela escrito "Credênciais Inválidas ou Usuário não existente"
@@ -40,7 +40,7 @@ Scenario: Login Usuário mal sucedido na aplicação usuário inválido
     Then eu vejo um erro genérico na tela escrito "Credênciais Inválidas ou Usuário não existente"
 
 Scenario: Usuário com permissão user não consegue acessar página administrativa
-    Given eu estou corretamente logado na aplicação como o usuário "2biiibiii" de senha "123123" e permissão "user"
+    Given eu estou corretamente logado na aplicação como o usuário "5biiibiii" de senha "123123" e permissão "user"
     And eu estou na página "initial-page" da aplicação
     When eu insiro corretamente o caminho para a página "lista-usuarios" diretamenta na URL
     Then eu sou redirecionado para a página "initial-page"
@@ -48,6 +48,6 @@ Scenario: Usuário com permissão user não consegue acessar página administrat
 
 Scenario: Usuário com permissão admin consegue acessar página administrativa
     Given eu estou corretamente logado na aplicação como o usuário "bibiadmin" de senha "123123" e permissão "admin"
-    And eu estou na página "initial-page" da aplicação
+    And eu estou na página "userAdmin" da aplicação
     When eu insiro corretamente o caminho para a página "lista-usuarios" diretamenta na URL
     Then eu sou redirecionado para a página "lista-usuarios"
