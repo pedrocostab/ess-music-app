@@ -12,58 +12,28 @@
       "historico": []
     },
     {
-      "id": "teste2",
-      "name": "teste2",
-      "password": "teste2",
-      "email": "teste@teste",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "jv111",
-      "name": "joaovictor",
-      "password": "jvsf123",
-      "email": "jvsf@hotmai.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "asd",
-      "name": "asd",
-      "password": "123456",
-      "email": "asd@gmail.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    {
-      "id": "lukita",
-      "name": "lucas",
-      "password": "123456",
-      "email": "lukita@gmail.com",
-      "gender": "",
-      "role": "",
-      "isactive": true,
-      "historico": []
-    },
-    { 
       "id": "pcsb",
       "name": "Pedro Basilio",
       "password": "$2a$10$OEqwLgban/PoSr2PLe5bPeVCsdHouxFo6ttpsch7V3lFobSoLZLsG",
       "email": "pcsb@cin.ufpe.br",
       "role": "user",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
       "id": "pcsb1",
       "name": "Pedro Basilio",
       "password": "$2a$10$LjnzGLAzfzVh4QasM8psHOQGGvET.7bkaDb/O3P7FD1Yb8SNNIeiS",
       "email": "pcsb1@cin.ufpe.br",
+      "role": "user",
+      "isactive": true,
+      "historico": []
+    },
+    {
+      "id": "jv111",
+      "name": "joao victor",
+      "password": "$2a$10$k/b1wZU.qs120ykG.MAMDONY/QpE7f3zOr/0S.p17x0tevYuhJDaO",
+      "email": "jvsf@cin.ufpe.br",
       "role": "user",
       "isactive": true,
       "historico": []

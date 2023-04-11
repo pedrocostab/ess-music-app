@@ -138,15 +138,6 @@
   td.album-capa img{
     border-radius: 50%;
   }
-  #container p:last-child{
-    font-size: 20px;
-
-    color: white;
-    white-space: nowrap;
-    }
-  #container {
-    float: left;
-  }
     
   #titlepage {
     text-align: center;
@@ -227,4 +218,13 @@ html{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#username p:last-child{
+  font-size: 40px;
+  color: green;
+  white-space: nowrap;
+  }
+#username {
+  float: left;
 }

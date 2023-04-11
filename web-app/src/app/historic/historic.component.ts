@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../service/auth.service';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-historic',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./historic.component.css']
 })
 export class HistoricComponent {
+
+  constructor( private service: AuthService, private dialog: MatDialog) { 
+    this.Loadinfouser();
+  }
+
+  user:any;
+  
+  Loadinfouser() {
+    this.user = this.service.GetbyCode(localStorage.getItem('username')).subscribe(res => {
+      this.user = res;
+    });
+  }
 
 }
