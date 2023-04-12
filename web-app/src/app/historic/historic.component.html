@@ -8,7 +8,7 @@
     </div>
     </div>
     <ul>
-      <li><a routerLink="" ><button>Remover histórico</button></a></li>
+      <li><a (click)="limparHistorico()" ><button>Limpar histórico</button></a></li>
     </ul>
 
     <p class="paragrafo" style="font-size: 30px; font-weight: bold;">Meu histórico</p>
@@ -17,13 +17,32 @@
       <table>
         <thead>
           <tr>
-            <th>#</th>
+            <th># Imagem</th>
             <th># Título</th>
             <th># Artista</th>
             <th># Álbum</th>
+            <th># Ações</th>
           </tr>
         </thead>
-        <tbody>            
+        <tbody>
+          <tr *ngFor="let item of musicasHistorico">
+            <td class="album-capa"><img src={{item.capaAlbum}} alt=""></td>
+            <td>{{item.titulo}}</td>
+            <td>{{item.artistaNome}}</td>
+            <td>{{item.tituloAlbum}}</td>
+            <td class="opcoes-header">
+              <div class="opcoes-wrapper">
+                <div class="dropdown">
+                  <button class="dropbtn"><span class="material-icons">more_vert</span></button>
+                  <div class="dropdown-content">
+                    <a href="#"><span class="material-icons">playlist_add</span>Adicionar a uma playlist</a>
+                    <a href="#"><span class="material-icons">delete</span>Apagar música do histórico</a>
+                  </div>
+                </div>
+              </div>
+          </tr>
+        </tbody>
+        <!-- <tbody>            
           <tr class="cor-diferente">
             <td class="album-capa">
               <img src="./../../assets/evermore.jpg" alt="">
@@ -114,7 +133,7 @@
                 </div>
               </div>
           </tr>
-        </tbody>
+        </tbody> -->
       </table>
     </div>
       <br>
