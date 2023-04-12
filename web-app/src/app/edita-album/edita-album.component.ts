@@ -37,9 +37,9 @@ export class EditaAlbumComponent {
   }
 
   editarAlbum(album: Album) {
-    const novoTitulo = (<HTMLInputElement>document.getElementById("album-titulo")).value;
-    const novoAlbum = (<HTMLInputElement>document.getElementById("album-url")).value;
-    const novoAno = (<HTMLInputElement>document.getElementById("album-ano")).value;
+    const novoTitulo = (<HTMLInputElement>document.getElementById("album-nome")).value;
+    const novoAlbum = (<HTMLInputElement>document.getElementById("album-url_foto_album")).value;
+    const novoAno = (<HTMLInputElement>document.getElementById("album-ano_lancamento")).value;
   
     // Requisição PUT para atualizar o álbum
     this.http.put(this.taURL + "/albums/" + String(album.id), {
