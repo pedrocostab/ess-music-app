@@ -14,7 +14,7 @@
     {
       "id": "pcsb",
       "name": "Pedro Basilio",
-      "password": "$2a$10$JbqntgKTYwz.WRgzrOsCueYcokImwy1SQ2XusSBW1BnXoutZIWnHe",
+      "password": "$2a$10$.veD0B9bjcwAa0QVi07PyeVYbNN6B8urvzcjM1Z4PKYvHkcgsV9YS",
       "email": "pcsb@cin.ufpe.br",
       "role": "user",
       "isactive": true,
@@ -77,7 +77,8 @@
       "password": "$2a$10$Q.5/gqHD/rN1gR4Trs0qjec5K7tctSHettD80DWA4ncf97qN0bGWK",
       "email": "pcsb@cpasodkfpoaskf",
       "role": "user",
-      "isactive": true
+      "isactive": true,
+      "historico": []
     },
     {
       "id": "floquinho",
