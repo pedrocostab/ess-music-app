@@ -64,7 +64,7 @@ export class ArtistaAdminComponent implements OnInit {
   
   deletarArtista() {
     this.artistaService.deleteArtistaById(this.artistaId).subscribe(() => {
-      this.router.navigate(['visualizar-artistas-admin']);
+      window.location.href = 'visualizar-artistas-admin'
     });
   }
 
