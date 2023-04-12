@@ -233,4 +233,35 @@ defineSupportCode(function ({ Given, When, Then }) {
         await expect(stt.isPresent()).to.eventually.equal(true);
     })
 
+    When(/^I write nothing in "Nome" field, "([^\"]*)" in "Senha" field, "([^\"]*)" in "Email" field$/, async (password, email) => {
+        await browser.wait(() => element(by.cssContainingText('h1', 'Editar Usuário')).isPresent(), 5000);
+        await $("input[formControlName='name']").clear();
+        await $("input[formControlName='password']").clear();
+        await $("input[formControlName='email']").clear();
+        await $("input[formControlName='name']").sendKeys('');
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='email']").sendKeys(<string> email);
+    })
+
+    When(/^I click on "Adicionar Novo Usuario" $/, async () => {
+        await element(by.buttonText('Adicionar Novo Usuario')).click();
+    })
+
+    When(/^I write "([^\"]*)" in "Usuario" field, "([^\"]*)" in "Nome" field, "([^\"]*)" in "Senha" field, "([^\"]*)" in "Email" field$/, async (user ,name, password, email) => {
+        await browser.wait(() => element(by.cssContainingText('h1', 'Editar Usuário')).isPresent(), 5000);
+        await $("input[formControlName='name']").clear();
+        await $("input[formControlName='password']").clear();
+        await $("input[formControlName='email']").clear();
+        await $("input[formControlName='user']").clear();
+        await $("input[formControlName='user']").sendKeys(<string> user);
+        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='email']").sendKeys(<string> email);
+    })
+    When(/^I select "Usuario" in "Tipo de Usuario" field$/, async () => {
+        await browser.wait(element(by.cssContainingText('span' ,'Atualizar')).click(), 5000);
+        await $("ng-reflect-value='usuario'").click();
+        // await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
+    })
+
 })
