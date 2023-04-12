@@ -270,21 +270,65 @@ defineSupportCode(function ({ Given, When, Then }) {
         await $("input[formControlName='password']").sendKeys(<string> password);
         await $("input[formControlName='email']").sendKeys(<string> email);
         await browser.wait(element(by.cssContainingText('span' ,'Selecione o Cargo')).click(), 5000);
-        // await $("input[formControlName='role']").click();
-        console.log('PAPIRE AQUI PORRA')
-        // await browser.wait($("ng-reflect-value='usuario'").click(), 5000);
         await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
-
-        console.log('PASDOKFSPDOAKFSDPAOFKSPDOKF AQUI CARAI')
-
     })
-    // When(/^I select "Usuario" in "Tipo de Usuario" field$/, async () => {
-    //     // await browser.wait(element(by.cssContainingText('span' ,'Atualizar')).click(), 5000);
-    //     // await $("ng-reflect-value='usuario'").click();
-    //     // await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
-    // })
+
     Then(/^I see a success message "Usuário cadastrado com sucesso"$/, { timeout: 10000 }, async () => {
         await element(by.cssContainingText('div', 'Usuário cadastrado com sucesso')).isPresent();
     })
 
+    When(/^I write nothing in "Usuario" field, "([^\"]*)" in "Nome" field, "([^\"]*)" in "Senha" field, "([^\"]*)" in "Email" field and select "Usuario" in "Tipo de Usuario"$/, async (name, password, email) => {
+        await browser.wait(() => element(by.cssContainingText('h1', 'Adicionar novo Usuário')).isPresent(), 5000);
+        await $("input[formControlName='name']").clear();
+        await $("input[formControlName='password']").clear();
+        await $("input[formControlName='email']").clear();
+        await $("input[formControlName='id']").clear();
+        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='email']").sendKeys(<string> email);
+        await browser.wait(element(by.cssContainingText('span' ,'Selecione o Cargo')).click(), 5000);
+        await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
+    })
+
+    When(/^I write "([^\"]*)" in "Usuario" field, nothing in "Nome" field, "([^\"]*)" in "Senha" field, "([^\"]*)" in "Email" field and select "Usuario" in "Tipo de Usuario"$/, async (user , password, email) => {
+        await browser.wait(() => element(by.cssContainingText('h1', 'Adicionar novo Usuário')).isPresent(), 5000);
+        await $("input[formControlName='name']").clear();
+        await $("input[formControlName='password']").clear();
+        await $("input[formControlName='email']").clear();
+        await $("input[formControlName='id']").clear();
+        await $("input[formControlName='id']").sendKeys(<string> user);
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await $("input[formControlName='email']").sendKeys(<string> email);
+        await browser.wait(element(by.cssContainingText('span' ,'Selecione o Cargo')).click(), 5000);
+        await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
+    })
+
+    When(/^I write "([^\"]*)" in "Usuario" field, "([^\"]*)" in "Nome" field, nothing in "Senha" field, "([^\"]*)" in "Email" field and select "Usuario" in "Tipo de Usuario"$/, async (user ,name, email) => {
+        await browser.wait(() => element(by.cssContainingText('h1', 'Adicionar novo Usuário')).isPresent(), 5000);
+        await $("input[formControlName='name']").clear();
+        await $("input[formControlName='password']").clear();
+        await $("input[formControlName='email']").clear();
+        await $("input[formControlName='id']").clear();
+        await $("input[formControlName='id']").sendKeys(<string> user);
+        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='email']").sendKeys(<string> email);
+        await browser.wait(element(by.cssContainingText('span' ,'Selecione o Cargo')).click(), 5000);
+        await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
+    })
+
+    When(/^I write "([^\"]*)" in "Usuario" field, "([^\"]*)" in "Nome" field, "([^\"]*)" in "Senha" field, nothing in "Email" field and select "Usuario" in "Tipo de Usuario"$/, async (user ,name, password) => {
+        await browser.wait(() => element(by.cssContainingText('h1', 'Adicionar novo Usuário')).isPresent(), 5000);
+        await $("input[formControlName='name']").clear();
+        await $("input[formControlName='password']").clear();
+        await $("input[formControlName='email']").clear();
+        await $("input[formControlName='id']").clear();
+        await $("input[formControlName='id']").sendKeys(<string> user);
+        await $("input[formControlName='name']").sendKeys(<string> name);
+        await $("input[formControlName='password']").sendKeys(<string> password);
+        await browser.wait(element(by.cssContainingText('span' ,'Selecione o Cargo')).click(), 5000);
+        await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
+    })
+    
+
+    
 })

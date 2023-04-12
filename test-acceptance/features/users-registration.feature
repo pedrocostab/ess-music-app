@@ -55,7 +55,7 @@ Scenario: Administrator wants to add a new User with an invalid email
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on "Adicionar Usuario"
+    When I click on "Adicionar Novo Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -63,13 +63,13 @@ Scenario: Administrator wants to add a new User with an invalid email
     And I select "Usuario" in "Tipo de Usuario" field
     And I select the checkbox of "Ativo" field
     And I click "Adicionar"
-    Then I see a error message "Por favor, insira um dado válido!"
+    Then I get a Error message "Por favor, insira um dado válido!"
 
 Scenario: Administrator wants to add a new User with an invalid password
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on "Adicionar Usuario"
+    When I click on "Adicionar Novo Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb0" in "Senha" field
@@ -77,13 +77,13 @@ Scenario: Administrator wants to add a new User with an invalid password
     And I select "Usuario" in "Tipo de Usuario" field
     And I select the checkbox of "Ativo" field
     And I click "Adicionar"
-    Then I see a error message "Por favor, insira um dado válido!"
+    Then I get a Error message "Por favor, insira um dado válido!"
 
 Scenario: Administrator wants to add a new User without user field
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on "Adicionar Usuario"
+    When I click on "Adicionar Novo Usuario"
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -91,13 +91,13 @@ Scenario: Administrator wants to add a new User without user field
     And I select the checkbox of "Ativo" field
     And I write nothing in "Usuario" field
     And I click "Adicionar"
-    Then I see a error message "Por favor, insira um dado válido!"
+    Then I get a Error message "Por favor, insira um dado válido!"
 
     Scenario: Administrator wants to add a new User without email
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on "Adicionar Usuario"
+    When I click on "Adicionar Novo Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -105,13 +105,13 @@ Scenario: Administrator wants to add a new User without user field
     And I select the checkbox of "Ativo" field
     And I write nothing in "Email" field
     And I click "Adicionar"
-    Then I see a error message "Por favor, insira um dado válido!"
+    Then I get a Error message "Por favor, insira um dado válido!"
 
     Scenario: Administrator wants to add a new User without password
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on "Adicionar Usuario"
+    When I click on "Adicionar Novo Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb2@cin.ufpe.br" in "Email" field
@@ -119,27 +119,13 @@ Scenario: Administrator wants to add a new User without user field
     And I select the checkbox of "Ativo" field
     And I write nothing in "Senha" field
     And I click "Adicionar"
-    Then I see a error message "Por favor, insira um dado válido!"
-
-    Scenario: Administrator wants to add a new User without name
-    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
-    And I am on the "Lista de Usuários" page
-    And I see a list of system users with "3" users
-    When I click on "Adicionar Usuario"
-    And I write "pcsb" in "Usuario" field
-    And I write "pcsb02" in "Senha" field
-    And I write "pcsb2@cin.ufpe.br" in "Email" field
-    And I select "Usuario" in "Tipo de Usuario" field
-    And I select the checkbox of "Ativo" field
-    And I write nothing in "Nome" field
-    And I click "Adicionar"
-    Then I see a error message "Por favor, insira um dado válido!"
+    Then I get a Error message "Por favor, insira um dado válido!"
 
     Scenario: Administrator wants to add a new User without role
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     And I see a list of system users with "3" users
-    When I click on "Adicionar Usuario"
+    When I click on "Adicionar Novo Usuario"
     And I write "pcsb" in "Usuario" field
     And I write "Pedro Costa" in "Nome" field
     And I write "pcsb02" in "Senha" field
@@ -147,4 +133,4 @@ Scenario: Administrator wants to add a new User without user field
     And I select the checkbox of "Ativo" field
     And I write nothing in "Tipo de Usuario" field
     And I click "Adicionar"
-    Then I see a error message "Por favor, insira um dado válido!"
+    Then I get a Error message "Por favor, insira um dado válido!"

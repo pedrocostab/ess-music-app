@@ -152,3 +152,43 @@ Scenario: Administrator wants to edit a User information without name
     And I write nothing in "Nome" field, "pcsb01" in "Senha" field, "pcsb@cin.ufpe.br" in "Email" field
     And I click "Atualizar"
     Then I get a Error message "Por favor, insira um dado válido!"
+
+Scenario: Administrator wants to add a new User
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    When I click on "Adicionar Novo Usuario" 
+    And I write "drielle" in "Usuario" field, "Drielle" in "Nome" field, "dri012" in "Senha" field, "dri@cin.ufpe.br" in "Email" field and select "Usuario" in "Tipo de Usuario"
+    And I click "Adicionar"
+    Then I see a success message "Usuário cadastrado com sucesso"
+
+Scenario: Administrator wants to add a new User without user field
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    When I click on "Adicionar Novo Usuario"
+    And I write nothing in "Usuario" field, "Drielle" in "Nome" field, "dri012" in "Senha" field, "dri@cin.ufpe.br" in "Email" field and select "Usuario" in "Tipo de Usuario"
+    And I click "Adicionar"
+    Then I get a Error message "Por favor, insira um dado válido!"
+
+Scenario: Administrator wants to add a new User without name
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    When I click on "Adicionar Novo Usuario"
+    And I write "drielle" in "Usuario" field, nothing in "Nome" field, "dri012" in "Senha" field, "dri@cin.ufpe.br" in "Email" field and select "Usuario" in "Tipo de Usuario"
+    And I click "Adicionar"
+    Then I get a Error message "Por favor, insira um dado válido!"
+
+Scenario: Administrator wants to add a new User without password   
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    When I click on "Adicionar Novo Usuario"
+    And I write "drielle" in "Usuario" field, "Drielle" in "Nome" field, nothing in "Senha" field, "dri@cin.ufpe.br" in "Email" field and select "Usuario" in "Tipo de Usuario"
+    And I click "Adicionar"
+    Then I get a Error message "Por favor, insira um dado válido!"
+
+Scenario: Administrator wants to add a new User without email
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    When I click on "Adicionar Novo Usuario" 
+    And I write "drielle" in "Usuario" field, "Drielle" in "Nome" field, "dri012" in "Senha" field, nothing in "Email" field and select "Usuario" in "Tipo de Usuario"
+    And I click "Adicionar"
+    Then I get a Error message "Por favor, insira um dado válido!"
