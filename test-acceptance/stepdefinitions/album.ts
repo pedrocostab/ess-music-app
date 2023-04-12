@@ -55,8 +55,11 @@ defineSupportCode(function ({ Given, When, Then }) {
 
 
     When(/^Preencho os campos "nome do álbum", "ano de lançamento" e "url_foto álbum" com os valores "([^\"]*)", "([^\"]*)" e "([^\"]*)"$/, async (name, year, url_photo) => {
+        await $("#album-nome").clear();
         await $("#album-nome").sendKeys(<string> name);
+        await $("#album-ano_lancamento").clear();
         await $("#album-ano_lancamento").sendKeys(<string> year);
+        await $("#album-url_foto_album").clear();
         await $("#album-url_foto_album").sendKeys(<string> url_photo);
     })
 
