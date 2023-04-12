@@ -19,11 +19,13 @@ export class AuthService {
     return this.http.get<any>(`${this.apiurl}/${code}`);
   }
 
+
   GetAllRole(): Observable<any[]> {
     return this.http.get<any[]>('http://localhost:3000/role');
   }
 
   Proceedregister(inputdata: any): Observable<any> {
+    inputdata.historic = []
     return this.http.post<any>(this.apiurl, inputdata);
   }
 
