@@ -64,18 +64,22 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
 
     Then(/^I see the "Email" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
         await expect($("input[formControlName='email'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
 
     Then(/^I see the "Senha" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
         await expect($("input[formControlName='password'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
 
     Then(/^I see the "Usuario" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
         await expect($("input[formControlName='id'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
 
     Then(/^I see the "Nome" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
         await expect($("input[formControlName='name'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
 
@@ -122,6 +126,7 @@ defineSupportCode(function ({ Given, When, Then }) {
 
     Given(/^I am on the "Lista de Usuários" page$/, {timeout: 30000}, async () => {
         await browser.wait(() => browser.getCurrentUrl().then((url) => url == (base_front_url + '/userAdmin')));
+        // await element(by.cssContainingText("a", "Visualizar Usuários")).click();
         await $("a[routerLink='/lista-usuarios']").click();
         await expect(browser.wait(() => browser.getCurrentUrl().then((url) => url == (base_front_url + '/lista-usuarios'))).then(()=>true).catch(()=>false)).to.eventually.equal(true);
     })
@@ -150,6 +155,8 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
     
     When(/^I click on the "Editar" button on the "Usuario" user "([^\"]*)" line$/, async (user:string) => {
+        // await element(by.xpath("//*[contains(@id,'Editar')]"));
+    //    await element(by.cssContainingText('td', user)).element(by.xpath('..')).element(by.buttonText('Editar')).click();
     await browser.wait(() => element(by.css('table')).isPresent(), 5000);
     const usr = element(by.cssContainingText('td', user));
     await expect(usr.isPresent()).to.eventually.equal(true);
@@ -173,6 +180,7 @@ defineSupportCode(function ({ Given, When, Then }) {
         await element(by.cssContainingText('span' ,'Atualizar')).click();
         })
     When(/^I click "Adicionar"$/, async () => {
+        // await browser.wait(element(by.cssContainingText('span.mdc-button__label' ,'Adicionar')).click(), 5000);
         await element(by.xpath("//*[@id='mat-mdc-dialog-1']/div/div/app-addpopup/mat-card/mat-card-content/form/div[2]/button"));
 
     })
@@ -191,6 +199,7 @@ defineSupportCode(function ({ Given, When, Then }) {
       })
 
     When(/^I click "Sim"$/, {timeout: 10000}, async () => {
+        // await element(by.buttonText('Sim')).click();      
         await element(by.cssContainingText('span', 'Sim')).click();  
         })
 
@@ -200,6 +209,7 @@ defineSupportCode(function ({ Given, When, Then }) {
     })
 
     Then(/^I see the "Nova Senha" field highlighted$/, { timeout: 10000 }, async () => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
         await expect($("input[formControlName='password'].ng-invalid").isPresent()).to.eventually.equal(true);
     })
     
@@ -239,6 +249,14 @@ defineSupportCode(function ({ Given, When, Then }) {
 
     When(/^I click on "Adicionar Novo Usuario"$/, async () => {
         await element(by.cssContainingText('span', 'Adicionar Novo Usuário')).click();
+            // await element(by.xpath("//*[contains(@id,'Editar')]"));
+        //    await element(by.cssContainingText('td', user)).element(by.xpath('..')).element(by.buttonText('Editar')).click();
+        // await browser.wait(() => element(by.css('table')).isPresent(), 5000);
+        // const usr = element(by.cssContainingText('td', 'admin@dizer.com'));
+        // await expect(usr.isPresent()).to.eventually.equal(true);
+        // const row = usr.element(by.xpath('..'));
+        // const edt = row.element(by.cssContainingText('span', 'Adicionar Novo Usuário '));
+        // await edt.click(); 
     })
 
     When(/^I write "([^\"]*)" in "Usuario" field, "([^\"]*)" in "Nome" field, "([^\"]*)" in "Senha" field, "([^\"]*)" in "Email" field and select "Usuario" in "Tipo de Usuario"$/, async (user ,name, password, email) => {
@@ -311,6 +329,12 @@ defineSupportCode(function ({ Given, When, Then }) {
         await browser.wait(element(by.cssContainingText('span' ,'Usuario')).click(), 5000);
     })
 
+    // Given(/^I see the "email" user "([^\"]*)"$/, {timeout: 10000}, async (email:string ) => {
+    //     const usr = element(by.cssContainingText('td', email));
+    //     await expect(usr.isPresent()).to.eventually.equal(true);
+    // })
+
+
     When(/^I click on the "Remover" button on the "Email" user "([^\"]*)" line$/, {timeout: 10000}, async (email:string ) => {
         await browser.wait(() => element(by.css('table')).isPresent(), 5000);
         const usr = element(by.cssContainingText('td', email));
@@ -320,12 +344,19 @@ defineSupportCode(function ({ Given, When, Then }) {
         await edt.click(); 
     })
 
+    // Given(/^I check that the email user "([^\"]*)" is no longer on the list of system users$/, {timeout: 10000}, async (email:string ) => {
+    //     await browser.wait(() => element(by.css('table')).isPresent(), 5000);
+    //     const usr = element(by.cssContainingText('td', email));
+    //     await expect(usr.isPresent()).to.eventually.equal(false);
+    // })
 
     When(/^I click on "Sim"$/, {timeout: 10000}, async () => {
+        // await element(by.buttonText('Sim')).click();      
         await element(by.xpath("//*[@id='mat-mdc-dialog-0']/div/div/app-deletepopup/mat-card/mat-card-content/div/a[1]/span[1]"));
         })
 
     Then(/^I check that the email user "([^\"]*)" is no longer on the list of system users$/, { timeout: 10000 }, async (email) => {
+        // await element(by.cssContainingText('mdc-text-field--invalid', '')).isPresent();
         await expect($("input[formControlName='email'].ng-invalid").isPresent()).to.eventually.equal(false);
     })
 })

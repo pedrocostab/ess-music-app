@@ -17,7 +17,7 @@ export let config: Config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
 
     specs: [
-        '../../features/users-registration.feature'
+        '../../features/usuario_edita_senha.feature'
     ],
 
     onPrepare: () => {

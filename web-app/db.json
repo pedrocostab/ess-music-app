@@ -12,14 +12,6 @@
       "historico": []
     },
     {
-      "id": "pcsb",
-      "name": "Pedro Basilio",
-      "password": "$2a$10$Ee.Xo95BzWao9Zgt4xRnaOD7n7e2zw3.JlZIhaVtDsumdaiBW4P8i",
-      "email": "pcsb@cin.ufpe.br",
-      "role": "usuario",
-      "isactive": true
-    },
-    {
       "id": "pcsb2",
       "name": "Pedro Deletado",
       "password": "$2a$10$rP4bGnQOIv342aMYLIycVeQ0OO8uCxQ7n4wiHR0zOqf1AeIuUUVkS",
@@ -34,6 +26,33 @@
       "email": "pcsbasilio@cin.ufpe.br",
       "role": "usuario",
       "isactive": true
+    },
+    {
+      "id": "pcsb4",
+      "name": "Pedro Basilio",
+      "password": "$2a$10$wW4BJE2zV7x2gpJ0ayxv2u6CA1mv.ckzlchB7VWSCSvYcYc1sE5ky",
+      "email": "pcsb4@cin.ufpe.br",
+      "role": "user",
+      "isactive": true,
+      "historic": []
+    },
+    {
+      "id": "pedrobasilio",
+      "name": "Pedro",
+      "password": "$2a$10$OZI1yyAXJKUwIKyfW6ZFLu5PLk7MHPfsJSi0Ay/gawiV1MJJptUai",
+      "email": "pedrobasilio@gmail.com",
+      "role": "user",
+      "isactive": true,
+      "historic": []
+    },
+    {
+      "id": "pcsb",
+      "name": "Pedro Basilio",
+      "password": "$2a$10$I1GhP91eAWHE1JCNOvZXteRKynlJc3wp9XLkvJHQTxdmytBTYWmq6",
+      "email": "pcsb@cin.ufpe.br",
+      "role": "user",
+      "isactive": true,
+      "historic": []
     }
   ],
   "role": [
