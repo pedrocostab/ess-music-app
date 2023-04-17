@@ -14,27 +14,26 @@
     {
       "id": "pcsb",
       "name": "Pedro Basilio",
-      "password": "$2a$10$.veD0B9bjcwAa0QVi07PyeVYbNN6B8urvzcjM1Z4PKYvHkcgsV9YS",
+      "password": "$2a$10$Ee.Xo95BzWao9Zgt4xRnaOD7n7e2zw3.JlZIhaVtDsumdaiBW4P8i",
       "email": "pcsb@cin.ufpe.br",
-      "role": "user",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": "pcsb2",
+      "name": "Pedro Deletado",
+      "password": "$2a$10$rP4bGnQOIv342aMYLIycVeQ0OO8uCxQ7n4wiHR0zOqf1AeIuUUVkS",
+      "email": "pedrocostab@gmail.com",
+      "role": "usuario",
       "isactive": true
     },
     {
       "id": "pcsb1",
       "name": "Pedro Santos",
-      "password": "$2a$10$.gEKGtFyo4C0OlvNRDpDxuGABQ20HVtf553sor1heDQzUP6Ul2jBe",
+      "password": "$2a$10$gjbi9V9TiTgwr6WjZUvq0e4.3oiF3Y72YM7li5TxxrXhO5iAURnFK",
       "email": "pcsbasilio@cin.ufpe.br",
-      "role": "user",
+      "role": "usuario",
       "isactive": true
-    },
-    {
-      "id": "pcsb2",
-      "name": "Pedro",
-      "password": "$2a$10$Q.5/gqHD/rN1gR4Trs0qjec5K7tctSHettD80DWA4ncf97qN0bGWK",
-      "email": "pcsb@cpasodkfpoaskf",
-      "role": "user",
-      "isactive": true,
-      "historico": []
     }
   ],
   "role": [
@@ -3735,6 +3734,25 @@
       "privacidade": "Pública",
       "url_foto_playlist": "https://cdn.shopify.com/s/files/1/0570/3483/4103/articles/Beneficios_de_treinar_em_jejum_600x600_crop_center.jpg?v=1673311268",
       "id": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Playlist Exemplo",
+      "privacidade": "Pública",
+      "categoria": "Rock",
+      "url_foto_playlist": "",
+      "usuario_dono": {
+        "id": "pedrobasilio",
+        "name": "Pedro Basilio",
+        "password": "$2a$10$4/B.RKoYwLNWxgs7.E/pf.94wH7mrLwMdzgjM76tpxzPVyVBd5zr2",
+        "email": "pedrocostab@gmail.com",
+        "role": "user",
+        "isactive": true,
+        "historic": []
+      },
+      "musicas": [
+        {}
+      ]
     }
   ],
   "categorias": [

@@ -55,10 +55,10 @@ Scenario: Registering new users without name
     And I see the "Nome" field highlighted
 
 Scenario: User logged in wants to change his password
-    Given I am logged in with user "pcsb1" and password "pcsb01"
+    Given I am logged in with user "pcsb" and password "pcsb01"
     And I am on the "Editar Perfil" page
     When I click on "Alterar Senha"
-    And I write "01pcsb" in "Nova Senha"
+    And I write "pcsb01" in "Nova Senha"
     And I click on "Alterar"
     Then I see a password changed successfully message
 
@@ -157,7 +157,7 @@ Scenario: Administrator wants to add a new User
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     When I click on "Adicionar Novo Usuario" 
-    And I write "drielle" in "Usuario" field, "Drielle" in "Nome" field, "dri012" in "Senha" field, "dri@cin.ufpe.br" in "Email" field and select "Usuario" in "Tipo de Usuario"
+    And I write "cleoncio" in "Usuario" field, "Cleo" in "Nome" field, "cleo01" in "Senha" field, "cleo@cin.ufpe.br" in "Email" field and select "Usuario" in "Tipo de Usuario"
     And I click "Adicionar"
     Then I see a success message "Usuário cadastrado com sucesso"
 
@@ -197,7 +197,16 @@ Scenario: Administrator wants to remove a User from the system
     Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
     And I am on the "Lista de Usuários" page
     And I see a list of system users
-    And I see the "email" user "pcsb@cin.ufpe.br"
-    When I click on the "Remover" button on the "Email" user "pcsb@cin.ufpe.br" line
+    And I see the "email" user "pcsb4@cin.ufpe.br"
+    When I click on the "Remover" button on the "Email" user "pcsb4@cin.ufpe.br" line
     And I click on "Sim"
-    Then I check that the email user "pcsb@cin.ufpe.br" is no longer on the list of system users
+    Then I check that the email user "pcsb4@cin.ufpe.br" is no longer on the list of system users
+
+Scenario: Administrator wants to remove a User from the system
+    Given I am logged in with an admin account with user "admin@dizer.com" and password "admin"
+    And I am on the "Lista de Usuários" page
+    And I see a list of system users
+    And I see the "email" user "cleo@cin.ufpe.br"
+    When I click on the "Remover" button on the "Email" user "cleo@cin.ufpe.br" line
+    And I click on "Sim"
+    Then I check that the email user "cleo@cin.ufpe.br" is no longer on the list of system users
